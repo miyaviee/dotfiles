@@ -26,8 +26,6 @@ NeoBundle 'Shougo/vimproc.vim', {
     \     'unix' : 'gmake',
     \    },
     \ }
-" colorscheme
-NeoBundle "tomasr/molokai"
 call neobundle#end()
 
 filetype plugin indent on       " restore filetype
@@ -163,4 +161,3 @@ endfunction"}}}
 
 colorscheme molokai
 hi Normal ctermbg=none
-
