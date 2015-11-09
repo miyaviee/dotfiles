@@ -21,6 +21,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'jelera/vim-javascript-syntax'
+NeoBundle 'tpope/vim-endwise'
 NeoBundle 'Shougo/vimproc.vim', {
     \ 'build' : {
     \     'windows' : 'tools\\update-dll-mingw',
@@ -72,6 +73,10 @@ endif
 au bufnewfile,bufread *.php set noexpandtab tabstop=2 shiftwidth=2
 au bufnewfile,bufread *.inc set noexpandtab tabstop=2 shiftwidth=2
 au bufnewfile,bufread *.tpl set noexpandtab tabstop=2 shiftwidth=2
+
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap [<Enter> []<Left><CR><ESC><S-o>
+inoremap (<Enter> ()<Left><CR><ESC><S-o>)]}
 
 """ Unite.vim
 " 起動時にインサートモードで開始
@@ -162,3 +167,4 @@ endfunction"}}}
 
 colorscheme molokai
 hi Normal ctermbg=none
+
