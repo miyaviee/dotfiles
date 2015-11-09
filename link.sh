@@ -8,3 +8,5 @@ ln -fs ~/dotfiles/.gemrc ~/.gemrc
 mkdir -p ~/.vim/colors
 ln -fs ~/dotfiles/colors/molokai.vim ~/.vim/colors/molokai.vim
 
+# alias
+echo "alias vi=vim" >> ~/.bash_profile
