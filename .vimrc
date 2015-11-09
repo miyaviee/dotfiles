@@ -77,8 +77,10 @@ au bufnewfile,bufread *.tpl set noexpandtab tabstop=2 shiftwidth=2
 " 起動時にインサートモードで開始
 let g:unite_enable_start_insert = 1
 " インサート／ノーマルどちらからでも呼び出せるようにキーマップ
-nnoremap <silent> <C-f> :<C-u>Unite file file_mru<CR>
-inoremap <silent> <C-f> <ESC>:<C-u>Unite file file_mru<CR>
+nnoremap <silent> <C-f> :<C-u>Unite file<CR>
+inoremap <silent> <C-f> <ESC>:<C-u>Unite file<CR>
+nnoremap <silent> <C-b> :<C-u>Unite buffer file_mru<CR>
+inoremap <silent> <C-b> <ESC>:<C-u>Unite buffer file_mru<CR>
 " ファイル検索
 inoremap <silent> <C-p> <Esc>:w<CR>:CtrlP<CR>
 
