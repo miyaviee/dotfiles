@@ -11,6 +11,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "plugin
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Townk/vim-autoclose'
+NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'Shougo/neosnippet'
@@ -75,7 +76,6 @@ endif
 au bufnewfile,bufread *.php set noexpandtab tabstop=2 shiftwidth=2
 au bufnewfile,bufread *.inc set noexpandtab tabstop=2 shiftwidth=2
 au bufnewfile,bufread *.tpl set noexpandtab tabstop=2 shiftwidth=2
-au bufnewfile,bufread *.snip set noexpandtab tabstop=2 shiftwidth=2
 
 autocmd FileType html inoremap <silent> <buffer> </ </<C-x><C-o>
 
@@ -165,4 +165,50 @@ endfunction"}}}
 
 colorscheme molokai
 hi Normal ctermbg=none
+
+"Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplcache.
+let g:neocomplcache_enable_at_startup = 1
+" Use smartcase.
+let g:neocomplcache_enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplecache_min_syntax_length = 5
+let g:neocomplcache_auto_completion_start_length = 5
+let g:neocomplcache_max_list = 20
+" Define dictionary.
+let g:neocomplcache_dictionary_filetype_lists = {
+      \ 'default' : ''
+      \ }
+
+" Define keyword.
+if !exists('g:neocomplcache_keyword_patterns')
+  let g:neocomplcache_keyword_patterns = {}
+endif
+let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
+
+if !exists('g:neocomplcache_delimiter_patterns')
+  let g:neocomplcache_delimiter_patterns = {}
+endif
+let g:neocomplcache_delimiter_patterns['php'] = ['->', '::', '\']
+let g:neocomplcache_delimiter_patterns['tpl'] = ['\.']
+let g:neocomplcache_delimiter_patterns['ruby'] = ['::','\.']
+
+if !exists('g:neocomplcache_omni_patterns')
+  let g:neocomplcache_omni_patterns = {}
+endif
+let g:neocomplcache_omni_patterns['default'] = ''
+
+let g:neocomplcache_plugin_disable = {
+  \ 'syntax_complete' : 1,
+  \ }
+
+" Plugin key-mappings.
+inoremap <expr><C-g>     neocomplcache#undo_completion()
+inoremap <expr><C-l>     neocomplcache#complete_common_string()
+
+" <TAB>: completion.
+"inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+" <C-h>, <BS>: close popup and delete backword char.
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
 
