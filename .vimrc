@@ -54,6 +54,8 @@ set noswapfile
 set list
 set lcs=tab:»-,trail:_,extends:\
 
+set pastetoggle=<C-E>
+
 let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/'
 
 "全角スペースをハイライト表示
@@ -120,29 +122,30 @@ nnoremap <silent> ,r  :<C-u>UniteResume search-buffer<CR>
 nnoremap <CR> G
 nnoremap <BS> gg
 
-" 新規タブ
-nnoremap <silent><C-t> :tabnew<CR>
-
 " unite grep に ag(The Silver Searcher) を使う
 if executable('ag')
-  let g:unite_source_grep_command = 'ag'
-  let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
-  let g:unite_source_grep_recursive_opt = ''
+let g:unite_source_grep_command = 'ag'
+let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
+let g:unite_source_grep_recursive_opt = ''
 endif
 
 " vp doesn't replace paste buffer
 function! RestoreRegister()
-  let @" = s:restore_reg
-  return ''
+let @" = s:restore_reg
+return ''
 endfunction
 function! s:Repl()
-  let s:restore_reg = @"
-  return "p@=RestoreRegister()\<cr>"
+let s:restore_reg = @"
+return "p@=RestoreRegister()\<cr>"
 endfunction
 vmap <silent> <expr> p <sid>Repl()"
 
 syntax on
 set cursorline
+
+" Move new tabpage at the last.
+nnoremap <silent> <C-w>t  :<C-u>tabnew \| :tabmove<CR>
+nnoremap <silent> <C-w>o  :<C-u>tabonly<CR>
 
 "uniteを開いている間のキーマッピング
 autocmd FileType unite call s:unite_my_settings()
@@ -150,17 +153,17 @@ function! s:unite_my_settings()"{{{
   "ESCでuniteを終了
   nmap <buffer> <ESC> <Plug>(unite_exit)
   "ctrl+jで縦に分割して開く
-  nnoremap <silent> <buffer> <expr> <C-j> unite#do_action('split')
-  inoremap <silent> <buffer> <expr> <C-j> unite#do_action('split')
+  nnoremap <silent> <buffer> <expr> <C-w>s unite#do_action('split')
+  inoremap <silent> <buffer> <expr> <C-w>s unite#do_action('split')
   "ctrl+lで横に分割して開く
-  nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
-  inoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
+  nnoremap <silent> <buffer> <expr> <C-w>v unite#do_action('vsplit')
+  inoremap <silent> <buffer> <expr> <C-w>v unite#do_action('vsplit')
   "ctrl+tで新しいタブで開く
-  nnoremap <silent> <buffer> <expr> <C-t> unite#do_action('tabopen')
-  inoremap <silent> <buffer> <expr> <C-t> unite#do_action('tabopen')
+  nnoremap <silent> <buffer> <expr> <C-w>t unite#do_action('tabopen')
+  inoremap <silent> <buffer> <expr> <C-w>t unite#do_action('tabopen')
   "ctrl+oでその場所に開く
-  nnoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
-  inoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
+  nnoremap <silent> <buffer> <expr> <C-w>o unite#do_action('open')
+  inoremap <silent> <buffer> <expr> <C-w>o unite#do_action('open')
 endfunction"}}}
 
 colorscheme molokai
