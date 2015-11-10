@@ -38,7 +38,8 @@ call neobundle#end()
 
 filetype plugin indent on       " restore filetype
 
-set encoding=utf-8
+set fileformat=unix
+set fileencoding=utf-8
 set tabstop=2
 set autoindent
 set smartindent
@@ -200,7 +201,7 @@ endif
 let g:neocomplcache_omni_patterns['default'] = ''
 
 let g:neocomplcache_plugin_disable = {
-  \ 'syntax_complete' : 1,
+  \ 'syntax_complete' : 1
   \ }
 
 " Plugin key-mappings.
