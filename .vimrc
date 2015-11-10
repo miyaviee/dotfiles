@@ -74,10 +74,6 @@ au bufnewfile,bufread *.php set noexpandtab tabstop=2 shiftwidth=2
 au bufnewfile,bufread *.inc set noexpandtab tabstop=2 shiftwidth=2
 au bufnewfile,bufread *.tpl set noexpandtab tabstop=2 shiftwidth=2
 
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap [<Enter> []<Left><CR><ESC><S-o>
-inoremap (<Enter> ()<Left><CR><ESC><S-o>)]}
-
 autocmd FileType html inoremap <silent> <buffer> </ </<C-x><C-o>
 
 """ Unite.vim
