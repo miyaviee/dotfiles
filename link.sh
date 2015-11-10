@@ -22,6 +22,8 @@ if [ -e ~/.vim/colors ]; then
 fi
 ln -fs ~/dotfiles/colors/molokai.vim ~/.vim/colors/molokai.vim
 
+vim +:NeoBundleInstall +:q
+
 # snippets
 cp ~/dotfiles/snippets/* ~/.vim/bundle/neosnippet-snippets/snippets
 
@@ -29,3 +31,4 @@ cp ~/dotfiles/snippets/* ~/.vim/bundle/neosnippet-snippets/snippets
 if [ -z "$(grep 'alias vi=vim' ~/.bash_profile)" ]; then
   echo "alias vi=vim" >> ~/.bash_profile
 fi
+

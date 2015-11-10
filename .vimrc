@@ -23,6 +23,7 @@ NeoBundle 'othree/html5.vim'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'Shougo/vimproc.vim', {
     \ 'build' : {
     \     'windows' : 'tools\\update-dll-mingw',
@@ -54,8 +55,6 @@ set noswapfile
 
 set list
 set lcs=tab:»-,trail:_,extends:\
-
-set pastetoggle=<C-E>
 
 let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/'
 
@@ -207,8 +206,9 @@ let g:neocomplcache_plugin_disable = {
 inoremap <expr><C-g>     neocomplcache#undo_completion()
 inoremap <expr><C-l>     neocomplcache#complete_common_string()
 
-" <TAB>: completion.
-"inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+
+nnoremap <silent>vs :VimShell<CR>
+nnoremap <silent>vp :VimShellPop<CR>
 
