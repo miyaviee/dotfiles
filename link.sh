@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# neobundle
+mkdir ~/.vim/bundle
+git clone https://github.com/Shougo/neobundle.vim.git ~/.vim/bundle/neobundle.vim
+
 # conf
 ln -fs ~/dotfiles/.vimrc ~/.vimrc
 ln -fs ~/dotfiles/.gemrc ~/.gemrc
