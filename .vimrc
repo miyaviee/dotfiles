@@ -24,6 +24,7 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'Shougo/vimshell.vim'
+NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/vimproc.vim', {
     \ 'build' : {
     \     'windows' : 'tools\\update-dll-mingw',
@@ -209,6 +210,9 @@ inoremap <expr><C-l>     neocomplcache#complete_common_string()
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
 
+" vim shell
 nnoremap <silent>vs :VimShell<CR>
 nnoremap <silent>vp :VimShellPop<CR>
 
+" git diff
+nnoremap <silent>gd :Gdiff<CR>
