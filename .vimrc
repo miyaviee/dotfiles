@@ -75,6 +75,7 @@ endif
 au bufnewfile,bufread *.php set noexpandtab tabstop=2 shiftwidth=2
 au bufnewfile,bufread *.inc set noexpandtab tabstop=2 shiftwidth=2
 au bufnewfile,bufread *.tpl set noexpandtab tabstop=2 shiftwidth=2
+au bufnewfile,bufread *.snip set noexpandtab tabstop=2 shiftwidth=2
 
 autocmd FileType html inoremap <silent> <buffer> </ </<C-x><C-o>
 
@@ -117,10 +118,6 @@ nnoremap <silent> <C-j> :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C
 inoremap <silent> <C-j> <ESC>:<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W><CR>
 " grep検索結果の再呼出
 nnoremap <silent> ,r  :<C-u>UniteResume search-buffer<CR>
-
-" Enterで最終行、BSで先頭行
-nnoremap <CR> G
-nnoremap <BS> gg
 
 " unite grep に ag(The Silver Searcher) を使う
 if executable('ag')
