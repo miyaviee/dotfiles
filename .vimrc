@@ -142,6 +142,8 @@ set cursorline
 " no insertmode move
 inoremap <silent><UP> <ESC><UP>
 inoremap <silent><DOWN> <ESC><DOWN>
+" enter insertmode
+nnoremap <silent><CR> $i<RIGHT><CR>
 
 " Move new tabpage at the last.
 nnoremap <silent> <C-w>t  :<C-u>tabnew \| :tabmove<CR>
