@@ -10,6 +10,7 @@ fi
 ln -fs `pwd`/.vimrc ~/.vimrc
 ln -fs `pwd`/.gemrc ~/.gemrc
 ln -fs `pwd`/.bash_profile ~/.bash_profile
+ln -fs `pwd`/.git-completion.bash ~/.git-completion.bash
 ln -fs `pwd`/.git-prompt.sh ~/.git-prompt.sh
 
 # color
