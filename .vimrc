@@ -99,7 +99,7 @@ xmap <C-k> <Plug>(neosnippet_expand_target)
 " SuperTab like snippets behavior.
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 \ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
+\: pumvisible() ? "\<DOWN>" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 \ "\<Plug>(neosnippet_expand_or_jump)"
 \: "\<TAB>"
@@ -162,6 +162,9 @@ function! s:unite_my_settings()"{{{
   "ctrl+oでその場所に開く
   nnoremap <silent> <buffer> <expr> <C-w>o unite#do_action('open')
   inoremap <silent> <buffer> <expr> <C-w>o unite#do_action('open')
+  " キャンセル
+  nnoremap <silent> <buffer> <silent><ESC> :q<CR>
+  inoremap <silent> <buffer> <silent><ESC> <ESC>:q<CR>
 endfunction"}}}
 
 colorscheme molokai
