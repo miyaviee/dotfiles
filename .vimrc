@@ -60,7 +60,7 @@ set lcs=tab:>-,trail:_,extends:\
 
 let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/'
 
-"全角スペースをハイライト表示
+" hilight zenkaku space
 function! ZenkakuSpace()
   highlight ZenkakuSpace cterm=reverse ctermfg=DarkMagenta gui=reverse guifg=DarkMagenta
 endfunction
@@ -81,14 +81,15 @@ au bufnewfile,bufread *.tpl set noexpandtab tabstop=2 shiftwidth=2
 autocmd FileType html inoremap <silent> <buffer> </ </<C-x><C-o>
 
 """ Unite.vim
-" 起動時にインサートモードで開始
+" auto start
 let g:unite_enable_start_insert = 1
-" インサート／ノーマルどちらからでも呼び出せるようにキーマップ
+" open file
 nnoremap <silent> <C-f> :<C-u>Unite file<CR>
 inoremap <silent> <C-f> <ESC>:<C-u>Unite file<CR>
-nnoremap <silent> <C-b> :<C-u>Unite buffer file_mru<CR>
-inoremap <silent> <C-b> <ESC>:<C-u>Unite buffer file_mru<CR>
-" ファイル検索
+" open buffer
+nnoremap <silent> <C-b> :<C-u>Unite file_mru<CR>
+inoremap <silent> <C-b> <ESC>:<C-u>Unite file_mru<CR>
+" CtrlP
 inoremap <silent> <C-p> <Esc>:w<CR>:CtrlP<CR>
 
 " Plugin key-mappings.
@@ -109,18 +110,15 @@ if has('conceal')
  set conceallevel=2 concealcursor=i
 endif"
 
-" vを二回で行末まで選択
-vnoremap v $h
-
-" grep検索
+" grep curent dir
 nnoremap <silent> <C-g>  :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
-" カーソル位置の単語をgrep検索
+" grep current word
 nnoremap <silent> <C-j> :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W><CR>
 inoremap <silent> <C-j> <ESC>:<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W><CR>
-" grep検索結果の再呼出
+" grep retake
 nnoremap <silent> ,r  :<C-u>UniteResume search-buffer<CR>
 
-" unite grep に ag(The Silver Searcher) を使う
+" unite grep use ag(The Silver Searcher)
 if executable('ag')
 let g:unite_source_grep_command = 'ag'
 let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
@@ -141,30 +139,32 @@ vmap <silent> <expr> p <sid>Repl()"
 syntax on
 set cursorline
 
+" no insertmode move
+inoremap <silent><UP> <ESC><UP>
+inoremap <silent><DOWN> <ESC><DOWN>
+
 " Move new tabpage at the last.
 nnoremap <silent> <C-w>t  :<C-u>tabnew \| :tabmove<CR>
 nnoremap <silent> <C-w>o  :<C-u>tabonly<CR>
 
-"uniteを開いている間のキーマッピング
+" unite settings
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()"{{{
-  "ESCでuniteを終了
+  "ESC unite
   nmap <buffer> <ESC> <Plug>(unite_exit)
-  "ctrl+jで縦に分割して開く
+  imap <buffer> <ESC> <Plug>(unite_exit)
+  "ctrl+w s open split
   nnoremap <silent> <buffer> <expr> <C-w>s unite#do_action('split')
   inoremap <silent> <buffer> <expr> <C-w>s unite#do_action('split')
-  "ctrl+lで横に分割して開く
+  "ctrl+w v open vsplit
   nnoremap <silent> <buffer> <expr> <C-w>v unite#do_action('vsplit')
   inoremap <silent> <buffer> <expr> <C-w>v unite#do_action('vsplit')
-  "ctrl+tで新しいタブで開く
+  "ctrl+w t open new tab
   nnoremap <silent> <buffer> <expr> <C-w>t unite#do_action('tabopen')
   inoremap <silent> <buffer> <expr> <C-w>t unite#do_action('tabopen')
-  "ctrl+oでその場所に開く
+  "ctrl+w o open this pane
   nnoremap <silent> <buffer> <expr> <C-w>o unite#do_action('open')
   inoremap <silent> <buffer> <expr> <C-w>o unite#do_action('open')
-  " キャンセル
-  nnoremap <silent> <buffer> <silent><ESC> :q<CR>
-  inoremap <silent> <buffer> <silent><ESC> <ESC>:q<CR>
 endfunction"}}}
 
 colorscheme molokai
@@ -212,7 +212,7 @@ inoremap <expr><C-g>     neocomplcache#undo_completion()
 inoremap <expr><C-l>     neocomplcache#complete_common_string()
 
 " <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+"inoremap <expr><BS> pumvisible() ? neocomplcache#smart_close_popup() : "\<BS>"
 
 " vim shell
 nnoremap <silent>vs :VimShell<CR>

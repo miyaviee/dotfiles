@@ -4,4 +4,4 @@ fi
 
 source ~/.git-completion.bash
 alias vi=vim
-export TEMR=xterm-256color
+export TERM=xterm-256color
