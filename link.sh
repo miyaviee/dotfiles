@@ -24,5 +24,5 @@ vim +:NeoBundleInstall +:q
 if [ ! -e ~/.vim/bundle/neosnippet-snippets/snippets ]; then
   mkdir -p ~/.vim/bundle/neosnippet-snippets/snippets
 fi
-cp ~/dotfiles/snippets/* ~/.vim/bundle/neosnippet-snippets/snippets
+cp `pwd`/snippets/* ~/.vim/bundle/neosnippet-snippets/snippets
 
