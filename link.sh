@@ -12,8 +12,8 @@ ln -fs ~/dotfiles/.gemrc ~/.gemrc
 
 # git
 ln -fs ~/dotfiles/.git-completion.bash ~/.git-completion.bash
-if [ -z "$(grep 'git-completion' ~/.bash_profile)" ]; then
-  echo "source ~/.git-completion.bash" >> ~/.bash_profile
+if [ -z "$(grep 'git-completion' ~/.bashrc)" ]; then
+  echo "source ~/.git-completion.bash" >> ~/.bashrc
 fi
 
 # color
@@ -25,10 +25,13 @@ ln -fs ~/dotfiles/colors/molokai.vim ~/.vim/colors/molokai.vim
 vim +:NeoBundleInstall +:q
 
 # snippets
+if [ ! -e ~/dotfiles/snippets ]; then
+  mkdir -p ~/.vim/bundle/neosnippet-snippets/snippets
+fi
 cp ~/dotfiles/snippets/* ~/.vim/bundle/neosnippet-snippets/snippets
 
 # alias
-if [ -z "$(grep 'alias vi=vim' ~/.bash_profile)" ]; then
-  echo "alias vi=vim" >> ~/.bash_profile
+if [ -z "$(grep 'alias vi=vim' ~/.bashrc)" ]; then
+  echo "alias vi=vim" >> ~/.bashrc
 fi
 
