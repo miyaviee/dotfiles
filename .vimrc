@@ -139,9 +139,6 @@ vmap <silent> <expr> p <sid>Repl()"
 syntax on
 set cursorline
 
-" no insertmode move
-inoremap <silent><UP> <ESC><UP>
-inoremap <silent><DOWN> <ESC><DOWN>
 " enter insertmode
 nnoremap <silent><CR> $i<RIGHT><CR>
 
