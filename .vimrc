@@ -183,7 +183,7 @@ let g:neocomplcache_enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplecache_min_syntax_length = 5
 let g:neocomplcache_auto_completion_start_length = 5
-let g:neocomplcache_max_list = 20
+let g:neocomplcache_max_list = 30
 " Define dictionary.
 let g:neocomplcache_dictionary_filetype_lists = {
       \ 'default' : ''
