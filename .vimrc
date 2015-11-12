@@ -56,7 +56,7 @@ set nobackup
 set noswapfile
 
 set list
-set lcs=tab:>-,trail:_,extends:\
+set lcs=tab:>>,trail:_,extends:\
 
 let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/'
 
