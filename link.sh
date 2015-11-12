@@ -22,8 +22,8 @@ ln -fs `pwd`/colors/molokai.vim ~/.vim/colors/molokai.vim
 vim +:NeoBundleInstall +:q
 
 # snippets
-if [ ! -e ~/.vim/bundle/neosnippet-snippets/snippets ]; then
-  mkdir -p ~/.vim/bundle/neosnippet-snippets/snippets
+if [ ! -e ~/.vim/snippets ]; then
+  mkdir -p ~/.vim/snippets
 fi
-cp `pwd`/snippets/* ~/.vim/bundle/neosnippet-snippets/snippets
+cp `pwd`/snippets/* ~/.vim/snippets
 

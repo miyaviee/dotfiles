@@ -58,7 +58,12 @@ set noswapfile
 set list
 set lcs=tab:>.,trail:_,extends:\
 
-let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/'
+noremap <Up> <Up>
+noremap <Down> <Down>
+noremap <Left> <Left>
+noremap <Right> <Right>
+
+let g:neosnippet#snippets_directory='~/.vim/snippets/'
 
 " hilight zenkaku space
 function! ZenkakuSpace()
