@@ -55,6 +55,7 @@ set nowritebackup
 set nobackup
 set noswapfile
 set number
+set incsearch
 
 set list
 set lcs=tab:>.,trail:_,extends:\
@@ -108,7 +109,7 @@ imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 \ "\<Plug>(neosnippet_expand_or_jump)"
 \: pumvisible() ? "\<DOWN>" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
+\ "\<Plug>(neosnippet_expand_and_or_jump)"
 \: "\<TAB>"
 
 " For snippet_complete marker.
@@ -184,11 +185,21 @@ let g:neocomplcache_enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplecache_min_syntax_length = 5
 let g:neocomplcache_auto_completion_start_length = 5
-let g:neocomplcache_max_list = 30
+if !exists('g:neocomplcache_plugin_completion_length')
+endif
+let g:neocomplcache_plugin_completion_length = {
+      \'buffer_complete' : 5,
+      \'syntax_complete' : 10,
+      \}
+
+let g:neocomplcache_max_list = 10
+let g:neocomplcache_enable_camel_case_completion = 1
+let g:neocomplcache_enable_underbar_completion = 1
+
 " Define dictionary.
 let g:neocomplcache_dictionary_filetype_lists = {
-      \ 'default' : ''
-      \ }
+      \'default' : '',
+      \}
 
 " Define keyword.
 if !exists('g:neocomplcache_keyword_patterns')
@@ -199,25 +210,23 @@ let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 if !exists('g:neocomplcache_delimiter_patterns')
   let g:neocomplcache_delimiter_patterns = {}
 endif
-let g:neocomplcache_delimiter_patterns['php'] = ['->', '::', '\']
-let g:neocomplcache_delimiter_patterns['tpl'] = ['\.']
-let g:neocomplcache_delimiter_patterns['ruby'] = ['::','\.']
 
 if !exists('g:neocomplcache_omni_patterns')
   let g:neocomplcache_omni_patterns = {}
 endif
-let g:neocomplcache_omni_patterns['default'] = ''
 
 let g:neocomplcache_plugin_disable = {
-  \ 'syntax_complete' : 1
-  \ }
+      \'tags_complete' : 1,
+      \'snippets_complete' : 1,
+      \}
 
 " Plugin key-mappings.
 inoremap <expr><C-g>     neocomplcache#undo_completion()
 inoremap <expr><C-l>     neocomplcache#complete_common_string()
 
 " <C-h>, <BS>: close popup and delete backword char.
-"inoremap <expr><BS> pumvisible() ? neocomplcache#smart_close_popup() : "\<BS>"
+inoremap <expr><BS> pumvisible() ? neocomplcache#smart_close_popup() : "\<C-h>"
+inoremap <expr><C-h> pumvisible() ? neocomplcache#smart_close_popup() : "\<C-h>"
 
 " vim shell
 nnoremap <silent>vs :VimShell<CR>
