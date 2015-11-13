@@ -1,0 +1,2 @@
+" CtrlP
+inoremap <silent> <C-p> <Esc>:w<CR>:CtrlP<CR>

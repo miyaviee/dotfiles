@@ -1,0 +1,3 @@
+" vim shell
+nnoremap <silent>vs :VimShell<CR>
+nnoremap <silent>vp :VimShellPop<CR>

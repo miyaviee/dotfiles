@@ -7,10 +7,10 @@ if [ ! -e ~/.vim/bundle/neobundle.vim ]; then
 fi
 
 # conf
-ln -fs `pwd`/.vimrc ~/.vimrc
-ln -fs `pwd`/.gemrc ~/.gemrc
-ln -fs `pwd`/.bash_profile ~/.bash_profile
-ln -fs `pwd`/.git-completion.bash ~/.git-completion.bash
+for dotfile in .??*
+do
+  ln -fs `pwd`/$dotfile ~/$dotfile
+done
 
 # color
 if [ ! -e ~/.vim/colors ]; then

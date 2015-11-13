@@ -1,0 +1,15 @@
+" basic
+set fileformat=unix
+set fileencoding=utf-8
+set number
+set list
+set lcs=tab:>.,trail:_,extends:\
+noremap <Up> <Up>
+noremap <Down> <Down>
+noremap <Left> <Left>
+noremap <Right> <Right>
+autocmd FileType html inoremap <silent> <buffer> </ </<C-x><C-o>
+syntax on
+set nocompatible
+set cursorline
+set backspace=indent,eol,start

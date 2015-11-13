@@ -1,0 +1,13 @@
+" search
+set ignorecase
+set smartcase
+set infercase
+set incsearch
+
+set showmatch
+set matchtime=1
+
+
+set nowritebackup
+set nobackup
+set noswapfile
