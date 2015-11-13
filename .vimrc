@@ -54,6 +54,7 @@ set matchtime=1
 set nowritebackup
 set nobackup
 set noswapfile
+set number
 
 set list
 set lcs=tab:>.,trail:_,extends:\
