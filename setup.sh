@@ -16,13 +16,17 @@ done
 if [ ! -e ~/.vim/colors ]; then
   mkdir -p ~/.vim/colors
 fi
-ln -fs `pwd`/colors/molokai.vim ~/.vim/colors/molokai.vim
 
 vim +:NeoBundleInstall +:q
 
-# snippets
-if [ ! -e ~/.vim/snippets ]; then
-  mkdir -p ~/.vim/snippets
-fi
-cp `pwd`/snippets/* ~/.vim/snippets
-
+# filetype conf
+for name in *
+do
+  if [ -d $name ]; then
+    mkdir -p ~/.vim/$name
+    for file in $name/*
+    do
+      ln -fs `pwd`/$file ~/.vim/$file
+    done
+  fi
+done
