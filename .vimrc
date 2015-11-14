@@ -24,3 +24,5 @@ source ~/.vimrc.window
 source ~/.vimrc.complcache
 
 source ~/.vimrc.vimshell
+
+source ~/.vimrc.syntastic
