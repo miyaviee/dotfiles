@@ -1,26 +1,26 @@
 " neobundle plugins
-source .vimrc.bundle
+source ~/.vimrc.bundle
 
-source .vimrc.basic
+source ~/.vimrc.basic
 
-source .vimrc.indent
+source ~/.vimrc.indent
 
-source .vimrc.search
+source ~/.vimrc.search
 
-source .vimrc.colors
+source ~/.vimrc.colors
 
-source .vimrc.snippets
+source ~/.vimrc.snippets
 
-source .vimrc.zenkaku
+source ~/.vimrc.zenkaku
 
-source .vimrc.unite
+source ~/.vimrc.unite
 
-source .vimrc.vimgrep
+source ~/.vimrc.vimgrep
 
-source .vimrc.paste
+source ~/.vimrc.paste
 
-source .vimrc.window
+source ~/.vimrc.window
 
-source .vimrc.complcache
+source ~/.vimrc.complcache
 
-source .vimrc.vimshell
+source ~/.vimrc.vimshell
