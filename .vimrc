@@ -25,4 +25,6 @@ source ~/.vimrc.complcache
 
 source ~/.vimrc.vimshell
 
+source ~/.vimrc.ctrlp
+
 source ~/.vimrc.syntastic
