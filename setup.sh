@@ -9,6 +9,9 @@ fi
 # conf
 for dotfile in .??*
 do
+  if [ -d $dotfile ]; then
+    continue;
+  fi
   ln -fs `pwd`/$dotfile ~/$dotfile
 done
 
@@ -16,8 +19,6 @@ done
 if [ ! -e ~/.vim/colors ]; then
   mkdir -p ~/.vim/colors
 fi
-
-vim +:NeoBundleInstall +:q
 
 # filetype conf
 for name in *
@@ -30,3 +31,5 @@ do
     done
   fi
 done
+
+vim +:NeoBundleInstall +:q
