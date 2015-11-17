@@ -1,7 +1,7 @@
 " CtrlP
 inoremap <silent> <C-p> <Esc>:w<CR>:CtrlP<CR>
 
-set wildignore+=*/tmp/*,*/cache/*,*.so,*.swp,*.zip,*.jpg,*.png
+set wildignore+=*/tmp/*,*/cache/*,*/rw/*,*.so,*.swp,*.zip,*.jpg,*.png
 
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|build)$'
 
