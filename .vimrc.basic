@@ -16,9 +16,9 @@ set backspace=indent,eol,start
 nnoremap <silent><S-z><S-z> :w<CR>
 set hlsearch
 
-nnoremap <Esc><Esc> :<C-u>set nohlsearch<CR>
+nnoremap <silent><Esc><Esc> :set nohlsearch<CR>
 
-nnoremap / :<C-u>set hlsearch<CR>/
-nnoremap ? :<C-u>set hlsearch<CR>?
-nnoremap * :<C-u>set hlsearch<CR>*
-nnoremap # :<C-u>set hlsearch<CR>#
+nnoremap / :set hlsearch<CR>/
+nnoremap ? :set hlsearch<CR>?
+nnoremap * :set hlsearch<CR>*
+nnoremap # :set hlsearch<CR>#
