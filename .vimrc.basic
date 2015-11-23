@@ -14,11 +14,3 @@ set nocompatible
 set cursorline
 set backspace=indent,eol,start
 nnoremap <silent><S-z><S-z> :w<CR>
-set hlsearch
-
-nnoremap <silent><Esc><Esc> :set nohlsearch<CR>
-
-nnoremap / :set hlsearch<CR>/
-nnoremap ? :set hlsearch<CR>?
-nnoremap * :set hlsearch<CR>*
-nnoremap # :set hlsearch<CR>#
