@@ -23,6 +23,7 @@ NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'stephpy/vim-yaml'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/vimproc.vim', {
     \ 'build' : {
