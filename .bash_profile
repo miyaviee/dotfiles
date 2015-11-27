@@ -6,4 +6,4 @@ source ~/.git-completion.bash
 alias vi=vim
 
 export TERM=xterm-256color
-
+export PATH=$HOME/bin:$PATH
