@@ -8,3 +8,4 @@ set shiftwidth=2
 au bufnewfile,bufread *.php set noexpandtab tabstop=2 shiftwidth=2
 au bufnewfile,bufread *.inc set noexpandtab tabstop=2 shiftwidth=2
 au bufnewfile,bufread *.tpl set noexpandtab tabstop=2 shiftwidth=2
+au bufnewfile,bufread *.txt set noexpandtab tabstop=2 shiftwidth=2
