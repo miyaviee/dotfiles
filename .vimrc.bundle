@@ -25,6 +25,9 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'stephpy/vim-yaml'
+NeoBundle 'tpope/vim-abolish'
+NeoBundle 'rhysd/clever-f.vim'
+NeoBundle 'haya14busa/incsearch.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/vimproc.vim', {
     \ 'build' : {
