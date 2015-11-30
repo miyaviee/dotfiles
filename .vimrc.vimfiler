@@ -1,0 +1,3 @@
+" open file
+nnoremap <silent> <C-f> :<C-u>VimFiler<CR>
+inoremap <silent> <C-f> <ESC>:<C-u>VimFiler<CR>

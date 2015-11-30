@@ -15,6 +15,8 @@ source ~/.vimrc.zenkaku
 
 source ~/.vimrc.unite
 
+source ~/.vimrc.vimfiler
+
 source ~/.vimrc.vimgrep
 
 source ~/.vimrc.paste

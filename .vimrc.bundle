@@ -9,6 +9,7 @@ call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 "plugin
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'

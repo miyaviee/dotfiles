@@ -1,9 +1,6 @@
 " Unite.vim
 " auto start
 let g:unite_enable_start_insert = 1
-" open file
-nnoremap <silent> <C-f> :<C-u>Unite file<CR>
-inoremap <silent> <C-f> <ESC>:<C-u>Unite file<CR>
 " open buffer
 nnoremap <silent> <C-b> :<C-u>Unite file_mru<CR>
 inoremap <silent> <C-b> <ESC>:<C-u>Unite file_mru<CR>
