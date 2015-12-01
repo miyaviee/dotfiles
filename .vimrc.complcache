@@ -49,3 +49,5 @@ inoremap <expr><C-l>     neocomplcache#complete_common_string()
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><BS> pumvisible() ? neocomplcache#smart_close_popup() : "\<C-h>"
 inoremap <expr><C-h> pumvisible() ? neocomplcache#smart_close_popup() : "\<C-h>"
+inoremap <expr><ESC> pumvisible() ? neocomplcache#close_popup() : "\<ESC>"
+
