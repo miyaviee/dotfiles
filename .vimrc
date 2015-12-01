@@ -26,3 +26,5 @@ source ~/.vimrc.vimshell
 source ~/.vimrc.ctrlp
 
 source ~/.vimrc.syntastic
+
+source ~/.vimrc.easyalign
