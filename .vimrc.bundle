@@ -29,6 +29,10 @@ NeoBundle 'tpope/vim-abolish'
 NeoBundle 'rhysd/clever-f.vim'
 NeoBundle 'haya14busa/incsearch.vim'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'junegunn/vim-easy-align'
+NeoBundle 'haya14busa/vim-asterisk'
+NeoBundle 'osyo-manga/vim-anzu'
+NeoBundle 'cohama/lexima.vim'
 NeoBundle 'Shougo/vimproc.vim', {
     \ 'build' : {
     \     'windows' : 'tools\\update-dll-mingw',
