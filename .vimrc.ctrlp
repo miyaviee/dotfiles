@@ -3,6 +3,6 @@ inoremap <silent> <C-p> <Esc>:w<CR>:CtrlP<CR>
 
 set wildignore+=*.so,*.swp,*.zip,*.jpg,*.png
 
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|build|rw)$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|build|cache|compile)$'
 
 let g:ctrlp_use_caching = 0
