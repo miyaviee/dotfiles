@@ -35,6 +35,7 @@ NeoBundle 'haya14busa/vim-asterisk'
 NeoBundle 'osyo-manga/vim-anzu'
 NeoBundle 'cohama/lexima.vim'
 NeoBundle 'osyo-manga/vim-brightest'
+NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'Shougo/vimproc.vim', {
     \ 'build' : {
     \     'windows' : 'tools\\update-dll-mingw',
