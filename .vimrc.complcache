@@ -11,7 +11,7 @@ if !exists('g:neocomplcache_plugin_completion_length')
 endif
 let g:neocomplcache_plugin_completion_length = {
       \'buffer_complete' : 5,
-      \'syntax_complete' : 10,
+      \'syntax_complete' : 5,
       \}
 
 let g:neocomplcache_max_list = 10
