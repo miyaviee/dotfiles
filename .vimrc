@@ -9,7 +9,7 @@ source ~/.vimrc.search
 
 source ~/.vimrc.colors
 
-source ~/.vimrc.snippets
+source ~/.vimrc.neosnippets
 
 source ~/.vimrc.zenkaku
 
