@@ -7,7 +7,6 @@ set incsearch
 set showmatch
 set matchtime=1
 
-
 set nowritebackup
 set nobackup
 set noswapfile
