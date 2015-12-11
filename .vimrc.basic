@@ -14,3 +14,4 @@ set nocompatible
 set cursorline
 set backspace=indent,eol,start
 nnoremap <silent><S-z><S-z> :w<CR>
+colorscheme Tomorrow-Night-Bright

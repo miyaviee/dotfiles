@@ -7,8 +7,6 @@ source ~/.vimrc.indent
 
 source ~/.vimrc.search
 
-source ~/.vimrc.colors
-
 source ~/.vimrc.neosnippets
 
 source ~/.vimrc.zenkaku
