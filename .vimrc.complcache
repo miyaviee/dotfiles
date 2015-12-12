@@ -42,8 +42,6 @@ let g:neocomplcache_plugin_disable = {
       \'snippets_complete' : 1,
       \}
 
-imap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-
 " Plugin key-mappings.
 inoremap <expr><C-g>     neocomplcache#undo_completion()
 inoremap <expr><C-l>     neocomplcache#complete_common_string()
