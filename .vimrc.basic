@@ -1,17 +1,27 @@
-" basic
 set fileformat=unix
 set fileencoding=utf-8
 set number
+set nocompatible
+set cursorline
+set backspace=indent,eol,start
 set list
+set ignorecase
+set smartcase
+set infercase
+set incsearch
+set showmatch
+set matchtime=1
+set nowritebackup
+set nobackup
+set noswapfile
 set lcs=tab:>.,trail:_,extends:\
+
 noremap <Up> <Up>
 noremap <Down> <Down>
 noremap <Left> <Left>
 noremap <Right> <Right>
+
 autocmd FileType html inoremap <silent> <buffer> </ </<C-x><C-o>
+
 syntax on
-set nocompatible
-set cursorline
-set backspace=indent,eol,start
-nnoremap <silent><S-z><S-z> :w<CR>
 colorscheme Tomorrow-Night-Bright

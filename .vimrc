@@ -5,8 +5,6 @@ source ~/.vimrc.basic
 
 source ~/.vimrc.indent
 
-source ~/.vimrc.search
-
 source ~/.vimrc.neosnippets
 
 source ~/.vimrc.zenkaku
