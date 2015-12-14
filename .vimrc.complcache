@@ -5,13 +5,13 @@ let g:neocomplcache_enable_at_startup = 1
 " Use smartcase.
 let g:neocomplcache_enable_smart_case = 1
 " Set minimum syntax keyword length.
-let g:neocomplecache_min_syntax_length = 3
-let g:neocomplcache_auto_completion_start_length = 3
+let g:neocomplecache_min_syntax_length = 5
+let g:neocomplcache_auto_completion_start_length = 5
 if !exists('g:neocomplcache_plugin_completion_length')
 endif
 let g:neocomplcache_plugin_completion_length = {
-      \'buffer_complete' : 3,
-      \'syntax_complete' : 3,
+      \'buffer_complete' : 5,
+      \'syntax_complete' : 5,
       \}
 
 let g:neocomplcache_max_list = 20
