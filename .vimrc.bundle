@@ -41,6 +41,7 @@ NeoBundle "kana/vim-textobj-line"
 NeoBundle 'mattn/vim-textobj-url'
 NeoBundle 'tek/vim-textobj-ruby'
 NeoBundle 'akiyan/vim-textobj-php'
+NeoBundle 'mattn/emmet-vim'
 NeoBundle 'Shougo/vimproc.vim', {
     \ 'build' : {
     \     'windows' : 'tools\\update-dll-mingw',
