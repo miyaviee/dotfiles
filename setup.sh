@@ -33,3 +33,7 @@ do
 done
 
 vim +:NeoBundleInstall +:q
+vim +:NeoBundleClean +:q
+
+# del dead link
+find ~/ -xtype l | xargs unlink
