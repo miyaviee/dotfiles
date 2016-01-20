@@ -2,23 +2,25 @@ snippet func
 options word
 	function ${1:#:function_name}(${2:#:argument}) {
 		${0:TARGET}
-	}
+	};
 
 snippet f
 options word
-	function(${1}) { ${0:TARGET} };
+	function(${1}) {
+		${0:TARGET}
+	};
 
 snippet if
 options head
 	if (${1:true}) {
 		${0:TARGET}
-	}
+	};
 
 snippet for
 options head
 	for (var ${1:i} in ${2:#:Things}) {
 		${0:TARGET}
-	}
+	};
 
 snippet swi
 options head
@@ -26,7 +28,7 @@ options head
 		case ${2:#:val}:
 			${0:TARGET}
 			break;
-	}
+	};
 
 snippet try
 options head
@@ -34,7 +36,7 @@ options head
 		${0:TARGET}
 	} catch (${1:e}) {
 		${2:TARGET}
-	}
+	};
 
 snippet :,
 options word
