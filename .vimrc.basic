@@ -21,8 +21,6 @@ noremap <Down> <Down>
 noremap <Left> <Left>
 noremap <Right> <Right>
 
-autocmd FileType html inoremap <silent> <buffer> </ </<C-x><C-o>
-
 syntax on
 colorscheme Tomorrow-Night-Bright
 autocmd BufWritePre * :%s/\s\+$//e

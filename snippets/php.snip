@@ -1,10 +1,30 @@
-snippet vd
-	var_dump(${0});
+endsnippet vd
+	var_dump(${0});exit;
 
 snippet fore
 	foreach ($${1:#:variable} as $key => $value) {
-		${0:TARGET}
+		${0:TARGET};
+	}
+
+snippet if
+	if (${1:#:cond}) {
+		${0:TARGET};
 	}
 
 snippet die
 	die();
+
+snippet class
+	class ${1:#:class_name}
+	{
+		${0:TARGET}
+	}
+
+snippet function
+	function(${1:#:variable})
+	{
+		${0:TARGET};
+	}
+
+snippet arr
+	array(${1:#:arr});

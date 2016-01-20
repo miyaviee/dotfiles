@@ -24,3 +24,5 @@ source ~/.vimrc.syntastic
 source ~/.vimrc.easyalign
 
 source ~/.vimrc.complcache
+
+source ~/.vimrc.snippet
