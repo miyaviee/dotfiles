@@ -38,10 +38,20 @@ options head
 
 snippet :,
 options word
-  ${1:#:value_name}: ${0:#:value},
+	${1:#:value_name}: ${0:#:value},
 
 
 snippet cl
 options head
-  console.log(${0:TARGET});
+	console.log(${0:TARGET});
 
+snippet ajax
+options head
+	$.ajax({
+		type: ${1:#:method},
+		url: ${2:#:url},
+		data: ${3:#:data},
+		dataType: ${4:#:dataType}
+	}).done(function(){
+		${0:TARGET}
+	});
