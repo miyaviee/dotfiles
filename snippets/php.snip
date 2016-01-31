@@ -3,12 +3,12 @@ snippet vd
 
 snippet fore
 	foreach ($${1:#:variable} as $key => $value) {
-		${0:TARGET};
+		${0:TARGET}
 	}
 
 snippet if
 	if (${1:#:cond}) {
-		${0:TARGET};
+		${0:TARGET}
 	}
 
 snippet die
@@ -23,16 +23,17 @@ snippet cla
 snippet func
 	function ${1:#:method name}(${2:#:variable})
 	{
-		${0:TARGET};
+		${0:TARGET}
 	}
 
 snippet arr
-	array(${0:TARGET});
+	array(${0:TARGET})
 
 snippet doc
 	/**
 	 *
 	 * ${1:#:comment}
+	 *
 	 * @param  ${2:#:type}
 	 * @return ${0:#:type}
 	 *
