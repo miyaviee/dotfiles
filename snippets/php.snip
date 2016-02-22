@@ -29,7 +29,14 @@ snippet func
 snippet arr
 	array(${0:TARGET})
 
-snippet doc
+snippet cdoc
+	/**
+	 *
+	 * ${1:#:comment}
+	 *
+	 */
+
+snippet fdoc
 	/**
 	 *
 	 * ${1:#:comment}
@@ -38,3 +45,6 @@ snippet doc
 	 * @return ${0:#:type}
 	 *
 	 */
+
+snippet vdoc
+	/* ${0:comment} */
