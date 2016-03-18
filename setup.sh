@@ -36,4 +36,11 @@ vim +:NeoBundleInstall +:q
 vim +:NeoBundleClean +:q
 
 # del dead link
-find ~/ -xtype l | xargs unlink
+for link in ~/.vimrc*
+do
+  if [ -e "`readlink $link`" ]; then
+    continue;
+  fi
+
+  unlink $link
+done
