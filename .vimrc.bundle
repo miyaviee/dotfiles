@@ -49,6 +49,8 @@ NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'stephpy/vim-yaml'
 NeoBundle 'slim-template/vim-slim'
+NeoBundle 'digitaltoad/vim-pug'
+NeoBundle 'kchmck/vim-coffee-script'
 
 " Util
 NeoBundle 'Shougo/vimshell.vim'
