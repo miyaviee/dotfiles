@@ -1,5 +1,4 @@
-" neobundle plugins
-source ~/.vimrc.bundle
+source ~/.vimrc.plugged
 
 source ~/.vimrc.basic
 

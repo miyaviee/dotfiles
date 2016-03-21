@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # neobundle
-if [ ! -e ~/.vim/bundle/neobundle.vim ]; then
-  mkdir -p ~/.vim/bundle
-  git clone https://github.com/Shougo/neobundle.vim.git ~/.vim/bundle/neobundle.vim
+if [ ! -e ~/.vim/autoload/plug.vim ]; then
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
 # conf
@@ -32,8 +32,8 @@ do
   fi
 done
 
-vim +:NeoBundleInstall +:q
-vim +:NeoBundleClean +:q
+vim +:PlugInstall +:q
+vim +:PlugClean +:q
 
 # del dead link
 for link in ~/.vimrc*
