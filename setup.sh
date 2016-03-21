@@ -32,8 +32,8 @@ do
   fi
 done
 
-vim +:PlugInstall +:q
-vim +:PlugClean +:q
+vim +:PlugInstall +:q +:q
+vim +:PlugClean +:q +:q
 
 # del dead link
 for link in ~/.vimrc*
