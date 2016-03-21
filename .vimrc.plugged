@@ -3,44 +3,39 @@ call plug#begin('~/.vim/plugged')
 Plug 'Shougo/neocomplcache'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
+Plug 'tpope/vim-endwise'
+Plug 'mattn/emmet-vim'
+Plug 'cohama/lexima.vim'
+
+" Util
+Plug 'Shougo/vimshell.vim'
+Plug 'scrooloose/syntastic'
+Plug 'kien/ctrlp.vim'
+Plug 'haya14busa/incsearch.vim'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " File
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimfiler'
 Plug 'Shougo/neomru.vim'
 
-" Search
-Plug 'kien/ctrlp.vim'
-Plug 'haya14busa/incsearch.vim'
-
 " Edit
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'kana/vim-textobj-user'
-Plug 'kana/vim-textobj-line'
-Plug 'mattn/vim-textobj-url'
-Plug 'tpope/vim-endwise'
 Plug 'junegunn/vim-easy-align'
 Plug 'haya14busa/vim-asterisk'
 Plug 'osyo-manga/vim-anzu'
-Plug 'cohama/lexima.vim'
 Plug 'tpope/vim-abolish'
 Plug 'rhysd/clever-f.vim'
 Plug 'osyo-manga/vim-brightest'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'mattn/emmet-vim'
 
-" Syntax
-Plug 'slim-template/vim-slim'
-Plug 'digitaltoad/vim-pug'
-Plug 'kchmck/vim-coffee-script'
-
-" Util
-Plug 'Shougo/vimshell.vim'
-Plug 'scrooloose/syntastic'
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+" text obj
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-line'
+Plug 'mattn/vim-textobj-url'
 
 " ruby
 Plug 'tek/vim-textobj-ruby', { 'for': 'ruby' }
@@ -60,5 +55,14 @@ Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 
 " yaml
 Plug 'stephpy/vim-yaml', { 'for': 'yaml' }
+
+" slim
+Plug 'slim-template/vim-slim', { 'for': 'slim' }
+
+" coffee
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+
+" jade
+Plug 'digitaltoad/vim-pug'
 
 call plug#end()
