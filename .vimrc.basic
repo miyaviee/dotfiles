@@ -15,6 +15,7 @@ set nowritebackup
 set nobackup
 set noswapfile
 set lcs=tab:>.,trail:_,extends:\
+set conceallevel=0
 
 noremap <Up> <Up>
 noremap <Down> <Down>
