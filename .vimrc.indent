@@ -10,3 +10,4 @@ au bufnewfile,bufread *.inc set expandtab tabstop=4 shiftwidth=4
 au bufnewfile,bufread *.tpl set expandtab tabstop=2 shiftwidth=2
 au bufnewfile,bufread *.txt set noexpandtab tabstop=2 shiftwidth=2
 au bufnewfile,bufread *.snip set noexpandtab tabstop=2 shiftwidth=2
+au bufnewfile,bufread *.go set noexpandtab tabstop=4 shiftwidth=4

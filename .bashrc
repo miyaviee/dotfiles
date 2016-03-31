@@ -4,7 +4,6 @@ fi
 
 source ~/.git-completion.bash
 alias vi=vim
-alias sudo='sudo -E'
 alias docker-start='docker-machine start default'
 alias docker-env='eval "$(docker-machine env default)"'
 alias docker-stop='docker-machine stop default'

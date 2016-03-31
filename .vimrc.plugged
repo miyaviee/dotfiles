@@ -65,4 +65,7 @@ Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 " jade
 Plug 'digitaltoad/vim-pug'
 
+" Go
+Plug 'fatih/vim-go', { 'for': 'go' }
+
 call plug#end()
