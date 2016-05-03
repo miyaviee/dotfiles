@@ -31,6 +31,7 @@ Plug 'tpope/vim-abolish'
 Plug 'rhysd/clever-f.vim'
 Plug 'osyo-manga/vim-brightest'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'AndrewRadev/splitjoin.vim'
 
 " text obj
 Plug 'kana/vim-textobj-user'
