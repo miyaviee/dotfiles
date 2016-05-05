@@ -63,9 +63,6 @@ Plug 'slim-template/vim-slim', { 'for': 'slim' }
 " coffee
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
-" jade
-Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
-
 " typescript
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 
