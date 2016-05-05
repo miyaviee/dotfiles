@@ -64,7 +64,10 @@ Plug 'slim-template/vim-slim', { 'for': 'slim' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
 " jade
-Plug 'digitaltoad/vim-pug'
+Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
+
+" typescript
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 
 " Go
 Plug 'fatih/vim-go', { 'for': 'go' }
