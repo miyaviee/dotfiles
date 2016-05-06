@@ -2,27 +2,27 @@ source go.vim
 
 snippet     fun
 options     head
-	func ${1:fname}(${2}) ${3:int }{
-		${0:TARGET:return }
+	func ${1:fname}(${2}) ${3}{
+		${0:TARGET}
 	}
 
-snippet     import
+snippet     imp
 options     head
 	import (
 		"${1:fmt}"
 	)
 	${0:TARGET}
 
-snippet     package
+snippet     pac
 options     head
 	package ${1:main}
 	${0:TARGET}
 
-snippet     printf
+snippet     pf
 options     head
-	fmt.Printf("${1}\n"${2:})
+	fmt.Printf("${1}\n"${0})
 
-snippet     println
+snippet     pl
 options     head
 	fmt.Println(${0:TARGET})
 
@@ -44,7 +44,7 @@ options     head
 		${0:TARGET}
 	}
 
-snippet     range
+snippet     ran
 abbr        for range
 options     head
 	for ${1:v} := range ${2:#:iterator} {
@@ -53,17 +53,16 @@ options     head
 
 snippet     if
 options     head
-		if ${1:#:condition} {
-			${0:TARGET}
-		}
+	if ${1:#:condition} {
+		${0:TARGET}
+	}
 
-snippet     iferr
-alias       ife
+snippet     ifer
 options     head
-		if err != nil {
-			return `g:NeosnippetSnippets_Goiferr()`
-		}
-		${2}
+	if err != nil {
+		return `g:NeosnippetSnippets_Goiferr()`
+	}
+	${2}
 
 snippet     switch
 abbr        switch {}
