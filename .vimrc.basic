@@ -24,4 +24,4 @@ noremap <Right> <Right>
 
 syntax on
 colorscheme Tomorrow-Night-Bright
-autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :FixWhitespace
