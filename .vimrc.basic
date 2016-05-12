@@ -21,6 +21,7 @@ noremap <Up> <Up>
 noremap <Down> <Down>
 noremap <Left> <Left>
 noremap <Right> <Right>
+inoremap <silent>jj <ESC>
 
 syntax on
 colorscheme Tomorrow-Night-Bright
