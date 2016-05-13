@@ -1,2 +1,0 @@
-" open file
-nnoremap <silent> ,f :<C-u>VimFiler<CR>

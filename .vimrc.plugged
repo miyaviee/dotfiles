@@ -16,7 +16,6 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " File
 Plug 'Shougo/unite.vim'
-Plug 'Shougo/vimfiler'
 Plug 'Shougo/neomru.vim'
 
 " Edit
