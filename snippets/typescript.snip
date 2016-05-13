@@ -14,7 +14,7 @@ options     head
 		${0:#:TARGET}
 	}
 
-snippet     method
+snippet     me
 options     head
 	${1:#:NAME}(${2:#:Args}): ${3:#:TYPE} {
 		${0:#:TARGET}
@@ -27,13 +27,6 @@ options     head
 	}
 
 	set $1(${4:value}: $2) {
-		${0:#:TARGET}
-	}
-
-snippet     staf
-abbr        static f(){}
-options     head
-	static ${1:#:NAME}(${2:#:Args}) {
 		${0:#:TARGET}
 	}
 
