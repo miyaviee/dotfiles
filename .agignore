@@ -1,3 +1,6 @@
-compile
-cache
-tmp
+**/compile/*
+**/cache/*
+**/tmp/*
+**/rw/*
+**/git/*
+**/svn/*
