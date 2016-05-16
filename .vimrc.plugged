@@ -65,7 +65,10 @@ Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 " typescript
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 
-" Go
+" go
 Plug 'fatih/vim-go', { 'for': 'go' }
+
+" smarty
+Plug 'vim-scripts/smarty-syntax', { 'for': 'smarty' }
 
 call plug#end()
