@@ -17,10 +17,6 @@ set noswapfile
 set lcs=tab:>-,trail:_,extends:\
 set conceallevel=0
 
-noremap <Up> <Up>
-noremap <Down> <Down>
-noremap <Left> <Left>
-noremap <Right> <Right>
 inoremap <silent>jj <ESC>
 
 syntax on
