@@ -4,3 +4,9 @@
 **/git/*
 **/svn/*
 **/rw/*
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+*.png
+*.PNG
