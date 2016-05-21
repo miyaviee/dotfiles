@@ -23,3 +23,5 @@ source ~/.vimrc.easyalign
 source ~/.vimrc.complcache
 
 source ~/.vimrc.snippet
+
+source ~/.vimrc.anzu
