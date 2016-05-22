@@ -1,10 +1,10 @@
-**/compile/*
-**/vendor/*
-**/cache/*
-**/tmp/*
-**/git/*
-**/svn/*
-**/rw/*
+*compile/*
+*vendor/*
+*cache/*
+*tmp/*
+*git/*
+*svn/*
+*rw/*
 *.jpg
 *.jpeg
 *.JPG
