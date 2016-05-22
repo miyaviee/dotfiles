@@ -1,4 +1,5 @@
 **/compile/*
+**/vendor/*
 **/cache/*
 **/tmp/*
 **/git/*
