@@ -17,8 +17,6 @@ set noswapfile
 set lcs=tab:>-,trail:_,extends:\
 set conceallevel=0
 
-inoremap <silent>jj <ESC>
-
 syntax on
 colorscheme Tomorrow-Night-Bright
 autocmd BufWritePre * :FixWhitespace
