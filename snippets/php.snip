@@ -4,6 +4,11 @@ snippet vd
 snippet ex
 	exit;
 
+snippet for
+	for ($i = 0; $i < ${1:#:num}; $i++) {
+		${0:TARGET}
+	}
+
 snippet fore
 	foreach ($${1:#:variable} as $key => $value) {
 		${0:TARGET}
