@@ -73,4 +73,7 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 " smarty
 Plug 'vim-scripts/smarty-syntax', { 'for': 'smarty' }
 
+" sql
+Plug 'vim-scripts/dbext.vim', { 'for': 'sql' }
+
 call plug#end()
