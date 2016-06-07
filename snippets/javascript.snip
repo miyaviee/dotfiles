@@ -20,11 +20,13 @@ snippet proto
 options head
 	${1:#:class_name}.prototype.${2:#:method_name} = function(${3:#:first_argument}) {
 		${0:TARGET}
-	};
+	}
 
 snippet f
 options word
-	function(${1}) { ${0:TARGET} };
+	function(${1}) {
+		${0:TARGET}
+	}
 
 snippet if
 options head
