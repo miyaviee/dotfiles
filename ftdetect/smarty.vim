@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.smarty setf smarty
+au BufNewFile,BufRead *.smarty,*.tpl setf smarty

@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 
 if has('lua')
   Plug 'Shougo/neocomplete'
+  Plug 'Shougo/neco-syntax'
 else
   Plug 'Shougo/neocomplcache'
 endif
