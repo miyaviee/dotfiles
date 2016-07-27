@@ -28,3 +28,5 @@ source ~/.vimrc.snippet
 
 source ~/.vimrc.anzu
 
+source ~/.vimrc.expand
+

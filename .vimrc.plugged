@@ -18,6 +18,7 @@ Plug 'scrooloose/syntastic'
 Plug 'kien/ctrlp.vim'
 Plug 'haya14busa/incsearch.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+Plug 'terryma/vim-expand-region'
 
 " File
 Plug 'Shougo/unite.vim'
