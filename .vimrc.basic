@@ -20,3 +20,5 @@ set conceallevel=0
 syntax on
 colorscheme Tomorrow-Night-Bright
 autocmd BufWritePre * :FixWhitespace
+
+autocmd FileType python setlocal completeopt-=preview
