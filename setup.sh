@@ -1,5 +1,8 @@
 #!/bin/sh
 
+git fetch -p
+git merge origin/master
+
 # neobundle
 if [ ! -e ~/.vim/autoload/plug.vim ]; then
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
