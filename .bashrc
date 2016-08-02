@@ -4,9 +4,6 @@ fi
 
 source ~/.git-completion.bash
 alias vi=vim
-alias docker-start='docker-machine start default'
-alias docker-env='eval "$(docker-machine env default)"'
-alias docker-stop='docker-machine stop default'
 
 export TERM=xterm-256color
 export PATH=$HOME/bin:$PATH
