@@ -18,7 +18,8 @@ set lcs=tab:>-,trail:_,extends:\
 set conceallevel=0
 
 syntax on
+autocmd ColorScheme * highlight Normal ctermbg=none
+autocmd ColorScheme * highlight LineNr ctermbg=none
 colorscheme Tomorrow-Night-Bright
 autocmd BufWritePre * :FixWhitespace
-
 autocmd FileType python setlocal completeopt-=preview
