@@ -37,11 +37,6 @@ Plug 'tpope/vim-abolish'
 Plug 'rhysd/clever-f.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 
-" text obj
-Plug 'kana/vim-textobj-user'
-Plug 'kana/vim-textobj-line'
-Plug 'mattn/vim-textobj-url'
-
 " html
 Plug 'mattn/emmet-vim'
 
