@@ -1,4 +1,5 @@
 call plug#begin('~/.vim/plugged')
+" B
 " Completion
 if has('lua')
   Plug 'Shougo/neocomplete'
@@ -17,26 +18,24 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'terryma/vim-expand-region'
 Plug 'airblade/vim-gitgutter'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'cohama/lexima.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'osyo-manga/vim-brightest'
+Plug 'osyo-manga/vim-anzu'
+Plug 'junegunn/vim-easy-align'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-surround'
 
 " File
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/neomru.vim'
 
 " Edit
-Plug 'tpope/vim-surround'
-Plug 'tomtom/tcomment_vim'
-Plug 'bronson/vim-trailing-whitespace'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'junegunn/vim-easy-align'
-Plug 'haya14busa/vim-asterisk'
-Plug 'osyo-manga/vim-anzu'
 Plug 'tpope/vim-abolish'
 Plug 'rhysd/clever-f.vim'
-Plug 'osyo-manga/vim-brightest'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'tpope/vim-endwise'
-Plug 'cohama/lexima.vim'
 
 " text obj
 Plug 'kana/vim-textobj-user'
