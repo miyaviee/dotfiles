@@ -26,6 +26,7 @@ Plug 'osyo-manga/vim-anzu'
 Plug 'junegunn/vim-easy-align'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
+Plug 'vim-scripts/AnsiEsc.vim'
 
 " File
 Plug 'Shougo/unite.vim'
