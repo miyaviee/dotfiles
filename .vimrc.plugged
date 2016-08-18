@@ -52,7 +52,7 @@ Plug 'akiyan/vim-textobj-php', { 'for': 'php' }
 Plug 'othree/html5.vim', { 'for': 'html' }
 
 " js
-Plug 'jelera/vim-javascript-syntax', { 'for': 'js' }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
 " css
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
