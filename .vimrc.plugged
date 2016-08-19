@@ -45,9 +45,6 @@ Plug 'mattn/emmet-vim'
 Plug 'tek/vim-textobj-ruby', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 
-" php
-Plug 'akiyan/vim-textobj-php', { 'for': 'php' }
-
 " html
 Plug 'othree/html5.vim', { 'for': 'html' }
 
