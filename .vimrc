@@ -20,8 +20,6 @@ source ~/.vimrc.syntastic
 
 source ~/.vimrc.easyalign
 
-source ~/.vimrc.neocomplcache
-
 source ~/.vimrc.neocomplete
 
 source ~/.vimrc.snippet

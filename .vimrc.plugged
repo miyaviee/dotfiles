@@ -1,11 +1,7 @@
 call plug#begin('~/.vim/plugged')
 " Completion
-if has('lua')
-  Plug 'Shougo/neocomplete'
-  Plug 'Shougo/neco-syntax'
-else
-  Plug 'Shougo/neocomplcache'
-endif
+Plug 'Shougo/neocomplete'
+Plug 'Shougo/neco-syntax'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 
