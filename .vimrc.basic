@@ -17,6 +17,11 @@ set noswapfile
 set lcs=tab:>-,trail:_,extends:\
 set conceallevel=0
 
+noremap <silent><Up> <Up>
+noremap <silent><Right> <Right>
+noremap <silent><Down> <Down>
+noremap <silent><Left> <Left>
+
 syntax on
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
