@@ -15,6 +15,9 @@ do
   if [ -d $dotfile ]; then
     continue;
   fi
+  if [ $dotfile = ".gitignore" ]; then
+    continue;
+  fi
   ln -fs `pwd`/$dotfile ~/$dotfile
 done
 
