@@ -36,6 +36,7 @@ do
 done
 
 vim +:PlugInstall +:q vim +:PlugClean +:q +:q
+vim install.go +:GoInstallBinaries +:q
 
 # del dead link
 for link in ~/.vimrc*
