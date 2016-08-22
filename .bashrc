@@ -13,3 +13,5 @@ export PATH=/usr/local/bin:$PATH
 
 PS1='[\u@\h \W]\$ '
 
+export GOPATH=$HOME/.go
+export PATH=$GOPATH/bin:$PATH
