@@ -16,7 +16,11 @@ options     head
 snippet     pac
 options     head
 	package ${1:main}
-	${0:TARGET}
+
+	func main() {
+		${0:TARGET}
+	}
+}
 
 snippet     pf
 options     head
