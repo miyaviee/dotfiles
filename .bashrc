@@ -15,5 +15,3 @@ PS1='[\u@\h \W]\$ '
 export EDITOR=vim
 eval "$(direnv hook bash)"
 
-export GOPATH=$HOME/.go
-export PATH=$GOPATH/bin:$PATH
