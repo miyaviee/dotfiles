@@ -7,7 +7,7 @@ nnoremap <silent> <C-g>  :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
 " grep current word
 nnoremap <silent> <C-j> :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W><CR>
 " grep current word class
-nnoremap <silent> <C-j>c :<C-u>Unite grep:. -buffer-name=search-buffer<CR>class <C-R><C-W><CR>
+nnoremap <silent> <C-j>c :<C-u>Unite grep:. -buffer-name=search-buffer<CR>class<Space><C-R><C-W><CR>
 
 nnoremap <silent> <C-o> :<C-u>Unite buffer<CR>
 
