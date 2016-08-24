@@ -39,7 +39,7 @@ do
 done
 
 vim +:PlugInstall +:q vim +:PlugClean +:q +:q
-GOPATH=~/.go vim install.go +:GoInstallBinaries +:q
+vim install.go +:GoInstallBinaries +:q
 
 # del dead link
 for link in ~/.vimrc*
