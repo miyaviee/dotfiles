@@ -16,6 +16,7 @@ set nobackup
 set noswapfile
 set lcs=tab:>-,trail:_,extends:\
 set conceallevel=0
+set clipboard+=unnamed
 
 syntax on
 autocmd ColorScheme * highlight Normal ctermbg=none
