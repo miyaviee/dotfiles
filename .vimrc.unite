@@ -5,7 +5,7 @@ let g:unite_enable_start_insert = 1
 " grep curent dir
 nnoremap <silent> <C-g>  :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
 " grep current word
-nnoremap <silent> <C-g>c :<C-u>Unite grep:. -buffer-name=search-buffer<CR>\s<C-R><C-W>[^\w]<CR>
+nnoremap <silent> <C-g>c :<C-u>Unite grep:. -buffer-name=search-buffer<CR>[^\w]<C-R><C-W>[^\w]<CR>
 " grep current word class
 nnoremap <silent> <C-j> :<C-u>Unite grep:. -buffer-name=search-buffer<CR>class<Space><C-R><C-W>[^\w]<CR>
 
