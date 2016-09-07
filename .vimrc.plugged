@@ -33,7 +33,7 @@ Plug 'tpope/vim-abolish'
 Plug 'rhysd/clever-f.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 
-" html
+" html/template
 Plug 'mattn/emmet-vim'
 
 " ruby
