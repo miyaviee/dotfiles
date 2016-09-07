@@ -22,6 +22,7 @@ syntax on
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
 autocmd ColorScheme * highlight NonText ctermbg=none
-colorscheme Tomorrow-Night-Bright
+set background=dark
+colorscheme jellybeans
 autocmd BufWritePre * :FixWhitespace
 autocmd FileType python setlocal completeopt-=preview
