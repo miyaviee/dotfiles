@@ -23,6 +23,10 @@ autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
 autocmd ColorScheme * highlight NonText ctermbg=none
 set background=dark
-colorscheme Tomorrow-Night-Bright
+try
+  colorscheme Tomorrow-Night-Bright
+catch
+  " no colorscheme
+endtry
 autocmd BufWritePre * :FixWhitespace
 autocmd FileType python setlocal completeopt-=preview

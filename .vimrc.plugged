@@ -22,6 +22,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/AnsiEsc.vim'
+Plug 'chriskempson/vim-tomorrow-theme'
 
 " File
 Plug 'Shougo/unite.vim'

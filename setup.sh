@@ -21,11 +21,6 @@ do
   ln -fs `pwd`/$dotfile ~/$dotfile
 done
 
-# color
-if [ ! -e ~/.vim/colors ]; then
-  mkdir -p ~/.vim/colors
-fi
-
 # filetype conf
 for name in *
 do
