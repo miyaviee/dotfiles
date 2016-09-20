@@ -24,6 +24,11 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'chriskempson/vim-tomorrow-theme'
 
+" textobj
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-line'
+Plug 'mattn/vim-textobj-url'
+
 " File
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/neomru.vim'
