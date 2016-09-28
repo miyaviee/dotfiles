@@ -30,6 +30,7 @@ Plug 'kana/vim-textobj-line'
 Plug 'mattn/vim-textobj-url'
 Plug 'rhysd/vim-textobj-anyblock'
 Plug 'kana/vim-textobj-entire'
+Plug 'osyo-manga/vim-textobj-blockwise'
 
 " File
 Plug 'Shougo/unite.vim'
