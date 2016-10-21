@@ -31,3 +31,5 @@ catch
 endtry
 autocmd BufWritePre * :FixWhitespace
 autocmd FileType python setlocal completeopt-=preview
+
+noremap q <Nop>
