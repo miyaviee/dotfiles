@@ -25,7 +25,7 @@ autocmd ColorScheme * highlight LineNr ctermbg=none
 autocmd ColorScheme * highlight NonText ctermbg=none
 set background=dark
 try
-  colorscheme Tomorrow-Night-Bright
+  colorscheme jellybeans
 catch
   " no colorscheme
 endtry

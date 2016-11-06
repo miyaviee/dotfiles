@@ -23,6 +23,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'nanotech/jellybeans.vim'
 
 " textobj
 Plug 'kana/vim-textobj-user'
