@@ -17,7 +17,10 @@ set noswapfile
 set lcs=tab:>-,trail:_,extends:\
 set conceallevel=0
 set clipboard+=unnamed
-set t_Co=256
+
+if !has('gui_running')
+  set t_Co=256
+endif
 
 syntax on
 autocmd ColorScheme * highlight Normal ctermbg=none

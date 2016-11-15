@@ -1,11 +1,11 @@
 call plug#begin('~/.vim/plugged')
-" Completion
+" completion
 Plug 'Shougo/neocomplete'
 Plug 'Shougo/neco-syntax'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 
-" Util
+" util
 Plug 'Shougo/vimshell.vim'
 Plug 'scrooloose/syntastic'
 Plug 'kien/ctrlp.vim'
@@ -22,6 +22,8 @@ Plug 'junegunn/vim-easy-align'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/AnsiEsc.vim'
+
+" colorcheme
 Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'nanotech/jellybeans.vim'
 
@@ -33,11 +35,11 @@ Plug 'rhysd/vim-textobj-anyblock'
 Plug 'kana/vim-textobj-entire'
 Plug 'osyo-manga/vim-textobj-blockwise'
 
-" File
+" file
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/neomru.vim'
 
-" Edit
+" edit
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-abolish'
 Plug 'rhysd/clever-f.vim'
