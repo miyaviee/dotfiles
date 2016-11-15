@@ -29,3 +29,5 @@ source ~/.vimrc.anzu
 source ~/.vimrc.expand
 
 source ~/.vimrc.vim-go
+
+source ~/.vimrc.multiple-cursors
