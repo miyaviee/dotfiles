@@ -16,8 +16,6 @@ source ~/.vimrc.vimshell
 
 source ~/.vimrc.ctrlp
 
-source ~/.vimrc.syntastic
-
 source ~/.vimrc.easyalign
 
 source ~/.vimrc.neocomplete
@@ -31,3 +29,5 @@ source ~/.vimrc.expand
 source ~/.vimrc.vim-go
 
 source ~/.vimrc.multiple-cursors
+
+source ~/.vimrc.watchdogs

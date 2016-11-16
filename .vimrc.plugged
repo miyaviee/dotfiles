@@ -7,7 +7,6 @@ Plug 'Shougo/neosnippet-snippets'
 
 " util
 Plug 'Shougo/vimshell.vim'
-Plug 'scrooloose/syntastic'
 Plug 'kien/ctrlp.vim'
 Plug 'haya14busa/incsearch.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
@@ -22,6 +21,11 @@ Plug 'junegunn/vim-easy-align'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/AnsiEsc.vim'
+Plug 'osyo-manga/vim-watchdogs'
+Plug 'osyo-manga/shabadou.vim'
+Plug 'thinca/vim-quickrun'
+Plug 'jceb/vim-hier'
+Plug 'dannyob/quickfixstatus'
 
 " colorcheme
 Plug 'chriskempson/vim-tomorrow-theme'
