@@ -33,6 +33,6 @@ catch
   " no colorscheme
 endtry
 autocmd BufWritePre * :FixWhitespace
-autocmd FileType python setlocal completeopt-=preview
+set completeopt-=preview
 
 noremap q <Nop>
