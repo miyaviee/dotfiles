@@ -25,7 +25,6 @@ Plug 'osyo-manga/vim-watchdogs'
 Plug 'osyo-manga/shabadou.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'jceb/vim-hier'
-Plug 'dannyob/quickfixstatus'
 
 " colorcheme
 Plug 'chriskempson/vim-tomorrow-theme'
