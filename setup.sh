@@ -10,9 +10,9 @@ if [ ! -e ~/.vim/autoload/plug.vim ]; then
 fi
 
 # filetype conf
-for name in *
+for name in `ls -a`
 do
-  if [[ "$name" =~ ^.git*$ ]]; then
+  if [[ "$name" =~ ^(.|..|.git*)$ ]]; then
     continue;
   fi
   if [ -d $name ]; then
@@ -23,7 +23,7 @@ do
     done
     continue;
   fi
-  if [[ "$name" =~ ^\.*$ ]]; then
+  if [[ "$name" =~ ^\..*$ ]]; then
     ln -fs `pwd`/$name ~/$name
   fi
 done
