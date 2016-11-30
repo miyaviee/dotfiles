@@ -18,17 +18,13 @@ set lcs=tab:>-,trail:_,extends:\
 set conceallevel=0
 set clipboard+=unnamed
 
-if !has('gui_running')
-  set t_Co=256
-endif
-
 syntax on
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
 autocmd ColorScheme * highlight NonText ctermbg=none
 set background=dark
 try
-  colorscheme jellybeans
+  colorscheme Tomorrow-Night-Bright
 catch
   " no colorscheme
 endtry
