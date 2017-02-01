@@ -27,7 +27,7 @@ Plug 'thinca/vim-quickrun'
 Plug 'jceb/vim-hier'
 
 " colorcheme
-Plug 'nanotech/jellybeans.vim'
+Plug 'dikiaap/minimalist'
 
 " textobj
 Plug 'kana/vim-textobj-user'
