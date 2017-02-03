@@ -22,9 +22,14 @@ options head
 		${0:TARGET}
 	}
 
-snippet f
+snippet fu
 options word
-	function(${1}) {
+	function(${1:#:argument}) {
+		${0:TARGET}
+	}
+
+snippet f
+	(${1:#:argument}) => {
 		${0:TARGET}
 	}
 
