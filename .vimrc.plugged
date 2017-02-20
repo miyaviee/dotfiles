@@ -25,6 +25,7 @@ Plug 'osyo-manga/vim-watchdogs'
 Plug 'osyo-manga/shabadou.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'jceb/vim-hier'
+Plug 'pocke/dicts'
 
 " colorcheme
 Plug 'dikiaap/minimalist'

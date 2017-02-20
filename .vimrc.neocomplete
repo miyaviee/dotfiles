@@ -13,6 +13,12 @@ let g:neocomplete#sources#dictionary#dictionaries = {
       \'default' : '',
       \}
 
+let s:neco_dicts_dir = $HOME . '/.vim/plugged/dicts'
+if isdirectory(s:neco_dicts_dir)
+  let g:neocomplete#sources#dictionary#dictionaries['ruby'] = s:neco_dicts_dir . '/ruby.dict'
+  let g:neocomplete#sources#dictionary#dictionaries['javascript'] = s:neco_dicts_dir . '/jquery.dict'
+endif
+
 " Define keyword.
 if !exists('g:neocomplete#keyword_patterns')
   let g:neocomplete#keyword_patterns = {}
