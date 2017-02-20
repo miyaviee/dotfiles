@@ -27,6 +27,7 @@ Plug 'thinca/vim-quickrun'
 Plug 'jceb/vim-hier'
 Plug 'pocke/dicts'
 Plug 't9md/vim-textmanip'
+Plug 'coderifous/textobj-word-column.vim'
 
 " colorcheme
 Plug 'dikiaap/minimalist'
