@@ -33,3 +33,5 @@ set completeopt-=preview
 
 set visualbell t_vb=
 set noerrorbells
+
+let g:vim_json_syntax_conceal = 0
