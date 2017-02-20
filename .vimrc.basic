@@ -31,4 +31,5 @@ endtry
 autocmd BufWritePre * :FixWhitespace
 set completeopt-=preview
 
-noremap q <Nop>
+set visualbell t_vb=
+set noerrorbells

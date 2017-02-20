@@ -33,3 +33,5 @@ source ~/.vimrc.multiple-cursors
 source ~/.vimrc.watchdogs
 
 source ~/.vimrc.clever-f
+
+source ~/.vimrc.textmanip
