@@ -51,3 +51,10 @@ snippet <?
 	<?php
 
 	${0}
+
+snippet try
+	try {
+		${1:#:action}
+	} catch (Exception $e) {
+		${0:TARGET}
+	}
