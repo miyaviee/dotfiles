@@ -35,3 +35,5 @@ set visualbell t_vb=
 set noerrorbells
 
 let g:vim_json_syntax_conceal = 0
+
+command! JsonFormat :execute '%!python -m json.tool'
