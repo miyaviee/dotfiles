@@ -28,6 +28,8 @@ setopt ignore_eof
 
 setopt interactive_comments
 
+setopt share_history
+
 eval "$(direnv hook zsh)"
 
 alias vi=vim

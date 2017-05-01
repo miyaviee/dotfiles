@@ -9,3 +9,7 @@ export GOPATH=~/.go
 export PATH=$GOPATH/bin:$PATH
 
 export PATH=~/.composer/vendor/bin:$PATH
+
+export HISTFILE=${HOME}/.zsh_history
+export HISTSIZE=1000
+export SAVEHIST=100000
