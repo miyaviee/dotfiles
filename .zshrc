@@ -2,7 +2,7 @@ source ~/.zplug/init.zsh
 
 zplug 'zsh-users/zsh-completions'
 
-zplug 'zsh-users/zsh-syntax-highlighting', defer:1
+zplug 'zsh-users/zsh-syntax-highlighting', defer:2
 
 zplug 'zsh-users/zsh-autosuggestions'
 
