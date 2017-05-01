@@ -1,3 +1,5 @@
+PROMPT="%c %# "
+
 bindkey -e
 
 fpath=(/usr/local/share/zsh-completions $fpath)
