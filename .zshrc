@@ -18,6 +18,14 @@ setopt auto_list
 
 setopt auto_menu
 
+setopt print_eight_bit
+
+setopt no_beep
+
+setopt ignore_eof
+
+setopt interactive_comments
+
 eval "$(direnv hook zsh)"
 
 alias vi=vim
