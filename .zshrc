@@ -1,8 +1,23 @@
+source ~/.zplug/init.zsh
+
+zplug 'zsh-users/zsh-completions'
+
+zplug 'zsh-users/zsh-syntax-highlighting', defer:1
+
+zplug 'zsh-users/zsh-autosuggestions'
+
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+zplug load
+
 PROMPT="%c %# "
 
 bindkey -e
-
-fpath=(/usr/local/share/zsh-completions $fpath)
 
 autoload -U compinit; compinit
 
