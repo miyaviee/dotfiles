@@ -6,6 +6,8 @@ zplug 'zsh-users/zsh-syntax-highlighting', defer:1
 
 zplug 'zsh-users/zsh-autosuggestions'
 
+zplug 'zsh-users/zsh-history-substring-search'
+
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
     if read -q; then
@@ -18,6 +20,9 @@ zplug load
 PROMPT="%c %# "
 
 bindkey -e
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 autoload -U compinit; compinit
 
