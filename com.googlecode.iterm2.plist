@@ -755,6 +755,8 @@
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
+	<key>ShowPaneTitles</key>
+	<false/>
 	<key>UseLionStyleFullscreen</key>
 	<false/>
 	<key>WordCharacters</key>
