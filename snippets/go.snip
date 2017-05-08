@@ -1,5 +1,3 @@
-source go.vim
-
 snippet     fun
 options     head
 	func ${1:fname}(${2}) ${3}{
@@ -25,6 +23,10 @@ options     head
 snippet     pf
 options     head
 	fmt.Printf("${1}\n"${0})
+
+snippet     spf
+options     head
+	fmt.Sprintf("${1}", ${0})
 
 snippet     pl
 options     head
@@ -64,9 +66,9 @@ options     head
 snippet     ifer
 options     head
 	if err != nil {
-		return `g:NeosnippetSnippets_Goiferr()`
+		${1:#:err}
 	}
-	${2}
+	${0:TARGET}
 
 snippet     switch
 abbr        switch {}
