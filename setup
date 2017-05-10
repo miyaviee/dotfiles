@@ -32,8 +32,19 @@ do
   fi
 done
 
-vim +:PlugInstall +:q +:PlugUpdate +:q +:PlugClean +:q +:q
+vim +:PlugInstall +:q +:PlugClean +:q +:q
 vim install.go +:GoInstallBinaries +:q
+
+if [ -z "$(which flake8)" ]; then
+  pip3 install flake8
+fi
+if [ ! -d ~/.pip ]; then
+  mkdir ~/.pip
+  cat <<EOS > ~/.pip/pip.conf
+  [list]
+  format=columns
+EOS
+fi
 
 # del dead link
 for link in ~/.*
