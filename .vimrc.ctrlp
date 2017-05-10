@@ -7,6 +7,8 @@ let g:ctrlp_types = ['fil']
 let g:ctrlp_extensions = ['funky']
 let g:ctrlp_funky_matchtype = 'path'
 
+let g:ctrlp_working_path_mode = 'w'
+
 if executable('ag')
   let g:ctrlp_use_caching=0
   let g:ctrlp_user_command='ag %s -l --nocolor --nogroup -g ""'
