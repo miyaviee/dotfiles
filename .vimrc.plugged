@@ -7,7 +7,8 @@ Plug 'Shougo/neosnippet-snippets'
 
 " util
 Plug 'Shougo/vimshell.vim'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tacahiroy/ctrlp-funky'
 Plug 'haya14busa/incsearch.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'terryma/vim-expand-region'
