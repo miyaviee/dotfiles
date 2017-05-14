@@ -23,8 +23,9 @@ autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
 autocmd ColorScheme * highlight NonText ctermbg=none
 set background=dark
+set termguicolors
 try
-  colorscheme minimalist
+  colorscheme dracula
 catch
   " no colorscheme
 endtry
