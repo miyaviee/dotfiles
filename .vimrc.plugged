@@ -57,6 +57,7 @@ Plug 'mattn/emmet-vim'
 
 " ruby
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
 " html
 Plug 'othree/html5.vim', { 'for': 'html' }
