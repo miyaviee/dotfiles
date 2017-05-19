@@ -32,7 +32,6 @@ Plug 'tyru/caw.vim'
 
 " colorcheme
 Plug 'dikiaap/minimalist'
-Plug 'dracula/vim'
 
 " textobj
 Plug 'kana/vim-textobj-user'
