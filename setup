@@ -16,19 +16,19 @@ fi
 # filetype conf
 for name in `ls -a`
 do
-  if [[ "$name" =~ ^(.|..|.git*)$ ]]; then
-    continue;
-  fi
-  if [ -d $name ]; then
-    mkdir -p ~/.vim/$name
-    for file in $name/*
+  if [ -d ${name} ]; then
+    if [ ${name:0:1} == '.' ]; then
+      continue
+    fi
+    mkdir -p ~/.vim/${name}
+    for file in ${name}/*
     do
-      ln -fs `pwd`/$file ~/.vim/$file
+      ln -fs `pwd`/${file} ~/.vim/${file}
     done
     continue;
   fi
-  if [[ "$name" =~ ^\..*$ ]]; then
-    ln -fs `pwd`/$name ~/$name
+  if [ ${name:0:1} == '.' ]; then
+    ln -fs `pwd`/${name} ~/${name}
   fi
 done
 
