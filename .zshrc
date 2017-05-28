@@ -25,6 +25,7 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 fpath=(~/.zplug/repos/zsh-users/zsh-completions/src $fpath)
+fpath=(~/dotfiles/completion $fpath)
 autoload -U compinit; compinit
 
 setopt auto_cd
