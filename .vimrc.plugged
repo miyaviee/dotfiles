@@ -74,6 +74,9 @@ Plug 'stephpy/vim-yaml', { 'for': 'yaml' }
 " slim
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
 
+" twig
+Plug 'evidens/vim-twig'
+
 " coffee
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
