@@ -37,3 +37,5 @@ source ~/.vimrc.clever-f
 source ~/.vimrc.textmanip
 
 source ~/.vimrc.emmet
+
+source ~/.vimrc.jsx
