@@ -1,3 +1,5 @@
-map r <Plug>(operator-replace)
-map c <Plug>(operator-camelize)
-map s <Plug>(operator-decamelize)
+noremap  r <Plug>(operator-replace)
+noremap  c <Plug>(operator-camelize)
+noremap  s <Plug>(operator-decamelize)
+vmap     / <Plug>(operator-comment)
+vmap     ? <Plug>(operator-uncomment)
