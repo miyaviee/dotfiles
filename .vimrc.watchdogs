@@ -16,6 +16,10 @@ let g:quickrun_config["watchdogs_checker/phpcs"] = {
 "   \ "type" : "watchdogs_checker/phpcs",
 "   \ }
 
+" let g:quickrun_config["ruby/watchdogs_checker"] = {
+"   \ "type" : "watchdogs_checker/rubocop",
+"   \ }
+
 call watchdogs#setup(g:quickrun_config)
 
 let g:watchdogs_check_BufWritePost_enable = 1
