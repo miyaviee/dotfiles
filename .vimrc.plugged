@@ -46,6 +46,7 @@ Plug 'osyo-manga/vim-textobj-blockwise'
 " operator
 Plug 'kana/vim-operator-user'
 Plug 'kana/vim-operator-replace'
+Plug 'tyru/operator-camelize.vim'
 
 " file
 Plug 'Shougo/unite.vim'

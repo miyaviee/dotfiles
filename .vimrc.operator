@@ -1,1 +1,3 @@
 map r <Plug>(operator-replace)
+map c <Plug>(operator-camelize)
+map s <Plug>(operator-decamelize)
