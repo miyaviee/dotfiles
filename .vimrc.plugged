@@ -43,6 +43,10 @@ Plug 'mattn/vim-textobj-url'
 Plug 'rhysd/vim-textobj-anyblock'
 Plug 'osyo-manga/vim-textobj-blockwise'
 
+" operator
+Plug 'kana/vim-operator-user'
+Plug 'kana/vim-operator-replace'
+
 " file
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/neomru.vim'
