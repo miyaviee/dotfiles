@@ -1,5 +1,3 @@
 map    r  <Plug>(operator-replace)
 map    tc <Plug>(operator-camelize)
 map    ts <Plug>(operator-decamelize)
-vmap   /  <Plug>(operator-comment)
-vmap   ?  <Plug>(operator-uncomment)

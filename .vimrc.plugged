@@ -28,7 +28,7 @@ Plug 'thinca/vim-quickrun'
 Plug 'jceb/vim-hier'
 Plug 'pocke/dicts'
 Plug 't9md/vim-textmanip'
-Plug 'coderifous/textobj-word-column.vim'
+Plug 'tomtom/tcomment_vim'
 
 " colorcheme
 Plug 'dikiaap/minimalist'
@@ -41,12 +41,12 @@ Plug 'kana/vim-textobj-entire'
 Plug 'mattn/vim-textobj-url'
 Plug 'rhysd/vim-textobj-anyblock'
 Plug 'osyo-manga/vim-textobj-blockwise'
+Plug 'coderifous/textobj-word-column.vim'
 
 " operator
 Plug 'kana/vim-operator-user'
 Plug 'kana/vim-operator-replace'
 Plug 'tyru/operator-camelize.vim'
-Plug 'emonkak/vim-operator-comment'
 
 " file
 Plug 'Shougo/unite.vim'
