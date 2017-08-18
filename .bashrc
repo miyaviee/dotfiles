@@ -15,5 +15,10 @@ PS1='[\u@\h \W]\$ '
 export EDITOR=vim
 eval "$(direnv hook bash)"
 
+export PATH=/usr/local/bin:$PATH
+
 export GOPATH=~/.go
 export PATH=$GOPATH/bin:$PATH
+
+export PATH=~/.composer/vendor/bin:$PATH
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
