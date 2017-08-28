@@ -5,6 +5,7 @@
 *git/*
 *svn/*
 *rw/*
+*coverage/*
 *.jpg
 *.jpeg
 *.JPG
