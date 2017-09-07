@@ -14,10 +14,7 @@ for name in `ls -a`; do
   if [ -d ${name} ]; then
     test ${name:0:1} = '.' && continue
 
-    mkdir -p ~/.vim/${name}
-    for file in ${name}/*; do
-      ln -fs `pwd`/${file} ~/.vim/${file}
-    done
+    ln -fs `pwd`/${name} ~/.vim/${name}
     continue
   fi
 
