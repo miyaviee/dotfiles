@@ -29,7 +29,7 @@ catch
   " no colorscheme
 endtry
 autocmd BufWritePre * :FixWhitespace
-autocmd FileType * setlocal formatoptions-=ro
+autocmd FileType * setlocal formatoptions-=o
 set completeopt-=preview
 
 set visualbell t_vb=
