@@ -61,6 +61,9 @@ Plug 'AndrewRadev/splitjoin.vim'
 " html/template
 Plug 'mattn/emmet-vim'
 
+" php
+Plug 'beanworks/vim-phpfmt', { 'for': 'php' }
+
 " ruby
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
