@@ -13,8 +13,9 @@ test -d ~/.zplug || git clone https://github.com/zplug/zplug ~/.zplug
 for name in `ls -a`; do
   if [ -d ${name} ]; then
     test ${name:0:1} = '.' && continue
-    test -e ~/.vim/${name} && continue
+    test -L ~/.vim/${name} && continue
 
+    rm -rf ~/.vim/${name}
     ln -fs `pwd`/${name} ~/.vim/${name}
     continue
   fi
