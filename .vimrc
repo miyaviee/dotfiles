@@ -41,5 +41,3 @@ source ~/.vimrc.emmet
 source ~/.vimrc.jsx
 
 source ~/.vimrc.operator
-
-source ~/.vimrc.phpfmt
