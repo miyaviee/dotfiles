@@ -24,6 +24,8 @@ for name in `ls -a`; do
 done
 
 vim +:PlugInstall +:q +:PlugClean +:q +:q
+
+export GOPATH=~/.go
 vim install.go +:GoInstallBinaries +:q
 
 test -z "$(which flake8)" && pip3 install flake8
