@@ -29,6 +29,7 @@ export GOPATH=~/.go
 vim install.go +:GoInstallBinaries +:q
 
 test -z "$(which flake8)" && pip3 install flake8
+test -z "$(which rubocop)" && gem install rubocop
 
 if [ ! -d ~/.pip ]; then
   mkdir ~/.pip
