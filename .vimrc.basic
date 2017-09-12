@@ -37,5 +37,6 @@ set noerrorbells
 
 let g:vim_json_syntax_conceal=0
 let g:omni_sql_no_default_maps=1
+let g:PHP_vintage_case_default_indent=1
 
 command! JsonFormat :execute '%!python -m json.tool'
