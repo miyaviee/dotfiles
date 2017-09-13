@@ -99,6 +99,9 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 " smarty
 Plug 'vim-scripts/smarty-syntax', { 'for': 'smarty' }
 
+" vue
+Plug 'posva/vim-vue', { 'for': 'vue' }
+
 " python
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 
