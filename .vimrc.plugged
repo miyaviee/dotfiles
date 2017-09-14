@@ -114,4 +114,7 @@ Plug 'elzr/vim-json', { 'for': 'json' }
 " elixir
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 
+" haskell
+Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+
 call plug#end()
