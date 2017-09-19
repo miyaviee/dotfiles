@@ -27,7 +27,7 @@ Plug 'thinca/vim-quickrun'
 Plug 'jceb/vim-hier'
 Plug 'pocke/dicts'
 Plug 't9md/vim-textmanip'
-Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-commentary'
 
 " colorcheme
 Plug 'dikiaap/minimalist'
