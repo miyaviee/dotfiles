@@ -43,3 +43,5 @@ source ~/.vimrc.jsx
 source ~/.vimrc.operator
 
 source ~/.vimrc.haskell-vim
+
+source ~/.vimrc.commentary
