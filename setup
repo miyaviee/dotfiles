@@ -36,6 +36,15 @@ format=columns
 EOS
 fi
 
+test -e ~/.config || mkdir ~/.config
+for name in `ls -a .config`; do
+  test ${name:0:1} = '.' && continue
+  test -L ~/.config/${name} && continue
+
+  rm -rf ~/.config/${name}
+  ln -fs `pwd`/.config/${name} ~/.config/${name}
+done
+
 # del dead link
 for link in ~/.*; do
   test -L $link || continue
