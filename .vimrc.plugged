@@ -117,4 +117,7 @@ Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 " haskell
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 
+" scala
+Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
+
 call plug#end()
