@@ -3,6 +3,7 @@ set fileencoding=utf-8
 set number
 set nocompatible
 set cursorline
+set nocursorcolumn
 set backspace=indent,eol,start
 set list
 set ignorecase
@@ -18,6 +19,9 @@ set lcs=tab:>-,trail:_,extends:\
 set conceallevel=0
 set clipboard+=unnamed
 set mouse-=a
+set completeopt-=preview
+set visualbell t_vb=
+set noerrorbells
 
 syntax on
 autocmd ColorScheme * highlight Normal ctermbg=none
@@ -31,10 +35,7 @@ catch
 endtry
 autocmd BufWritePre * :FixWhitespace
 autocmd FileType * setlocal formatoptions-=o
-set completeopt-=preview
-
-set visualbell t_vb=
-set noerrorbells
+autocmd FileType ruby setlocal re=1
 
 let g:vim_json_syntax_conceal=0
 let g:omni_sql_no_default_maps=1
