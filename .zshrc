@@ -52,6 +52,8 @@ setopt interactive_comments
 
 setopt share_history
 
+unsetopt promptcr
+
 eval "$(direnv hook zsh)"
 
 alias vi=vim
