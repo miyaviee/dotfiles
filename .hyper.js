@@ -116,7 +116,8 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyper-transparent'
+    'hyper-transparent',
+    'hyperminimal'
   ],
 
   // in development, you can create a directory under
