@@ -16,6 +16,8 @@ export PATH=/usr/local/opt/python/libexec/bin:$PATH
 export GEM_HOME=~/.gem
 export PATH=~/.gem/bin:$PATH
 
+export PATH=~/.gem/ruby/2.4.0/bin:$PATH
+
 export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=100000

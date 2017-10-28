@@ -26,3 +26,5 @@ export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
 export GEM_HOME=~/.gem
 export PATH=~/.gem/bin:$PATH
+
+export PATH=~/.gem/ruby/2.4.0/bin:$PATH
