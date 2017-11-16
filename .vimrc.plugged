@@ -46,6 +46,7 @@ Plug 'kana/vim-textobj-user'
   Plug 'rhysd/vim-textobj-anyblock'
   Plug 'osyo-manga/vim-textobj-blockwise'
   Plug 'coderifous/textobj-word-column.vim'
+  Plug 'rhysd/vim-textobj-ruby', { 'for': 'ruby' }
 
 " operator
 Plug 'kana/vim-operator-user'
