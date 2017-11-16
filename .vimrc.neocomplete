@@ -30,6 +30,8 @@ if !exists('g:neocomplete#delimiter_patterns')
 endif
 
 if !exists('g:neocomplete#sources#omni#input_patterns')
-  let g:neocomplete#sources#omni#input_patterns = {}
+  let g:neocomplete#sources#omni#input_patterns = {
+    \"ruby" : '[^. *\t]\.\w*\|\h\w*::',
+    \}
 endif
 
