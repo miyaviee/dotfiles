@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
   Plug 'Shougo/neocomplete'
     Plug 'Shougo/neco-syntax'
+    Plug 'pocke/dicts'
   Plug 'Shougo/neosnippet'
     Plug 'Shougo/neosnippet-snippets'
   Plug 'Shougo/vimshell.vim'
@@ -12,27 +13,30 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " util
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tacahiroy/ctrlp-funky'
 Plug 'haya14busa/incsearch.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'airblade/vim-gitgutter'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'cohama/lexima.vim'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'osyo-manga/vim-brightest'
 Plug 'osyo-manga/vim-anzu'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-ragtag'
+  Plug 'tpope/vim-ragtag'
 Plug 'vim-scripts/AnsiEsc.vim'
-Plug 'w0rp/ale'
 Plug 'jceb/vim-hier'
-Plug 'pocke/dicts'
-Plug 't9md/vim-textmanip'
-Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-abolish'
 Plug 'AndrewRadev/splitjoin.vim'
+
+" editorconfig
+Plug 'editorconfig/editorconfig-vim'
+
+" comment
+Plug 'tpope/vim-commentary'
+
+" async syntax check
+Plug 'w0rp/ale'
 
 " colorcheme
 Plug 'dikiaap/minimalist'
