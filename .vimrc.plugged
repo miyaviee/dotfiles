@@ -61,7 +61,6 @@ Plug 'kana/vim-operator-user'
 Plug 'mattn/emmet-vim'
 
 " ruby
-Plug 'vim-scripts/ruby-matchit', { 'for': 'ruby' }
 Plug 'osyo-manga/vim-monster', { 'for': 'ruby' }
 
 " haml
