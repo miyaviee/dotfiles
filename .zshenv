@@ -21,3 +21,5 @@ export PATH=~/.gem/ruby/2.4.0/bin:$PATH
 export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=100000
+
+export DIRENV_WARN_TIMEOUT=100s
