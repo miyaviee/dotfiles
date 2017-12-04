@@ -1,7 +1,6 @@
 set fileformat=unix
 set fileencoding=utf-8
 set number
-set nocompatible
 set cursorline
 set nocursorcolumn
 set backspace=indent,eol,start
