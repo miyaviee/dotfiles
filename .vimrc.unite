@@ -9,7 +9,7 @@ nnoremap <silent> <C-g>c :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><
 " grep current word function
 nnoremap <silent> <C-g>f :<C-u>Unite grep:. -buffer-name=search-buffer<CR>(func(tion)?\|def)<Space><C-R><C-W>(<Space>\|\(\|$)<CR>
 " grep current word class
-nnoremap <silent> <C-j> :<C-u>Unite grep:. -buffer-name=search-buffer<CR>^([<Space>\t]+)?(abstract<Space>)?(class\|trait\|type\|defmodule)<Space><C-R><C-W>(<Space>\|{\|$)<CR>
+nnoremap <silent> <C-j> :<C-u>Unite grep:. -buffer-name=search-buffer<CR>^([<Space>\t]+)?(abstract<Space>)?(class\|trait\|type\|defmodule)<Space><C-R><C-W>(<Space>\|{\|\(\|$)<CR>
 
 nnoremap <silent> <C-o> :<C-u>Unite buffer<CR>
 
