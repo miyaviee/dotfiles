@@ -12,8 +12,6 @@ source ~/.vimrc.paste
 
 source ~/.vimrc.window
 
-source ~/.vimrc.vimshell
-
 source ~/.vimrc.ctrlp
 
 source ~/.vimrc.easyalign

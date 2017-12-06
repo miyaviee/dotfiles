@@ -1,6 +1,9 @@
 " Move new tabpage at the last.
-nnoremap <silent> <C-w>t  :<C-u>tabnew \| :tabmove<CR>
+nnoremap <silent> <C-w>n  :<C-u>tabnew \| :tabmove<CR>
 nnoremap <silent> <C-w>o  :<C-u>tabonly<CR>
+
+" terminal open
+nnoremap <silent> <C-w>t  :term ++rows=20 ++close<CR>
 
 " unite settings
 autocmd FileType unite call s:unite_my_settings()
