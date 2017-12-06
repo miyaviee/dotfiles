@@ -67,3 +67,5 @@ if [ -f ~/google-cloud-sdk/path.zsh.inc ]; then source ~/google-cloud-sdk/path.z
 if [ -f ~/google-cloud-sdk/completion.zsh.inc ]; then source ~/google-cloud-sdk/completion.zsh.inc; fi
 
 type kubectl > /dev/null 2>&1 && source <(kubectl completion zsh)
+
+test -z $VIRTUAL_ENV || source $VIRTUAL_ENV/bin/activate
