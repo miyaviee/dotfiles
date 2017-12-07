@@ -84,9 +84,12 @@ snippet     pri
 options     word
 	print(${0:#:TARGET})
 
-snippet     co
+snippet     py2
 abbr        # -*- coding ...
 	# -*- coding: utf-8 -*-
+	from __future__ import unicode_literals
+	from __future__ import absolute_import
+	${0}
 
 snippet     main
 options     head
