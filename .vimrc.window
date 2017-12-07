@@ -1,12 +1,3 @@
 " Move new tabpage at the last.
 nnoremap <silent> <C-w>n  :<C-u>tabnew \| :tabmove<CR>
 nnoremap <silent> <C-w>o  :<C-u>tabonly<CR>
-
-" terminal open
-nnoremap <silent> <C-w>t  :ter ++rows=15 ++close<CR>
-
-command! Rails   :ter ++close bin/rails s
-command! Rspec   :ter ++rows=10 bin/rspec
-
-command! Django  :ter ++close python manage.py runserver
-command! DjangoT :ter ++rows=10 python manage.py test

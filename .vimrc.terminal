@@ -1,0 +1,9 @@
+" terminal open
+nnoremap <silent> vp  :ter ++rows=15 ++close<CR>
+nnoremap <silent> vs  :ter ++curwin ++close<CR>
+
+command! Rails   :ter ++close bin/rails s
+command! Rspec   :ter ++rows=10 bin/rspec
+
+command! Django  :ter ++close python manage.py runserver
+command! DjangoT :ter ++rows=10 python manage.py test

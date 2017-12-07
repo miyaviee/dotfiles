@@ -47,3 +47,5 @@ source ~/.vimrc.commentary
 source ~/.vimrc.vim-scala
 
 source ~/.vimrc.jedi
+
+source ~/.vimrc.terminal
