@@ -1,10 +1,8 @@
-let g:ale_sign_column_always = 1
-
-let g:ale_php_phpcs_standard = 'PSR2'
-
 let g:ale_linters = {
   \ 'php': ['php'],
   \ }
+
+let g:ale_php_phpcs_standard = 'PSR2'
 
 let g:ale_fixers = {
   \ 'php': ['phpcbf'],
