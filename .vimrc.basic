@@ -22,6 +22,7 @@ set completeopt-=preview
 set visualbell t_vb=
 set noerrorbells
 set signcolumn=yes
+set re=1
 
 syntax on
 autocmd ColorScheme * highlight Normal ctermbg=none
