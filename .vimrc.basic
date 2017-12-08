@@ -25,6 +25,10 @@ set signcolumn=yes
 set re=1
 set tags=.git/tags
 
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+
 syntax on
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
