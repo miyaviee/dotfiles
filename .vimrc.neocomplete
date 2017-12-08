@@ -1,19 +1,14 @@
-" Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
-" Use smartcase.
 let g:neocomplete#enable_smart_case = 1
-" Use auto select
 let g:neocomplete#enable_auto_select = 1
-" Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 1
-let g:neocomplete#auto_completion_start_length = 1
 
+let g:neocomplete#sources#syntax#min_keyword_length = 4
+let g:neocomplete#auto_completion_start_length = 1
 let g:neocomplete#max_list = 20
 
 inoremap <expr> <Up>   pumvisible() ? "\<C-p>" : "\<Up>"
 inoremap <expr> <Down> pumvisible() ? "\<C-n>" : "\<Down>"
 
-" Define dictionary.
 let g:neocomplete#sources#dictionary#dictionaries = {
       \'default' : '',
       \}
@@ -24,7 +19,12 @@ if isdirectory(s:neco_dicts_dir)
   let g:neocomplete#sources#dictionary#dictionaries.javascript = s:neco_dicts_dir . '/jquery.dict'
 endif
 
-" Define keyword.
+if !exists('g:neocomplete#sources#file_include#exts')
+  let g:neocomplete#sources#file_include#exts = {}
+endif
+
+let g:neocomplete#sources#file_include#exts.ruby = ['', 'rb']
+
 if !exists('g:neocomplete#keyword_patterns')
   let g:neocomplete#keyword_patterns = {}
 endif
