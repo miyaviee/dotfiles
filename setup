@@ -45,6 +45,9 @@ for name in `ls -a .config`; do
   ln -fs `pwd`/.config/${name} ~/.config/${name}
 done
 
+test -L ~/.git_tmp || ln -fs `pwd`/.git_tmp ~/.git_tmp
+test -z "$(git config --global --get init.templatedir)" && git config --global init.templatedir ~/.git_tmp
+
 # del dead link
 for link in ~/.*; do
   test -L $link || continue

@@ -23,6 +23,7 @@ set visualbell t_vb=
 set noerrorbells
 set signcolumn=yes
 set re=1
+set tags=.git/tags
 
 syntax on
 autocmd ColorScheme * highlight Normal ctermbg=none
