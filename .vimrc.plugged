@@ -28,6 +28,10 @@ Plug 'tpope/vim-abolish'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'majutsushi/tagbar'
 
+" statusline
+Plug 'itchyny/lightline.vim'
+Plug 'bling/vim-bufferline'
+
 " editorconfig
 Plug 'editorconfig/editorconfig-vim'
 

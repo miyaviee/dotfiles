@@ -51,3 +51,5 @@ source ~/.vimrc.jedi
 source ~/.vimrc.terminal
 
 source ~/.vimrc.tagbar
+
+source ~/.vimrc.statusline
