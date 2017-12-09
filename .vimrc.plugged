@@ -27,6 +27,7 @@ Plug 'jceb/vim-hier'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-abolish'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'majutsushi/tagbar'
 
 " editorconfig
 Plug 'editorconfig/editorconfig-vim'
