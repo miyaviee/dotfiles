@@ -1,0 +1,36 @@
+set completeopt+=noinsert
+
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_smart_case = 1
+
+let g:deoplete#sources#syntax#min_keyword_length = 4
+let g:deoplete#auto_completion_start_length = 1
+let g:deoplete#max_list = 20
+
+imap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" :
+      \neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" :
+      \pumvisible() ? "\<C-y>" :
+      \"\<TAB>"
+
+smap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" :
+      \"\<ESC>"
+
+inoremap <expr><C-c>  pumvisible() ? deoplete#smart_close_popup() : "\<C-c>"
+inoremap <expr><Up>   pumvisible() ? "\<C-p>" : "\<Up>"
+inoremap <expr><Down> pumvisible() ? "\<C-n>" : "\<Down>"
+
+let g:deoplete#sources#dictionary#dictionaries = {
+      \'default' : '',
+      \}
+
+let s:neco_dicts_dir = $HOME . '/.vim/plugged/dicts'
+if isdirectory(s:neco_dicts_dir)
+  let g:deoplete#sources#dictionary#dictionaries.ruby = s:neco_dicts_dir . '/ruby.dict'
+  let g:deoplete#sources#dictionary#dictionaries.javascript = s:neco_dicts_dir . '/jquery.dict'
+endif
+
+if !exists('g:deoplete#sources#file_include#exts')
+  let g:deoplete#sources#file_include#exts = {}
+endif
+
+let g:deoplete#sources#file_include#exts.ruby = ['', 'rb']

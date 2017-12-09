@@ -23,10 +23,13 @@ for name in `ls -a`; do
   test ${name:0:1} = '.' && ln -fs `pwd`/${name} ~/${name}
 done
 
-vim +:PlugInstall +:q +:PlugClean +:q +:q
+VIM=vim
+type nvim > /dev/null 2>&1 && VIM=nvim
+
+$VIM +:PlugInstall +:q +:PlugClean +:q +:q
 
 export GOPATH=~/.go
-vim install.go +:GoInstallBinaries +:q
+$VIM install.go +:GoInstallBinaries +:q
 
 if [ ! -d ~/.pip ]; then
   mkdir ~/.pip

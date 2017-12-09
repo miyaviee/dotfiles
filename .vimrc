@@ -16,7 +16,12 @@ source ~/.vimrc.ctrlp
 
 source ~/.vimrc.easyalign
 
-source ~/.vimrc.neocomplete
+if has('nvim') || has('python3')
+  source ~/.vimrc.deoplete
+else
+  source ~/.vimrc.neocomplete
+  source ~/.vimrc.jedi
+endif
 
 source ~/.vimrc.snippet
 
@@ -45,8 +50,6 @@ source ~/.vimrc.haskell-vim
 source ~/.vimrc.commentary
 
 source ~/.vimrc.vim-scala
-
-source ~/.vimrc.jedi
 
 source ~/.vimrc.terminal
 
