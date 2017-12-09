@@ -3,11 +3,9 @@
 let g:unite_enable_start_insert = 0
 
 " grep curent dir
-nnoremap <silent> <C-g>  :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+nnoremap <silent> <C-g>w  :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
 " grep current word
-nnoremap <silent> <C-g>c :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W><CR>
-
-nnoremap <silent> <C-o> :<C-u>Unite buffer<CR>
+nnoremap <silent> <C-g> :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W><CR>
 
 " unite grep use ag(silver_searcher)
 if executable('ag')
@@ -18,7 +16,7 @@ endif
 
 " search file open
 autocmd FileType unite call s:unite_my_settings()
-function! s:unite_my_settings()"{{{
+function! s:unite_my_settings()
   "ESC unite
   nmap <buffer> <ESC> <Plug>(unite_exit)
   imap <buffer> <ESC> <Plug>(unite_exit)
@@ -34,4 +32,4 @@ function! s:unite_my_settings()"{{{
   "ctrl+o open this pane
   nnoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
   inoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
-endfunction"}}}
+endfunction
