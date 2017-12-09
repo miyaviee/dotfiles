@@ -6,6 +6,7 @@ Plug 'rhysd/clever-f.vim'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'kassio/neoterm'
 else
   if has('python3')
     Plug 'Shougo/deoplete.nvim'

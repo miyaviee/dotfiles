@@ -1,9 +1,24 @@
 " terminal open
-nnoremap <silent> vp  :ter ++rows=15 ++close<CR>
-nnoremap <silent> vs  :ter ++curwin ++close<CR>
+if has('nvim')
+  " Useful maps
+  " open terminal
+  nnoremap <silent> vp :call neoterm#open()<CR>
+  " hide/close terminal
+  nnoremap <silent> vc :call neoterm#close()<CR>
+  " kills the current job (send a <c-c>)
+  nnoremap <silent> vq :call neoterm#kill()<CR>
 
-command! Rails   :ter ++close bin/rails s
-command! Rspec   :ter ++rows=10 bin/rspec
+  command! Rails   :T bin/rails s
+  command! Rspec   :T bin/rspec
 
-command! Django  :ter ++close python manage.py runserver
-command! DjangoT :ter ++rows=10 python manage.py test
+  command! Django  :T python manage.py runserver
+  command! DjangoT :T python manage.py test
+else
+  nnoremap <silent> vp  :ter ++rows=15 ++close<CR>
+
+  command! Rails   :ter ++close bin/rails s
+  command! Rspec   :ter ++rows=10 bin/rspec
+
+  command! Django  :ter ++close python manage.py runserver
+  command! DjangoT :ter ++rows=10 python manage.py test
+endif
