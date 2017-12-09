@@ -6,8 +6,6 @@ source ~/.vimrc.indent
 
 source ~/.vimrc.zenkaku
 
-source ~/.vimrc.unite
-
 source ~/.vimrc.paste
 
 source ~/.vimrc.window

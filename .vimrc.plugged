@@ -26,9 +26,6 @@ endif
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 
-" require lua
-Plug 'Shougo/unite.vim'
-
 " completion file
 Plug 'Shougo/neco-syntax'
 Plug 'pocke/dicts'
