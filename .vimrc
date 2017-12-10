@@ -43,11 +43,7 @@ source ~/.vimrc.jsx
 
 source ~/.vimrc.operator
 
-source ~/.vimrc.haskell-vim
-
 source ~/.vimrc.commentary
-
-source ~/.vimrc.vim-scala
 
 source ~/.vimrc.terminal
 
