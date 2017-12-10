@@ -4,7 +4,7 @@ fi
 
 source ~/dotfiles/completion/git-completion.bash
 type kubectl > /dev/null 2>&1 && source <(kubectl completion bash)
-alias vi=vim
+alias vi=nvim
 
 export TERM=xterm-256color
 export PATH=$HOME/bin:$HOME/.local/bin:$PATH
@@ -13,7 +13,7 @@ export LC_ALL=en_US.UTF-8
 
 PS1='[\u@\h \W]\$ '
 
-export EDITOR=vim
+export EDITOR=nvim
 eval "$(direnv hook bash)"
 
 export PATH=/usr/local/bin:$PATH

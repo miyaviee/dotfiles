@@ -58,7 +58,7 @@ unsetopt promptcr
 
 eval "$(direnv hook zsh)"
 
-alias vi=vim
+alias vi=nvim
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f ~/google-cloud-sdk/path.zsh.inc ]; then source ~/google-cloud-sdk/path.zsh.inc; fi
