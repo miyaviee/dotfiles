@@ -23,6 +23,9 @@ for name in `ls -a`; do
   test ${name:0:1} = '.' && ln -fs `pwd`/${name} ~/${name}
 done
 
+test -L ~/.config/nvim || ln -fs ~/.vim ~/.config/nvim
+test -L ~/.config/nvim/init.vim || ln -fs ~/.vimrc ~/.config/nvim/init.vim
+
 VIM=vim
 type nvim > /dev/null 2>&1 && VIM=nvim
 
