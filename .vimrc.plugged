@@ -1,7 +1,4 @@
 call plug#begin('~/.vim/plugged')
-" vimproc
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug 'rhysd/clever-f.vim'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -18,6 +15,7 @@ else
     Plug 'Shougo/neocomplete'
   end
   Plug 'pocke/dicts'
+  Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 endif
 
 if has('python3')
@@ -50,6 +48,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-abolish'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'majutsushi/tagbar'
+Plug 'rhysd/clever-f.vim'
 
 " statusline
 Plug 'itchyny/lightline.vim'
