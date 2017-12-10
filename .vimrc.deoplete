@@ -18,19 +18,3 @@ smap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" :
 inoremap <expr><C-c>  pumvisible() ? deoplete#smart_close_popup() : "\<C-c>"
 inoremap <expr><Up>   pumvisible() ? "\<C-p>" : "\<Up>"
 inoremap <expr><Down> pumvisible() ? "\<C-n>" : "\<Down>"
-
-let g:deoplete#sources#dictionary#dictionaries = {
-      \'default' : '',
-      \}
-
-let s:neco_dicts_dir = $HOME . '/.vim/plugged/dicts'
-if isdirectory(s:neco_dicts_dir)
-  let g:deoplete#sources#dictionary#dictionaries.ruby = s:neco_dicts_dir . '/ruby.dict'
-  let g:deoplete#sources#dictionary#dictionaries.javascript = s:neco_dicts_dir . '/jquery.dict'
-endif
-
-if !exists('g:deoplete#sources#file_include#exts')
-  let g:deoplete#sources#file_include#exts = {}
-endif
-
-let g:deoplete#sources#file_include#exts.ruby = ['', 'rb']

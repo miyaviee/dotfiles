@@ -17,6 +17,7 @@ else
     Plug 'osyo-manga/vim-monster', { 'for': 'ruby' }
     Plug 'Shougo/neocomplete'
   end
+  Plug 'pocke/dicts'
 endif
 
 if has('python3')
@@ -29,7 +30,6 @@ Plug 'Shougo/neosnippet-snippets'
 
 " completion file
 Plug 'Shougo/neco-syntax'
-Plug 'pocke/dicts'
 
 " util
 Plug 'ctrlpvim/ctrlp.vim'
