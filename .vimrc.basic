@@ -31,19 +31,13 @@ if has('conceal')
 endif
 
 syntax on
-autocmd ColorScheme * highlight Normal ctermbg=none
-autocmd ColorScheme * highlight LineNr ctermbg=none
-autocmd ColorScheme * highlight NonText ctermbg=none
-set background=dark
-try
-  colorscheme minimalist
-catch
-  " no colorscheme
-endtry
 autocmd BufWritePre * :FixWhitespace
 autocmd FileType * setlocal formatoptions-=o
 
 let g:vim_json_syntax_conceal=0
 let g:omni_sql_no_default_maps=1
+
+let g:python_host_prog = $HOME.'/neovim2/bin/python'
+let g:python3_host_prog = $HOME.'/neovim3/bin/python'
 
 command! JsonFormat :execute '%!python -m json.tool'

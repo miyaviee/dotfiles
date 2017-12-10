@@ -1,0 +1,9 @@
+autocmd ColorScheme * highlight Normal ctermbg=none
+autocmd ColorScheme * highlight LineNr ctermbg=none
+autocmd ColorScheme * highlight NonText ctermbg=none
+set background=dark
+try
+  colorscheme minimalist
+catch
+  " no colorscheme
+endtry

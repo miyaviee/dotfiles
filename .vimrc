@@ -1,6 +1,8 @@
+source ~/.vimrc.basic
+
 source ~/.vimrc.plugged
 
-source ~/.vimrc.basic
+source ~/.vimrc.color
 
 source ~/.vimrc.indent
 
