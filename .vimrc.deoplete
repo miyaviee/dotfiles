@@ -7,6 +7,14 @@ let g:deoplete#sources#syntax#min_keyword_length = 4
 let g:deoplete#auto_completion_start_length = 1
 let g:deoplete#max_list = 20
 
+function g:Multiple_cursors_before()
+  let g:deoplete#disable_auto_complete = 1
+endfunction
+
+function g:Multiple_cursors_after()
+  let g:deoplete#disable_auto_complete = 0
+endfunction
+
 imap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" :
       \neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" :
       \pumvisible() ? "\<C-y>" :

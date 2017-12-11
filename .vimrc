@@ -31,8 +31,6 @@ source ~/.vimrc.expand
 
 source ~/.vimrc.vim-go
 
-source ~/.vimrc.multiple-cursors
-
 source ~/.vimrc.ale
 
 source ~/.vimrc.clever-f
