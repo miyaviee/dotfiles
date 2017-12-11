@@ -24,7 +24,9 @@ set visualbell t_vb=
 set noerrorbells
 set signcolumn=yes
 set re=1
+
 set tags=.git/tags
+nnoremap <silent> <C-]> g<C-]>
 
 if has('conceal')
   set conceallevel=2 concealcursor=i
