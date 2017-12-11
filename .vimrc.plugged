@@ -1,58 +1,57 @@
 call plug#begin('~/.vim/plugged')
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'kassio/neoterm'
-else
-  if has('python3')
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
-  else
-    Plug 'davidhalter/jedi-vim', { 'for': 'python' }
-    Plug 'osyo-manga/vim-monster', { 'for': 'ruby' }
-    Plug 'Shougo/neocomplete'
-  end
-  Plug 'pocke/dicts'
-  Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-endif
-
-if has('python3')
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'zchee/deoplete-jedi', { 'for': 'python' }
   Plug 'Shougo/deoplete-rct', { 'for': 'ruby' }
   Plug 'zchee/deoplete-go', { 'do': 'make', 'for': 'go' }
-endif
+  Plug 'Shougo/neco-syntax'
 
+" Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
-
-" completion file
-Plug 'Shougo/neco-syntax'
 
 " util
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'haya14busa/incsearch.vim'
-Plug 'terryma/vim-expand-region'
-Plug 'airblade/vim-gitgutter'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'cohama/lexima.vim'
-Plug 'osyo-manga/vim-brightest'
-Plug 'osyo-manga/vim-anzu'
-Plug 'junegunn/vim-easy-align'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-ragtag'
-Plug 'vim-scripts/AnsiEsc.vim'
-Plug 'jceb/vim-hier'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-abolish'
+Plug 'vim-scripts/ansiEsc.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'majutsushi/tagbar'
+
+" extend replace
+Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-ragtag'
+
+" git status
+Plug 'airblade/vim-gitgutter'
+
+" extend search
+Plug 'tpope/vim-abolish'
+
+" terminal
+Plug 'kassio/neoterm'
+
+" search position
+Plug 'osyo-manga/vim-anzu'
+
+" word highlight
+Plug 'osyo-manga/vim-brightest'
+
+" formatting space
+Plug 'junegunn/vim-easy-align'
+
+" autoclose
+Plug 'cohama/lexima.vim'
+
+" char search
 Plug 'rhysd/clever-f.vim'
+
+" extend visual mode
+Plug 'terryma/vim-expand-region'
+Plug 'terryma/vim-multiple-cursors'
 
 " statusline
 Plug 'itchyny/lightline.vim'
-Plug 'bling/vim-bufferline'
 
 " editorconfig
 Plug 'editorconfig/editorconfig-vim'
@@ -109,9 +108,6 @@ Plug 'evidens/vim-twig'
 
 " typescript
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
-
-" go
-Plug 'fatih/vim-go', { 'for': 'go' }
 
 " smarty
 Plug 'vim-scripts/smarty-syntax', { 'for': 'smarty' }

@@ -16,20 +16,13 @@ source ~/.vimrc.ctrlp
 
 source ~/.vimrc.easyalign
 
-if has('nvim') || has('python3')
-  source ~/.vimrc.deoplete
-else
-  source ~/.vimrc.neocomplete
-  source ~/.vimrc.jedi
-endif
+source ~/.vimrc.deoplete
 
 source ~/.vimrc.snippet
 
 source ~/.vimrc.anzu
 
 source ~/.vimrc.expand
-
-source ~/.vimrc.vim-go
 
 source ~/.vimrc.ale
 
@@ -49,4 +42,4 @@ source ~/.vimrc.terminal
 
 source ~/.vimrc.tagbar
 
-source ~/.vimrc.statusline
+source ~/.vimrc.lightline

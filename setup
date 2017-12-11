@@ -26,13 +26,7 @@ done
 test -L ~/.config/nvim || ln -fs ~/.vim ~/.config/nvim
 test -L ~/.config/nvim/init.vim || ln -fs ~/.vimrc ~/.config/nvim/init.vim
 
-VIM=vim
-type nvim > /dev/null 2>&1 && VIM=nvim
-
-$VIM +:PlugInstall +:q +:PlugClean +:q +:q
-
-export GOPATH=~/.go
-$VIM install.go +:GoInstallBinaries +:q
+nvim +:PlugInstall +:q +:PlugClean +:q +:q
 
 if [ ! -d ~/.pip ]; then
   mkdir ~/.pip

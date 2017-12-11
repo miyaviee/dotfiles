@@ -1,6 +1,5 @@
 set noshowmode
 set laststatus=2
 
-nnoremap <silent>B :bprevious<CR>
-nnoremap <silent>b :bnext<CR>
+nnoremap <silent>B :b#<CR>
 nnoremap <silent>Q :bdelete<CR>
