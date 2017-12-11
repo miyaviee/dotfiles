@@ -26,6 +26,8 @@
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 9</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/dotfiles</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -64,7 +66,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>382 1266 620 392 -268 768 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1 1061 918 381 -268 768 1920 1057 </string>
+	<string>0 1352 796 473 -268 768 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>-268 768 1920 1080 -268 768 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -635,7 +637,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 14</string>
+			<string>Menlo-Regular 16</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -706,6 +708,8 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>F036831E-4CE8-43B4-B782-3C70E445C9DF</string>
+	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
+	<true/>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -758,7 +762,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-07T13:41:55Z</date>
+	<date>2017-12-10T17:06:10Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -772,6 +776,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.4</string>
+	<string>3.1.5</string>
 </dict>
 </plist>
