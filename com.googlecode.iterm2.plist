@@ -68,7 +68,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>0 1334 796 473 -268 768 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-268 768 1920 1080 -268 768 1920 1057 </string>
+	<string>-132 951 1410 787 -268 768 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -691,7 +691,7 @@
 			<key>Thin Strokes</key>
 			<integer>3</integer>
 			<key>Transparency</key>
-			<real>0.08</real>
+			<real>0.080000000000000000</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -699,7 +699,7 @@
 			<key>Use Bright Bold</key>
 			<true/>
 			<key>Use Italic Font</key>
-			<true/>
+			<false/>
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
