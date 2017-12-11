@@ -24,6 +24,7 @@ Plug 'tpope/vim-surround'
 
 " git status
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 " extend search
 Plug 'tpope/vim-abolish'

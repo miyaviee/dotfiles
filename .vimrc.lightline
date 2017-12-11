@@ -3,3 +3,13 @@ set laststatus=2
 
 nnoremap <silent>B :b#<CR>
 nnoremap <silent>Q :bdelete<CR>
+
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \   },
+      \   'component_function': {
+      \     'gitbranch': 'fugitive#head'
+      \   },
+      \ }
