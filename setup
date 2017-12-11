@@ -28,6 +28,10 @@ test -L ~/.config/nvim/init.vim || ln -fs ~/.vimrc ~/.config/nvim/init.vim
 
 nvim +:PlugInstall +:q +:PlugClean +:q +:q
 
+export GOPATH=~/.go
+type golint > /dev/null 2>&1 || go get -u github.com/golang/lint/golint
+type goimports > /dev/null 2>&1 || go get golang.org/x/tools/cmd/goimports
+
 if [ ! -d ~/.pip ]; then
   mkdir ~/.pip
   cat <<EOS > ~/.pip/pip.conf
