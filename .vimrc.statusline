@@ -3,4 +3,4 @@ set laststatus=2
 
 nnoremap <silent>B :bprevious<CR>
 nnoremap <silent>b :bnext<CR>
-nnoremap <silent>q :bdelete<CR>
+nnoremap <silent>Q :bdelete<CR>

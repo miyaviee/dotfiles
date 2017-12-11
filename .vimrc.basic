@@ -27,7 +27,7 @@ set re=1
 set synmaxcol=1000
 
 set tags=.git/tags
-nnoremap <silent> <C-]> g<C-]>
+nnoremap <silent> q <Nop>
 
 if has('conceal')
   set conceallevel=2 concealcursor=i
