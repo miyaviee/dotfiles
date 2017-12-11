@@ -5,6 +5,7 @@ nnoremap <silent>B :b#<CR>
 nnoremap <silent>Q :bdelete<CR>
 
 let g:lightline = {
+      \ 'colorscheme': 'Dracula',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
