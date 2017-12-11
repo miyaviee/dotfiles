@@ -1,16 +1,20 @@
 set noshowmode
 set laststatus=2
 
-nnoremap <silent>B :b#<CR>
-nnoremap <silent>Q :bdelete<CR>
+let g:lightline = {}
 
-let g:lightline = {
-      \ 'colorscheme': 'Dracula',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \   },
-      \   'component_function': {
+let g:lightline.colorscheme = 'Dracula'
+
+let g:lightline.active = {
+      \     'left': [
+      \       ['mode', 'paste'],
+      \       ['gitbranch', 'readonly', 'filename', 'modified']
+      \     ],
+      \   }
+
+let g:lightline.component_function = {
       \     'gitbranch': 'fugitive#head'
-      \   },
-      \ }
+      \   }
+
+let g:lightline.separator = {'left': ' ', 'right': ' '}
+let g:lightline.subseparator = {'left': '|', 'right': '|'}

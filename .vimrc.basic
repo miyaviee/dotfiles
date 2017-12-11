@@ -27,7 +27,6 @@ set re=1
 set synmaxcol=1000
 
 set tags=.git/tags
-nnoremap <silent> q <Nop>
 
 if has('conceal')
   set conceallevel=2 concealcursor=i
@@ -44,3 +43,7 @@ let g:python_host_prog = $HOME.'/neovim2/bin/python'
 let g:python3_host_prog = $HOME.'/neovim3/bin/python'
 
 command! JsonFormat :execute '%!python -m json.tool'
+
+nnoremap <silent> q <Nop>
+nnoremap <silent> B :b#<CR>
+nnoremap <silent> Q :bdelete<CR>
