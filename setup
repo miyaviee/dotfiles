@@ -23,8 +23,9 @@ for name in `ls -a`; do
   test ${name:0:1} = '.' && ln -fs `pwd`/${name} ~/${name}
 done
 
+PACKAGES='virtualenv flake8 autopep8'
 PIP3=`which pip3 || which pip`
-${PIP3} install virtualenv
+${PIP3} install ${PACKAGES}
 PYTHON3=`which python3 || which python`
 test -d ~/neovim3 || ${PYTHON3} -m virtualenv ~/neovim3
 source ~/neovim3/bin/activate
@@ -32,7 +33,7 @@ pip install neovim
 deactivate
 
 PIP2=`which pip2 || which pip`
-${PIP2} install virtualenv
+${PIP2} install ${PACKAGES}
 PYTHON2=`which python2 || which python`
 test -d ~/neovim2 || ${PYTHON2} -m virtualenv ~/neovim2
 source ~/neovim2/bin/activate
