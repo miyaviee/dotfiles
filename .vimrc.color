@@ -1,9 +1,10 @@
-autocmd ColorScheme * highlight Normal ctermbg=none
-autocmd ColorScheme * highlight LineNr ctermbg=none
-autocmd ColorScheme * highlight NonText ctermbg=none
+" autocmd ColorScheme * highlight Normal ctermbg=none
+" autocmd ColorScheme * highlight LineNr ctermbg=none
+" autocmd ColorScheme * highlight NonText ctermbg=none
+set termguicolors
 set background=dark
 try
-  colorscheme minimalist
+  colorscheme nord
 catch
   " no colorscheme
 endtry
