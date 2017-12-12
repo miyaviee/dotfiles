@@ -6,6 +6,7 @@
 *svn/*
 *rw/*
 *coverage/*
+*__init__*
 *.jpg
 *.jpeg
 *.JPG
