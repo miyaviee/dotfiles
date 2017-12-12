@@ -418,10 +418,12 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>382 1266 620 392 -268 768 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>469 237 796 473 0 0 1920 1080 </string>
+	<string>0 1334 796 473 -268 768 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1080 0 0 1920 1057 </string>
+	<string>-268 768 1920 1080 -268 768 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1149,7 +1151,7 @@
 			<key>Thin Strokes</key>
 			<integer>3</integer>
 			<key>Transparency</key>
-			<real>0.08</real>
+			<real>0.080000000000000002</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1173,17 +1175,15 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>CE3F236B-14CC-4CA5-BC55-F8185C6BDEA8</string>
+	<string>F036831E-4CE8-43B4-B782-3C70E445C9DF</string>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
-	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>533787384.45834798</real>
+	<real>530261824.90733802</real>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
@@ -1230,11 +1230,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=69</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=10</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-12-12T01:39:28Z</date>
+	<date>2017-12-11T15:21:29Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
