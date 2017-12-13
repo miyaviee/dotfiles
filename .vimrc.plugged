@@ -39,9 +39,6 @@ Plug 'kassio/neoterm'
 " search position
 Plug 'osyo-manga/vim-anzu'
 
-" word highlight
-Plug 'osyo-manga/vim-brightest'
-
 " formatting space
 Plug 'junegunn/vim-easy-align'
 
