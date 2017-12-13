@@ -1,14 +1,14 @@
+let g:ale_fix_on_save = 1
+
+let g:ale_php_phpcs_standard = 'PSR2'
+
 let g:ale_linters = {
   \ 'php': ['php'],
   \ 'go': ['golint'],
   \ }
-
-let g:ale_php_phpcs_standard = 'PSR2'
 
 let g:ale_fixers = {
   \ 'php': ['phpcbf'],
   \ 'python': ['autopep8'],
   \ 'go': ['goimports', 'gofmt'],
   \ }
-
-let g:ale_fix_on_save = 1
