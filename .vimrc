@@ -43,3 +43,5 @@ source ~/.vimrc.terminal
 source ~/.vimrc.tagbar
 
 source ~/.vimrc.lightline
+
+source ~/.vimrc.edge-motion

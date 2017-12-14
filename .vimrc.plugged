@@ -20,6 +20,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'majutsushi/tagbar'
+Plug 'haya14busa/vim-edgemotion'
 
 " extend replace
 Plug 'tpope/vim-surround'
