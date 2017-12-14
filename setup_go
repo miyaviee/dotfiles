@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 export GOPATH=~/.go
 type golint > /dev/null 2>&1 || go get -u github.com/golang/lint/golint
