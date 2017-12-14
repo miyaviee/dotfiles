@@ -15,7 +15,6 @@ Plug 'Shougo/neosnippet-snippets'
 
 " util
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'haya14busa/incsearch.vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'AndrewRadev/splitjoin.vim'
@@ -31,13 +30,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " extend search
-Plug 'tpope/vim-abolish'
+Plug 'haya14busa/is.vim'
+Plug 'osyo-manga/vim-anzu'
 
 " terminal
 Plug 'kassio/neoterm'
-
-" search position
-Plug 'osyo-manga/vim-anzu'
 
 " formatting space
 Plug 'junegunn/vim-easy-align'

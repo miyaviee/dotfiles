@@ -20,8 +20,6 @@ source ~/.vimrc.deoplete
 
 source ~/.vimrc.snippet
 
-source ~/.vimrc.anzu
-
 source ~/.vimrc.expand
 
 source ~/.vimrc.ale
@@ -45,3 +43,5 @@ source ~/.vimrc.tagbar
 source ~/.vimrc.lightline
 
 source ~/.vimrc.edge-motion
+
+source ~/.vimrc.is
