@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 " colorcheme
-Plug 'dikiaap/minimalist'
 Plug 'arcticicestudio/nord-vim'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
