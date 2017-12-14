@@ -4,7 +4,7 @@
 set termguicolors
 set background=dark
 try
-  colorscheme nord
+  colorscheme onedark
 catch
   " no colorscheme
 endtry
