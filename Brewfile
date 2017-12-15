@@ -10,3 +10,4 @@ brew 'direnv'
 brew 'neovim'
 brew 'ripgrep'
 brew 'zsh', args: ['--without-etcdir']
+brew 'ctags'
