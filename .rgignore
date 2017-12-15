@@ -9,6 +9,7 @@
 *migrations/*
 *bin/*
 *__init__*
+*\.min\.*
 *.jpg
 *.jpeg
 *.JPG
