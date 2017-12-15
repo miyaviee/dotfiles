@@ -19,7 +19,6 @@ Plug 'Shougo/denite.nvim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'majutsushi/tagbar'
 
 " extend replace
 Plug 'tpope/vim-surround'

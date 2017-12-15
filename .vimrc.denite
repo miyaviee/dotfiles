@@ -22,3 +22,6 @@ inoremap <C-g> <ESC>:w<CR>:Denite grep<CR>
 
 nnoremap <C-o> :Denite buffer<CR>
 inoremap <C-o> <ESC>:w<CR>:Denite buffer<CR>
+
+nnoremap <C-\> :Denite outline<CR>
+inoremap <C-\> <ESC>:w<CR>:Denite outline<CR>
