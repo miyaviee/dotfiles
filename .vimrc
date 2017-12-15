@@ -12,7 +12,7 @@ source ~/.vimrc.paste
 
 source ~/.vimrc.window
 
-source ~/.vimrc.ctrlp
+source ~/.vimrc.denite
 
 source ~/.vimrc.easyalign
 

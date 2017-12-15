@@ -1,0 +1,20 @@
+call denite#custom#option('default', 'prompt', '>')
+
+if executable('rg')
+  call denite#custom#var('file_rec', 'command', ['rg', '--files', '--glob', ''])
+  call denite#custom#var('grep', 'command', ['rg'])
+endif
+
+call denite#custom#map('insert', "<C-j>", '<denite:move_to_next_line>')
+call denite#custom#map('insert', "<C-k>", '<denite:move_to_previous_line>')
+
+call denite#custom#map('insert', "<C-v>", '<denite:do_action:vsplit>')
+
+nnoremap <C-p> :Denite file_rec<CR>
+inoremap <C-p> <ESC>:w<CR>:Denite file_rec<CR>
+
+nnoremap <C-g> :Denite grep<CR>
+inoremap <C-g> <ESC>:w<CR>:Denite grep<CR>
+
+nnoremap <C-o> :Denite buffer<CR>
+inoremap <C-o> <ESC>:w<CR>:Denite buffer<CR>

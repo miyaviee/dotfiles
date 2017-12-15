@@ -45,5 +45,3 @@ let g:python3_host_prog = expand('~/neovim3/bin/python')
 command! JsonFormat :execute '%!python -m json.tool'
 
 nnoremap <silent> q <Nop>
-nnoremap <silent> B :b#<CR>
-nnoremap <silent> Q :bdelete<CR>
