@@ -8,12 +8,12 @@ let g:lightline.colorscheme = 'onedark'
 let g:lightline.active = {
       \     'left': [
       \       ['mode', 'paste'],
-      \       ['gitbranch', 'readonly', 'filename', 'modified']
+      \       ['gitbranch', 'readonly', 'relativepath', 'modified'],
       \     ],
       \   }
 
 let g:lightline.component_function = {
-      \     'gitbranch': 'fugitive#head'
+      \     'gitbranch': 'fugitive#head',
       \   }
 
 let g:lightline.separator = {'left': ' ', 'right': ' '}
