@@ -40,8 +40,6 @@ source ~/.vimrc.tagbar
 
 source ~/.vimrc.lightline
 
-source ~/.vimrc.edgemotion
-
 source ~/.vimrc.easymotion
 
 source ~/.vimrc.is
