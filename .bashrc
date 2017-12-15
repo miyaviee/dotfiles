@@ -4,7 +4,9 @@ fi
 
 source ~/dotfiles/completion/git-completion.bash
 type kubectl > /dev/null 2>&1 && source <(kubectl completion bash)
+
 alias vi=nvim
+alias rg='rg -i'
 
 export TERM=xterm-256color
 export PATH=$HOME/bin:$HOME/.local/bin:$PATH

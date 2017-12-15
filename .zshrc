@@ -60,6 +60,8 @@ eval "$(direnv hook zsh)"
 
 alias vi=nvim
 
+alias rg='rg -i'
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f ~/google-cloud-sdk/path.zsh.inc ]; then source ~/google-cloud-sdk/path.zsh.inc; fi
 
