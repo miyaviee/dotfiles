@@ -10,6 +10,10 @@ call denite#custom#map('insert', "<C-k>", '<denite:move_to_previous_line>')
 
 call denite#custom#map('insert', "<C-v>", '<denite:do_action:vsplit>')
 
+call denite#custom#option('_', 'highlight_mode_insert', 'CursorLine')
+call denite#custom#option('_', 'highlight_matched_range', 'None')
+call denite#custom#option('_', 'highlight_matched_char', 'None')
+
 nnoremap <C-p> :Denite file_rec<CR>
 inoremap <C-p> <ESC>:w<CR>:Denite file_rec<CR>
 
