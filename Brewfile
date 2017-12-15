@@ -8,5 +8,5 @@ brew 'python3'
 brew 'go'
 brew 'direnv'
 brew 'neovim'
-brew 'the_silver_searcher'
+brew 'ripgrep'
 brew 'zsh', args: ['--without-etcdir']
