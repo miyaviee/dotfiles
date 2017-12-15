@@ -24,8 +24,6 @@ source ~/.vimrc.expand
 
 source ~/.vimrc.ale
 
-source ~/.vimrc.clever-f
-
 source ~/.vimrc.textmanip
 
 source ~/.vimrc.emmet
@@ -42,6 +40,8 @@ source ~/.vimrc.tagbar
 
 source ~/.vimrc.lightline
 
-source ~/.vimrc.edge-motion
+source ~/.vimrc.edgemotion
+
+source ~/.vimrc.easymotion
 
 source ~/.vimrc.is

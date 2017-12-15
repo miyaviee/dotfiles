@@ -32,6 +32,7 @@ Plug 'tpope/vim-fugitive'
 " extend search
 Plug 'haya14busa/is.vim'
 Plug 'osyo-manga/vim-anzu'
+Plug 'easymotion/vim-easymotion'
 
 " terminal
 Plug 'kassio/neoterm'
@@ -41,9 +42,6 @@ Plug 'junegunn/vim-easy-align'
 
 " autoclose
 Plug 'cohama/lexima.vim'
-
-" char search
-Plug 'rhysd/clever-f.vim'
 
 " extend visual mode
 Plug 'terryma/vim-expand-region'
