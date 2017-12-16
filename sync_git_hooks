@@ -1,0 +1,5 @@
+#!/bin/bash
+for hook in .git_tmp/hooks/*; do
+  find ~/projects -name $(basename ${hook}) | xargs -L1 cp $hook
+done
+
