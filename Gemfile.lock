@@ -1,0 +1,61 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (5.1.4)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    backticks (1.0.2)
+    brakeman (4.1.0)
+    code_analyzer (0.4.8)
+      sexp_processor
+    concurrent-ruby (1.0.5)
+    daemons (1.2.5)
+    docker-compose (1.1.7)
+      backticks (~> 1.0)
+    docker-sync (0.5.2)
+      daemons (~> 1.2, >= 1.2.3)
+      docker-compose (~> 1.1, >= 1.1.7)
+      dotenv (~> 2.1, >= 2.1.1)
+      gem_update_checker (~> 0.2.0, >= 0.2.0)
+      os
+      terminal-notifier (= 2.0.0)
+      thor (~> 0.19, >= 0.19.0)
+    dotenv (2.2.1)
+    erubis (2.7.0)
+    gem_update_checker (0.2.0)
+    i18n (0.9.1)
+      concurrent-ruby (~> 1.0)
+    json (2.1.0)
+    minitest (5.10.3)
+    os (1.0.0)
+    rails_best_practices (1.19.0)
+      activesupport
+      code_analyzer (>= 0.4.8)
+      erubis
+      i18n
+      json
+      require_all
+      ruby-progressbar
+    rcodetools (0.8.5.0)
+    require_all (1.4.0)
+    ruby-progressbar (1.9.0)
+    sexp_processor (4.10.0)
+    terminal-notifier (2.0.0)
+    thor (0.20.0)
+    thread_safe (0.3.6)
+    tzinfo (1.2.4)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  brakeman
+  docker-sync
+  rails_best_practices
+  rcodetools
+
+BUNDLED WITH
+   1.16.0
