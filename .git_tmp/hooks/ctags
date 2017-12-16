@@ -1,2 +1,2 @@
 #!/bin/sh
-ctags -R -f ~/tags .
+ctags -R -f .git/tags .
