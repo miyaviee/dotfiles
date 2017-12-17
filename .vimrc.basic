@@ -38,8 +38,6 @@ if has('conceal')
 endif
 
 syntax on
-autocmd BufWritePre * :FixWhitespace
-autocmd FileType * setlocal formatoptions-=o
 
 let g:vim_json_syntax_conceal=0
 let g:omni_sql_no_default_maps=1

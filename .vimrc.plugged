@@ -16,7 +16,6 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'Shougo/denite.nvim'
 
 " util
-Plug 'bronson/vim-trailing-whitespace'
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 
