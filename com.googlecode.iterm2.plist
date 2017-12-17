@@ -286,7 +286,7 @@
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
-	<false/>
+	<true/>
 	<key>HideTabCloseButton</key>
 	<true/>
 	<key>HideTabNumber</key>
@@ -298,7 +298,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 9</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.vim/plugged/onedark.vim/term</string>
+	<string>~/dotfiles</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{876, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -335,9 +335,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>382 1266 620 392 -268 768 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>0 1334 796 473 -268 768 1920 1080 </string>
+	<string>0 1335 796 473 -268 768 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>566 316 490 429 0 0 1366 745 </string>
+	<string>-268 768 1920 1080 -268 768 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1006,7 +1006,7 @@
 			<key>Thin Strokes</key>
 			<integer>3</integer>
 			<key>Transparency</key>
-			<real>0.05</real>
+			<real>0.050000000000000003</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1089,7 +1089,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-12-16T10:35:43Z</date>
+	<date>2017-12-17T11:39:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
