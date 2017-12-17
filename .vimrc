@@ -4,8 +4,6 @@ source ~/.vimrc.plugged
 
 source ~/.vimrc.color
 
-source ~/.vimrc.indent
-
 source ~/.vimrc.zenkaku
 
 source ~/.vimrc.paste
