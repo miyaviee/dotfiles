@@ -5,7 +5,7 @@ for ver in 2 3; do
   PYTHON=`which python${ver} || which python`
   DIR=neovim${ver}
 
-  ${PIP} install -r requirements.txt
+  ${PIP} install virtualenv
   test -d ~/${DIR} || ${PYTHON} -m virtualenv ~/${DIR}
   source ~/${DIR}/bin/activate
   pip install neovim

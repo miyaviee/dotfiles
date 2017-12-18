@@ -1,3 +1,2 @@
-virtualenv
 flake8
 autopep8
