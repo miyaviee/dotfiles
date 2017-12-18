@@ -9,11 +9,13 @@ let g:lightline.active = {
       \     'left': [
       \       ['mode', 'paste'],
       \       ['gitbranch', 'readonly', 'relativepath', 'modified'],
+      \       ['ale'],
       \     ],
       \   }
 
 let g:lightline.component_function = {
       \     'gitbranch': 'fugitive#head',
+      \     'ale': 'ALEGetStatusLine',
       \   }
 
 let g:lightline.separator = {'left': ' ', 'right': ' '}
