@@ -9,6 +9,6 @@ brew 'go'
 brew 'node'
 brew 'direnv'
 brew 'neovim'
-brew 'the_silver_searcher'
+brew 'ripgrep'
 brew 'zsh', args: ['--without-etcdir']
 brew 'ctags'
