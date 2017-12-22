@@ -3,7 +3,7 @@ set laststatus=2
 
 let g:lightline = {}
 
-let g:lightline.colorscheme = 'onedark'
+let g:lightline.colorscheme = 'quantum'
 
 let g:lightline.active = {
       \     'left': [
