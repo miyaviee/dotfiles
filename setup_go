@@ -1,6 +1,6 @@
 #!/bin/bash
 
 export GOPATH=~/.go
-type golint > /dev/null 2>&1 || go get -u github.com/golang/lint/golint
-type goimports > /dev/null 2>&1 || go get golang.org/x/tools/cmd/goimports
 type dep > /dev/null 2>&1 || go get -u github.com/golang/dep/cmd/dep
+type gometalinter > /dev/null 2>&1 || go get -u github.com/alecthomas/gometalinter
+gometalinter --install
