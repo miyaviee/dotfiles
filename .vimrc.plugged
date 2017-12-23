@@ -8,6 +8,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'Shougo/deoplete-rct', { 'for': 'ruby' }
   Plug 'zchee/deoplete-go', { 'do': 'make', 'for': 'go' }
   Plug 'Shougo/neco-syntax'
+  Plug 'ujihisa/neco-look'
 
 " Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet'
