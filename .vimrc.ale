@@ -6,7 +6,7 @@ let g:ale_php_phpcs_standard = 'PSR2'
 
 let g:ale_linters = {
   \ 'php': ['php'],
-  \ 'go': ['gometalinter'],
+  \ 'go': ['vet', 'golint'],
   \ }
 
 let g:ale_fixers = {
