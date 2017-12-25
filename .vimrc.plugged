@@ -65,7 +65,6 @@ Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-entire'
 Plug 'mattn/vim-textobj-url'
 Plug 'rhysd/vim-textobj-anyblock'
-Plug 'osyo-manga/vim-textobj-blockwise'
 Plug 'coderifous/textobj-word-column.vim'
 Plug 'rhysd/vim-textobj-ruby', { 'for': 'ruby' }
 
