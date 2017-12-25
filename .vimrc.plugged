@@ -95,14 +95,8 @@ Plug 'stephpy/vim-yaml', { 'for': 'yaml' }
 " slim
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
 
-" twig
-Plug 'evidens/vim-twig', { 'for': 'twig' }
-
 " typescript
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
-
-" smarty
-Plug 'vim-scripts/smarty-syntax', { 'for': 'smarty' }
 
 " vue
 Plug 'posva/vim-vue', { 'for': 'vue' }
