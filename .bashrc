@@ -33,4 +33,4 @@ export PATH=~/.gem/ruby/2.4.0/bin:$PATH
 
 export DIRENV_WARN_TIMEOUT=100s
 
-test -z $VIRTUAL_ENV || source $VIRTUAL_ENV/bin/activate
+test -z $VIRTUAL_ENV || export PATH=$VIRTUAL_ENV/bin:$PATH

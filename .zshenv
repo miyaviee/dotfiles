@@ -23,3 +23,5 @@ export HISTSIZE=1000
 export SAVEHIST=100000
 
 export DIRENV_WARN_TIMEOUT=100s
+
+test -z $VIRTUAL_ENV || export PATH=$VIRTUAL_ENV/bin:$PATH
