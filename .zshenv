@@ -7,7 +7,7 @@ export EDITOR=nvim
 
 export PATH=/usr/local/bin:$PATH
 
-export GOPATH=~/.go
+export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
 
 export PATH=~/.composer/vendor/bin:$PATH
