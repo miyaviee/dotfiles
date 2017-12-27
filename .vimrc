@@ -39,3 +39,5 @@ source ~/.vimrc.lightline
 source ~/.vimrc.easymotion
 
 source ~/.vimrc.is
+
+source ~/.vimrc.test

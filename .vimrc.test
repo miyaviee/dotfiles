@@ -1,0 +1,5 @@
+let g:test#strategy = 'neoterm'
+
+nnoremap <silent> tt :TestLast<CR>
+nnoremap <silent> tf :TestFile<CR>
+nnoremap <silent> ts :TestSuite<CR>

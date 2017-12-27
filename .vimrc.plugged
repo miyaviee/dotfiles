@@ -20,6 +20,9 @@ Plug 'Shougo/denite.nvim'
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 
+" runner
+Plug 'janko-m/vim-test'
+
 " extend replace
 Plug 'tpope/vim-surround'
   Plug 'tpope/vim-ragtag'
