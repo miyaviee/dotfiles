@@ -22,6 +22,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 
 " runner
 Plug 'janko-m/vim-test'
+Plug 'thinca/vim-quickrun'
 
 " extend replace
 Plug 'tpope/vim-surround'
