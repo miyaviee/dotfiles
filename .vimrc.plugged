@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 " colorcheme
 Plug 'cocopon/iceberg.vim'
 
+" completion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'zchee/deoplete-jedi', { 'for': 'python' }
   Plug 'Shougo/deoplete-rct', { 'for': 'ruby' }
@@ -13,6 +14,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet'
 
+" file explorer
 Plug 'Shougo/denite.nvim'
 
 " util
