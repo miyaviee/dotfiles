@@ -32,8 +32,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " extend search
-Plug 'haya14busa/is.vim'
-Plug 'osyo-manga/vim-anzu'
 Plug 'easymotion/vim-easymotion'
 
 " terminal
