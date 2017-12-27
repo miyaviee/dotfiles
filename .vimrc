@@ -34,8 +34,6 @@ source ~/.vimrc.commentary
 
 source ~/.vimrc.terminal
 
-source ~/.vimrc.lightline
-
 source ~/.vimrc.easymotion
 
 source ~/.vimrc.is

@@ -49,9 +49,6 @@ Plug 'cohama/lexima.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
 
-" statusline
-Plug 'itchyny/lightline.vim'
-
 " editorconfig
 Plug 'editorconfig/editorconfig-vim'
 

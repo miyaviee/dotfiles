@@ -30,6 +30,7 @@ set noerrorbells
 set signcolumn=yes
 set re=1
 set synmaxcol=1000
+set laststatus=0
 
 set tags=.git/tags;
 
