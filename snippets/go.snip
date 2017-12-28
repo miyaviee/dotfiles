@@ -15,8 +15,8 @@ snippet     func
 abbr        func ...() { ... }
 alias fn
 options     head
-  func ${1:fname}(${2}) ${3:int }{
-    ${0:TARGET:return }
+  func ${1:fname}(${2}) ${3:#:rtype} {
+    ${0:TARGET}
   }
 
 snippet     import
@@ -27,7 +27,7 @@ options     head
   )
   ${0:TARGET}
 
-snippet     package
+snippet     pac
 alias pk
 options     head
   package ${1:main}
