@@ -12,7 +12,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
   \ 'php': ['phpcbf'],
   \ 'python': ['autopep8'],
-  \ 'go': ['goimports', 'gofmt'],
+  \ 'go': ['goimports'],
   \ }
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
