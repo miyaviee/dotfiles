@@ -37,5 +37,3 @@ source ~/.vimrc.terminal
 source ~/.vimrc.easymotion
 
 source ~/.vimrc.test
-
-source ~/.vimrc.quickrun
