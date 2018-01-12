@@ -1,4 +1,5 @@
 let g:neoterm_autoscroll = 1
+let g:neoterm_size = 15
 
 " hide/close terminal
 nnoremap <silent> vc :call neoterm#toggle()<CR>
