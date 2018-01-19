@@ -34,10 +34,6 @@ set laststatus=0
 
 set tags=.git/tags;
 
-if has('conceal')
-  set conceallevel=2 concealcursor=i
-endif
-
 syntax on
 
 let g:vim_json_syntax_conceal=0
