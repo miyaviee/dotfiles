@@ -4,7 +4,7 @@ if executable('rg')
   call denite#custom#var('file_rec', 'command', ['rg', '--color=never', '--files', '--glob', ''])
 
   call denite#custom#var('grep', 'command', ['rg'])
-  call denite#custom#var('grep', 'default_opts', ['-i', '--vimgrep'])
+  call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--hidden'])
   call denite#custom#var('grep', 'recursive_opts', [])
   call denite#custom#var('grep', 'pattern_opt', [])
   call denite#custom#var('grep', 'separator', ['--'])
@@ -17,13 +17,16 @@ call denite#custom#map('insert', "<C-k>", '<denite:move_to_previous_line>')
 call denite#custom#map('insert', "<C-v>", '<denite:do_action:vsplit>')
 
 nnoremap <C-p> :Denite file_rec<CR>
-inoremap <C-p> <ESC>:w<CR>:Denite file_rec<CR>
+inoremap <C-p> <ESC>:Denite file_rec<CR>
 
 nnoremap <C-g> :Denite grep<CR>
-inoremap <C-g> <ESC>:w<CR>:Denite grep<CR>
+inoremap <C-g> <ESC>:Denite grep<CR>
+
+nnoremap <C-h> :Denite grep:::`expand('<cword>')`<CR>
+inoremap <C-h> <ESC>:Denite grep:::`expand('<cword>')`<CR>
 
 nnoremap <C-o> :Denite buffer<CR>
-inoremap <C-o> <ESC>:w<CR>:Denite buffer<CR>
+inoremap <C-o> <ESC>:Denite buffer<CR>
 
 nnoremap <C-\> :Denite outline<CR>
-inoremap <C-\> <ESC>:w<CR>:Denite outline<CR>
+inoremap <C-\> <ESC>:Denite outline<CR>
