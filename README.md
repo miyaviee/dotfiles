@@ -1,7 +1,5 @@
 # dotfiles
 
-## zsh
-`brew install zsh --without-etcdir`
+## Mac
 
-## vim
-`brew install vim --with-python3 --with-lua`
+`brew bundle`
