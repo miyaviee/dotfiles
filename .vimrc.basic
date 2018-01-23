@@ -33,6 +33,7 @@ set synmaxcol=1000
 set laststatus=0
 
 set tags=.git/tags;
+set tagcase=match
 
 syntax on
 
