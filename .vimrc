@@ -22,8 +22,6 @@ source ~/.vimrc.expand
 
 source ~/.vimrc.ale
 
-source ~/.vimrc.textmanip
-
 source ~/.vimrc.emmet
 
 source ~/.vimrc.jsx
