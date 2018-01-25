@@ -1,5 +1,10 @@
 let g:test#strategy = 'neoterm'
 
+let g:test#python#djangotest#options = {
+  \ 'file': '--failfast',
+  \ 'suite': '--failfast',
+  \ }
+
 nnoremap <silent> tt :TestLast<CR>
 nnoremap <silent> tf :TestFile<CR>
 nnoremap <silent> ts :TestSuite<CR>
