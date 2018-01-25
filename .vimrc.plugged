@@ -68,7 +68,6 @@ Plug 'kana/vim-textobj-entire'
 Plug 'mattn/vim-textobj-url'
 Plug 'rhysd/vim-textobj-anyblock'
 Plug 'coderifous/textobj-word-column.vim'
-Plug 'rhysd/vim-textobj-ruby', { 'for': 'ruby' }
 
 " operator
 Plug 'kana/vim-operator-user'
