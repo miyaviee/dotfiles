@@ -1,5 +1,5 @@
 --tag-relative
---recurse
+--recurse=yes
 --sort=yes
 --append=no
 
