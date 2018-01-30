@@ -14,6 +14,7 @@ set ignorecase
 set smartcase
 set infercase
 set incsearch
+set nohlsearch
 set showmatch
 set matchtime=1
 set nowritebackup
@@ -46,7 +47,6 @@ let g:python3_host_prog = expand('~/neovim3/bin/python')
 command! JsonFormat :execute '%!python -m json.tool'
 
 nmap <silent> q <Nop>
-nmap <silent> <ESC><ESC> :noh<CR>
 
 tmap <silent> <ESC> <C-\><C-n>
 
