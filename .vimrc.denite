@@ -25,8 +25,8 @@ inoremap <C-g> <ESC>:Denite grep<CR>
 nnoremap <C-h> :Denite grep:::`expand('<cword>')`<CR>
 inoremap <C-h> <ESC>:Denite grep:::`expand('<cword>')`<CR>
 
-nnoremap <C-o> :Denite buffer<CR>
-inoremap <C-o> <ESC>:Denite buffer<CR>
+nnoremap <C-o> :Denite file_mru<CR>
+inoremap <C-o> <ESC>:Denite file_mru<CR>
 
 nnoremap <C-\> :Denite outline<CR>
 inoremap <C-\> <ESC>:Denite outline<CR>
