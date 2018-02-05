@@ -1,0 +1,32 @@
+snippet     if
+options     head
+	if (${1:#:condition}) {
+		${0}
+	}
+
+snippet     fun
+options     head
+	function ${1:#:name}(${2}) {
+		${0}
+	}
+
+snippet     fu
+	function(${1}) {
+		${0}
+	}
+
+snippet     for
+options     head
+	for (var ${1:i}; $1 < ${2:#:arr}.length; $1++) {
+		${0}
+	}
+
+snippet     fori
+options     head
+	for (var ${1:i} in ${2:#:arr}) {
+		${0}
+	}
+
+snippet     log
+options     head
+	console.log(${0})
