@@ -36,6 +36,8 @@ set laststatus=0
 set tags=.git/tags;
 set tagcase=match
 
+au TermOpen * setlocal nonumber norelativenumber signcolumn=no
+
 syntax on
 
 let g:vim_json_syntax_conceal=0
