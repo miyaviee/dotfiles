@@ -30,7 +30,7 @@ source ~/.vimrc.operator
 
 source ~/.vimrc.commentary
 
-source ~/.vimrc.terminal
+source ~/.vimrc.neoterm
 
 source ~/.vimrc.easymotion
 
