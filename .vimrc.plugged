@@ -17,7 +17,6 @@ Plug 'Shougo/neosnippet'
 
 " file explorer
 Plug 'Shougo/denite.nvim'
-  Plug 'Shougo/neomru.vim'
 
 " util
 Plug 'vim-scripts/AnsiEsc.vim'
