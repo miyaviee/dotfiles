@@ -47,7 +47,8 @@ let g:omni_sql_no_default_maps=1
 let g:python_host_prog = expand('~/neovim2/bin/python')
 let g:python3_host_prog = expand('~/neovim3/bin/python')
 
-command! JsonFormat :execute '%!python -m json.tool'
+command! JsonFmt :execute '%!python -m json.tool'
+command! SQLFmt :execute '%!sqlfmt -u'
 
 nmap <silent> q <Nop>
 

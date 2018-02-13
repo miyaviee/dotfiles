@@ -105,9 +105,6 @@ Plug 'posva/vim-vue', { 'for': 'vue' }
 " python
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 
-" sql
-Plug 'mattn/vim-sqlfmt', { 'for': 'sql' }
-
 " json
 Plug 'elzr/vim-json', { 'for': 'json' }
 
