@@ -6,6 +6,7 @@ for ver in 2 3; do
   DIR=neovim${ver}
 
   ${PIP} install virtualenv
+  rm -rf ~/${DIR}
   ${PYTHON} -m virtualenv ~/${DIR}
   source ~/${DIR}/bin/activate
   pip install neovim
