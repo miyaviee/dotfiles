@@ -49,6 +49,8 @@ test -L ~/.git_tmp || ln -fs `pwd`/.git_tmp ~/.git_tmp
 test -z "$(git config --global --get init.templatedir)" && git config --global init.templatedir ~/.git_tmp
 test -z "$(git config --global --get core.excludesfile)" && git config --global core.excludesfile ~/.gitignore_global
 
+type sql-formatter-cli > /dev/null 2>&1 || npm i -g sql-formatter-cli
+
 # del dead link
 for link in ~/.*; do
   test -L $link || continue

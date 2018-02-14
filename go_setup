@@ -5,5 +5,3 @@ type dep > /dev/null 2>&1 || go get -u github.com/golang/dep/cmd/dep
 type gocode > /dev/null 2>&1 || go get -u github.com/nsf/gocode
 type gometalinter > /dev/null 2>&1 || go get -u github.com/alecthomas/gometalinter
 $GOPATH/bin/gometalinter --install
-
-type sqlfmt > /dev/null 2>&1 || go get github.com/jackc/sqlfmt/...

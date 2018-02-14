@@ -48,7 +48,7 @@ let g:python_host_prog = expand('~/neovim2/bin/python')
 let g:python3_host_prog = expand('~/neovim3/bin/python')
 
 command! JsonFmt :execute '%!python -m json.tool'
-command! SQLFmt :execute '%!sqlfmt -u'
+command! SQLFmt :execute '%!sql-formatter-cli'
 
 nmap <silent> q <Nop>
 
