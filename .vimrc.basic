@@ -34,7 +34,7 @@ set re=1
 set synmaxcol=1000
 set laststatus=0
 
-set tags=.git/tags;
+set tags=.git/tags,.git/vendor.tags;
 set tagcase=match
 
 au TermOpen * setlocal nonumber norelativenumber signcolumn=no
