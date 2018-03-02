@@ -4,7 +4,7 @@ tap 'beeftornado/rmtree'
 
 brew 'git'
 brew 'python'
-brew 'python3'
+brew 'python@2', link: true
 brew 'go'
 brew 'node'
 brew 'yarn'
