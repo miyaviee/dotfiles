@@ -1,0 +1,16 @@
+--tag-relative=yes
+--recurse=yes
+
+--exclude=.git
+--exclude=public
+--exclude=dest
+--exclude=assets
+
+--exclude=vendor
+--exclude=node_modules
+--exclude=.direnv
+
+--exclude=Makefile
+
+--languages=-JSON
+--languages=-reStructuredText
