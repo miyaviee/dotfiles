@@ -5,6 +5,8 @@
 --exclude=public
 --exclude=dest
 --exclude=assets
+--exclude=migrate
+--exclude=migrations
 
 --exclude=vendor
 --exclude=node_modules
