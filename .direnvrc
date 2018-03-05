@@ -1,0 +1,12 @@
+layout_virtualenv() {
+  local python=${1}
+  local venv=${1}
+  if [ -n "${2}" ]; then
+    venv=${2}
+  fi
+  local venv_path=$(direnv_layout_dir)/${venv}
+  if [ ! -d ${venv_path} ]; then
+    ${python} -m virtualenv ${venv_path}
+  fi
+  source ${venv_path}/bin/activate
+}
