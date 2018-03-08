@@ -1,9 +1,9 @@
 let g:neoterm_autoscroll = 1
 
 " hide/close terminal
-nnoremap <silent> vc :call neoterm#toggle()<CR>
+nnoremap <silent> vc :Ttoggle<CR>
 " kills the current job (send a <c-c>)
-nnoremap <silent> vq :call neoterm#kill()<CR>
+nnoremap <silent> vq :Tkill<CR>
 
 command! -nargs=+ Rails   :T bin/rails <args>
 command! -nargs=+ Django  :T python manage.py <args>
