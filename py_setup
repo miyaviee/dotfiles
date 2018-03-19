@@ -5,6 +5,7 @@ for ver in 2 3; do
   PYTHON=`which python${ver} || which python`
   DIR=neovim${ver}
 
+  ${PIP} install -U pip
   ${PIP} uninstall -y virtualenv
   ${PIP} install virtualenv
   rm -rf ~/${DIR}
