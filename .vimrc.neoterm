@@ -1,4 +1,5 @@
 let g:neoterm_autoscroll = 1
+let g:neoterm_default_mod = 'botright'
 
 " hide/close terminal
 nnoremap <silent> vc :Ttoggle<CR>
