@@ -1,0 +1,15 @@
+if !exists('g:lightline')
+  let g:lightline = {}
+endif
+
+let g:lightline['active'] = {
+  \   'left': [
+  \     ['mode', 'paste'],
+  \     ['readonly', 'filename', 'modified'],
+  \     ['ale'],
+  \   ],
+  \ }
+
+let g:lightline['component_function'] = {
+  \     'ale': 'ALEGetStatusLine',
+  \ }
