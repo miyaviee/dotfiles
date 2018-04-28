@@ -16,6 +16,7 @@ set infercase
 set incsearch
 set nohlsearch
 set nowrapscan
+set noshowmode
 set showmatch
 set matchtime=1
 set nowritebackup
