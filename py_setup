@@ -1,16 +1,19 @@
 #!/bin/bash
 
-for ver in 2 3; do
-  PIP=`which pip${ver} || which pip`
-  PYTHON=`which python${ver} || which python`
-  DIR=neovim${ver}
+ver=${1}
+if [ -z "${ver}" ]; then
+  ver=3
+fi
 
-  ${PIP} install -U pip
-  ${PIP} uninstall -y virtualenv
-  ${PIP} install virtualenv
-  rm -rf ~/${DIR}
-  ${PYTHON} -m virtualenv ~/${DIR}
-  source ~/${DIR}/bin/activate
-  pip install neovim -U
-  deactivate
-done
+PIP=`which pip${ver} || which pip`
+PYTHON=`which python${ver} || which python`
+DIR=neovim${ver}
+
+${PIP} install -U pip
+${PIP} uninstall -y virtualenv
+${PIP} install virtualenv
+rm -rf ~/${DIR}
+${PYTHON} -m virtualenv ~/${DIR}
+source ~/${DIR}/bin/activate
+pip install neovim -U
+deactivate
