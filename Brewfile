@@ -6,6 +6,7 @@ tap 'universal-ctags/universal-ctags'
 brew 'git'
 brew 'python'
 brew 'python@2', link: true
+brew 'pipenv'
 brew 'go'
 brew 'node'
 brew 'yarn'
