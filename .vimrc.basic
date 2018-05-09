@@ -37,9 +37,6 @@ set laststatus=2
 
 set tags=.git/tags,.git/vendor.tags;
 set tagcase=match
-nnoremap <C-t>n :tn<CR>
-nnoremap <C-t>p :tp<CR>
-nnoremap <C-t>s :ts<CR>
 
 au TermOpen * setlocal nonumber norelativenumber signcolumn=no
 tmap <silent> <ESC> <C-\><C-n>
