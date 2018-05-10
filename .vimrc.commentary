@@ -1,1 +1,2 @@
 autocmd FileType php setlocal commentstring=//\ %s
+autocmd FileType sh setlocal commentstring=#\ %s
