@@ -1,8 +1,10 @@
 let g:neoterm_autoscroll = 1
 let g:neoterm_default_mod = 'botright'
 
-" hide/close terminal
-nnoremap <silent> vc :Ttoggle<CR>
+" open terminal
+nnoremap <silent> vo :Topen<CR>
+" close terminal
+nnoremap <silent> vc :Tclose<CR>
 " kills the current job (send a <c-c>)
 nnoremap <silent> vq :Tkill<CR>
 
