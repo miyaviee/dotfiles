@@ -31,5 +31,6 @@ export PATH=~/.gem/bin:$PATH
 export PATH=~/.gem/ruby/2.4.0/bin:$PATH
 
 export DIRENV_WARN_TIMEOUT=100s
+export PIPENV_VENV_IN_PROJECT=1
 
 test -z $VIRTUAL_ENV || export PATH=$VIRTUAL_ENV/bin:$PATH
