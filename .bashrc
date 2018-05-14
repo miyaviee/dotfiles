@@ -16,6 +16,7 @@ PS1='[\u@\h \W]\$ '
 
 export EDITOR=nvim
 eval "$(direnv hook bash)"
+eval "$(pipenv --completion)"
 
 export PATH=/usr/local/bin:$PATH
 

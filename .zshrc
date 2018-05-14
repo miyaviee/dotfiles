@@ -58,6 +58,8 @@ unsetopt promptcr
 
 eval "$(direnv hook zsh)"
 
+eval "$(pipenv --completion)"
+
 alias vi=nvim
 
 # The next line updates PATH for the Google Cloud SDK.
