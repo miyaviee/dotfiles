@@ -23,8 +23,6 @@ export PATH=/usr/local/bin:$PATH
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
 
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
-
 export GEM_HOME=~/.gem
 export PATH=~/.gem/bin:$PATH
 
