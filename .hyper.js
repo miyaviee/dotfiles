@@ -9,10 +9,10 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 14,
+    fontSize: 15,
 
     // font family with optional fallbacks
-    fontFamily: 'monaco, "Source Han Code JP", Consolas, monospace',
+    fontFamily: 'menlo, monaco, "Source Han Code JP", Consolas, monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
@@ -117,7 +117,8 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hyper-transparent',
-    'hyperminimal'
+    'hyperminimal',
+    'hyper-iceberg',
   ],
 
   // in development, you can create a directory under
