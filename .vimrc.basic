@@ -31,6 +31,7 @@ set completeopt-=preview
 set visualbell t_vb=
 set noerrorbells
 set signcolumn=yes
+set updatetime=100
 set re=1
 set synmaxcol=1000
 set laststatus=2
