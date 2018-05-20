@@ -8,6 +8,7 @@ brew 'python'
 brew 'python@2', link: true
 brew 'pipenv'
 brew 'go'
+brew 'ruby'
 brew 'node'
 brew 'yarn'
 brew 'direnv'
