@@ -17,10 +17,10 @@ indent_style = tab
 indent_size = 4
 indent_style = tab
 
-[*.js]
+[*.{js,json}]
 indent_size = 2
 
-[*.{jsx,json,ts}]
+[*.{jsx,ts}]
 indent_size = 4
 
 [*.py]
