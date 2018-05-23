@@ -8,7 +8,7 @@
 **/coverage/*
 **/migrations/*
 **/bin/*
-**/__init__*
+**/_*
 **/*\.min\.*
 **/*.jpg
 **/*.jpeg
