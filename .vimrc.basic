@@ -38,6 +38,7 @@ set laststatus=2
 
 set tags=.git/tags,.git/vendor.tags;
 set tagcase=match
+nnoremap <silent> <C-]> g<C-]>
 
 au TermOpen * setlocal nonumber norelativenumber signcolumn=no
 tmap <silent> <ESC> <C-\><C-n>
