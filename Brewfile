@@ -11,6 +11,7 @@ brew 'go'
 brew 'ruby'
 brew 'node'
 brew 'yarn'
+brew 'lua@5.1'
 brew 'direnv'
 brew 'neovim', args: ['HEAD']
 brew 'ripgrep'
