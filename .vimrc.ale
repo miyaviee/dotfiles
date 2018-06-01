@@ -2,7 +2,7 @@ let g:ale_fix_on_save = 1
 let g:ale_set_highlights = 0
 
 let g:ale_pattern_options = {
-  \ '\.direnv\|vendor': {'ale_linters': [], 'ale_fixers': []},
+  \ '\.direnv\|vendor\|migrations': {'ale_linters': [], 'ale_fixers': []},
   \ }
 
 let g:ale_linters = {
