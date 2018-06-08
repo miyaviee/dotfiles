@@ -2,17 +2,17 @@ let g:ale_fix_on_save = 1
 let g:ale_set_highlights = 0
 
 let g:ale_pattern_options = {
-  \ '\.direnv\|vendor\|migrations': {'ale_linters': [], 'ale_fixers': []},
-  \ }
+      \ '\.direnv\|vendor\|migrations': {'ale_linters': [], 'ale_fixers': []},
+      \ }
 
 let g:ale_linters = {
-  \ 'go': ['vet', 'golint'],
-  \ }
+      \ 'go': ['vet', 'golint'],
+      \ }
 
 let g:ale_fixers = {
-  \ 'python': ['autopep8'],
-  \ 'go': ['goimports'],
-  \ }
+      \ 'python': ['autopep8'],
+      \ 'go': ['goimports'],
+      \ }
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)

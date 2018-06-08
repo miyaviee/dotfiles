@@ -3,13 +3,13 @@ if !exists('g:lightline')
 endif
 
 let g:lightline['active'] = {
-  \   'left': [
-  \     ['mode', 'paste'],
-  \     ['readonly', 'filename', 'modified'],
-  \     ['ale'],
-  \   ],
-  \ }
+      \   'left': [
+      \     ['mode', 'paste'],
+      \     ['readonly', 'filename', 'modified'],
+      \     ['ale'],
+      \   ],
+      \ }
 
 let g:lightline['component_function'] = {
-  \     'ale': 'ALEGetStatusLine',
-  \ }
+      \     'ale': 'ALEGetStatusLine',
+      \ }
