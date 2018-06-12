@@ -23,7 +23,6 @@ GEM
       json
       require_all
       ruby-progressbar
-    rcodetools (0.8.5.0)
     require_all (1.4.0)
     ruby-progressbar (1.9.0)
     sexp_processor (4.10.0)
@@ -37,7 +36,6 @@ PLATFORMS
 DEPENDENCIES
   brakeman
   rails_best_practices
-  rcodetools
 
 BUNDLED WITH
    1.16.2
