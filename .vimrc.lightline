@@ -2,7 +2,7 @@ if !exists('g:lightline')
   let g:lightline = {}
 endif
 
-let g:lightline['active'] = {
+let g:lightline.active = {
       \   'left': [
       \     ['mode', 'paste'],
       \     ['readonly', 'filename', 'modified'],
@@ -10,6 +10,6 @@ let g:lightline['active'] = {
       \   ],
       \ }
 
-let g:lightline['component_function'] = {
+let g:lightline.component_function = {
       \     'ale': 'ALEGetStatusLine',
       \ }
