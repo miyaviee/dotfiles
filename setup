@@ -51,6 +51,7 @@ test -z "$(git config --global --get init.templatedir)" && git config --global i
 test -z "$(git config --global --get core.excludesfile)" && git config --global core.excludesfile ~/.gitignore_global
 
 type sql-formatter-cli > /dev/null 2>&1 || npm i -g sql-formatter-cli
+type prettier > /dev/null 2>&1 || npm i -g prettier
 
 # del dead link
 for link in ~/.*; do
