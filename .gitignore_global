@@ -2,3 +2,4 @@
 .venv/
 .envrc
 .DS_Store
+**/assets/*
