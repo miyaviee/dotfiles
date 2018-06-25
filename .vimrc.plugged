@@ -21,7 +21,6 @@ Plug 'Shougo/denite.nvim'
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'osyo-manga/vim-brightest'
-Plug 'itchyny/lightline.vim'
 
 " runner
 Plug 'janko-m/vim-test'

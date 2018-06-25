@@ -35,5 +35,3 @@ source ~/.vimrc.neoterm
 source ~/.vimrc.easymotion
 
 source ~/.vimrc.test
-
-source ~/.vimrc.lightline
