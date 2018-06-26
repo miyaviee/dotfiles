@@ -6,12 +6,6 @@ catch
   " no colorscheme
 endtry
 
-if !exists('g:lightline')
-  let g:lightline = {}
-endif
-
-let g:lightline.colorscheme = 'iceberg'
-
 hi! LineNr ctermbg=None guibg=None
 hi! SignColumn ctermbg=None guibg=None
 hi! GitGutterAdd ctermbg=None guibg=None
