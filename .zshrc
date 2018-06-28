@@ -58,9 +58,9 @@ setopt nonomatch
 
 unsetopt promptcr
 
-eval "$(direnv hook zsh)"
+type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
 
-eval "$(pipenv --completion)"
+type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
 
 alias vi=nvim
 

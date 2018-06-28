@@ -15,8 +15,8 @@ export LC_ALL=en_US.UTF-8
 PS1='[\u@\h \W]\$ '
 
 export EDITOR=nvim
-eval "$(direnv hook bash)"
-eval "$(pipenv --completion)"
+type direnv > /dev/null 2>&1 && eval "$(direnv hook bash)"
+type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
 
 export PATH=/usr/local/bin:$PATH
 
