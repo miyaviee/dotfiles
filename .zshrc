@@ -60,7 +60,7 @@ unsetopt promptcr
 
 type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
 
-type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
+# type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
 
 alias vi=nvim
 
