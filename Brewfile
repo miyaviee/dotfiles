@@ -7,6 +7,7 @@ brew 'git'
 brew 'python'
 brew 'python@2', link: true
 brew 'pipenv'
+brew 'pyenv'
 brew 'go'
 brew 'ruby'
 brew 'node'

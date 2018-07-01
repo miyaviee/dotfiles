@@ -62,6 +62,8 @@ type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
 
 # type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
 
+type pyenv > /dev/null 2>&1 && eval "$(pyenv init -)"
+
 alias vi=nvim
 
 # The next line updates PATH for the Google Cloud SDK.

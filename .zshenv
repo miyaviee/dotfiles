@@ -20,4 +20,7 @@ export SAVEHIST=100000
 export DIRENV_WARN_TIMEOUT=100s
 export PIPENV_VENV_IN_PROJECT=1
 
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
+
 test -z $VIRTUAL_ENV || export PATH=$VIRTUAL_ENV/bin:$PATH

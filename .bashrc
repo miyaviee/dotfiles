@@ -17,6 +17,7 @@ PS1='[\u@\h \W]\$ '
 export EDITOR=nvim
 type direnv > /dev/null 2>&1 && eval "$(direnv hook bash)"
 # type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
+type pyenv > /dev/null 2>&1 && eval "$(pyenv init -)"
 
 export PATH=/usr/local/bin:$PATH
 
@@ -28,5 +29,8 @@ export PATH=~/.gem/bin:$PATH
 
 export DIRENV_WARN_TIMEOUT=100s
 export PIPENV_VENV_IN_PROJECT=1
+
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
 
 test -z $VIRTUAL_ENV || export PATH=$VIRTUAL_ENV/bin:$PATH
