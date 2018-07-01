@@ -25,7 +25,7 @@ layout_pyenv() {
 
   pyenv local ${1}
   if [ ! -d ${venv_path} ]; then
-    python -m venv ${venv_path}
+    python -m virtualenv ${venv_path}
   fi
   source ${venv_path}/bin/activate
 
