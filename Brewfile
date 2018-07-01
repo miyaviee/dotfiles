@@ -4,9 +4,6 @@ tap 'beeftornado/rmtree'
 tap 'universal-ctags/universal-ctags'
 
 brew 'git'
-brew 'python'
-brew 'python@2', link: true
-brew 'pipenv'
 brew 'pyenv'
 brew 'go'
 brew 'ruby'

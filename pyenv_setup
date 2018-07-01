@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [ -z "${1}" ]; then
+  echo "version is required."
+  exit
+fi
+
+ver=${1}
+if [ ! -e $PYENV_ROOT/versions/${ver} ]; then
+  echo "${ver} is not installed."
+  exit
+fi
+
+pyenv global ${ver}
+
+DIR=neovim${ver:0:1}
+
+pip install -U pip
+pip install -U pipenv
+pip install -U virtualenv
+rm -rf ~/${DIR}
+python -m virtualenv ~/${DIR}
+source ~/${DIR}/bin/activate
+pip install neovim -U
+deactivate
+
+pyenv global 2.7.15
