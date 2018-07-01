@@ -11,6 +11,27 @@ layout_virtualenv() {
   source ${venv_path}/bin/activate
 }
 
+layout_pyenv() {
+  if [ -z "$(which pyenv)" ]; then
+    echo 'pyenv not installed.'
+    exit
+  fi
+
+  local venv=${1}
+  if [ -n "${2}" ]; then
+    venv=${2}
+  fi
+  local venv_path=$(direnv_layout_dir)/${venv}
+
+  pyenv local ${1}
+  if [ ! -d ${venv_path} ]; then
+    python -m venv ${venv_path}
+  fi
+  source ${venv_path}/bin/activate
+
+  pyenv local --unset
+}
+
 layout_pipenv() {
   local venv_path=${1}
   if [ -e ${venv_path}/bin/activate ]; then
