@@ -21,7 +21,7 @@ pip install -U virtualenv
 rm -rf ~/${DIR}
 python -m virtualenv ~/${DIR}
 source ~/${DIR}/bin/activate
-pip install neovim -U
+pip install -U neovim
 deactivate
 
 pyenv global 2.7.15

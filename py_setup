@@ -10,10 +10,9 @@ PYTHON=`which python${ver} || which python`
 DIR=neovim${ver}
 
 ${PIP} install -U pip
-${PIP} uninstall -y virtualenv
-${PIP} install virtualenv
+${PIP} install -U virtualenv
 rm -rf ~/${DIR}
 ${PYTHON} -m virtualenv ~/${DIR}
 source ~/${DIR}/bin/activate
-pip install neovim -U
+pip install -U neovim
 deactivate
