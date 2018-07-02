@@ -58,12 +58,6 @@ setopt nonomatch
 
 unsetopt promptcr
 
-type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
-
-# type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
-
-type pyenv > /dev/null 2>&1 && eval "$(pyenv init -)"
-
 alias vi=nvim
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -73,3 +67,9 @@ if [ -f ~/google-cloud-sdk/path.zsh.inc ]; then source ~/google-cloud-sdk/path.z
 if [ -f ~/google-cloud-sdk/completion.zsh.inc ]; then source ~/google-cloud-sdk/completion.zsh.inc; fi
 
 type kubectl > /dev/null 2>&1 && source <(kubectl completion zsh)
+
+type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
+
+# type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
+
+test -z $VIRTUAL_ENV && type pyenv > /dev/null 2>&1 && eval "$(pyenv init -)"
