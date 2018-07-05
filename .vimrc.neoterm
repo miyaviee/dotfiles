@@ -2,7 +2,7 @@ let g:neoterm_autoscroll = 1
 let g:neoterm_default_mod = 'botright'
 
 " open terminal
-nnoremap <silent> vo :Topen<CR><C-w>w<S-$>a
+nnoremap <silent> vo :Topen<CR><C-w>wa
 " open/close terminal
 nnoremap <silent> vc :Ttoggle<CR>
 " kills the current job (send a <c-c>)
