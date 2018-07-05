@@ -54,8 +54,9 @@ let g:python_host_prog = expand('~/neovim2/bin/python')
 let g:python3_host_prog = expand('~/neovim3/bin/python')
 
 nmap <silent> q <Nop>
-nmap <silent> =j :%!python -m json.tool<CR>
-nmap <silent> =s :%!sql-formatter-cli<CR>
+
+autocmd FileType json nmap <silent> == :%!python -m json.tool<CR>
+autocmd FileType sql nmap <silent> == :%!sql-formatter-cli<CR>
 
 noremap <expr> <C-b> max([winheight(0) - 2, 1]) . "\<C-u>" . (line('.') < 1         + winheight(0) ? 'H' : 'L')
 noremap <expr> <C-f> max([winheight(0) - 2, 1]) . "\<C-d>" . (line('.') > line('$') - winheight(0) ? 'L' : 'H')
