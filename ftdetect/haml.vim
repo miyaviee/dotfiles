@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.haml setf haml
+autocmd BufNewFile,BufRead *.haml setf haml
