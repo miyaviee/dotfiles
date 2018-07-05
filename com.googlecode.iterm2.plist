@@ -1019,9 +1019,9 @@
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
-			<true/>
+			<false/>
 			<key>Use Bright Bold</key>
-			<true/>
+			<false/>
 			<key>Use Italic Font</key>
 			<false/>
 			<key>Use Non-ASCII Font</key>
