@@ -20,6 +20,7 @@ Plug 'Shougo/denite.nvim'
 " util
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'tpope/vim-repeat'
 
 " runner
 Plug 'janko-m/vim-test'
@@ -34,7 +35,6 @@ Plug 'tpope/vim-fugitive'
 
 " extend search
 Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-repeat'
 
 " terminal
 Plug 'kassio/neoterm'
