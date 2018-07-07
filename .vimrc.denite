@@ -17,14 +17,14 @@ call denite#custom#map('insert', "<C-k>", '<denite:move_to_previous_line>')
 call denite#custom#map('insert', "<C-v>", '<denite:do_action:vsplit>')
 call denite#custom#map('insert', "<C-n>", '<denite:do_action:tabopen>')
 
-nnoremap <C-p> :Denite file_rec<CR>
-inoremap <C-p> <ESC>:Denite file_rec<CR>
+nnoremap <C-p> :<C-u>Denite file_rec<CR>
+inoremap <C-p> <ESC>:<C-u>Denite file_rec<CR>
 
-nnoremap <C-g> :Denite grep<CR>
-inoremap <C-g> <ESC>:Denite grep<CR>
+nnoremap <C-g> :<C-u>Denite grep<CR>
+inoremap <C-g> <ESC>:<C-u>Denite grep<CR>
 
-nnoremap <C-h> :Denite grep:::`expand('<cword>')`<CR>
-inoremap <C-h> <ESC>:Denite grep:::`expand('<cword>')`<CR>
+nnoremap <C-h> :<C-u>Denite grep:::`expand('<cword>')`<CR>
+inoremap <C-h> <ESC>:<C-u>Denite grep:::`expand('<cword>')`<CR>
 
-nnoremap <C-\> :Denite outline<CR>
-inoremap <C-\> <ESC>:Denite outline<CR>
+nnoremap <C-\> :<C-u>Denite outline<CR>
+inoremap <C-\> <ESC>:<C-u>Denite outline<CR>

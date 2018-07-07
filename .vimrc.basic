@@ -41,7 +41,7 @@ set tagcase=match
 nnoremap <silent> <C-]> g<C-]>
 
 nnoremap <silent> <Leader>q :<C-u>lclose<CR>
-nnoremap <silent> <Esc><Esc> :nohlsearch<CR>
+nnoremap <silent> <Esc><Esc> :<C-u>nohlsearch<CR>
 
 autocmd TermOpen * setlocal nonumber norelativenumber signcolumn=no
 tmap <silent> <ESC> <C-\><C-n>
@@ -56,8 +56,8 @@ let g:python3_host_prog = expand('~/neovim3/bin/python')
 
 nmap <silent> q <Nop>
 
-autocmd FileType json nmap <silent> == :%!python -m json.tool<CR>
-autocmd FileType sql nmap <silent> == :%!sql-formatter-cli<CR>
+autocmd FileType json nmap <silent> == :<C-u>%!python -m json.tool<CR>
+autocmd FileType sql nmap <silent> == :<C-u>%!sql-formatter-cli<CR>
 
 noremap <expr> <C-b> max([winheight(0) - 2, 1]) . "\<C-u>" . (line('.') < 1         + winheight(0) ? 'H' : 'L')
 noremap <expr> <C-f> max([winheight(0) - 2, 1]) . "\<C-d>" . (line('.') > line('$') - winheight(0) ? 'L' : 'H')

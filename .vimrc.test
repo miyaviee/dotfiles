@@ -5,6 +5,6 @@ let g:test#python#djangotest#options = {
       \ 'suite': '--failfast --noinput',
       \ }
 
-nnoremap <silent> tt :TestLast<CR>
-nnoremap <silent> tf :TestFile<CR>
-nnoremap <silent> ts :TestSuite<CR>
+nnoremap <silent> tt :<C-u>TestLast<CR>
+nnoremap <silent> tf :<C-u>TestFile<CR>
+nnoremap <silent> ts :<C-u>TestSuite<CR>
