@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 " colorcheme
-Plug 'cocopon/iceberg.vim'
 Plug 'tyrannicaltoucan/vim-quantum'
 
 " completion

@@ -5,10 +5,3 @@ try
 catch
   " no colorscheme
 endtry
-
-hi! LineNr ctermbg=None guibg=None
-hi! SignColumn ctermbg=None guibg=None
-hi! GitGutterAdd ctermbg=None guibg=None
-hi! GitGutterChange ctermbg=None guibg=None
-hi! GitGutterChangeDelete ctermbg=None guibg=None
-hi! GitGutterDelete ctermbg=None guibg=None
