@@ -25,10 +25,6 @@ Plug 'tpope/vim-repeat'
 " runner
 Plug 'janko-m/vim-test'
 
-" extend replace
-Plug 'tpope/vim-surround'
-  Plug 'tpope/vim-ragtag'
-
 " git status
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -71,6 +67,9 @@ Plug 'coderifous/textobj-word-column.vim'
 Plug 'kana/vim-operator-user'
 Plug 'kana/vim-operator-replace'
 Plug 'tyru/operator-camelize.vim'
+Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-ragtag'
+
 
 " html/template
 Plug 'mattn/emmet-vim'
