@@ -23,6 +23,7 @@ set nobackup
 set noswapfile
 set hidden
 set lcs=tab:>\ ,trail:_,extends:\
+set fcs=eob:\ ,
 set conceallevel=0
 set clipboard+=unnamed
 set mouse-=a
