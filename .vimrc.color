@@ -1,7 +1,7 @@
 set termguicolors
 set background=dark
 try
-  colorscheme iceberg
+  colorscheme quantum
 catch
   " no colorscheme
 endtry
