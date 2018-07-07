@@ -17,8 +17,7 @@ pyenv global ${ver}
 DIR=neovim${ver:0:1}
 
 pip install -U pip
-pip install -U pipenv
-pip install -U virtualenv
+pip install -U -r requirements.txt
 rm -rf ~/${DIR}
 python -m virtualenv ~/${DIR}
 source ~/${DIR}/bin/activate

@@ -10,7 +10,7 @@ PYTHON=`which python${ver} || which python`
 DIR=neovim${ver}
 
 ${PIP} install -U pip
-${PIP} install -U virtualenv
+pip install -U -r requirements.txt
 rm -rf ~/${DIR}
 ${PYTHON} -m virtualenv ~/${DIR}
 source ~/${DIR}/bin/activate
