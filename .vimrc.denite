@@ -20,6 +20,9 @@ call denite#custom#map('insert', "<C-t>", '<denite:do_action:tabopen>')
 nnoremap <C-p> :<C-u>Denite file_rec<CR>
 inoremap <C-p> <ESC>:<C-u>Denite file_rec<CR>
 
+nnoremap <C-l> :<C-u>Denite buffer<CR>
+inoremap <C-l> <ESC>:<C-u>Denite buffer<CR>
+
 nnoremap <C-g> :<C-u>Denite grep<CR>
 inoremap <C-g> <ESC>:<C-u>Denite grep<CR>
 
