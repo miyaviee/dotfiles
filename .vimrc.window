@@ -1,3 +1,0 @@
-" Move new tabpage at the last.
-nnoremap <silent> <C-w>t  :<C-u>tabnew \| tabmove<CR>
-nnoremap <silent> <C-w>o  :<C-u>tabonly<CR>

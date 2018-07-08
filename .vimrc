@@ -8,8 +8,6 @@ source ~/.vimrc.zenkaku
 
 source ~/.vimrc.paste
 
-source ~/.vimrc.window
-
 source ~/.vimrc.denite
 
 source ~/.vimrc.easyalign
