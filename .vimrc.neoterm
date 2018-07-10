@@ -8,5 +8,5 @@ nnoremap <silent> vc :<C-u>Ttoggle<CR>
 " kills the current job (send a <c-c>)
 nnoremap <silent> vq :<C-u>Tkill<CR>
 
-command! -nargs=+ Rails   :<C-u>T bin/rails <args>
-command! -nargs=+ Django  :<C-u>T python manage.py <args>
+command! -nargs=+ Rails   :T bin/rails <args>
+command! -nargs=+ Django  :T python manage.py <args>
