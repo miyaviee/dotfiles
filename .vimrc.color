@@ -7,6 +7,7 @@ catch
 endtry
 
 hi! LineNr ctermbg=None guibg=None
+hi! VertSplit ctermbg=None guibg=None
 hi! SignColumn ctermbg=None guibg=None
 hi! GitGutterAdd ctermbg=None guibg=None
 hi! GitGutterChange ctermbg=None guibg=None
