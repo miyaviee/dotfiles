@@ -21,6 +21,8 @@ set nowritebackup
 set nobackup
 set noswapfile
 set hidden
+set splitright
+set splitbelow
 set lcs=tab:>\ ,trail:_,extends:\
 set fcs=eob:\ ,
 set conceallevel=0
