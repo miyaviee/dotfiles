@@ -6,10 +6,10 @@ catch
   " no colorscheme
 endtry
 
-hi! LineNr ctermbg=None guibg=None
-hi! VertSplit ctermbg=None guibg=None
-hi! SignColumn ctermbg=None guibg=None
-hi! GitGutterAdd ctermbg=None guibg=None
-hi! GitGutterChange ctermbg=None guibg=None
-hi! GitGutterChangeDelete ctermbg=None guibg=None
-hi! GitGutterDelete ctermbg=None guibg=None
+hi! LineNr cterm=None ctermbg=None gui=None guibg=None
+hi! VertSplit cterm=None ctermbg=None gui=None guibg=None
+hi! SignColumn cterm=None ctermbg=None gui=None guibg=None
+hi! GitGutterAdd cterm=None ctermbg=None gui=None guibg=None
+hi! GitGutterChange cterm=None ctermbg=None gui=None guibg=None
+hi! GitGutterChangeDelete cterm=None ctermbg=None gui=None guibg=None
+hi! GitGutterDelete cterm=None ctermbg=None gui=None guibg=None
