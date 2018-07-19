@@ -6,10 +6,14 @@ catch
   " no colorscheme
 endtry
 
-hi! LineNr cterm=None ctermbg=None gui=None guibg=None
-hi! VertSplit cterm=None ctermbg=None gui=None guibg=None
-hi! SignColumn cterm=None ctermbg=None gui=None guibg=None
-hi! GitGutterAdd cterm=None ctermbg=None gui=None guibg=None
-hi! GitGutterChange cterm=None ctermbg=None gui=None guibg=None
-hi! GitGutterChangeDelete cterm=None ctermbg=None gui=None guibg=None
-hi! GitGutterDelete cterm=None ctermbg=None gui=None guibg=None
+hi! LineNr cterm=None ctermbg=None ctermfg=None gui=None guibg=None guifg=None
+hi! SignColumn cterm=None ctermbg=None ctermfg=None gui=None guibg=None guifg=None
+
+hi! GitGutterAdd cterm=None ctermbg=None ctermfg=None gui=None guibg=None guifg=None
+hi! GitGutterChange cterm=None ctermbg=None ctermfg=None gui=None guibg=None guifg=None
+hi! GitGutterChangeDelete cterm=None ctermbg=None ctermfg=None gui=None guibg=None guifg=None
+hi! GitGutterDelete cterm=None ctermbg=None ctermfg=None gui=None guibg=None guifg=None
+
+hi! VertSplit cterm=None ctermbg=None ctermfg=None gui=None guibg=None guifg=None
+hi! StatusLineNC cterm=reverse ctermbg=None ctermfg=None gui=reverse guibg=None guifg=None
+hi! StatusLineTermNC cterm=reverse ctermbg=None ctermfg=None gui=reverse guibg=None guifg=None
