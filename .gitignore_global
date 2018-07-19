@@ -1,5 +1,7 @@
 .direnv/
 .venv/
 .envrc
+.python-version
+.ruby-version
 .DS_Store
 **/assets/*
