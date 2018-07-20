@@ -29,6 +29,7 @@ set conceallevel=0
 set clipboard+=unnamed
 set mouse-=a
 set completeopt-=preview
+set inccommand=nosplit
 set visualbell t_vb=
 set noerrorbells
 set signcolumn=yes
