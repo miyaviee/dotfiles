@@ -17,5 +17,3 @@ hi! GitGutterDelete cterm=None ctermbg=None gui=None guibg=None
 
 hi! StatusLineNC cterm=reverse ctermbg=None ctermfg=None gui=reverse guibg=None guifg=None
 hi! StatusLineTermNC cterm=reverse ctermbg=None ctermfg=None gui=reverse guibg=None guifg=None
-
-hi! link phpVarSelector Identifier
