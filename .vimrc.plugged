@@ -25,6 +25,7 @@ Plug 'tpope/vim-repeat'
 
 " runner
 Plug 'janko-m/vim-test'
+Plug 'thinca/vim-quickrun'
 
 " git status
 Plug 'airblade/vim-gitgutter'
