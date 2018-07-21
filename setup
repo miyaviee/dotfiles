@@ -28,14 +28,6 @@ test -L ~/.config/nvim/init.vim || ln -fs ~/.vimrc ~/.config/nvim/init.vim
 
 nvim +:PlugInstall +:q +:PlugClean +:q +:q
 
-if [ ! -d ~/.pip ]; then
-  mkdir ~/.pip
-  cat <<EOS > ~/.pip/pip.conf
-[list]
-format=columns
-EOS
-fi
-
 test -e ~/.config || mkdir ~/.config
 for name in `ls -a .config`; do
   test ${name:0:1} = '.' && continue
@@ -45,8 +37,9 @@ for name in `ls -a .config`; do
   ln -fs `pwd`/.config/${name} ~/.config/${name}
 done
 
+test -L ~/.pip || ln -fs `pwd`/.pip ~/.pip
 test -L ~/.git_tmp || ln -fs `pwd`/.git_tmp ~/.git_tmp
-test -L ~/.ctags.d || ln -fs `pwd`/.ctags.d ~/.ctags.d
+test -L ~/.ctags.d || ln -fs `pwd`/.ctags.d ~/.ctags.d[]
 test -z "$(git config --global --get init.templatedir)" && git config --global init.templatedir ~/.git_tmp
 test -z "$(git config --global --get core.excludesfile)" && git config --global core.excludesfile ~/.gitignore_global
 
