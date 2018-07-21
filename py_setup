@@ -9,8 +9,8 @@ PIP=`which pip${ver} || which pip`
 PYTHON=`which python${ver} || which python`
 DIR=neovim${ver}
 
-${PIP} install -U pip
-pip install -U -r requirements.txt
+${PIP} install -U -I --no-cache-dir pip
+${PIP} install -U -I --no-cache-dir -r requirements.txt
 rm -rf ~/${DIR}
 ${PYTHON} -m virtualenv ~/${DIR}
 source ~/${DIR}/bin/activate
