@@ -12,7 +12,6 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'ujihisa/neco-look'
 
 " snippet
-" Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet'
   Plug 'Shougo/neosnippet-snippets'
 
