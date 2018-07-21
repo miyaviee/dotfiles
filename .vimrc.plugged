@@ -14,6 +14,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " snippet
 " Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet'
+  Plug 'Shougo/neosnippet-snippets'
 
 " file explorer
 Plug 'Shougo/denite.nvim'
