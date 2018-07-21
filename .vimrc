@@ -14,7 +14,7 @@ source ~/.vimrc.easyalign
 
 source ~/.vimrc.deoplete
 
-source ~/.vimrc.snippet
+source ~/.vimrc.neosnippet
 
 source ~/.vimrc.expand
 
