@@ -27,7 +27,7 @@ bindkey '^[[B' history-substring-search-down
 fignore=('.pyc' '.sw?' '.6' '.8')
 
 fpath=(~/.zplug/repos/zsh-users/zsh-completions/src $fpath)
-fpath=(~/dotfiles/completion $fpath)
+fpath=(~/dotfiles/.completion $fpath)
 autoload -U compinit; compinit
 
 setopt auto_cd

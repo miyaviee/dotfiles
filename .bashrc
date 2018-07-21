@@ -29,7 +29,7 @@ test -z $VIRTUAL_ENV || export PATH=$VIRTUAL_ENV/bin:$PATH
 
 alias vi=nvim
 
-source ~/dotfiles/completion/git-completion.bash
+source ~/dotfiles/.completion/git-completion.bash
 
 type kubectl > /dev/null 2>&1 && source <(kubectl completion bash)
 
