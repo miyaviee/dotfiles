@@ -71,7 +71,6 @@ Plug 'tyru/operator-camelize.vim'
 Plug 'tpope/vim-surround'
   Plug 'tpope/vim-ragtag'
 
-
 " html/template
 Plug 'mattn/emmet-vim'
 
