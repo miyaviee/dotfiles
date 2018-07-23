@@ -22,3 +22,6 @@ brew 'redis@3.2', link: true
 brew 'vegeta'
 brew 'jaggr'
 brew 'jplot'
+
+brew 'kubernetes-cli'
+cask 'minikube'
