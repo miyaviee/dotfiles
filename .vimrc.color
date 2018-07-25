@@ -1,5 +1,8 @@
 set termguicolors
 set background=dark
+
+syntax on
+
 try
   colorscheme quantum
 catch
