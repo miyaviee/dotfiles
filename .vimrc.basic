@@ -9,7 +9,6 @@ set number
 set cursorline
 set nocursorcolumn
 set backspace=indent,eol,start
-set list
 set ignorecase
 set smartcase
 set infercase
@@ -24,8 +23,9 @@ set noswapfile
 set hidden
 set splitright
 set splitbelow
-set lcs=tab:>\ ,trail:_,extends:\
-set fcs=eob:\ ,
+set list
+set listchars=tab:>\ ,trail:_,extends:\
+set fillchars=eob:\ ,
 set conceallevel=0
 set clipboard+=unnamed
 set mouse-=a
