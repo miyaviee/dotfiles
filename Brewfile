@@ -24,3 +24,4 @@ brew 'jaggr'
 brew 'jplot'
 
 brew 'kubernetes-cli'
+brew 'kubernetes-helm'
