@@ -24,4 +24,3 @@ brew 'jaggr'
 brew 'jplot'
 
 brew 'kubernetes-cli'
-cask 'minikube'
