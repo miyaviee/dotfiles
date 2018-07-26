@@ -19,5 +19,7 @@
 
 --exclude=Makefile
 
+--exclude=gulpfile.js
+
 --languages=-JSON
 --languages=-reStructuredText
