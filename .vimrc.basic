@@ -9,6 +9,7 @@ set number
 set cursorline
 set nocursorcolumn
 set backspace=indent,eol,start
+set wildmode=longest,full
 set ignorecase
 set smartcase
 set infercase
