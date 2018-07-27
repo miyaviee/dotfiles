@@ -1,1 +1,1 @@
-nnoremap <silent> == :<C-u>%!python -m json.tool<CR>
+nnoremap <silent> == :<C-u>%!jq .<CR>
