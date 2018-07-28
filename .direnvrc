@@ -16,19 +16,8 @@ layout_pyenv() {
     echo 'pyenv not installed.'
     exit
   fi
-
-  local venv=${1}
-  if [ -n "${2}" ]; then
-    venv=${2}
-  fi
-  local venv_path=$(direnv_layout_dir)/${venv}
-
   pyenv local ${1}
-  if [ ! -d ${venv_path} ]; then
-    python -m virtualenv ${venv_path}
-  fi
-  source ${venv_path}/bin/activate
-
+  layout_virtualenv python${1:0:1} ${venv}
   pyenv local --unset
 }
 
