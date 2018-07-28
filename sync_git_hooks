@@ -1,6 +1,5 @@
 #!/bin/bash
-for hook in .git_tmp/hooks/*; do
-  for dir in projects go; do
-    test -e ~/${dir} && find ~/${dir} -name $(basename ${hook}) | xargs -L1 cp $hook
-  done
+for dir in ~/projects/* ~/go/src/*; do
+  hooks=${dir}/.git/hooks
+  test -e ${hooks} && cp -R .git_tmp/hooks/* ${hooks}
 done
