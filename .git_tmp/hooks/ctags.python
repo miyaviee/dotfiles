@@ -1,0 +1,2 @@
+#!/bin/sh
+test -e $VIRTUAL_ENV && ctags --languages=python -f .git/vendor.tags $VIRTUAL_ENV
