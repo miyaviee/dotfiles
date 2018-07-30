@@ -1,2 +1,3 @@
 #!/bin/sh
-test -e $VIRTUAL_ENV && ctags --languages=python -f .git/vendor.tags $VIRTUAL_ENV
+GITDIR=`dirname $0`/..
+test -e $VIRTUAL_ENV && ctags --languages=python -f ${GITDIR}/vendor.tags $VIRTUAL_ENV
