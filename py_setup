@@ -8,7 +8,7 @@ fi
 
 PIP=`which pip${ver} || which pip`
 PYTHON=`which python${ver} || which python`
-DIR=neovim${ver:0:1}
+DIR=neovim${ver}
 
 ${PIP} install -U -I --no-cache-dir pip
 ${PIP} install -U -I --no-cache-dir -r requirements.txt
