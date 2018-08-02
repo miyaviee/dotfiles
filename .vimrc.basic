@@ -46,8 +46,6 @@ nnoremap <silent> <C-]> g<C-]>
 
 nnoremap <silent> <Leader>q :<C-u>lclose<CR>
 
-autocmd InsertEnter * setlocal nohlsearch
-autocmd InsertLeave * setlocal hlsearch
 nnoremap <silent> <ESC><ESC> :<C-u>nohlsearch<CR>
 
 autocmd TermOpen * setlocal nonumber norelativenumber signcolumn=no
