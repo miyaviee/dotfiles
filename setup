@@ -50,11 +50,6 @@ done
 test -z "$(git config --global --get init.templatedir)" && git config --global init.templatedir ~/.git_tmp
 test -z "$(git config --global --get core.excludesfile)" && git config --global core.excludesfile ~/.gitignore_global
 
-type sql-formatter-cli > /dev/null 2>&1 || npm i -g sql-formatter-cli
-type prettier > /dev/null 2>&1 || npm i -g prettier
-type eslint > /dev/null 2>&1 || npm i -g eslint
-type yamllint > /dev/null 2>&1 || npm i -g yaml-lint
-
 # del dead link
 for link in ~/.*; do
   test -L $link || continue
