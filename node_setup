@@ -1,3 +1,5 @@
+#!/bin/bash
+
 type sql-formatter-cli > /dev/null 2>&1 || npm i -g sql-formatter-cli
 type prettier > /dev/null 2>&1 || npm i -g prettier
 type eslint > /dev/null 2>&1 || npm i -g eslint
