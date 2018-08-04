@@ -26,12 +26,10 @@ set splitright
 set splitbelow
 set list
 set listchars=tab:>\ ,trail:_,extends:\
-set fillchars=eob:\ ,
 set conceallevel=0
 set clipboard+=unnamed
 set mouse-=a
 set completeopt=menu,noinsert
-set inccommand=nosplit
 set visualbell t_vb=
 set noerrorbells
 set signcolumn=yes
@@ -48,8 +46,15 @@ nnoremap <silent> <Leader>q :<C-u>lclose<CR>
 
 nnoremap <silent> <ESC><ESC> :<C-u>nohlsearch<CR>
 
-autocmd TermOpen * setlocal nonumber norelativenumber signcolumn=no
-tmap <silent> <ESC> <C-\><C-n>
+try
+  set fillchars=eob:\ ,
+  set inccommand=nosplit
+
+  autocmd TermOpen * setlocal nonumber norelativenumber signcolumn=no
+  tmap <silent> <ESC> <C-\><C-n>
+catch
+  " not supported
+endtry
 
 let g:vim_json_syntax_conceal=0
 let g:omni_sql_no_default_maps=1
