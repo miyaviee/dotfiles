@@ -39,7 +39,7 @@ done
 
 test -L ~/.pip || ln -fs `pwd`/.pip ~/.pip
 test -L ~/.git_tmp || ln -fs `pwd`/.git_tmp ~/.git_tmp
-test -L ~/.ctags.d || ln -fs `pwd`/.ctags.d ~/.ctags.d[]
+test -L ~/.ctags.d || ln -fs `pwd`/.ctags.d ~/.ctags.d
 
 test -e ~/.atom || mkdir ~/.atom
 for name in `ls -a .atom`; do
