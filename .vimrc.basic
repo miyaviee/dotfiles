@@ -35,7 +35,7 @@ set noerrorbells
 set signcolumn=yes
 set updatetime=100
 set re=1
-set synmaxcol=200
+set synmaxcol=300
 set laststatus=0
 
 set tags=.git/tags,.git/vendor.tags;
