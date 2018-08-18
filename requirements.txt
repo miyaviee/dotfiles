@@ -1,5 +1,5 @@
-virtualenv
-flake8
 autopep8
+flake8
 isort
 pipenv
+virtualenv
