@@ -982,7 +982,7 @@
 	<key>NSFontPanelSizeSliderParams</key>
 	<string>2 0 100</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/dotfiles</string>
+	<string>~/.vim/plugged/neodark.vim/terms</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{876, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -1026,7 +1026,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>382 1284 620 392 -268 768 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>474 1351 796 473 -268 768 1920 1080 </string>
+	<string>474 1338 796 486 -268 768 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>-268 768 1920 1080 -268 768 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -1757,7 +1757,7 @@
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
-			<true/>
+			<false/>
 			<key>Window Type</key>
 			<integer>1</integer>
 			<key>Working Directory</key>
@@ -1832,7 +1832,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-02T12:10:46Z</date>
+	<date>2018-08-18T03:49:04Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -1852,6 +1852,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.7</string>
+	<string>3.2.0</string>
 </dict>
 </plist>
