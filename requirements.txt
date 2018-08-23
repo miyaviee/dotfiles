@@ -1,5 +1,6 @@
+autopep8
 flake8
 isort
 pipenv
 virtualenv
-yapf
+pycodestyle<2.4
