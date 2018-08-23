@@ -4,7 +4,7 @@ set background=dark
 syntax on
 
 try
-  colorscheme quantum
+  colorscheme iceberg
 catch
   " no colorscheme
 endtry
@@ -17,8 +17,6 @@ hi! GitGutterAdd cterm=None ctermbg=None gui=None guibg=None
 hi! GitGutterChange cterm=None ctermbg=None gui=None guibg=None
 hi! GitGutterChangeDelete cterm=None ctermbg=None gui=None guibg=None
 hi! GitGutterDelete cterm=None ctermbg=None gui=None guibg=None
-
-hi! MatchParen cterm=underline ctermbg=None ctermfg=None gui=underline guibg=None guifg=None
 
 hi! StatusLineNC cterm=reverse ctermbg=None ctermfg=None gui=reverse guibg=None guifg=None
 hi! StatusLineTermNC cterm=reverse ctermbg=None ctermfg=None gui=reverse guibg=None guifg=None
