@@ -34,7 +34,6 @@ set visualbell t_vb=
 set noerrorbells
 set signcolumn=yes
 set updatetime=100
-set re=1
 set synmaxcol=300
 set laststatus=0
 
