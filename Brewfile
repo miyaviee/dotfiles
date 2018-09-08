@@ -24,5 +24,7 @@ brew 'vegeta'
 brew 'jaggr'
 brew 'jplot'
 
+brew 'circleci'
+
 brew 'kubernetes-cli'
 brew 'kubernetes-helm'
