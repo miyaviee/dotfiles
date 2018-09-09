@@ -68,40 +68,26 @@ Plug 'tyru/operator-camelize.vim'
 Plug 'tpope/vim-surround'
   Plug 'tpope/vim-ragtag'
 
-" html/template
-Plug 'mattn/emmet-vim'
-
-" haml
-Plug 'tpope/vim-haml', { 'for': 'haml' }
-
 " html
 Plug 'othree/html5.vim', { 'for': 'html' }
-
-" js
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-
-" react
-Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
-
-" css
+Plug 'mattn/emmet-vim'
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 
-" yaml
-Plug 'stephpy/vim-yaml', { 'for': 'yaml' }
-
-" slim
-Plug 'slim-template/vim-slim', { 'for': 'slim' }
-
-" typescript
+" javascript
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
-
-" vue
 Plug 'posva/vim-vue', { 'for': 'vue' }
+
+" ruby
+Plug 'tpope/vim-haml', { 'for': 'haml' }
+Plug 'slim-template/vim-slim', { 'for': 'slim' }
 
 " python
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 
-" json
+" filetype
 Plug 'elzr/vim-json', { 'for': 'json' }
+Plug 'stephpy/vim-yaml', { 'for': 'yaml' }
 
 call plug#end()
