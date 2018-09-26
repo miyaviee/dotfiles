@@ -15,11 +15,10 @@
 
 --exclude=vendor
 --exclude=node_modules
+--exclude=gulp
 --exclude=.direnv
 
 --exclude=Makefile
-
---exclude=gulpfile.js
 
 --languages=-JSON
 --languages=-reStructuredText
