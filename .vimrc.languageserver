@@ -1,0 +1,10 @@
+let g:LanguageClient_serverCommands = {
+    \ 'python': ['pyls'],
+    \ }
+
+let g:LanguageClient_diagnosticsList = 'Disabled'
+let g:LanguageClient_diagnosticsEnable = 0
+let g:LanguageClient_loadSettings = 0
+let g:LanguageClient_hasSnippetSupport = 0
+let g:LanguageClient_waitOutputTimeout = 5
+let g:LanguageClient_hoverPreview = 'Never'

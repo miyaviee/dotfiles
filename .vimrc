@@ -2,6 +2,8 @@ source ~/.vimrc.basic
 
 source ~/.vimrc.plugged
 
+source ~/.vimrc.languageserver
+
 source ~/.vimrc.color
 
 source ~/.vimrc.zenkaku
