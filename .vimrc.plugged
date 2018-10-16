@@ -10,6 +10,8 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
       \ 'do': 'bash install.sh',
       \ }
 
+Plug 'junegunn/fzf'
+
 " snippet
 Plug 'Shougo/neosnippet'
   Plug 'Shougo/neosnippet-snippets'

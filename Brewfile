@@ -12,6 +12,7 @@ brew 'node'
 brew 'lua@5.1'
 brew 'direnv'
 brew 'neovim'
+brew 'fzf'
 brew 'ripgrep'
 brew 'zsh', args: ['without-etcdir']
 brew 'universal-ctags', args: ['HEAD']
