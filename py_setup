@@ -13,7 +13,7 @@ DIR=neovim${ver}
 ${PIP} freeze | xargs ${PIP} uninstall -y
 ${PIP} install -U -I --no-cache-dir pip
 ${PIP} install -U -I --no-cache-dir -r requirements.txt
-test ${ver} = 3 && ${PIP} install -U -I --no-cache-dir black python-language-server
+test ${ver} = 3 && ${PIP} install -U -I --no-cache-dir black
 rm -rf ~/${DIR}
 ${PYTHON} -m virtualenv ~/${DIR}
 source ~/${DIR}/bin/activate
