@@ -23,6 +23,7 @@ Plug 'Shougo/denite.nvim'
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'tpope/vim-repeat'
+Plug 'itchyny/lightline.vim'
 
 " runner
 Plug 'janko-m/vim-test'
