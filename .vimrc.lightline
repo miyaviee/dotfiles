@@ -1,3 +1,6 @@
 let g:lightline = {
       \ 'colorscheme': 'iceberg',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
+      \ },
       \ }
