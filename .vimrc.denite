@@ -1,4 +1,5 @@
 call denite#custom#option('default', 'prompt', '>')
+call denite#custom#option('default', 'statusline', v:false)
 call denite#custom#option('_', 'highlight_matched_range', 'None')
 call denite#custom#option('_', 'highlight_matched_char', 'None')
 
