@@ -5,3 +5,4 @@ pipenv
 virtualenv
 pycodestyle<2.4
 python-language-server
+pylint
