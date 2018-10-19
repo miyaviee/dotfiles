@@ -41,12 +41,6 @@ test -L ~/.pip || ln -fs `pwd`/.pip ~/.pip
 test -L ~/.git_tmp || ln -fs `pwd`/.git_tmp ~/.git_tmp
 test -L ~/.ctags.d || ln -fs `pwd`/.ctags.d ~/.ctags.d
 
-test -e ~/.atom || mkdir ~/.atom
-for name in `ls -a .atom`; do
-  test ${name:0:1} = '.' && continue
-  test -L ~/.atom/${name} || ln -fs `pwd`/.atom/${name} ~/.atom/${name}
-done
-
 test -z "$(git config --global --get init.templatedir)" && git config --global init.templatedir ~/.git_tmp
 test -z "$(git config --global --get core.excludesfile)" && git config --global core.excludesfile ~/.gitignore_global
 
