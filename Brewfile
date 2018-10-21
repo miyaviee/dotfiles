@@ -11,7 +11,7 @@ brew 'ruby'
 brew 'node'
 brew 'lua@5.1'
 brew 'direnv'
-brew 'neovim'
+brew 'neovim', args: ['HEAD']
 brew 'fzf'
 brew 'ripgrep'
 brew 'zsh', args: ['without-etcdir']
