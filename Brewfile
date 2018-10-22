@@ -7,7 +7,7 @@ tap 'rs/tap'
 brew 'git'
 brew 'pyenv'
 brew 'go'
-brew 'ruby'
+brew 'ruby', link: true
 brew 'node'
 brew 'lua@5.1'
 brew 'direnv'
