@@ -1,4 +1,7 @@
 #!/bin/bash
 
+brew upgrade --fetch-HEAD --cleanup
+brew cleanup
+
 nvim +:PlugUpdate +:q +:PlugClean +:q +:q
 nvim +:UpdateRemotePlugins +:q +:q
