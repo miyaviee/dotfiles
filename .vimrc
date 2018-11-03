@@ -39,3 +39,5 @@ source ~/.vimrc.test
 source ~/.vimrc.lightline
 
 source ~/.vimrc.gutentags
+
+source ~/.vimrc.tablemode
