@@ -90,7 +90,7 @@ Plug 'slim-template/vim-slim', { 'for': 'slim' }
 " python
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 
-" filetype
+" syntax
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'stephpy/vim-yaml', { 'for': 'yaml' }
 
