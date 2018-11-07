@@ -41,9 +41,6 @@ Plug 'easymotion/vim-easymotion'
 " terminal
 Plug 'kassio/neoterm'
 
-" formatting space
-Plug 'junegunn/vim-easy-align'
-
 " autoclose
 Plug 'cohama/lexima.vim'
 

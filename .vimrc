@@ -12,8 +12,6 @@ source ~/.vimrc.paste
 
 source ~/.vimrc.denite
 
-source ~/.vimrc.easyalign
-
 source ~/.vimrc.deoplete
 
 source ~/.vimrc.neosnippet
