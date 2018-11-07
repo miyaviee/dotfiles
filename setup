@@ -26,8 +26,6 @@ done
 test -L ~/.config/nvim || ln -fs ~/.vim ~/.config/nvim
 test -L ~/.config/nvim/init.vim || ln -fs ~/.vimrc ~/.config/nvim/init.vim
 
-nvim +:PlugInstall +:q +:PlugClean +:q +:q
-
 test -e ~/.config || mkdir ~/.config
 for name in `ls -a .config`; do
   test ${name:0:1} = '.' && continue
@@ -50,3 +48,5 @@ for link in ~/.*; do
   test -e "$(readlink $link)" && continue
   unlink $link
 done
+
+nvim +:PlugInstall +:q +:PlugClean +:q +:q
