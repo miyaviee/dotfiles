@@ -1,37 +1,32 @@
+" not plugged
 source ~/.vimrc.basic
 
+" plugin manage
 source ~/.vimrc.plugged
 
-source ~/.vimrc.languageserver
-
+" ui
 source ~/.vimrc.color
-
+source ~/.vimrc.lightline
 source ~/.vimrc.denite
-
-source ~/.vimrc.deoplete
-
-source ~/.vimrc.neosnippet
-
-source ~/.vimrc.expand
-
-source ~/.vimrc.ale
-
-source ~/.vimrc.emmet
-
-source ~/.vimrc.jsx
-
-source ~/.vimrc.operator
-
-source ~/.vimrc.commentary
-
-source ~/.vimrc.neoterm
-
 source ~/.vimrc.easymotion
 
-source ~/.vimrc.test
-
-source ~/.vimrc.lightline
-
+" language
+source ~/.vimrc.languageserver
+source ~/.vimrc.ale
+source ~/.vimrc.jsx
 source ~/.vimrc.gutentags
-
+source ~/.vimrc.commentary
 source ~/.vimrc.tablemode
+
+" completion
+source ~/.vimrc.deoplete
+source ~/.vimrc.neosnippet
+source ~/.vimrc.emmet
+
+" term
+source ~/.vimrc.test
+source ~/.vimrc.neoterm
+
+" textobj
+source ~/.vimrc.operator
+source ~/.vimrc.expand
