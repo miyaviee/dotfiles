@@ -6,10 +6,6 @@ source ~/.vimrc.languageserver
 
 source ~/.vimrc.color
 
-source ~/.vimrc.zenkaku
-
-source ~/.vimrc.paste
-
 source ~/.vimrc.denite
 
 source ~/.vimrc.deoplete

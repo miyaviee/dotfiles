@@ -62,3 +62,21 @@ let g:python_host_prog = expand('~/neovim2/bin/python')
 let g:python3_host_prog = expand('~/neovim3/bin/python')
 
 nnoremap <silent> q <Nop>
+
+" hilight zenkaku space
+function! ZenkakuSpace()
+  highlight ZenkakuSpace cterm=reverse ctermfg=red gui=reverse guifg=DarkMagenta
+endfunction
+
+if has('syntax')
+  augroup ZenkakuSpace
+    autocmd!
+    autocmd ColorScheme       * call ZenkakuSpace()
+    autocmd VimEnter,WinEnter * match ZenkakuSpace /　/
+  augroup END
+  call ZenkakuSpace()
+endif
+
+vnoremap <silent> y y`]
+vnoremap <silent> p p`]
+nnoremap <silent> p p`]
