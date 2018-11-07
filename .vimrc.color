@@ -4,7 +4,7 @@ set background=dark
 syntax on
 
 try
-  colorscheme iceberg
+  colorscheme onedark
 catch
   " no colorscheme
 endtry
