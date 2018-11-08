@@ -28,4 +28,3 @@ source ~/.vimrc.term
 
 " textobj
 source ~/.vimrc.operator
-source ~/.vimrc.expand
