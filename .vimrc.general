@@ -1,3 +1,33 @@
+" colorscheme
+set termguicolors
+set background=dark
+
+syntax on
+
+try
+  colorscheme onedark
+catch
+  " no colorscheme
+endtry
+
+hi! LineNr cterm=None ctermbg=None gui=None guibg=None
+hi! SignColumn cterm=None ctermbg=None gui=None guibg=None
+hi! VertSplit cterm=None ctermbg=None gui=None guibg=None
+
+hi! GitGutterAdd cterm=None ctermbg=None gui=None guibg=None
+hi! GitGutterChange cterm=None ctermbg=None gui=None guibg=None
+hi! GitGutterChangeDelete cterm=None ctermbg=None gui=None guibg=None
+hi! GitGutterDelete cterm=None ctermbg=None gui=None guibg=None
+
+" statusline
+let g:lightline = {
+      \ 'colorscheme': 'onedark',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
+      \ },
+      \ }
+
+" filer
 call denite#custom#option('default', 'prompt', '>')
 call denite#custom#option('default', 'statusline', v:false)
 call denite#custom#option('_', 'highlight_matched_range', 'None')
@@ -34,3 +64,22 @@ inoremap <silent> <C-h> <ESC>:<C-u>Denite grep:::`expand('<cword>')`<CR>
 
 nnoremap <silent> <C-\> :<C-u>Denite outline<CR>
 inoremap <silent> <C-\> <ESC>:<C-u>Denite outline<CR>
+
+" Move to char in line
+map f <Plug>(easymotion-fl)
+map F <Plug>(easymotion-Fl)
+
+" <Leader>f{char} to move to {char}
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+
+" s{char}{char} to move to {char}{char}
+nmap s <Plug>(easymotion-overwin-f2)
+
+" Move to line
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)

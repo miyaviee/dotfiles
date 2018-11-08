@@ -5,10 +5,7 @@ source ~/.vimrc.basic
 source ~/.vimrc.plugged
 
 " ui
-source ~/.vimrc.color
-source ~/.vimrc.lightline
-source ~/.vimrc.denite
-source ~/.vimrc.easymotion
+source ~/.vimrc.general
 
 " language
 source ~/.vimrc.language
