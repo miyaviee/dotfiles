@@ -9,3 +9,14 @@ nnoremap <silent> vq :<C-u>Tkill<CR>
 
 command! -nargs=+ Rails   :T bin/rails <args>
 command! -nargs=+ Django  :T python manage.py <args>
+
+let g:test#strategy = 'neoterm'
+
+let g:test#python#djangotest#options = {
+      \ 'file': '--failfast --noinput',
+      \ 'suite': '--failfast --noinput',
+      \ }
+
+nnoremap <silent> tt :<C-u>TestLast<CR>
+nnoremap <silent> tf :<C-u>TestFile<CR>
+nnoremap <silent> ts :<C-u>TestSuite<CR>

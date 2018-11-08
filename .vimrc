@@ -24,8 +24,7 @@ source ~/.vimrc.neosnippet
 source ~/.vimrc.emmet
 
 " term
-source ~/.vimrc.test
-source ~/.vimrc.neoterm
+source ~/.vimrc.term
 
 " textobj
 source ~/.vimrc.operator
