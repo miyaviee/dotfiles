@@ -11,12 +11,7 @@ source ~/.vimrc.denite
 source ~/.vimrc.easymotion
 
 " language
-source ~/.vimrc.languageserver
-source ~/.vimrc.ale
-source ~/.vimrc.jsx
-source ~/.vimrc.gutentags
-source ~/.vimrc.commentary
-source ~/.vimrc.tablemode
+source ~/.vimrc.language
 
 " completion
 source ~/.vimrc.completion
