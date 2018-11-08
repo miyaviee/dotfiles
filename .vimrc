@@ -19,9 +19,7 @@ source ~/.vimrc.commentary
 source ~/.vimrc.tablemode
 
 " completion
-source ~/.vimrc.deoplete
-source ~/.vimrc.neosnippet
-source ~/.vimrc.emmet
+source ~/.vimrc.completion
 
 " term
 source ~/.vimrc.term
