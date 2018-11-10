@@ -34,7 +34,7 @@ call denite#custom#option('_', 'highlight_matched_range', 'None')
 call denite#custom#option('_', 'highlight_matched_char', 'None')
 
 if executable('rg')
-  call denite#custom#var('file_rec', 'command', ['rg', '--color=never', '--files', '--glob', ''])
+  call denite#custom#var('file/rec', 'command', ['rg', '--color=never', '--files', '--glob', ''])
 
   call denite#custom#var('grep', 'command', ['rg'])
   call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--hidden'])
@@ -50,8 +50,8 @@ call denite#custom#map('insert', "<C-k>", '<denite:move_to_previous_line>')
 call denite#custom#map('insert', "<C-s>", '<denite:do_action:split>')
 call denite#custom#map('insert', "<C-v>", '<denite:do_action:vsplit>')
 
-nnoremap <silent> <C-p> :<C-u>Denite file_rec<CR>
-inoremap <silent> <C-p> <ESC>:<C-u>Denite file_rec<CR>
+nnoremap <silent> <C-p> :<C-u>Denite file/rec<CR>
+inoremap <silent> <C-p> <ESC>:<C-u>Denite file/rec<CR>
 
 nnoremap <silent> <C-l> :<C-u>Denite buffer<CR>
 inoremap <silent> <C-l> <ESC>:<C-u>Denite buffer<CR>
