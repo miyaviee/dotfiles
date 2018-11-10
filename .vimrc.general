@@ -30,7 +30,6 @@ let g:lightline = {
 " filer
 call denite#custom#option('default', 'prompt', '>')
 call denite#custom#option('default', 'statusline', v:false)
-call denite#custom#option('default', 'unique', v:true)
 call denite#custom#option('default', 'empty', v:false)
 call denite#custom#option('default', 'buffer_name', 'denite')
 
@@ -38,7 +37,7 @@ if executable('rg')
   call denite#custom#var('file/rec', 'command', ['rg', '--color=never', '--files', '--glob', ''])
 
   call denite#custom#var('grep', 'command', ['rg'])
-  call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--hidden'])
+  call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--hidden', '-S'])
   call denite#custom#var('grep', 'recursive_opts', [])
   call denite#custom#var('grep', 'pattern_opt', [])
   call denite#custom#var('grep', 'separator', ['--'])
@@ -60,8 +59,8 @@ inoremap <silent> <C-l> <ESC>:<C-u>Denite grep:`expand('%')`<CR>
 nnoremap <silent> <C-g> :<C-u>Denite grep<CR>
 inoremap <silent> <C-g> <ESC>:<C-u>Denite grep<CR>
 
-nnoremap <silent> <C-h> :<C-u>Denite -ignorecase=false grep:::`expand('<cword>')`<CR>
-inoremap <silent> <C-h> <ESC>:<C-u>Denite -ignorecase=false grep:::`expand('<cword>')`<CR>
+nnoremap <silent> <C-h> :<C-u>Denite grep:::`expand('<cword>')`<CR>
+inoremap <silent> <C-h> <ESC>:<C-u>Denite grep:::`expand('<cword>')`<CR>
 
 nnoremap <silent> <C-\> :<C-u>Denite outline<CR>
 inoremap <silent> <C-\> <ESC>:<C-u>Denite outline<CR>
