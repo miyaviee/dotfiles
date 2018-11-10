@@ -5,7 +5,7 @@ set background=dark
 syntax on
 
 try
-  colorscheme iceberg
+  colorscheme gruvbox
 catch
   " no colorscheme
 endtry
@@ -21,7 +21,7 @@ hi! GitGutterDelete cterm=None ctermbg=None gui=None guibg=None
 
 " statusline
 let g:lightline = {
-      \ 'colorscheme': 'iceberg',
+      \ 'colorscheme': 'gruvbox',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ },
