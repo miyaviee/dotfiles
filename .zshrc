@@ -74,4 +74,4 @@ type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
 
 # type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
 
-test -z $VIRTUAL_ENV && type pyenv > /dev/null 2>&1 && eval "$(pyenv init -)"
+[ -z $VIRTUAL_ENV ] && type pyenv > /dev/null 2>&1 && eval "$(pyenv init -)"

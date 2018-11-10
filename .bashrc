@@ -1,6 +1,4 @@
-if [ -e /etc/bashrc ]; then
-  . /etc/bashrc
-fi
+[ -e /etc/bashrc ] && . /etc/bashrc
 
 export TERM=xterm-256color
 export LANG=en_US.UTF-8
@@ -24,7 +22,7 @@ export PIPENV_VENV_IN_PROJECT=1
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 
-test -z $VIRTUAL_ENV || export PATH=$VIRTUAL_ENV/bin:$PATH
+[ -z $VIRTUAL_ENV ] || export PATH=$VIRTUAL_ENV/bin:$PATH
 
 alias vi=nvim
 
@@ -34,4 +32,4 @@ type direnv > /dev/null 2>&1 && eval "$(direnv hook bash)"
 
 # type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
 
-test -z $VIRTUAL_ENV && type pyenv > /dev/null 2>&1 && eval "$(pyenv init -)"
+[ -z $VIRTUAL_ENV ] && type pyenv > /dev/null 2>&1 && eval "$(pyenv init -)"

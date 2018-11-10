@@ -22,4 +22,4 @@ export PIPENV_VENV_IN_PROJECT=1
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 
-test -z $VIRTUAL_ENV || export PATH=$VIRTUAL_ENV/bin:$PATH
+[ -z $VIRTUAL_ENV ] || export PATH=$VIRTUAL_ENV/bin:$PATH

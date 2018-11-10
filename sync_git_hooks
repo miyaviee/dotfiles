@@ -1,6 +1,7 @@
 #!/bin/bash
 for dir in ~/projects/* ~/go/src/*; do
-  test -f ${dir} && continue
+  [ -f ${dir} ] && continue
+
   hooks=${dir}/.git/hooks
-  test -e ${hooks} && rm -rf ${hooks} && cp -R .git_tmp/hooks ${dir}/.git
+  [ -e ${hooks} ] && rm -rf ${hooks} && cp -R .git_tmp/hooks ${dir}/.git
 done
