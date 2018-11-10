@@ -5,3 +5,5 @@ brew cleanup
 
 nvim +:PlugUpdate +:q +:PlugClean +:q +:q
 nvim +:UpdateRemotePlugins +:q +:q
+
+cd ~/.zplug && git pull -p
