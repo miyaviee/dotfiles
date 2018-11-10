@@ -29,10 +29,18 @@ test -L ~/.config/nvim/init.vim || ln -fs ~/.vimrc ~/.config/nvim/init.vim
 test -e ~/.config || mkdir ~/.config
 for name in `ls -a .config`; do
   test ${name:0:1} = '.' && continue
-  test -L ~/.config/${name} && continue
 
-  rm -rf ~/.config/${name}
-  ln -fs `pwd`/.config/${name} ~/.config/${name}
+  if [ -f .config/${name} ]; then
+    test -L ~/.config/${name} && continue
+    ln -fs `pwd`/.config/${name} ~/.config/${name} && continue
+  fi
+
+  test -L ~/.config/${name} && unlink ~/.config/${name}
+  test -e ~/.config/${name} || mkdir ~/.config/${name}
+  for conf in .config/${name}/*; do
+    test -L ~/${conf} && continue
+    ln -fs `pwd`/${conf} ~/${conf}
+  done
 done
 
 test -L ~/.pip || ln -fs `pwd`/.pip ~/.pip
@@ -43,7 +51,7 @@ test -z "$(git config --global --get init.templatedir)" && git config --global i
 test -z "$(git config --global --get core.excludesfile)" && git config --global core.excludesfile ~/.gitignore_global
 
 # del dead link
-for link in ~/.*; do
+for link in ~/.* ~/.config/*; do
   test -L $link || continue
   test -e "$(readlink $link)" && continue
   unlink $link
