@@ -10,3 +10,12 @@ layout_virtualenv() {
   fi
   source ${venv_path}/bin/activate
 }
+
+layout_pipenv() {
+  local venv_path=$(pipenv --venv)
+  if [ -z "${venv_path}" ]; then
+    exit 1
+  fi
+  source ${venv_path}/bin/activate
+  export PIPENV_ACTIVE=1
+}
