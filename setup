@@ -11,22 +11,19 @@ git merge origin/master
 
 # filetype conf
 for name in `ls -a`; do
-  if [ -d ${name} ]; then
-    [ ${name:0:1} = '.' ] && continue
-    [ -L ~/.vim/${name} ] && continue
-
-    rm -rf ~/.vim/${name}
-    ln -fs `pwd`/${name} ~/.vim/${name}
+  if [ -f ${name} ]; then
+    [ ${name:0:1} = '.' ] && ln -fs `pwd`/${name} ~/${name}
     continue
   fi
 
-  [ ${name:0:1} = '.' ] && ln -fs `pwd`/${name} ~/${name}
+  [ ${name:0:1} = '.' ] && continue
+  [ -L ~/.vim/${name} ] && continue
+
+  rm -rf ~/.vim/${name}
+  ln -fs `pwd`/${name} ~/.vim/${name}
 done
 
-[ -L ~/.config/nvim ] || ln -fs ~/.vim ~/.config/nvim
-[ -L ~/.config/nvim/init.vim ] || ln -fs ~/.vimrc ~/.config/nvim/init.vim
-
-test -e ~/.config || mkdir ~/.config
+mkdir -p ~/.config
 for name in `ls -a .config`; do
   [ ${name:0:1} = '.' ] && continue
 
@@ -36,25 +33,27 @@ for name in `ls -a .config`; do
   fi
 
   [ -L ~/.config/${name} ] && unlink ~/.config/${name}
-  [ -e ~/.config/${name} ] || mkdir ~/.config/${name}
+
+  mkdir -p ~/.config/${name}
   for conf in .config/${name}/*; do
     [ -L ~/${conf} ] && continue
     ln -fs `pwd`/${conf} ~/${conf}
   done
 done
 
-[ -L ~/.pip ] || ln -fs `pwd`/.pip ~/.pip
-[ -L ~/.git_tmp ] || ln -fs `pwd`/.git_tmp ~/.git_tmp
-[ -L ~/.ctags.d ] || ln -fs `pwd`/.ctags.d ~/.ctags.d
-
-[ -z "$(git config --global --get init.templatedir)" ] && git config --global init.templatedir ~/.git_tmp
-[ -z "$(git config --global --get core.excludesfile)" ] && git config --global core.excludesfile ~/.gitignore_global
+for name in .pip .git_tmp .ctags.d; do
+  [ -L ~/${name} ] || ln -fs `pwd`/${name} ~/${name}
+done
 
 # del dead link
 for link in ~/.* ~/.config/*; do
-  [ -L $link ] || continue
-  [ -e "$(readlink $link)" ] && continue
-  unlink $link
+  [ -L $link ] && [ ! -e "$(readlink $link)" ] && unlink $link
 done
+
+[ -L ~/.config/nvim ] || ln -fs ~/.vim ~/.config/nvim
+[ -L ~/.config/nvim/init.vim ] || ln -fs ~/.vimrc ~/.config/nvim/init.vim
+
+[ -z "$(git config --global --get init.templatedir)" ] && git config --global init.templatedir ~/.git_tmp
+[ -z "$(git config --global --get core.excludesfile)" ] && git config --global core.excludesfile ~/.gitignore_global
 
 nvim +:PlugInstall +:q +:PlugClean +:q +:q
