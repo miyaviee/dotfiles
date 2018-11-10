@@ -31,6 +31,7 @@ let g:lightline = {
 call denite#custom#option('default', 'prompt', '>')
 call denite#custom#option('default', 'statusline', v:false)
 call denite#custom#option('default', 'unique', v:true)
+call denite#custom#option('default', 'buffer_name', 'denite')
 
 if executable('rg')
   call denite#custom#var('file/rec', 'command', ['rg', '--color=never', '--files', '--glob', ''])
@@ -63,6 +64,8 @@ inoremap <silent> <C-h> <ESC>:<C-u>Denite -ignorecase=false grep:::`expand('<cwo
 
 nnoremap <silent> <C-\> :<C-u>Denite outline<CR>
 inoremap <silent> <C-\> <ESC>:<C-u>Denite outline<CR>
+
+nnoremap <silent> ,,    :<C-u>Denite -buffer-name=denite -resume<CR>
 
 " Move to char in line
 map f <Plug>(easymotion-fl)
