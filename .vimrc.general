@@ -31,8 +31,6 @@ let g:lightline = {
 call denite#custom#option('default', 'prompt', '>')
 call denite#custom#option('default', 'statusline', v:false)
 call denite#custom#option('default', 'unique', v:true)
-call denite#custom#option('_', 'highlight_matched_range', 'None')
-call denite#custom#option('_', 'highlight_matched_char', 'None')
 
 if executable('rg')
   call denite#custom#var('file/rec', 'command', ['rg', '--color=never', '--files', '--glob', ''])
