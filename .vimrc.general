@@ -31,6 +31,8 @@ let g:lightline = {
 call denite#custom#option('default', 'prompt', '>')
 call denite#custom#option('default', 'statusline', v:false)
 call denite#custom#option('default', 'empty', v:false)
+call denite#custom#option('default', 'auto_preview', v:true)
+call denite#custom#option('default', 'vertical_preview', v:true)
 
 if executable('rg')
   call denite#custom#var('file/rec', 'command', ['rg', '--color=never', '--files', '--glob', ''])
@@ -49,8 +51,8 @@ call denite#custom#map('insert', "<C-k>", '<denite:move_to_previous_line>')
 call denite#custom#map('insert', "<C-s>", '<denite:do_action:split>')
 call denite#custom#map('insert', "<C-v>", '<denite:do_action:vsplit>')
 
-nnoremap <silent> <C-p> :<C-u>Denite file/rec<CR>
-inoremap <silent> <C-p> <ESC>:<C-u>Denite file/rec<CR>
+nnoremap <silent> <C-p> :<C-u>Denite file/rec -no-auto-preview<CR>
+inoremap <silent> <C-p> <ESC>:<C-u>Denite file/rec -no-auto-preview<CR>
 
 nnoremap <silent> <C-l> :<C-u>Denite grep:`expand('%')`<CR>
 inoremap <silent> <C-l> <ESC>:<C-u>Denite grep:`expand('%')`<CR>
@@ -61,8 +63,8 @@ inoremap <silent> <C-g> <ESC>:<C-u>Denite grep<CR>
 nnoremap <silent> <C-h> :<C-u>Denite grep:::`expand('<cword>')`<CR>
 inoremap <silent> <C-h> <ESC>:<C-u>Denite grep:::`expand('<cword>')`<CR>
 
-nnoremap <silent> <C-\> :<C-u>Denite outline<CR>
-inoremap <silent> <C-\> <ESC>:<C-u>Denite outline<CR>
+nnoremap <silent> <C-\> :<C-u>Denite outline -no-auto-preview<CR>
+inoremap <silent> <C-\> <ESC>:<C-u>Denite outline -no-auto-preview<CR>
 
 nnoremap <silent> ,,    :<C-u>Denite -resume<CR>
 
