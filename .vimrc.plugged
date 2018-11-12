@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'cocopon/iceberg.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
+Plug 'tyrannicaltoucan/vim-quantum'
 
 " completion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
