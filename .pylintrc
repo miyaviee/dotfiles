@@ -1,3 +1,16 @@
+[MASTER]
+ignore=
+    migrations,
+    tests,
+
 [MESSAGES CONTROL]
-disable=all
-enable=attribute-defined-outside-init
+disable=
+    attribute-defined-outside-init,
+    broad-except,
+    import-error,
+    invalid-name,
+    missing-docstring,
+    no-self-use,
+    no-value-for-parameter,
+    too-few-public-methods,
+    unused-argument,
