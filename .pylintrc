@@ -10,6 +10,7 @@ disable=
     import-error,
     invalid-name,
     missing-docstring,
+    no-name-in-module,
     no-self-use,
     no-value-for-parameter,
     too-few-public-methods,
