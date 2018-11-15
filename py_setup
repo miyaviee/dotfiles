@@ -11,11 +11,11 @@ PYTHON=`which python${ver} || which python`
 DIR=neovim${ver}
 
 ${PIP} freeze | xargs ${PIP} uninstall -y
-${PIP} install -U -I --no-cache-dir pip
-${PIP} install -U -I --no-cache-dir -r requirements.txt
-[ ${ver} -eq 3 ] && ${PIP} install -U -I --no-cache-dir black pipenv
-rm -rf ~/${DIR}
-${PYTHON} -m virtualenv ~/${DIR}
+${PIP} install -U pip
+${PIP} install -U -r requirements.txt
+[ ${ver} -eq 3 ] && ${PIP} install -U black pipenv
+[ -e ~/${DIR} ] || ${PYTHON} -m virtualenv ~/${DIR}
 source ~/${DIR}/bin/activate
+pip freeze | xargs pip uninstall -y
 pip install -U neovim
 deactivate
