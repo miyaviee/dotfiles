@@ -5,6 +5,7 @@ ignore=
 
 [MESSAGES CONTROL]
 disable=
+    access-member-before-definition,
     attribute-defined-outside-init,
     broad-except,
     import-error,
