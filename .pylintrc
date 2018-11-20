@@ -15,4 +15,5 @@ disable=
     no-self-use,
     no-value-for-parameter,
     too-few-public-methods,
+    too-many-arguments,
     unused-argument,
