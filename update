@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brew upgrade --fetch-HEAD --cleanup
+brew upgrade --fetch-HEAD
 brew cleanup
 
 nvim +:PlugUpdate +:q +:PlugClean +:q +:q
