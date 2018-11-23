@@ -12,6 +12,7 @@ disable=
     invalid-name,
     missing-docstring,
     no-name-in-module,
+    no-member,
     no-self-use,
     no-value-for-parameter,
     too-few-public-methods,
