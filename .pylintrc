@@ -1,7 +1,7 @@
 [MASTER]
-ignore=
-    migrations,
-    tests,
+ignore-patterns=
+    \d{4}_\w+.py,
+    test_.*.py,
 
 [MESSAGES CONTROL]
 disable=
