@@ -24,6 +24,8 @@ export PATH=$PYENV_ROOT/bin:$PATH
 
 [ -z $VIRTUAL_ENV ] || export PATH=$VIRTUAL_ENV/bin:$PATH
 
+export GIT_MERGE_AUTOEDIT=no
+
 alias vi=nvim
 
 type kubectl > /dev/null 2>&1 && source <(kubectl completion bash)

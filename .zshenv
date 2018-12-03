@@ -22,4 +22,6 @@ export PIPENV_VENV_IN_PROJECT=1
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 
+export GIT_MERGE_AUTOEDIT=no
+
 [ -z $VIRTUAL_ENV ] || export PATH=$VIRTUAL_ENV/bin:$PATH
