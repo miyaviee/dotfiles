@@ -4,4 +4,3 @@ isort
 virtualenv
 pycodestyle
 python-language-server
-pylint

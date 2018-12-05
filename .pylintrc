@@ -3,6 +3,9 @@ ignore-patterns=
     \d{4}_\w+.py,
     test_.*.py,
 
+load-plugins=
+    pylint_django,
+
 [MESSAGES CONTROL]
 disable=
     access-member-before-definition,
@@ -13,7 +16,6 @@ disable=
     invalid-name,
     missing-docstring,
     no-name-in-module,
-    no-member,
     no-self-use,
     no-value-for-parameter,
     too-few-public-methods,
