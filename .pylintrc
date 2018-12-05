@@ -9,7 +9,6 @@ load-plugins=
 [MESSAGES CONTROL]
 disable=
     access-member-before-definition,
-    attribute-defined-outside-init,
     bad-continuation,
     broad-except,
     import-error,
