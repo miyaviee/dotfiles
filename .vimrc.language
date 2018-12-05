@@ -27,6 +27,16 @@ let g:ale_fixers = {
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
+" lsp
+if executable('pyls')
+    " pip install python-language-server
+    autocmd User lsp_setup call lsp#register_server({
+        \ 'name': 'pyls',
+        \ 'cmd': {server_info->['pyls']},
+        \ 'whitelist': ['python'],
+        \ })
+endif
+
 " jsx
 let g:jsx_ext_required = 0
 
