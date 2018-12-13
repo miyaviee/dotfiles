@@ -9,11 +9,11 @@ Plug 'arcticicestudio/nord-vim'
 
 " completion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'zchee/deoplete-jedi', { 'for': 'python' }
   Plug 'zchee/deoplete-go', { 'do': 'make', 'for': 'go' }
-
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
+  Plug 'autozimu/LanguageClient-neovim', {
+      \ 'branch': 'next',
+      \ 'do': 'bash install.sh',
+      \ }
 
 " snippet
 Plug 'Shougo/neosnippet'

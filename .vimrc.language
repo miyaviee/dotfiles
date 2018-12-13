@@ -28,14 +28,18 @@ nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " lsp
-if executable('pyls')
-    " pip install python-language-server
-    autocmd User lsp_setup call lsp#register_server({
-        \ 'name': 'pyls',
-        \ 'cmd': {server_info->['pyls']},
-        \ 'whitelist': ['python'],
-        \ })
-endif
+let g:LanguageClient_serverCommands = {
+    \ 'python': ['pyls'],
+    \ }
+
+let g:LanguageClient_diagnosticsSignsMax = 0
+let g:LanguageClient_changeThrottle = 0.1
+let g:LanguageClient_diagnosticsList = 'Disabled'
+let g:LanguageClient_diagnosticsEnable = 0
+let g:LanguageClient_loadSettings = 0
+let g:LanguageClient_hasSnippetSupport = 0
+let g:LanguageClient_waitOutputTimeout = 5
+let g:LanguageClient_hoverPreview = 'Never'
 
 " jsx
 let g:jsx_ext_required = 0
