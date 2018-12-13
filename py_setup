@@ -11,11 +11,11 @@ PYTHON=`which python${ver} || which python`
 DIR=neovim${ver}
 
 ${PIP} freeze | xargs ${PIP} uninstall -y
-${PIP} install -U pip
-${PIP} install -U -r requirements.txt
-[ ${ver} -eq 3 ] && ${PIP} install -U black pipenv pylint pylint-django
+${PIP} install -IU pip
+${PIP} install -IU -r requirements.txt
+[ ${ver} -eq 3 ] && ${PIP} install -IU black pipenv pylint pylint-django
 [ -e ~/${DIR} ] || ${PYTHON} -m virtualenv ~/${DIR}
 source ~/${DIR}/bin/activate
 pip freeze | xargs pip uninstall -y
-pip install -U neovim
+pip install -IU neovim
 deactivate
