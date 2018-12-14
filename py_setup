@@ -17,5 +17,5 @@ ${PIP} install -IU -r requirements.txt
 [ -e ~/${DIR} ] || ${PYTHON} -m virtualenv ~/${DIR}
 source ~/${DIR}/bin/activate
 pip freeze | xargs pip uninstall -y
-pip install -IU neovim
+pip install -IU pynvim
 deactivate
