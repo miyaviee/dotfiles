@@ -3,8 +3,8 @@
 brew upgrade --fetch-HEAD
 brew cleanup
 
-nvim +:PlugUpdate +:q +:PlugClean +:q +:q
-nvim +:GoUpdateBinaries +:q +:q
-nvim +:UpdateRemotePlugins +:q +:q
+nvim +:PlugUpdate +:PlugClean +:qa
+nvim +:GoUpdateBinaries +:qa
+nvim +:UpdateRemotePlugins +:qa
 
 cd ~/.zplug && git pull -p

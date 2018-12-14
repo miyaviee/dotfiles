@@ -56,4 +56,4 @@ done
 [ -L ~/.config/nvim ] || ln -fs ~/.vim ~/.config/nvim
 [ -L ~/.config/nvim/init.vim ] || ln -fs ~/.vimrc ~/.config/nvim/init.vim
 
-nvim +:PlugInstall +:q +:PlugClean +:q +:q
+nvim +:PlugInstall +:PlugClean +:qa
