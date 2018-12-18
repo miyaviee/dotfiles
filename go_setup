@@ -2,3 +2,5 @@
 
 go get -u golang.org/x/tools/...
 go get -u github.com/sourcegraph/go-langserver
+
+nvim update.go +:GoUpdateBinaries +:qa

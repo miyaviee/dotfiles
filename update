@@ -4,7 +4,6 @@ brew upgrade --fetch-HEAD
 brew cleanup
 
 nvim +:PlugUpdate +:PlugClean +:qa
-nvim +:GoUpdateBinaries +:qa
 nvim +:UpdateRemotePlugins +:qa
 
 cd ~/.zplug && git pull -p
