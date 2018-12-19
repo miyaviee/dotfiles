@@ -1,6 +1,3 @@
 #!/bin/bash
 
-type sql-formatter-cli > /dev/null 2>&1 || npm i -g sql-formatter-cli
-type prettier > /dev/null 2>&1 || npm i -g prettier
-type yamllint > /dev/null 2>&1 || npm i -g yaml-lint
-type yarn > /dev/null 2>&1 || npm i -g yarn
+npm i -g sql-formatter-cli prettier yaml-lint yarn
