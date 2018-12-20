@@ -22,6 +22,7 @@ let g:ale_fixers = {
       \ 'python': ['black'],
       \ 'javascript': ['prettier'],
       \ 'jsx': ['prettier'],
+      \ 'yaml': ['prettier'],
       \ }
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
