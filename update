@@ -3,6 +3,8 @@
 brew upgrade --fetch-HEAD
 brew cleanup
 
+type gcloud > /dev/null 2>&1 && gcloud components update
+
 nvim +:PlugUpdate +:PlugClean +:qa
 nvim +:UpdateRemotePlugins +:qa
 
