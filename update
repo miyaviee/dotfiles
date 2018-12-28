@@ -5,7 +5,8 @@ brew cleanup
 
 type gcloud > /dev/null 2>&1 && gcloud components update
 
-bundle update
+type bundle > /dev/null 2>&1 || gem install bundler
+gem update bundler && bundle update
 
 nvim +:PlugUpdate +:PlugClean +:qa
 nvim +:UpdateRemotePlugins +:qa
