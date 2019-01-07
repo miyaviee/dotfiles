@@ -11,6 +11,7 @@ export PATH=$GOPATH/bin:$PATH
 
 export GEM_HOME=~/.gem
 export PATH=~/.gem/bin:$PATH
+export PATH=/usr/local/opt/ruby/bin:$PATH
 
 export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000

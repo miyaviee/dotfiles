@@ -15,6 +15,7 @@ export PATH=$GOPATH/bin:$PATH
 
 export GEM_HOME=~/.gem
 export PATH=~/.gem/bin:$PATH
+export PATH=/usr/local/opt/ruby/bin:$PATH
 
 export DIRENV_WARN_TIMEOUT=100s
 export PIPENV_VENV_IN_PROJECT=1
