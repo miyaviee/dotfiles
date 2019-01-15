@@ -6,6 +6,7 @@ tap 'rs/tap'
 
 brew 'git'
 brew 'pyenv'
+brew 'xz'
 brew 'go'
 brew 'ruby', link: true
 brew 'node'
