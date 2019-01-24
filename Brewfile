@@ -19,6 +19,7 @@ brew 'universal-ctags', args: ['HEAD', 'without-doc']
 brew 'mysql@5.6', link: true
 brew 'redis@3.2', link: true
 brew 'jq'
+brew 'q'
 
 brew 'vegeta'
 brew 'jaggr'
