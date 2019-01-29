@@ -55,6 +55,7 @@ catch
   " not supported
 endtry
 
+filetype plugin indent on
 syntax on
 
 let g:vim_json_syntax_conceal=0
