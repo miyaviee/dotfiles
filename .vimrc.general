@@ -2,8 +2,6 @@
 set termguicolors
 set background=dark
 
-syntax on
-
 try
   colorscheme gruvbox
 catch
