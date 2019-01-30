@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR=`dirname $0`
+DIR=`pwd`
 
 brew upgrade --fetch-HEAD
 brew cleanup
@@ -10,6 +10,7 @@ nvim +:UpdateRemotePlugins +:qa
 
 cd ~/.zplug && git pull -p
 
+cd ${DIR}
 type gcloud > /dev/null 2>&1 && gcloud components update
 type bundle > /dev/null 2>&1 || gem install bundler
 
