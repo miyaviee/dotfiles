@@ -68,8 +68,8 @@ inoremap <silent> <C-l> <ESC>:<C-u>Denite grep:`expand('%')` -buffer-name=grep<C
 command! DResume  :Denite -buffer-name=grep -resume
 
 " Move to char in line
-map f <Plug>(easymotion-fl)
-map F <Plug>(easymotion-Fl)
+nmap f <Plug>(easymotion-fl)
+nmap F <Plug>(easymotion-Fl)
 
 " s{char}{char} to move to {char}{char}
 nmap s <Plug>(easymotion-overwin-f2)
