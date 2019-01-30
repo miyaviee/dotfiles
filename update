@@ -1,14 +1,16 @@
 #!/bin/bash
 
+DIR=`dirname $0`
+
 brew upgrade --fetch-HEAD
 brew cleanup
-
-type gcloud > /dev/null 2>&1 && gcloud components update
-
-type bundle > /dev/null 2>&1 || gem install bundler
-gem update bundler && bundle install
 
 nvim +:PlugUpdate +:PlugClean +:qa
 nvim +:UpdateRemotePlugins +:qa
 
 cd ~/.zplug && git pull -p
+
+type gcloud > /dev/null 2>&1 && gcloud components update
+type bundle > /dev/null 2>&1 || gem install bundler
+
+gem update bundler && bundle install
