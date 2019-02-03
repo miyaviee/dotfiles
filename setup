@@ -4,7 +4,7 @@ git fetch -p
 git merge origin/master
 
 # vim-plug
-[ -e ~/.vim/autoload/plug.vim ] || curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+[ -e ~/.config/nvim/autoload/plug.vim ] || curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 [ -e ~/.zplug/init.zsh ] || git clone https://github.com/zplug/zplug ~/.zplug
@@ -13,7 +13,7 @@ git merge origin/master
 [ -z "$(git config --global --get core.excludesfile)" ] && git config --global core.excludesfile ~/.gitignore_global
 
 # del dead link
-for link in ~/.* ~/.config/* ~/.vim/*; do
+for link in ~/.* ~/.config/* ~/.config/nvim/*; do
   [ -L $link ] && [ ! -e "$(readlink $link)" ] && unlink $link
 done
 
@@ -29,31 +29,20 @@ done
 
 mkdir -p ~/.config
 for name in .config/*; do
-  [ ${name:0:1} = '.' ] && continue
+  [ ${name:8:1} = '.' ] && continue
 
-  if [ -f .config/${name} ]; then
-    [ -L ~/.config/${name} ] || ln -fs `pwd`/.config/${name} ~/.config/${name}
+  if [ -f ${name} ]; then
+    [ -L ~/${name} ] || ln -fs `pwd`/${name} ~/${name}
     continue
   fi
 
-  [ -L ~/.config/${name} ] && unlink ~/.config/${name}
+  [ -L ~/${name} ] && unlink ~/${name}
 
-  mkdir -p ~/.config/${name}
-  for conf in .config/${name}/*; do
+  mkdir -p ~/${name}
+  for conf in ${name}/*; do
     [ -L ~/${conf} ] && continue
     ln -fs `pwd`/${conf} ~/${conf}
   done
 done
-
-# vim setting
-mkdir -p ~/.vim
-for name in .vim/*; do
-  [ -L ~/${name} ] && continue
-  rm -rf ~/${name}
-  ln -fs `pwd`/${name} ~/${name}
-done
-
-[ -L ~/.config/nvim ] || ln -fs ~/.vim ~/.config/nvim
-[ -L ~/.config/nvim/init.vim ] || ln -fs ~/.vimrc ~/.config/nvim/init.vim
 
 nvim +:PlugInstall +:PlugClean +:qa
