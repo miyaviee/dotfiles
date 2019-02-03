@@ -9,7 +9,7 @@ git merge origin/master
 
 [ -e ~/.zplug/init.zsh ] || git clone https://github.com/zplug/zplug ~/.zplug
 
-[ -z "$(git config --global --get init.templatedir)" ] && git config --global init.templatedir ~/.git_tmp
+[ -z "$(git config --global --get init.templatedir)" ] && git config --global init.templatedir ~/.git_template
 [ -z "$(git config --global --get core.excludesfile)" ] && git config --global core.excludesfile ~/.gitignore_global
 
 # del dead link
@@ -23,7 +23,7 @@ for name in .*; do
   [ -f ${name} ] && ln -fs `pwd`/${name} ~/${name}
 done
 
-for name in .pip .git_tmp .ctags.d; do
+for name in .pip .git_template .ctags.d; do
   [ -L ~/${name} ] || ln -fs `pwd`/${name} ~/${name}
 done
 
