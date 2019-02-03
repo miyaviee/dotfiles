@@ -2,8 +2,7 @@
 
 DIR=`pwd`
 
-brew upgrade --fetch-HEAD
-brew cleanup
+type brew > /dev/null 2>&1 && brew upgrade --fetch-HEAD && brew cleanup
 
 nvim +:PlugUpdate +:PlugClean +:qa
 nvim +:UpdateRemotePlugins +:qa
