@@ -17,13 +17,7 @@ indent_style = tab
 indent_size = 4
 indent_style = tab
 
-[*.{js,json}]
-indent_size = 2
-
 [*.{jsx,ts}]
-indent_size = 4
-
-[*.{md,markdown}]
 indent_size = 4
 
 [*.py]
