@@ -1,5 +1,5 @@
 [flake8]
-exclude = .direnv,.venv,manage.py,migrations/.*
+exclude = .direnv,.venv,manage.py,migrations
 ignore = E203, E266, E501, W503
 max-line-length = 80
 max-complexity = 18
