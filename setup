@@ -1,5 +1,7 @@
 #!/bin/bash
 
+BASEDIR=$(pwd)
+
 git fetch -p
 git merge origin/master
 
@@ -20,17 +22,17 @@ done
 # root dotfiles
 for name in .*; do
   [ "${name:${#name}-5:5}" == "Store" ] && continue
-  [ -f ${name} ] && ln -fs `pwd`/${name} ~/${name}
+  [ -f ${name} ] && ln -fs ${BASEDIR}/${name} ~/${name}
 done
 
 for name in .pip .git_template .ctags.d; do
-  [ -L ~/${name} ] || ln -fs `pwd`/${name} ~/${name}
+  [ -L ~/${name} ] || ln -fs ${BASEDIR}/${name} ~/${name}
 done
 
 mkdir -p ~/.config
 for name in .config/*; do
   if [ -f ${name} ]; then
-    [ -L ~/${name} ] || ln -fs `pwd`/${name} ~/${name}
+    [ -L ~/${name} ] || ln -fs ${BASEDIR}/${name} ~/${name}
     continue
   fi
 
@@ -38,7 +40,7 @@ for name in .config/*; do
 
   mkdir -p ~/${name}
   for conf in ${name}/*; do
-    [ -L ~/${conf} ] || ln -fs `pwd`/${conf} ~/${conf}
+    [ -L ~/${conf} ] || ln -fs ${BASEDIR}/${conf} ~/${conf}
   done
 done
 
