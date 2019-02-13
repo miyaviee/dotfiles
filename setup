@@ -29,8 +29,6 @@ done
 
 mkdir -p ~/.config
 for name in .config/*; do
-  [ ${name:8:1} = '.' ] && continue
-
   if [ -f ${name} ]; then
     [ -L ~/${name} ] || ln -fs `pwd`/${name} ~/${name}
     continue
@@ -40,8 +38,7 @@ for name in .config/*; do
 
   mkdir -p ~/${name}
   for conf in ${name}/*; do
-    [ -L ~/${conf} ] && continue
-    ln -fs `pwd`/${conf} ~/${conf}
+    [ -L ~/${conf} ] || ln -fs `pwd`/${conf} ~/${conf}
   done
 done
 
