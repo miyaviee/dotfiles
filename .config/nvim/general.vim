@@ -30,9 +30,6 @@ call denite#custom#option('_', 'prompt', '>')
 call denite#custom#option('_', 'statusline', v:false)
 call denite#custom#option('_', 'empty', v:false)
 
-call denite#custom#option('grep', 'auto_preview', v:true)
-call denite#custom#option('grep', 'vertical_preview', v:true)
-
 if executable('rg')
   call denite#custom#var('file/rec', 'command', ['rg', '--color=never', '--files', '--glob', ''])
 
