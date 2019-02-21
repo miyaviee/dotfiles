@@ -37,10 +37,11 @@ let g:LanguageClient_diagnosticsSignsMax = 0
 let g:LanguageClient_changeThrottle = 0.1
 let g:LanguageClient_diagnosticsList = 'Disabled'
 let g:LanguageClient_diagnosticsEnable = 0
-let g:LanguageClient_loadSettings = 0
 let g:LanguageClient_hasSnippetSupport = 0
 let g:LanguageClient_waitOutputTimeout = 5
 let g:LanguageClient_hoverPreview = 'Never'
+
+let g:LanguageClient_settingsPath = expand('~/.config/nvim/settings.json')
 
 " jsx
 let g:jsx_ext_required = 0
