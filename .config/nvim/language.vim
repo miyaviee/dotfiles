@@ -49,9 +49,5 @@ let g:jsx_ext_required = 0
 " ctags
 let g:gutentags_ctags_tagfile = '.git/tags'
 
-" comment
-autocmd FileType php setlocal commentstring=//\ %s
-autocmd FileType sh setlocal commentstring=#\ %s
-
 " table
 let g:table_mode_corner = '|'
