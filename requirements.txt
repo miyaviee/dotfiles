@@ -1,6 +1,4 @@
-autopep8
 flake8
 isort
 virtualenv
-pycodestyle
 python-language-server

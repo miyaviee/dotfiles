@@ -24,6 +24,10 @@ let g:ale_fixers = {
       \ 'javascript.jsx': ['eslint'],
       \ }
 
+if executable('autopep8')
+  let g:ale_fixers.python = ['autopep8']
+endif
+
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
