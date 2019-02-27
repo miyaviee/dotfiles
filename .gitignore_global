@@ -4,5 +4,6 @@
 .envrc
 .python-version
 .ruby-version
+.node-version
 .DS_Store
 **/assets/*
