@@ -5,11 +5,10 @@ tap 'universal-ctags/universal-ctags'
 tap 'rs/tap'
 
 brew 'git'
-brew 'pyenv'
+brew 'anyenv'
 brew 'xz'
 brew 'go'
 brew 'ruby', link: true
-brew 'node'
 brew 'lua@5.1'
 brew 'direnv'
 brew 'neovim'
