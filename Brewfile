@@ -8,7 +8,6 @@ brew 'git'
 brew 'anyenv'
 brew 'xz'
 brew 'go'
-brew 'ruby', link: true
 brew 'lua@5.1'
 brew 'direnv'
 brew 'neovim'
