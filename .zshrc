@@ -68,7 +68,7 @@ alias vi=nvim
 # added by travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
-type anyenv > /dev/null 2>&1 && eval "$(anyenv init -)"
+[[ ! "${PATH}" =~ "\.anyenv" ]] && type anyenv > /dev/null 2>&1 && eval "$(anyenv init -)"
 
 type kubectl > /dev/null 2>&1 && source <(kubectl completion zsh)
 
