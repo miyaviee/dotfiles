@@ -20,9 +20,6 @@ export PATH=/usr/local/opt/ruby/bin:$PATH
 export DIRENV_WARN_TIMEOUT=100s
 export PIPENV_VENV_IN_PROJECT=1
 
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PYENV_ROOT/bin:$PATH
-
 [ -z $VIRTUAL_ENV ] || export PATH=$VIRTUAL_ENV/bin:$PATH
 
 export GIT_MERGE_AUTOEDIT=no
@@ -36,5 +33,3 @@ type kubectl > /dev/null 2>&1 && source <(kubectl completion bash)
 type direnv > /dev/null 2>&1 && eval "$(direnv hook bash)"
 
 # type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
-
-[ -z $VIRTUAL_ENV ] && type pyenv > /dev/null 2>&1 && eval "$(pyenv init -)"

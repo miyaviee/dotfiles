@@ -75,5 +75,3 @@ type kubectl > /dev/null 2>&1 && source <(kubectl completion zsh)
 type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
 
 # type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
-
-[ -z $VIRTUAL_ENV ] && type pyenv > /dev/null 2>&1 && eval "$(pyenv init -)"
