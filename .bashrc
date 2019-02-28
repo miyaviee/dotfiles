@@ -20,8 +20,6 @@ export PATH=/usr/local/opt/ruby/bin:$PATH
 export DIRENV_WARN_TIMEOUT=100s
 export PIPENV_VENV_IN_PROJECT=1
 
-[ -z $VIRTUAL_ENV ] || export PATH=$VIRTUAL_ENV/bin:$PATH
-
 export GIT_MERGE_AUTOEDIT=no
 
 alias vi=nvim
