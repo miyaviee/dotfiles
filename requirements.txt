@@ -1,4 +1,5 @@
 flake8
 isort
-virtualenv
 python-language-server
+virtualenv
+yapf

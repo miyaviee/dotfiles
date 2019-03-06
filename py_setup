@@ -14,7 +14,7 @@ ${PIP} freeze | xargs ${PIP} uninstall -y
 ${PIP} install -IU pip
 ${PIP} install -IU -r requirements.txt
 [ ${ver} -eq 2 ] && ${PIP} install -IU awscli
-[ ${ver} -eq 3 ] && ${PIP} install -IU black pipenv pylint pylint-django
+[ ${ver} -eq 3 ] && ${PIP} install -IU pipenv pylint pylint-django
 rm -rf ~/${DIR} && ${PYTHON} -m virtualenv ~/${DIR}
 source ~/${DIR}/bin/activate
 pip install -IU pynvim
