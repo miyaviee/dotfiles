@@ -19,14 +19,10 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
       \ 'go': ['goimports'],
-      \ 'python': ['yapf'],
+      \ 'python': executable('black') ? ['black'] : ['yapf'],
       \ 'javascript': ['eslint'],
       \ 'javascript.jsx': ['eslint'],
       \ }
-
-if executable('black')
-  let g:ale_fixers.python = ['black']
-endif
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
