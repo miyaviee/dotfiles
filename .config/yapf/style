@@ -2,5 +2,5 @@
 based_on_style = pep8
 allow_split_before_dict_value = False
 column_limit = 88
-dedent_closing_brackets = True
 space_between_ending_comma_and_closing_bracket = False
+split_arguments_when_comma_terminated = True
