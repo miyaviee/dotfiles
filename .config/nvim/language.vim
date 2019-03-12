@@ -29,7 +29,7 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " lsp
 let g:LanguageClient_serverCommands = {
-    \ 'go': ['go-langserver', '-gocodecompletion'],
+    \ 'go': ['gopls', '-mode', 'stdio'],
     \ 'python': ['pyls'],
     \ }
 
