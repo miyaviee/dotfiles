@@ -3,6 +3,7 @@
 .vscode/
 .envrc
 .python-version
+.yapfignore
 .ruby-version
 .node-version
 .DS_Store

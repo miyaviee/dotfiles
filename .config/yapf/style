@@ -4,3 +4,4 @@ allow_split_before_dict_value = False
 column_limit = 88
 space_between_ending_comma_and_closing_bracket = False
 split_arguments_when_comma_terminated = True
+split_before_arithmetic_operator = True
