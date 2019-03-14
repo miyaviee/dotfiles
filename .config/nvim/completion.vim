@@ -1,9 +1,7 @@
 " deoplete
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_smart_case = 1
-let g:deoplete#max_list = 10
+let g:deoplete#max_list = 20
 
-call deoplete#custom#source('_', 'sorters', ['sorter_word'])
 call deoplete#custom#source('tag', 'min_pattern_length', 5)
 
 function g:Multiple_cursors_before()
