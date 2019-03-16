@@ -2,10 +2,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 " colorcheme
 Plug 'cocopon/iceberg.vim'
-Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
 Plug 'tyrannicaltoucan/vim-quantum'
-Plug 'arcticicestudio/nord-vim'
 
 " completion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
