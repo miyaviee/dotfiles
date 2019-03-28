@@ -24,8 +24,6 @@ export GIT_MERGE_AUTOEDIT=no
 
 alias vi=nvim
 
-[[ ! "${PATH}" =~ "\.anyenv" ]] && type anyenv > /dev/null 2>&1 && eval "$(anyenv init -)"
-
 type kubectl > /dev/null 2>&1 && source <(kubectl completion bash)
 
 type direnv > /dev/null 2>&1 && eval "$(direnv hook bash)"
