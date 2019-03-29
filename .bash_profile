@@ -1,6 +1,5 @@
-if [ -e ~/.bashrc ]; then
-  . ~/.bashrc
-fi
+# for Mac
+[ -f ~/.bashrc ] && . ~/.bashrc
 
 # The next line updates PATH for the Google Cloud SDK.
 [ -f ~/google-cloud-sdk/path.bash.inc ] && source ~/google-cloud-sdk/path.bash.inc
