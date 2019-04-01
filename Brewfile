@@ -12,7 +12,7 @@ brew 'go'
 brew 'direnv'
 brew 'neovim'
 brew 'ripgrep'
-brew 'zsh', args: ['without-etcdir']
+brew 'zsh'
 brew 'universal-ctags', args: ['HEAD', 'without-doc']
 brew 'mysql-client'
 brew 'redis'
