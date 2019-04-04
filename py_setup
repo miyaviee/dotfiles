@@ -8,7 +8,7 @@ for ver in 2 3; do
   ${PIP} freeze | xargs ${PIP} uninstall -y
   ${PIP} install -IU pip
   ${PIP} install -IU -r requirements.txt
-  [ ${ver} -eq 3 ] && ${PIP} install -IU pipenv pylint
+  [ ${ver} -eq 3 ] && ${PIP} install -IU pipenv
   rm -rf ~/${DIR} && ${PYTHON} -m virtualenv ~/${DIR}
   source ~/${DIR}/bin/activate
   pip install -IU pynvim
