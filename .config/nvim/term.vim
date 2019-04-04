@@ -12,6 +12,10 @@ command! -nargs=+ Django  :T python manage.py <args>
 
 let g:test#strategy = 'neoterm'
 
+if executable('pytest')
+  let g:test#python#runner = 'pytest'
+endif
+
 let g:test#python#djangotest#options = {
       \ 'file': '--failfast --noinput',
       \ 'suite': '--failfast --noinput',
