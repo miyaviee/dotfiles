@@ -1,5 +1,4 @@
 flake8
-isort
 python-language-server
 virtualenv
 git+https://github.com/google/yapf
