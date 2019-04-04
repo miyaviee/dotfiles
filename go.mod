@@ -48,20 +48,21 @@ require (
 	github.com/mattn/go-runewidth v0.0.4 // indirect
 	github.com/mdempsky/gocode v0.0.0-20190203001940-7fb65232883f // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
-	github.com/mithrandie/csvq v1.9.7 // indirect
+	github.com/mithrandie/csvq v1.9.9 // indirect
 	github.com/nbutton23/zxcvbn-go v0.0.0-20180912185939-ae427f1e4c1d // indirect
 	github.com/nicksnyder/go-i18n v1.10.0 // indirect
 	github.com/onsi/ginkgo v1.8.0 // indirect
 	github.com/onsi/gomega v1.5.0 // indirect
+	github.com/pelletier/go-toml v1.3.0 // indirect
 	github.com/peterh/liner v1.1.0 // indirect
 	github.com/pkg/errors v0.8.1 // indirect
 	github.com/pkg/profile v1.3.0 // indirect
-	github.com/rogpeppe/go-internal v1.2.2 // indirect
+	github.com/rogpeppe/go-internal v1.3.0 // indirect
 	github.com/rogpeppe/godef v1.1.1 // indirect
 	github.com/russross/blackfriday v2.0.0+incompatible // indirect
 	github.com/shirou/gopsutil v2.18.12+incompatible // indirect
 	github.com/shurcooL/go v0.0.0-20190330031554-6713ea532688 // indirect
-	github.com/sirupsen/logrus v1.4.0 // indirect
+	github.com/sirupsen/logrus v1.4.1 // indirect
 	github.com/spf13/afero v1.2.2 // indirect
 	github.com/spf13/cobra v0.0.3 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
@@ -71,14 +72,13 @@ require (
 	github.com/ugorji/go/codec v0.0.0-20190320090025-2dc34c0b8780 // indirect
 	github.com/zmb3/gogetdoc v0.0.0-20190228002656-b37376c5da6a // indirect
 	golang.org/x/arch v0.0.0-20190312162104-788fe5ffcd8c // indirect
-	golang.org/x/crypto v0.0.0-20190325154230-a5d413f7728c // indirect
+	golang.org/x/crypto v0.0.0-20190403202508-8e1b8d32e692 // indirect
 	golang.org/x/lint v0.0.0-20190313153728-d0100b6bd8b3 // indirect
-	golang.org/x/net v0.0.0-20190328230028-74de082e2cca // indirect
+	golang.org/x/net v0.0.0-20190403144856-b630fd6fe46b // indirect
 	golang.org/x/sync v0.0.0-20190227155943-e225da77a7e6 // indirect
-	golang.org/x/sys v0.0.0-20190402054613-e4093980e83e // indirect
-	golang.org/x/tools v0.0.0-20190401205534-4c644d7e323d // indirect
+	golang.org/x/tools v0.0.0-20190403183509-8a44e74612bc // indirect
 	gopkg.in/alecthomas/kingpin.v3-unstable v3.0.0-20180810215634-df19058c872c // indirect
-	honnef.co/go/tools v0.0.0-20190319011948-d116c56a00f3 // indirect
+	honnef.co/go/tools v0.0.0-20190404041852-d36bf9040906 // indirect
 	mvdan.cc/unparam v0.0.0-20190310220240-1b9ccfa71afe // indirect
 	sourcegraph.com/sqs/pbtypes v1.0.0 // indirect
 )
