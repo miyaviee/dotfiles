@@ -1,3 +1,0 @@
-#!/bin/bash
-
-type isort > /dev/null 2>&1 && isort `git diff --name-only --staged` > /dev/null 2>&1
