@@ -1,6 +1,6 @@
 #!/bin/bash
 
-go get -u golang.org/x/tools/...
+go get -u golang.org/x/tools/cmd/gopls
 go get -u github.com/mithrandie/csvq
 
 nvim update.go +:GoUpdateBinaries +:qa
