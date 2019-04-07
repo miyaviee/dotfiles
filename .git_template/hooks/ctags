@@ -1,3 +1,3 @@
-#!/bin/sh
-GITDIR=`dirname $0`/..
+#!/bin/bash
+GITDIR=$(git rev-parse --show-toplevel)
 ctags -f ${GITDIR}/tags ${GITDIR}/..
