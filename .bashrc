@@ -12,7 +12,6 @@ export PATH=/usr/local/bin:$PATH
 
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
-export GO111MODULE=on
 
 export DIRENV_WARN_TIMEOUT=100s
 export PIPENV_VENV_IN_PROJECT=1

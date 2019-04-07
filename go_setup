@@ -1,6 +1,13 @@
 #!/bin/bash
 
+DIR=$(cd $(dirname ${0}) && pwd)
+
 go get -u golang.org/x/tools/cmd/gopls
-go get -u github.com/mithrandie/csvq
+
+for lib in github.com/mithrandie/csvq; do
+  go get -d ${lib}
+  cd ${GOPATH}/src/${lib} && env GO111MODULE=on go install
+done
+cd ${DIR}
 
 nvim update.go +:GoUpdateBinaries +:qa
