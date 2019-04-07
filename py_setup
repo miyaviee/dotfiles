@@ -1,8 +1,8 @@
 #!/bin/bash
 
 for ver in 2 3; do
-  PIP=`which pip${ver} || which pip`
-  PYTHON=`which python${ver} || which python`
+  PIP=$(which pip${ver} || which pip)
+  PYTHON=$(which python${ver} || which python)
   DIR=neovim${ver}
 
   ${PIP} freeze | xargs ${PIP} uninstall -y
