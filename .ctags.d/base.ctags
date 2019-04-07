@@ -10,8 +10,9 @@
 --exclude=migrate
 --exclude=migrations
 
---exclude=spec
---exclude=tests
+--exclude=*_test.go
+--exclude=*_spec.rb
+--exclude=test_*.py
 
 --exclude=vendor
 --exclude=node_modules
