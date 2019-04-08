@@ -1,3 +1,3 @@
 #!/bin/bash
-GITDIR=$(git rev-parse --show-toplevel)
+GITDIR=$(git rev-parse --show-toplevel)/.git
 [ -e $GEM_HOME ] && ctags --languages=ruby -f ${GITDIR}/vendor.tags $GEM_HOME/
