@@ -13,7 +13,7 @@ brew 'direnv'
 brew 'neovim'
 brew 'ripgrep'
 brew 'zsh'
-brew 'universal-ctags', args: ['HEAD', 'without-doc']
+brew 'universal-ctags', args: ['HEAD', 'with-jansson', 'with-libyaml', 'without-doc']
 brew 'mysql-client'
 brew 'redis'
 brew 'jq'
