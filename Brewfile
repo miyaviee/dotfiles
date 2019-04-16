@@ -26,5 +26,3 @@ brew 'circleci'
 
 brew 'kubernetes-cli'
 brew 'kubernetes-helm'
-
-cask 'insomnia'
