@@ -31,6 +31,9 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 let g:LanguageClient_serverCommands = {
     \ 'go': ['gopls'],
     \ 'python': ['pyls'],
+    \ 'javascript': ['javascript-typescript-stdio'],
+    \ 'javascript.jsx': ['javascript-typescript-stdio'],
+    \ 'typescript': ['javascript-typescript-stdio'],
     \ }
 
 let g:LanguageClient_diagnosticsSignsMax = 0
