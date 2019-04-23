@@ -16,10 +16,8 @@ if executable('pytest')
   let g:test#python#runner = 'pytest'
 endif
 
-let g:test#python#djangotest#options = {
-      \ 'file': '--failfast --noinput',
-      \ 'suite': '--failfast --noinput',
-      \ }
+let g:test#python#djangotest#options = '--failfast --noinput'
+let g:test#python#pytest#options = '-x'
 
 nnoremap <silent> tt :<C-u>TestLast<CR>
 nnoremap <silent> tf :<C-u>TestFile<CR>
