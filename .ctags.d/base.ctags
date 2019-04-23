@@ -10,10 +10,6 @@
 --exclude=migrate
 --exclude=migrations
 
---exclude=*_test.go
---exclude=*_spec.rb
---exclude=test_*.py
-
 --exclude=vendor
 --exclude=node_modules
 --exclude=gulp
