@@ -3,6 +3,8 @@
 .vscode/
 .envrc
 .python-version
+.coverage
+coverage/
 .yapfignore
 .ruby-version
 .node-version
