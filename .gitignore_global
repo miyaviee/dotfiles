@@ -4,6 +4,7 @@
 .envrc
 .python-version
 .coverage
+.coverage.*
 coverage/
 .yapfignore
 .ruby-version
