@@ -12,7 +12,7 @@ let g:ale_pattern_options = {
       \ }
 
 let g:ale_linters = {
-      \ 'go': ['vet', 'golint'],
+      \ 'go': ['vet'],
       \ 'python': ['flake8'],
       \ 'ruby': ['rubocop', 'rails_best_pracitices'],
       \ }
