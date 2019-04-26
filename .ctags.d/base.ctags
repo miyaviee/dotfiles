@@ -1,6 +1,7 @@
 --tag-relative=yes
 --recurse=yes
 --sort=yes
+--excmd=number
 
 --exclude=.git
 --exclude=public
