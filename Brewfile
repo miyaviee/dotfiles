@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap 'beeftornado/rmtree'
 tap 'universal-ctags/universal-ctags'
 tap 'rs/tap'
+tap 'koekeishiya/formulae'
 
 brew 'git'
 brew 'anyenv'
@@ -26,3 +27,5 @@ brew 'circleci'
 
 brew 'kubernetes-cli'
 brew 'kubernetes-helm'
+
+brew 'chunkwm'
