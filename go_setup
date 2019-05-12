@@ -9,5 +9,3 @@ for lib in github.com/mithrandie/csvq; do
   cd ${GOPATH}/src/${lib} && env GO111MODULE=on go install
 done
 cd ${DIR}
-
-nvim update.go +:GoUpdateBinaries +:qa
