@@ -2,8 +2,6 @@
 
 DIR=$(cd $(dirname ${0}) && pwd)
 
-go get -u golang.org/x/tools/cmd/gopls
-
 for lib in github.com/mithrandie/csvq; do
   go get -u -d ${lib}
   cd ${GOPATH}/src/${lib} && env GO111MODULE=on go install
