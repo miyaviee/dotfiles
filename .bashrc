@@ -23,5 +23,3 @@ alias vi=nvim
 type kubectl > /dev/null 2>&1 && source <(kubectl completion bash)
 
 type direnv > /dev/null 2>&1 && eval "$(direnv hook bash)"
-
-# type pipenv > /dev/null 2>&1 && eval "$(pipenv --completion)"
