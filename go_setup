@@ -1,9 +1,6 @@
 #!/bin/bash
 
-DIR=$(cd $(dirname ${0}) && pwd)
-
 for lib in github.com/mithrandie/csvq; do
   go get -u -d ${lib}
   cd ${GOPATH}/src/${lib} && env GO111MODULE=on go install
 done
-cd ${DIR}
