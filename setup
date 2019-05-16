@@ -16,9 +16,9 @@ git merge origin/master
 
 [ -e ~/.config/anyenv/anyenv-install ] || anyenv install --init
 
-# del dead link
+# reset link
 for link in ~/.* ~/.config/* ~/.config/nvim/*; do
-  [ -L $link ] && [ ! -e "$(readlink $link)" ] && unlink $link
+  [ -L $link ] && unlink $link
 done
 
 # root dotfiles
@@ -28,17 +28,15 @@ for name in .*; do
 done
 
 for name in .pip .git_template .ctags.d; do
-  [ -L ~/${name} ] || ln -fs ${BASEDIR}/${name} ~/${name}
+  ln -fs ${BASEDIR}/${name} ~/${name}
 done
 
 mkdir -p ~/.config
 for name in .config/*; do
   if [ -f ${name} ]; then
-    [ -L ~/${name} ] || ln -fs ${BASEDIR}/${name} ~/${name}
+    ln -fs ${BASEDIR}/${name} ~/${name}
     continue
   fi
-
-  [ -L ~/${name} ] && unlink ~/${name}
 
   mkdir -p ~/${name}
   for conf in ${name}/*; do
