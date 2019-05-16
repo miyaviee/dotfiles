@@ -47,3 +47,5 @@ for name in .config/*; do
 done
 
 nvim +:PlugInstall +:PlugClean +:qa
+
+type bundle > /dev/null 2>&1 || gem install bundler
