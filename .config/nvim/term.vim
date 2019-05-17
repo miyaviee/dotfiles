@@ -20,5 +20,6 @@ let g:test#python#djangotest#options = '--failfast --noinput'
 let g:test#python#pytest#options = '-x'
 
 nnoremap <silent> tt :<C-u>TestLast<CR>
+nnoremap <silent> tn :<C-u>TestNearest<CR>
 nnoremap <silent> tf :<C-u>TestFile<CR>
 nnoremap <silent> ts :<C-u>TestSuite<CR>
