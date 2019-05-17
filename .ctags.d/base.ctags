@@ -20,4 +20,5 @@
 --exclude=Makefile
 
 --languages=-JSON
+--languages=-Yaml
 --languages=-reStructuredText
