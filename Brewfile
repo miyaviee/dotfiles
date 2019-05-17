@@ -20,6 +20,7 @@ brew 'universal-ctags', args: ['HEAD', 'with-jansson', 'with-libyaml', 'without-
 brew 'mysql-client'
 brew 'redis'
 brew 'jq'
+brew 'fzf'
 
 brew 'vegeta'
 brew 'jaggr'

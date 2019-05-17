@@ -27,6 +27,8 @@ Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'dhruvasagar/vim-table-mode'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 " runner
 Plug 'janko-m/vim-test'
