@@ -5,6 +5,6 @@ type gcloud > /dev/null 2>&1 && gcloud components update
 
 gem update bundler && bundle install
 
-nvim +:PlugUpdate +:PlugClean +:UpdateRemotePlugins +:qa
+nvim +:PlugUpgrade +:PlugUpdate +:PlugClean +:UpdateRemotePlugins +:qa
 
 cd ~/.zplug && git pull -p
