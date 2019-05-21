@@ -70,3 +70,5 @@ nmap F <Plug>(easymotion-Fl)
 
 " s{char}{char} to move to {char}{char}
 nmap s <Plug>(easymotion-overwin-f2)
+
+let g:EasyMotion_smartcase = 1
