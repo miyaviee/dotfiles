@@ -18,8 +18,9 @@ endfunction
 imap <expr><C-c> pumvisible() ? deoplete#smart_close_popup() : "\<C-c>"
 
 " neosnippet
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<ESC>"
+imap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_jump)" : neosnippet#expandable()
+      \ ? "\<Plug>(neosnippet_expand)" : "\<TAB>"
+smap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_jump)" : "\<TAB>"
 
 " emmet
 let g:user_emmet_settings = {
