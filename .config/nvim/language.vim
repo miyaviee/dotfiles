@@ -26,6 +26,7 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 let g:LanguageClient_serverCommands = {
     \ 'go': ['gopls'],
     \ 'python': ['pyls'],
+    \ 'ruby': ['solargraph', 'stdio'],
     \ 'javascript': ['javascript-typescript-stdio'],
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
     \ 'typescript': ['javascript-typescript-stdio'],
