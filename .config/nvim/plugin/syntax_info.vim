@@ -13,11 +13,12 @@ function! s:get_syn_attr(synid)
   let guifg = synIDattr(a:synid, "fg", "gui")
   let guibg = synIDattr(a:synid, "bg", "gui")
   return {
-        \ "name": name,
-        \ "ctermfg": ctermfg,
-        \ "ctermbg": ctermbg,
-        \ "guifg": guifg,
-        \ "guibg": guibg}
+        \   "name": name,
+        \   "ctermfg": ctermfg,
+        \   "ctermbg": ctermbg,
+        \   "guifg": guifg,
+        \   "guibg": guibg,
+        \ }
 endfunction
 function! s:get_syn_info()
   let baseSyn = s:get_syn_attr(s:get_syn_id(0))

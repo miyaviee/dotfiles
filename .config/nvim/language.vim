@@ -2,21 +2,21 @@
 let g:ale_set_highlights = 0
 
 let g:ale_pattern_options = {
-      \ '\.direnv\|\.venv\|\.vim\|vendor\|migrations': {'ale_linters': [], 'ale_fixers': []},
+      \   '\.direnv\|\.venv\|\.vim\|vendor\|migrations': {'ale_linters': [], 'ale_fixers': []},
       \ }
 
 let g:ale_linters = {
-      \ 'go': ['vet', 'golint'],
-      \ 'python': ['flake8'],
-      \ 'ruby': ['rubocop'],
+      \   'go': ['vet', 'golint'],
+      \   'python': ['flake8'],
+      \   'ruby': ['rubocop'],
       \ }
 
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
-      \ 'go': ['goimports'],
-      \ 'python': executable('black') ? ['black'] : ['yapf'],
-      \ 'javascript': ['eslint'],
-      \ 'javascript.jsx': ['eslint'],
+      \   'go': ['goimports'],
+      \   'python': executable('black') ? ['black'] : ['yapf'],
+      \   'javascript': ['eslint'],
+      \   'javascript.jsx': ['eslint'],
       \ }
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
@@ -24,12 +24,12 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " lsp
 let g:LanguageClient_serverCommands = {
-    \ 'go': ['gopls'],
-    \ 'python': ['pyls'],
-    \ 'ruby': ['solargraph', 'stdio'],
-    \ 'javascript': ['javascript-typescript-stdio'],
-    \ 'javascript.jsx': ['javascript-typescript-stdio'],
-    \ 'typescript': ['javascript-typescript-stdio'],
+    \   'go': ['gopls'],
+    \   'python': ['pyls'],
+    \   'ruby': ['solargraph', 'stdio'],
+    \   'javascript': ['javascript-typescript-stdio'],
+    \   'javascript.jsx': ['javascript-typescript-stdio'],
+    \   'typescript': ['javascript-typescript-stdio'],
     \ }
 
 let g:LanguageClient_diagnosticsSignsMax = 0

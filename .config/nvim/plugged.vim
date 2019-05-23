@@ -9,8 +9,8 @@ Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'deoplete-plugins/deoplete-tag'
   Plug 'autozimu/LanguageClient-neovim', {
-      \ 'branch': 'next',
-      \ 'do': 'bash install.sh',
+      \   'branch': 'next',
+      \   'do': 'bash install.sh',
       \ }
 
 " snippet
