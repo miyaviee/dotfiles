@@ -5,7 +5,6 @@ tap 'universal-ctags/universal-ctags'
 tap 'rs/tap'
 tap 'koekeishiya/formulae'
 
-brew 'git'
 brew 'anyenv'
 brew 'readline'
 brew 'xz'
