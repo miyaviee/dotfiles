@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for repo in github.com/mithrandie/csvq; do
+  echo "get ${repo}"
+  env GO111MODULE=off go get -u ${repo}
+done
