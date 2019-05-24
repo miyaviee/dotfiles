@@ -5,6 +5,7 @@ let g:ale_pattern_options = {
       \   '\.direnv\|\.venv\|\.vim\|vendor\|migrations': {'ale_linters': [], 'ale_fixers': []},
       \ }
 
+let g:ale_lint_delay = 500
 let g:ale_linters = {
       \   'go': ['govet', 'golint'],
       \   'python': ['flake8'],
