@@ -6,7 +6,7 @@ let g:ale_pattern_options = {
       \ }
 
 let g:ale_linters = {
-      \   'go': ['vet', 'golint'],
+      \   'go': ['govet', 'golint'],
       \   'python': ['flake8'],
       \   'ruby': ['rubocop'],
       \ }
@@ -50,8 +50,8 @@ let g:gutentags_ctags_tagfile = '.git/tags'
 let g:table_mode_corner = '|'
 
 " go
-let g:go_def_mode = 'godef'
-let g:go_info_mode = 'gocode'
+let g:go_def_mode = 'gopls'
+let g:go_info_mode = 'gopls'
 let g:go_code_completion_enabled = 0
 let g:go_fmt_autosave = 0
 let g:go_mod_fmt_autosave = 0
