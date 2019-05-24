@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for repo in github.com/mithrandie/csvq; do
+for repo in github.com/mithrandie/csvq github.com/cweill/gotests/...; do
   echo "get ${repo}"
   env GO111MODULE=off go get -u ${repo}
 done
