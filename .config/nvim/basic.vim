@@ -50,7 +50,7 @@ try
   set inccommand=nosplit
 
   autocmd TermOpen * setlocal nonumber norelativenumber signcolumn=no
-  tmap <silent> <ESC> <C-\><C-n>
+  autocmd TermOpen * tnoremap <silent> <ESC> <C-\><C-n>
 catch
   " not supported
 endtry
