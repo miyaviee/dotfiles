@@ -5,7 +5,6 @@ let g:deoplete#max_list = 20
 call deoplete#custom#option('ignore_sources', {'_': ['ale']})
 
 call deoplete#custom#source('_', 'sorters', ['sorter_word'])
-call deoplete#custom#source('tag', 'min_pattern_length', 5)
 
 function g:Multiple_cursors_before()
   call deoplete#custom#buffer_option('auto_complete', v:false)
