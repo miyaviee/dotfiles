@@ -42,6 +42,17 @@ let g:LanguageClient_waitOutputTimeout = 5
 let g:LanguageClient_hoverPreview = 'Never'
 
 " jsx
+function LC_maps()
+  if has_key(g:LanguageClient_serverCommands, &filetype)
+    nnoremap <buffer> <silent> K     :call LanguageClient#textDocument_hover()<cr>
+    nnoremap <buffer> <silent> gd    :call LanguageClient#textDocument_definition()<CR>
+    nnoremap <buffer> <silent> <C-]> :call LanguageClient#textDocument_definition()<CR>
+    nnoremap <buffer> <silent> <F2>  :call LanguageClient#textDocument_rename()<CR>
+  endif
+endfunction
+
+autocmd FileType * call LC_maps()
+
 let g:jsx_ext_required = 0
 
 " ctags
