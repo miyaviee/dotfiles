@@ -68,9 +68,6 @@ call denite#custom#map('insert', "<C-v>", '<denite:do_action:vsplit>')
 nnoremap <silent> <C-p> :<C-u>Denite file/rec<CR>
 inoremap <silent> <C-p> <ESC>:<C-u>Denite file/rec<CR>
 
-nnoremap <silent> <C-\> :<C-u>Denite outline<CR>
-inoremap <silent> <C-\> <ESC>:<C-u>Denite outline<CR>
-
 nnoremap <silent> <C-g> :<C-u>Denite grep -buffer-name=grep<CR>
 inoremap <silent> <C-g> <ESC>:<C-u>Denite grep -buffer-name=grep<CR>
 
@@ -90,3 +87,6 @@ nmap F <Plug>(easymotion-Fl)
 nmap s <Plug>(easymotion-overwin-f2)
 
 let g:EasyMotion_smartcase = 1
+
+" tagbar
+nnoremap <silent> <C-\> :<C-u>TagbarToggle<CR>

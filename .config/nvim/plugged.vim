@@ -18,6 +18,7 @@ Plug 'Shougo/neosnippet'
 
 " file explorer
 Plug 'Shougo/denite.nvim'
+Plug 'majutsushi/tagbar'
 
 " util
 Plug 'vim-scripts/AnsiEsc.vim'
