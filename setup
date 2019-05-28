@@ -2,8 +2,11 @@
 
 BASEDIR=$(pwd)
 
-git fetch -p
-git merge origin/master
+BRANCH=$(git symbolic-ref --short HEAD)
+
+[ "${BRANCH}" != "master" ] && git checkout master
+git pull -p
+[ "${BRANCH}" != "master" ] && git checkout ${BRANCH} && git merge master
 
 # vim-plug
 [ -e ~/.config/nvim/autoload/plug.vim ] || curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
