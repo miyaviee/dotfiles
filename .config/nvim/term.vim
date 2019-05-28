@@ -18,6 +18,7 @@ endif
 
 let g:test#python#djangotest#options = '--failfast --noinput'
 let g:test#python#pytest#options = '-x'
+let g:test#go#gotest#options = '-failfast'
 
 nnoremap <silent> tt :<C-u>TestLast<CR>
 nnoremap <silent> tn :<C-u>TestNearest<CR>
