@@ -10,6 +10,7 @@ let g:ale_linters = {
       \   'go': ['golint'],
       \   'python': ['flake8'],
       \   'ruby': ['rubocop'],
+      \   'typescript': ['tsserver'],
       \ }
 
 let g:ale_fix_on_save = 1
