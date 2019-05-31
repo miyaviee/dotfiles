@@ -47,6 +47,7 @@ let g:lightline.active = {
 call denite#custom#option('_', 'prompt', '>')
 call denite#custom#option('_', 'statusline', v:false)
 call denite#custom#option('_', 'empty', v:false)
+call denite#custom#option('_', 'winheight', 10)
 
 if executable('rg')
   call denite#custom#var('file/rec', 'command', ['rg', '--color=never', '--files', '--glob', ''])
