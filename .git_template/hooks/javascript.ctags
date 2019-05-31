@@ -1,3 +1,0 @@
-#!/bin/bash
-GITDIR=$(git rev-parse --show-toplevel)/.git
-[ -e node_modules ] && ctags --languages=js -f ${GITDIR}/vendor.tags node_modules/

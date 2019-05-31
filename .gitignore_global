@@ -11,3 +11,4 @@ coverage/
 .node-version
 .DS_Store
 **/assets/*
+*.tags

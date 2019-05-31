@@ -56,7 +56,7 @@ autocmd FileType * call LC_maps()
 let g:jsx_ext_required = 0
 
 " ctags
-let g:gutentags_ctags_tagfile = '.git/tags'
+let g:gutentags_ctags_tagfile = '.tags'
 
 " table
 let g:table_mode_corner = '|'
