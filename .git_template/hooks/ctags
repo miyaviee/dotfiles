@@ -1,3 +1,0 @@
-#!/bin/bash
-TAGFILE=$(git rev-parse --show-toplevel)/.tags
-ctags -f ${TAGFILE} .
