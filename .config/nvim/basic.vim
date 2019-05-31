@@ -58,6 +58,8 @@ endtry
 filetype plugin indent on
 syntax on
 
+autocmd FileType * setlocal formatoptions-=ro
+
 let g:vim_json_syntax_conceal=0
 let g:omni_sql_no_default_maps=1
 
