@@ -2,7 +2,7 @@
 
 BASEDIR=$(pwd)
 
-git stash && git pull -p && git stash pop
+git pull -p
 
 # vim-plug
 [ -e ~/.config/nvim/autoload/plug.vim ] || curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
@@ -16,33 +16,15 @@ git stash && git pull -p && git stash pop
 [ -e ~/.config/anyenv/anyenv-install ] || anyenv install --init
 
 # reset link
-for link in ~/.* ~/.config/* ~/.config/nvim/*; do
-  [ -L $link ] && unlink $link
-done
+for link in ~/.* ~/.config/* ~/.config/nvim/*; do [ -L $link ] && unlink $link; done
 
 # root dotfiles
-for name in .*; do
-  [ "${name:${#name}-5:5}" == "Store" ] && continue
-  [ -f ${name} ] && ln -fs ${BASEDIR}/${name} ~/${name}
-done
-
-for name in .pip .git_template .ctags.d; do
-  ln -fs ${BASEDIR}/${name} ~/${name}
-done
+for name in .*; do [[ ${name} =~ \.(config|git|tags|[A-Z].*|\.)?$ ]] || ln -fs ${BASEDIR}/${name} ~/${name} ;done
 
 mkdir -p ~/.config
 for name in .config/*; do
-  if [ -f ${name} ]; then
-    ln -fs ${BASEDIR}/${name} ~/${name}
-    continue
-  fi
-
-  mkdir -p ~/${name}
-  for conf in ${name}/*; do
-    [ -L ~/${conf} ] || ln -fs ${BASEDIR}/${conf} ~/${conf}
-  done
+  [ -f ${name} ] && ln -fs ${BASEDIR}/${name} ~/${name} && continue
+  mkdir -p ~/${name} && for conf in ${name}/*; do ln -fs ${BASEDIR}/${conf} ~/${conf}; done
 done
 
 nvim +:PlugInstall +:PlugClean +:qa
-
-type bundle > /dev/null 2>&1 || gem install bundler
