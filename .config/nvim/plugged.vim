@@ -18,6 +18,7 @@ Plug 'Shougo/neosnippet'
 
 " file explorer
 Plug 'Shougo/denite.nvim', { 'tag': '2.1' }
+Plug 'ctrlpvim/ctrlp.vim'
 
 " util
 Plug 'vim-scripts/AnsiEsc.vim'
@@ -26,8 +27,6 @@ Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
   Plug 'maximbaz/lightline-ale'
 Plug 'ludovicchabant/vim-gutentags'
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
 
 " runner
 Plug 'janko-m/vim-test'

@@ -19,7 +19,6 @@ brew 'universal-ctags', args: ['HEAD', 'with-jansson', 'with-libyaml', 'without-
 brew 'mysql'
 brew 'redis'
 brew 'jq'
-brew 'fzf'
 
 brew 'vegeta'
 brew 'jaggr'

@@ -50,8 +50,6 @@ call denite#custom#option('_', 'empty', v:false)
 call denite#custom#option('_', 'winheight', 10)
 
 if executable('rg')
-  call denite#custom#var('file/rec', 'command', ['rg', '--color=never', '--files', '--glob', ''])
-
   call denite#custom#var('grep', 'command', ['rg'])
   call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--hidden', '-S'])
   call denite#custom#var('grep', 'recursive_opts', [])
@@ -65,12 +63,6 @@ call denite#custom#map('insert', "<C-k>", '<denite:move_to_previous_line>')
 
 call denite#custom#map('insert', "<C-s>", '<denite:do_action:split>')
 call denite#custom#map('insert', "<C-v>", '<denite:do_action:vsplit>')
-
-nnoremap <silent> <C-p> :<C-u>Denite file/rec<CR>
-inoremap <silent> <C-p> <ESC>:<C-u>Denite file/rec<CR>
-
-nnoremap <silent> <C-\> :<C-u>Denite outline<CR>
-inoremap <silent> <C-\> <ESC>:<C-u>Denite outline<CR>
 
 nnoremap <silent> <C-g> :<C-u>Denite grep -buffer-name=grep<CR>
 inoremap <silent> <C-g> <ESC>:<C-u>Denite grep -buffer-name=grep<CR>
@@ -91,3 +83,25 @@ nmap F <Plug>(easymotion-Fl)
 nmap s <Plug>(easymotion-overwin-f2)
 
 let g:EasyMotion_smartcase = 1
+
+" ctrlp
+nnoremap <silent> <C-\> :<C-u>CtrlPBufTag<CR>
+inoremap <silent> <C-\> <ESC>:<C-u>CtrlPBufTag<CR>
+
+if executable('rg')
+  let g:ctrlp_user_command = 'rg --files %s'
+  let g:ctrlp_use_caching = 0
+endif
+
+let g:ctrlp_buffer_func = {
+    \   'enter': 'DisableLastStatus',
+    \   'exit':  'EnableLastStatus',
+    \ }
+
+func! DisableLastStatus()
+    set laststatus=0
+endfunc
+
+func! EnableLastStatus()
+    set laststatus=2
+endfunc
