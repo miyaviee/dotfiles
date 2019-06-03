@@ -17,7 +17,7 @@ Plug 'Shougo/neosnippet'
   Plug 'Shougo/neosnippet-snippets'
 
 " file explorer
-Plug 'Shougo/denite.nvim'
+Plug 'Shougo/denite.nvim', { 'tag': '2.1' }
 
 " util
 Plug 'vim-scripts/AnsiEsc.vim'
