@@ -17,8 +17,8 @@ Plug 'Shougo/neosnippet'
   Plug 'Shougo/neosnippet-snippets'
 
 " file explorer
-Plug 'Shougo/denite.nvim', { 'tag': '2.1' }
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mhinz/vim-grepper'
 
 " util
 Plug 'vim-scripts/AnsiEsc.vim'

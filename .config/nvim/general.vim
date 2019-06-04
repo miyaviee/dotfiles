@@ -43,38 +43,6 @@ let g:lightline.active = {
       \   ],
       \ }
 
-" filer
-call denite#custom#option('_', 'prompt', '>')
-call denite#custom#option('_', 'statusline', v:false)
-call denite#custom#option('_', 'empty', v:false)
-call denite#custom#option('_', 'winheight', 10)
-
-if executable('rg')
-  call denite#custom#var('grep', 'command', ['rg'])
-  call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--hidden', '-S'])
-  call denite#custom#var('grep', 'recursive_opts', [])
-  call denite#custom#var('grep', 'pattern_opt', [])
-  call denite#custom#var('grep', 'separator', ['--'])
-  call denite#custom#var('grep', 'final_opts', [])
-endif
-
-call denite#custom#map('insert', "<C-j>", '<denite:move_to_next_line>')
-call denite#custom#map('insert', "<C-k>", '<denite:move_to_previous_line>')
-
-call denite#custom#map('insert', "<C-s>", '<denite:do_action:split>')
-call denite#custom#map('insert', "<C-v>", '<denite:do_action:vsplit>')
-
-nnoremap <silent> <C-g> :<C-u>Denite grep -buffer-name=grep<CR>
-inoremap <silent> <C-g> <ESC>:<C-u>Denite grep -buffer-name=grep<CR>
-
-nnoremap <silent> <C-h> :<C-u>Denite grep:::`expand('<cword>')` -buffer-name=grep<CR>
-inoremap <silent> <C-h> <ESC>:<C-u>Denite grep:::`expand('<cword>')` -buffer-name=grep<CR>
-
-nnoremap <silent> <C-l> :<C-u>Denite grep:`expand('%')` -buffer-name=grep<CR>
-inoremap <silent> <C-l> <ESC>:<C-u>Denite grep:`expand('%')` -buffer-name=grep<CR>
-
-command! DResume  :Denite -buffer-name=grep -resume
-
 " Move to char in line
 nmap f <Plug>(easymotion-fl)
 nmap F <Plug>(easymotion-Fl)
@@ -105,3 +73,16 @@ endfunc
 func! EnableLastStatus()
     set laststatus=2
 endfunc
+
+" grepper
+nnoremap <silent> <C-g> :<C-u>Grepper -tool rg<CR>
+inoremap <silent> <C-g> <ESC>:<C-u>Grepper -tool rg<CR>
+
+nnoremap <silent> <C-h> :<C-u>Grepper -tool rg -cword -noprompt<CR>
+inoremap <silent> <C-h> <ESC>:<C-u>Grepper -tool rg -cword -noprompt<CR>
+
+nnoremap <silent> <C-l> :<C-u>Grepper -tool rg -buffer<CR>
+inoremap <silent> <C-l> <ESC>:<C-u>Grepper -tool rg -buffer<CR>
+
+let g:grepper = {}
+let g:grepper.simple_prompt = 1
