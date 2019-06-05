@@ -84,5 +84,11 @@ inoremap <silent> <C-h> <ESC>:<C-u>Grepper -tool rg -cword -noprompt<CR>
 nnoremap <silent> <C-l> :<C-u>Grepper -tool rg -buffer<CR>
 inoremap <silent> <C-l> <ESC>:<C-u>Grepper -tool rg -buffer<CR>
 
-let g:grepper = {}
-let g:grepper.simple_prompt = 1
+let g:grepper = {
+      \   'simple_prompt': 1,
+      \   'tools': ['rg'],
+      \ }
+
+let g:grepper.rg = {
+      \   'grepprg': 'rg --vimgrep --hidden --smart-case',
+      \ }
