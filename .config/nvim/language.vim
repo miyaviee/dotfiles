@@ -7,7 +7,7 @@ let g:ale_pattern_options = {
 
 let g:ale_lint_delay = 500
 let g:ale_linters = {
-      \   'go': ['golint'],
+      \   'go': ['govet', 'golint'],
       \   'python': ['flake8'],
       \   'ruby': ['rubocop'],
       \   'typescript': ['tsserver'],
