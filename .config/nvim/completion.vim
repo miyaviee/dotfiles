@@ -12,12 +12,15 @@ function g:Multiple_cursors_after()
   call deoplete#custom#buffer_option('auto_complete', v:true)
 endfunction
 
-imap <expr><C-c> pumvisible() ? deoplete#smart_close_popup() : "\<C-c>"
+imap <expr><C-c> pumvisible() ?
+      \ deoplete#smart_close_popup() : "\<C-c>"
 
 " neosnippet
-imap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_jump)" : neosnippet#expandable()
-      \ ? "\<Plug>(neosnippet_expand)" : "\<TAB>"
-smap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_jump)" : "\<TAB>"
+imap <expr><TAB> neosnippet#jumpable() ?
+      \ "\<Plug>(neosnippet_jump)" : neosnippet#expandable() ?
+      \ "\<Plug>(neosnippet_expand)" : "\<TAB>"
+smap <expr><TAB> neosnippet#jumpable() ?
+      \ "\<Plug>(neosnippet_jump)" : "\<TAB>"
 
 " emmet
 let g:user_emmet_settings = {
