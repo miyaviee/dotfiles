@@ -1,5 +1,4 @@
 flake8
 pylint
-python-language-server
 virtualenv
 yapf

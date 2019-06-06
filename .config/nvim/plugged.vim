@@ -6,11 +6,7 @@ Plug 'morhetz/gruvbox'
 Plug 'tyrannicaltoucan/vim-quantum'
 
 " completion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'autozimu/LanguageClient-neovim', {
-      \   'branch': 'next',
-      \   'do': 'bash install.sh',
-      \ }
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 
 " snippet
 Plug 'Shougo/neosnippet'

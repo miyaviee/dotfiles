@@ -10,9 +10,6 @@ source ~/.config/nvim/general.vim
 " language
 source ~/.config/nvim/language.vim
 
-" completion
-source ~/.config/nvim/completion.vim
-
 " term
 source ~/.config/nvim/term.vim
 

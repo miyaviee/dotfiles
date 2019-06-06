@@ -25,35 +25,41 @@ let g:ale_fixers = {
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
-" lsp
-let g:LanguageClient_serverCommands = {
-    \   'go': ['gopls'],
-    \   'python': ['pyls'],
-    \   'ruby': ['solargraph', 'stdio'],
-    \   'javascript.jsx': ['javascript-typescript-stdio'],
-    \   'typescript': ['javascript-typescript-stdio'],
-    \ }
+" coc
+inoremap <expr><CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-let g:LanguageClient_diagnosticsSignsMax = 0
-let g:LanguageClient_changeThrottle = 0.1
-let g:LanguageClient_diagnosticsList = 'Disabled'
-let g:LanguageClient_diagnosticsEnable = 0
-let g:LanguageClient_hasSnippetSupport = 0
-let g:LanguageClient_waitOutputTimeout = 5
-let g:LanguageClient_hoverPreview = 'Never'
+nmap <silent> gd    <Plug>(coc-definition)
+nmap <silent> <C-]> <Plug>(coc-definition)
+nmap <silent> gy    <Plug>(coc-typr-definition)
+nmap <silent> gi    <Plug>(coc-implementation)
+nmap <silent> gr    <Plug>(coc-references)
+nmap <silent> gn    <Plug>(coc-rename)
 
-" jsx
-function LC_maps()
-  if has_key(g:LanguageClient_serverCommands, &filetype)
-    nnoremap <buffer> <silent> K     :call LanguageClient#textDocument_hover()<cr>
-    nnoremap <buffer> <silent> gd    :call LanguageClient#textDocument_definition()<CR>
-    nnoremap <buffer> <silent> <C-]> :call LanguageClient#textDocument_definition()<CR>
-    nnoremap <buffer> <silent> <F2>  :call LanguageClient#textDocument_rename()<CR>
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
   endif
 endfunction
 
-autocmd FileType * call LC_maps()
+" neosnippet
+imap <expr><TAB> neosnippet#jumpable() ?
+      \ "\<Plug>(neosnippet_jump)" : neosnippet#expandable() ?
+      \ "\<Plug>(neosnippet_expand)" : "\<TAB>"
+smap <expr><TAB> neosnippet#jumpable() ?
+      \ "\<Plug>(neosnippet_jump)" : "\<TAB>"
 
+" emmet
+let g:user_emmet_settings = {
+      \    'variables': {
+      \      'lang': "ja"
+      \    }
+      \ }
+
+" jsx
 let g:jsx_ext_required = 0
 
 " ctags
