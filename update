@@ -8,3 +8,5 @@ gem update bundler && bundle install
 nvim +:PlugUpgrade +:PlugUpdate +:PlugClean +:UpdateRemotePlugins +:qa
 
 cd ~/.zplug && git pull -p
+zplug update
+anyenv update

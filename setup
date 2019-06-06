@@ -13,7 +13,10 @@ git pull -p
 [ -z "$(git config --global --get init.templatedir)" ] && git config --global init.templatedir ~/.git_template
 [ -z "$(git config --global --get core.excludesfile)" ] && git config --global core.excludesfile ~/.gitignore_global
 
+# anyenv
 [ -e ~/.config/anyenv/anyenv-install ] || anyenv install --init
+mkdir -p $(anyenv root)/plugins
+[ -e $(anyenv root)/plugins/anyenv-update ] || git clone https://github.com/znz/anyenv-update $(anyenv root)/plugins/anyenv-update
 
 # reset link
 for link in ~/.* ~/.config/* ~/.config/nvim/*; do [ -L $link ] && unlink $link; done
