@@ -37,7 +37,7 @@ set updatetime=100
 set synmaxcol=300
 set laststatus=2
 
-set tags=.tags,vendor.tags;
+set tags=.tags,vendor.tags
 set tagcase=match
 nnoremap <silent> <C-]> g<C-]>
 
