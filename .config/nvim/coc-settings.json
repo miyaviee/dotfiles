@@ -1,5 +1,6 @@
 {
   "diagnostic.enable": false,
   "suggest.noselect": false,
-  "suggest.maxCompleteItemCount": 20
+  "suggest.maxCompleteItemCount": 20,
+  "python.jediEnabled": false
 }
