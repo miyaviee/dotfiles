@@ -4,3 +4,7 @@ for repo in github.com/mithrandie/csvq github.com/cweill/gotests/...; do
   echo "get ${repo}"
   env GO111MODULE=off go get -u ${repo}
 done
+
+pip3 install -IU poetry pipdeptree
+
+npm i -g sql-formatter-cli
