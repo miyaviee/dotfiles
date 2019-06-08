@@ -4,7 +4,16 @@
     "es6": true,
     "node": true
   },
-  "extends": "eslint:recommended",
+  "extends": [
+    "standard",
+    "eslint:recommended",
+    "vue",
+    "plugin:vue/recommended"
+  ],
+  "plugins": [
+    "import",
+    "vue"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
