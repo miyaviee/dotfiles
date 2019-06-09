@@ -18,3 +18,5 @@ export DIRENV_WARN_TIMEOUT=100s
 export PIPENV_VENV_IN_PROJECT=1
 
 export GIT_MERGE_AUTOEDIT=no
+
+export PATH=~/.anyenv/bin:$PATH

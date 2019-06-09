@@ -19,6 +19,8 @@ export PIPENV_VENV_IN_PROJECT=1
 
 export GIT_MERGE_AUTOEDIT=no
 
+export PATH=~/.anyenv/bin:$PATH
+
 alias vi=nvim
 
 type kubectl > /dev/null 2>&1 && source <(kubectl completion bash)
