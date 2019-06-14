@@ -46,6 +46,15 @@ function! s:show_documentation()
   endif
 endfunction
 
+let g:coc_global_extensions = [
+      \   'coc-json',
+      \   'coc-go',
+      \   'coc-python',
+      \   'coc-solargraph',
+      \   'coc-tsserver',
+      \   'coc-neosnippet',
+      \ ]
+
 " neosnippet
 imap <expr><TAB> neosnippet#jumpable() ?
       \ "\<Plug>(neosnippet_jump)" : neosnippet#expandable() ?
