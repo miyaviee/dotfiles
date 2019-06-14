@@ -27,5 +27,3 @@ brew 'circleci'
 
 brew 'kubernetes-cli'
 brew 'kubernetes-helm'
-
-brew 'chunkwm'
