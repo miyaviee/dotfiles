@@ -53,8 +53,8 @@ nmap s <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
 
 " ctrlp
-nnoremap <silent> <C-\> :<C-u>CtrlPTag<CR>
-inoremap <silent> <C-\> <ESC>:<C-u>CtrlPTag<CR>
+nnoremap <silent> <C-\> :<C-u>CocList outline<CR>
+inoremap <silent> <C-\> <ESC>:<C-u>CocList outline<CR>
 
 let g:ctrlp_line_prefix = ''
 
