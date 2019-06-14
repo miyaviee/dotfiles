@@ -2,5 +2,9 @@
   "diagnostic.enable": false,
   "suggest.noselect": false,
   "suggest.maxCompleteItemCount": 20,
-  "python.jediEnabled": false
+  "python.jediEnabled": false,
+  "list.insertMappings": {
+    "<C-v>": "action:vsplit",
+    "<C-s>": "action:split"
+  }
 }
