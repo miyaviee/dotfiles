@@ -1,8 +1,8 @@
 set fileformat=unix
 set fileencoding=utf-8
-set tabstop=2
 set autoindent
 set smartindent
+set tabstop=4
 set expandtab
 set shiftwidth=2
 set number
