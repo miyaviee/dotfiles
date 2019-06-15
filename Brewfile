@@ -25,5 +25,4 @@ brew 'jplot'
 
 brew 'circleci'
 
-brew 'kubernetes-cli'
 brew 'kubernetes-helm'
