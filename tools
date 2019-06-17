@@ -1,9 +1,9 @@
 #!/bin/bash
 
-for repo in github.com/mithrandie/csvq github.com/cweill/gotests/...; do
-  echo "get ${repo}"
-  env GO111MODULE=off go get -u ${repo}
-done
+GO111MODULE=off go get -u \
+  github.com/mithrandie/csvq \
+  github.com/cweill/gotests/... \
+  golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow
 
 pip3 install -IU poetry pipdeptree
 
