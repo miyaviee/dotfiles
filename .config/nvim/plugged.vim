@@ -6,7 +6,7 @@ Plug 'morhetz/gruvbox'
 Plug 'tyrannicaltoucan/vim-quantum'
 
 " completion
-Plug 'neoclide/coc.nvim', { 'do': 'yarn install --frozen-lockfile' }
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " snippet
 Plug 'Shougo/neosnippet'
