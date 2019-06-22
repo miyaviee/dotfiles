@@ -30,7 +30,6 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 inoremap <expr><CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 nmap <silent> gd    <Plug>(coc-definition)
-nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> gy    <Plug>(coc-type-definition)
 nmap <silent> gi    <Plug>(coc-implementation)
 nmap <silent> gr    <Plug>(coc-references)
