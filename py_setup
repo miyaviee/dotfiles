@@ -1,15 +1,18 @@
 #!/bin/bash
 
-for ver in 2 3; do
-  PIP=$(which pip${ver} || which pip)
-  ${PIP} freeze | xargs ${PIP} uninstall -y
-  ${PIP} install -IU pip
-  ${PIP} install -IU -r requirements.txt
+ver=${1}
+if [ -z ${ver} ]; then
+  ver=3
+fi
 
-  DIR=neovim${ver}
-  PYTHON=$(which python${ver} || which python)
-  rm -rf ~/${DIR} && ${PYTHON} -m virtualenv ~/${DIR}
-  source ~/${DIR}/bin/activate
-  pip install -IU pynvim
-  deactivate
-done
+PIP=$(which pip${ver} || which pip)
+${PIP} freeze | xargs ${PIP} uninstall -y
+${PIP} install -IU pip
+${PIP} install -IU -r requirements.txt
+
+DIR=neovim${ver}
+PYTHON=$(which python${ver} || which python)
+rm -rf ~/${DIR} && ${PYTHON} -m virtualenv ~/${DIR}
+source ~/${DIR}/bin/activate
+pip install -IU pynvim
+deactivate

@@ -63,7 +63,6 @@ autocmd FileType * setlocal formatoptions-=ro
 let g:vim_json_syntax_conceal=0
 let g:omni_sql_no_default_maps=1
 
-let g:python_host_prog = expand('~/neovim2/bin/python')
 let g:python3_host_prog = expand('~/neovim3/bin/python')
 
 nnoremap <silent> q <Nop>
