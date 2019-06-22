@@ -37,9 +37,6 @@ Plug 'easymotion/vim-easymotion'
 " terminal
 Plug 'kassio/neoterm'
 
-" autoclose
-Plug 'cohama/lexima.vim'
-
 " extend visual mode
 Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
