@@ -7,5 +7,4 @@
 coverage/
 .yapfignore
 .DS_Store
-**/assets/*
 *.tags
