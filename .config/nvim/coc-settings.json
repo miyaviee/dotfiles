@@ -4,6 +4,7 @@
   "suggest.noselect": false,
   "suggest.maxCompleteItemCount": 20,
   "python.jediEnabled": false,
+  "solargraph.checkGemVersion": false,
   "list.insertMappings": {
     "<C-v>": "action:vsplit",
     "<C-s>": "action:split"
