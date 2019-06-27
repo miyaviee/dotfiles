@@ -5,6 +5,7 @@
 .coverage
 .coverage.*
 coverage/
+public/assets/
 .yapfignore
 .DS_Store
 *.tags
