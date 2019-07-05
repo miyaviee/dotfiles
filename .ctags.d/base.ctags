@@ -4,9 +4,7 @@
 --excmd=number
 
 --exclude=.git
---exclude=public
---exclude=dest
---exclude=assets
+--exclude=*.min.*
 
 --exclude=migrate
 --exclude=migrations
