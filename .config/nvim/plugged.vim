@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'cocopon/iceberg.vim'
 Plug 'morhetz/gruvbox'
 Plug 'tyrannicaltoucan/vim-quantum'
+Plug 'arcticicestudio/nord-vim'
 
 " completion
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
