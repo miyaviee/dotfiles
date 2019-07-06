@@ -1,5 +1,5 @@
 " not plugged
-source ~/.config/nvim/basic.vim
+source ~/.config/nvim/base.vim
 
 " plugin manage
 source ~/.config/nvim/plugged.vim
