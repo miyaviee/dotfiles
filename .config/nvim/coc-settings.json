@@ -1,6 +1,6 @@
 {
   "coc.preferences.messageLevel": "warning",
-  "diagnostic.enable": false,
+  "diagnostic.displayByAle": true,
   "suggest.noselect": false,
   "suggest.maxCompleteItemCount": 20,
   "python.jediEnabled": false,

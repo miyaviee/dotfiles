@@ -1,18 +1,15 @@
 " syntax
-let g:ale_set_highlights = 0
-let g:ale_lint_on_enter = 0
 let g:ale_disable_lsp = 1
-
 let g:ale_pattern_options = {
       \   '\.direnv\|\.venv\|\.vim\|vendor\|migrations': {'ale_linters': [], 'ale_fixers': []},
       \ }
 
 let g:ale_lint_delay = 500
+let g:ale_lint_on_save = 0
 let g:ale_linters = {
-      \   'go': ['govet', 'golint'],
+      \   'go': ['golint'],
       \   'python': ['flake8'],
       \   'ruby': ['rubocop'],
-      \   'typescript': ['tsserver'],
       \ }
 
 let g:ale_fix_on_save = 1
