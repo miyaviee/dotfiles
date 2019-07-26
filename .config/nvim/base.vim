@@ -67,7 +67,7 @@ let g:python3_host_prog = expand('~/neovim3/bin/python')
 
 nnoremap <silent> q <Nop>
 
-" hilight zenkaku space
+" highlight full-width space
 function! ZenkakuSpace()
   highlight ZenkakuSpace cterm=reverse ctermfg=red gui=reverse guifg=DarkMagenta
 endfunction
