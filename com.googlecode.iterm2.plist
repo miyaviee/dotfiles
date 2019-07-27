@@ -1369,11 +1369,11 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 878 796 486 0 0 2560 1417 </string>
+	<string>269 884 796 486 0 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 2560 1440 0 0 2560 1417 </string>
+	<string>324 149 1930 1206 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2088,7 +2088,6 @@
 			<key>Thin Strokes</key>
 			<integer>3</integer>
 			<key>Transparency</key>
-			<!-- <real>0.12</real> -->
 			<real>0.055</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
@@ -2170,7 +2169,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-07-05T10:16:18Z</date>
+	<date>2019-07-27T01:33:10Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
