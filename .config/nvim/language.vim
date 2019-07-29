@@ -8,7 +8,7 @@ let g:ale_go_golangci_lint_options = '--disable-all --enable=golint --fast'
 
 let g:ale_lint_delay = 500
 let g:ale_linters = {
-      \   'go': ['golangci-lint'],
+      \   'go': ['govet', 'golangci-lint'],
       \   'python': ['flake8'],
       \   'ruby': ['rubocop'],
       \ }
