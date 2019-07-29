@@ -53,9 +53,6 @@ nmap s <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
 
 " ctrlp
-nnoremap <silent> <C-\> :<C-u>CocList outline<CR>
-inoremap <silent> <C-\> <ESC>:<C-u>CocList outline<CR>
-
 let g:ctrlp_line_prefix = ''
 
 if executable('rg')
@@ -76,15 +73,13 @@ func! EnableLastStatus()
     set laststatus=2
 endfunc
 
+" coc
+nnoremap <silent> <C-\> :<C-u>CocList outline<CR>
+
 " grepper
 nnoremap <silent> <C-g> :<C-u>Grepper -tool rg<CR>
-inoremap <silent> <C-g> <ESC>:<C-u>Grepper -tool rg<CR>
-
 nnoremap <silent> <C-h> :<C-u>Grepper -tool rg -cword -noprompt<CR>
-inoremap <silent> <C-h> <ESC>:<C-u>Grepper -tool rg -cword -noprompt<CR>
-
 nnoremap <silent> <C-l> :<C-u>Grepper -tool rg -buffer<CR>
-inoremap <silent> <C-l> <ESC>:<C-u>Grepper -tool rg -buffer<CR>
 
 let g:grepper = {
       \   'simple_prompt': 1,
