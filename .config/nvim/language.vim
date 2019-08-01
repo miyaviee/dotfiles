@@ -25,8 +25,7 @@ let g:ale_fixers = {
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
+" lsp
 nmap <silent> gd    <Plug>(coc-definition)
 nmap <silent> gy    <Plug>(coc-type-definition)
 nmap <silent> gi    <Plug>(coc-implementation)
@@ -42,6 +41,9 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+" coc
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 let g:coc_global_extensions = [
       \   'coc-json',
