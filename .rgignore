@@ -1,11 +1,10 @@
-**/compile/*
-**/vendor/*
-**/cache/*
-**/tmp/*
-**/.git/*
-**/.svn/*
+/vendor/*
+/cache/*
+/tmp/*
+/.git/*
+/.svn/*
+/coverage/*
 **/rw/*
-**/coverage/*
 **/migrations/*
 **/migrate/*
 **/bin/*
