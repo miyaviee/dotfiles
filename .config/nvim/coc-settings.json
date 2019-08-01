@@ -2,7 +2,7 @@
   "coc.preferences.messageLevel": "warning",
   "diagnostic.enable": false,
   "suggest.noselect": false,
-  "suggest.maxCompleteItemCount": 20,
+  "suggest.maxCompleteItemCount": 10,
   "python.jediEnabled": false,
   "solargraph.checkGemVersion": false,
   "list.insertMappings": {
