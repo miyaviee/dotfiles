@@ -1,5 +1,6 @@
 {
   "coc.preferences.messageLevel": "warning",
+  "coc.preferences.bracketEnterImprove": false,
   "diagnostic.enable": false,
   "suggest.noselect": false,
   "suggest.maxCompleteItemCount": 10,
