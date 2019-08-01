@@ -51,7 +51,6 @@ let g:coc_global_extensions = [
       \   'coc-vetur',
       \   'coc-word',
       \   'coc-neosnippet',
-      \   'coc-pairs',
       \ ]
 
 " neosnippet
