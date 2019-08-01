@@ -24,6 +24,7 @@ Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
   Plug 'maximbaz/lightline-ale'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'jiangmiao/auto-pairs'
 
 " runner
 Plug 'janko-m/vim-test'
