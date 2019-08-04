@@ -28,6 +28,7 @@ Plug 'jiangmiao/auto-pairs'
 
 " runner
 Plug 'janko-m/vim-test'
+Plug 'tpope/vim-dispatch'
 
 " git status
 Plug 'airblade/vim-gitgutter'
