@@ -41,8 +41,6 @@ set tags=.tags,vendor.tags
 set tagcase=match
 nnoremap <silent> <C-]> g<C-]>
 
-nnoremap <silent> <Leader>q :<C-u>cclose<CR>
-
 nnoremap <silent> <ESC><ESC> :<C-u>nohlsearch<CR>
 
 try
