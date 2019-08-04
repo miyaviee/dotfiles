@@ -51,7 +51,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-commentary'
 
 " async syntax check
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 " textobj
 Plug 'kana/vim-textobj-user'
