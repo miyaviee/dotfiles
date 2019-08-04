@@ -20,6 +20,7 @@ endif
 let g:test#python#djangotest#options = '--failfast --noinput'
 let g:test#python#pytest#options = '-x'
 let g:test#go#gotest#options = {
+      \   'all': '-vet=off',
       \   'nearest': '-failfast',
       \ }
 
