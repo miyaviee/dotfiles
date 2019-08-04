@@ -27,3 +27,4 @@ nnoremap <silent> tt :<C-u>TestLast<CR>
 nnoremap <silent> tn :<C-u>TestNearest<CR>
 nnoremap <silent> tf :<C-u>TestFile<CR>
 nnoremap <silent> ts :<C-u>TestSuite<CR>
+nnoremap <silent> tv :<C-u>TestVisit<CR>
