@@ -4,17 +4,18 @@ let g:ale_pattern_options = {
       \   '\.direnv\|\.venv\|\.vim\|vendor\|migrations': {'ale_linters': [], 'ale_fixers': []},
       \ }
 
+let g:ale_go_gofmt_options = '-s'
 let g:ale_go_golangci_lint_options = '--disable-all --enable=golint'
 
 let g:ale_linters = {
-      \   'go': ['govet', 'golangci-lint'],
+      \   'go': ['gofmt', 'govet', 'golangci-lint'],
       \   'python': ['flake8'],
       \   'ruby': ['rubocop'],
       \ }
 
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
-      \   'go': ['goimports'],
+      \   'go': ['gofmt', 'goimports'],
       \   'python': executable('black') ? ['black'] : ['yapf'],
       \   'javascript': ['eslint'],
       \   'javascript.jsx': ['eslint'],
