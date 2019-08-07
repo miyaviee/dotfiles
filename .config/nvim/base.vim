@@ -26,7 +26,6 @@ set splitright
 set splitbelow
 set list
 set listchars=tab:\|\ ,trail:_,extends:\
-set conceallevel=2 concealcursor=niv
 set clipboard+=unnamed
 set mouse-=a
 set completeopt=menu,noinsert
