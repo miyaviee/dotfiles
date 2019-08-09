@@ -86,9 +86,6 @@ let g:jsx_ext_required = 0
 " ctags
 let g:gutentags_ctags_tagfile = '.tags'
 
-" table
-let g:table_mode_corner = '|'
-
 " go
 let g:go_code_completion_enabled = 0
 let g:go_def_mapping_enabled = 0
