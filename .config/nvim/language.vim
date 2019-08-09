@@ -22,8 +22,8 @@ let g:ale_fixers = {
       \   'javascript.jsx': ['eslint'],
       \ }
 
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
+nmap <silent> <C-k> <Plug>(ale_previous)
+nmap <silent> <C-j> <Plug>(ale_next)
 
 " lsp
 nmap <silent> gd    <Plug>(coc-definition)
