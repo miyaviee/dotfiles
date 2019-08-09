@@ -1,10 +1,11 @@
 {
   "coc.preferences.messageLevel": "warning",
   "coc.preferences.bracketEnterImprove": false,
-  "diagnostic.enable": false,
+  "diagnostic.displayByAle": true,
   "suggest.noselect": false,
   "suggest.maxCompleteItemCount": 10,
   "python.jediEnabled": false,
+  "javascript.validate.enable": false,
   "solargraph.checkGemVersion": false,
   "list.insertMappings": {
     "<C-v>": "action:vsplit",

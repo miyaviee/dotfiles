@@ -9,7 +9,7 @@ let g:ale_go_gofmt_options = '-s'
 let g:ale_go_golangci_lint_options = '--disable-all --enable=golint'
 
 let g:ale_linters = {
-      \   'go': ['gofmt', 'govet', 'golangci-lint'],
+      \   'go': ['golangci-lint'],
       \   'python': ['flake8'],
       \   'ruby': ['rubocop'],
       \ }
