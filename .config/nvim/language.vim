@@ -42,6 +42,9 @@ function! s:show_documentation()
   endif
 endfunction
 
+" auto-pairs
+let g:AutoPairsMapCR = 0
+
 " coc
 inoremap <silent><expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
