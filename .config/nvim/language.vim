@@ -48,6 +48,14 @@ let g:AutoPairsMapBS = 0
 " coc
 inoremap <silent><expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
+function! Multiple_cursors_before()
+  let b:coc_suggest_disable = 1
+endfunction
+
+function! Multiple_cursors_after()
+  let b:coc_suggest_disable = 0
+endfunction
+
 let g:coc_global_extensions = [
       \   'coc-json',
       \   'coc-go',
