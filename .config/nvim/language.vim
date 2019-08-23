@@ -17,6 +17,7 @@ let g:ale_fix_on_save = 1
 let g:ale_fixers = {
       \   'go': ['goimports'],
       \   'python': executable('black') ? ['black'] : ['yapf'],
+      \   'ruby': ['rubocop'],
       \   'javascript': ['eslint'],
       \   'javascript.jsx': ['eslint'],
       \ }
