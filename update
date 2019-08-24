@@ -3,9 +3,6 @@
 type brew > /dev/null 2>&1 && brew upgrade --fetch-HEAD && brew cleanup
 type gcloud > /dev/null 2>&1 && gcloud components update
 
-bundle update
-gem cleanup
-
 nvim +:PlugUpgrade +:PlugUpdate +:PlugClean +:UpdateRemotePlugins +:qa
 
 cd ~/.zplug && git pull -p
