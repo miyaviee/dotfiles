@@ -10,5 +10,12 @@
   "list.insertMappings": {
     "<C-v>": "action:vsplit",
     "<C-s>": "action:split"
+  },
+  "languageserver": {
+    "go": {
+      "command": "~/go/bin/gopls",
+      "rootPatterns": ["go.mod"],
+      "filetypes": ["go"]
+    }
   }
 }

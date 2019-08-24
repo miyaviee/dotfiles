@@ -59,7 +59,6 @@ endfunction
 
 let g:coc_global_extensions = [
       \   'coc-json',
-      \   'coc-go',
       \   'coc-python',
       \   'coc-solargraph',
       \   'coc-tsserver',
