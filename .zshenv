@@ -8,7 +8,6 @@ export PATH=/usr/local/bin:$PATH
 
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
-export CGO_ENABLED=0
 
 export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000
