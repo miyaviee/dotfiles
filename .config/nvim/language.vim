@@ -1,4 +1,4 @@
-" syntax
+" lint
 let g:ale_disable_lsp = 1
 let g:ale_set_highlights = 0
 let g:ale_pattern_options = {
@@ -46,7 +46,7 @@ endfunction
 let g:AutoPairsMapCR = 0
 let g:AutoPairsMapBS = 0
 
-" coc
+" completion
 inoremap <silent><expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
 function! Multiple_cursors_before()
