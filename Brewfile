@@ -28,3 +28,5 @@ brew 'jplot'
 brew 'circleci'
 
 brew 'kubernetes-helm'
+
+cask 'sequel-pro'
