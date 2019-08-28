@@ -19,6 +19,7 @@ brew 'mysql'
 brew 'redis'
 brew 'jq'
 brew 'gnu-sed'
+brew 'tig'
 
 brew 'vegeta'
 brew 'jaggr'
