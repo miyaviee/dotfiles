@@ -11,7 +11,7 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " snippet
 Plug 'Shougo/neosnippet'
-  Plug 'honza/vim-snippets'
+  Plug 'Shougo/neosnippet-snippets'
 
 " file explorer
 Plug 'ctrlpvim/ctrlp.vim'

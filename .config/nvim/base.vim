@@ -35,6 +35,7 @@ set signcolumn=yes
 set updatetime=100
 set synmaxcol=300
 set laststatus=2
+set conceallevel=2 concealcursor=i
 
 set tags=.tags,vendor.tags
 set tagcase=match
