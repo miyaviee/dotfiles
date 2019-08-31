@@ -9,3 +9,4 @@ public/assets/
 .yapfignore
 .DS_Store
 *.tags
+.local.vim
