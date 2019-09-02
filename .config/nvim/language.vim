@@ -5,7 +5,8 @@ let g:ale_pattern_options = {
       \   '\.direnv\|\.venv\|\.vim\|vendor\|migrations': {'ale_linters': [], 'ale_fixers': []},
       \ }
 
-let g:ale_go_golangci_lint_options = '--disable-all --enable=golint'
+let g:ale_go_golangci_lint_package = 1
+let g:ale_go_golangci_lint_options = '--fast --enable=golint'
 
 let g:ale_linters = {
       \   'go': ['golangci-lint'],
