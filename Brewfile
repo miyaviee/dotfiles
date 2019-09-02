@@ -29,4 +29,5 @@ brew 'circleci'
 
 brew 'kubernetes-helm'
 
+cask 'insomnia'
 cask 'sequel-pro'
