@@ -20,6 +20,7 @@ brew 'redis'
 brew 'jq'
 brew 'gnu-sed'
 brew 'tig'
+brew 'chunkwm'
 
 brew 'vegeta'
 brew 'jaggr'
