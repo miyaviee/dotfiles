@@ -20,6 +20,8 @@ export GIT_MERGE_AUTOEDIT=no
 
 export PATH=~/.anyenv/bin:$PATH
 
+export BAT_THEME=ansi-dark
+
 alias vi=nvim
 
 type kubectl > /dev/null 2>&1 && source <(kubectl completion bash)

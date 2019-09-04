@@ -19,3 +19,5 @@ export PIPENV_VENV_IN_PROJECT=1
 export GIT_MERGE_AUTOEDIT=no
 
 export PATH=~/.anyenv/bin:$PATH
+
+export BAT_THEME=ansi-dark
