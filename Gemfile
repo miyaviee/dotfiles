@@ -5,6 +5,5 @@ source 'https://rubygems.org'
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 gem 'rubocop'
-gem 'rubocop-rails'
 gem 'rubocop-performance'
-gem 'solargraph'
+gem 'rubocop-rails'
