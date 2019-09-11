@@ -6,6 +6,8 @@
 .coverage.*
 coverage/
 public/assets/
+node_modules/
+vendor/bundle/
 .yapfignore
 .DS_Store
 *.tags
