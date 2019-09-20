@@ -45,7 +45,7 @@ endfunction
 
 " auto-pairs
 let g:AutoPairsMapCR = 0
-let g:AutoPairsMapBS = 0
+let g:AutoPairsMultilineClose = 0
 
 " completion
 inoremap <silent><expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
