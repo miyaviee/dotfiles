@@ -48,7 +48,7 @@ let g:AutoPairsMapCR = 0
 let g:AutoPairsMultilineClose = 0
 
 " completion
-inoremap <silent><expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
+inoremap <silent><expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>\<C-r>=AutoPairsReturn()\<CR>"
 
 function! Multiple_cursors_before()
   let b:coc_suggest_disable = 1
