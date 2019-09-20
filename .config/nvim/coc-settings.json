@@ -3,6 +3,7 @@
   "coc.preferences.bracketEnterImprove": false,
   "diagnostic.enable": false,
   "suggest.noselect": false,
+  "suggest.enablePreselect": false,
   "suggest.maxCompleteItemCount": 10,
   "python.jediEnabled": false,
   "javascript.validate.enable": false,
