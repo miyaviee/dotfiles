@@ -1,5 +1,7 @@
 let g:neoterm_autoscroll = 1
-let g:neoterm_default_mod = 'vertical'
+let g:neoterm_default_mod = 'botright'
+let g:neoterm_size = 10
+let g:neoterm_fixedsize = 1
 let g:neoterm_use_relative_path = 1
 
 " open/close terminal
