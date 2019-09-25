@@ -9,7 +9,6 @@ nnoremap <silent> vq :<C-u>Tkill<CR>
 
 command! -nargs=+ Rails   :T bin/rails <args>
 command! -nargs=+ Django  :T python manage.py <args>
-command! -nargs=+ Docker  :T docker <args>
 
 let g:test#strategy = 'neoterm'
 
