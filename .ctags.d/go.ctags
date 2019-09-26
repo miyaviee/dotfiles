@@ -2,3 +2,4 @@
 
 --exclude=*_testing.go
 --exclude=*_test.go
+--exclude=*_mock.go
