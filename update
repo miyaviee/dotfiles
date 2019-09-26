@@ -3,6 +3,15 @@
 type brew > /dev/null 2>&1 && brew upgrade --fetch-HEAD && brew cleanup
 type gcloud > /dev/null 2>&1 && gcloud components update
 
+type go > /dev/null 2>&1 && GO111MODULE=off go get -u \
+  github.com/mithrandie/csvq \
+  github.com/cweill/gotests/... \
+  golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow
+
+type pip3 > /dev/null 2>&1 && pip3 install -U poetry pipdeptree
+
+type npm > /dev/null 2>&1 && npm i -g npm yarn eslint eslint-plugin-vue prettier typescript sql-formatter-cli
+
 nvim +:PlugUpgrade +:PlugUpdate +:PlugClean +:UpdateRemotePlugins +:qa
 
 cd ~/.zplug && git pull -p
