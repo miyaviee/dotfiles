@@ -24,8 +24,11 @@ Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
   Plug 'maximbaz/lightline-ale'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
+
+" auto close
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-endwise'
 
 " runner
 Plug 'janko-m/vim-test'

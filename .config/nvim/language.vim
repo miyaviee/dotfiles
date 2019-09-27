@@ -43,12 +43,15 @@ function! s:show_documentation()
   endif
 endfunction
 
-" auto-pairs
+" auto close
 let g:AutoPairsMapCR = 0
 let g:AutoPairsMultilineClose = 0
 
+let g:endwise_no_mappings = 1
+
 " completion
-inoremap <silent><expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>\<C-r>=AutoPairsReturn()\<CR>"
+inoremap <silent><expr> <CR> pumvisible() ?
+      \ "\<C-y>" : "\<C-g>u\<CR>\<C-r>=EndwiseDiscretionary()\<CR>\<C-r>=AutoPairsReturn()\<CR>"
 
 function! Multiple_cursors_before()
   let b:coc_suggest_disable = 1
