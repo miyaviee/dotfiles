@@ -22,6 +22,7 @@ brew 'gnu-sed'
 brew 'tig'
 brew 'chunkwm'
 brew 'yabai'
+brew 'csvq'
 
 brew 'vegeta'
 brew 'jaggr'
