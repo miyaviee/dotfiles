@@ -21,6 +21,7 @@ brew 'jq'
 brew 'gnu-sed'
 brew 'tig'
 brew 'chunkwm'
+brew 'yabai'
 
 brew 'vegeta'
 brew 'jaggr'
