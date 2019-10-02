@@ -5,6 +5,7 @@
   "suggest.noselect": false,
   "suggest.enablePreselect": false,
   "suggest.maxCompleteItemCount": 10,
+  "suggest.minTriggerInputLength": 2,
   "python.jediEnabled": false,
   "javascript.validate.enable": false,
   "solargraph.checkGemVersion": false,
