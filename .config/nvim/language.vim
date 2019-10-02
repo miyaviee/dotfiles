@@ -6,7 +6,7 @@ let g:ale_pattern_options = {
       \ }
 
 let g:ale_go_golangci_lint_package = 1
-let g:ale_go_golangci_lint_options = '--disable-all --enable=typecheck --enable=golint'
+let g:ale_go_golangci_lint_options = '--disable-all --enable=typecheck,golint'
 
 let g:ale_linters = {
       \   'go': ['golangci-lint'],
