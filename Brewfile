@@ -33,4 +33,4 @@ brew 'circleci'
 brew 'kubernetes-helm'
 
 cask 'insomnia'
-cask 'sequel-pro'
+cask 'homebrew/cask-versions/sequel-pro-nightly'
