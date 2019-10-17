@@ -21,6 +21,7 @@ let g:ale_fixers = {
       \   'ruby': ['rubocop'],
       \   'javascript': ['eslint'],
       \   'javascript.jsx': ['eslint'],
+      \   'terraform': executable('terraform') ? ['terraform'] : [],
       \ }
 
 nmap <silent> <C-k> <Plug>(ale_previous)
