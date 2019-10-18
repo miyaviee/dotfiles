@@ -33,7 +33,7 @@ set visualbell t_vb=
 set noerrorbells
 set signcolumn=yes
 set updatetime=100
-set synmaxcol=300
+set synmaxcol=1000
 set laststatus=2
 set conceallevel=2 concealcursor=i
 
