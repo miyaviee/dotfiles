@@ -7,7 +7,7 @@ type go > /dev/null 2>&1 && GO111MODULE=off go get -u \
   github.com/cweill/gotests/... \
   golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow
 
-type pip3 > /dev/null 2>&1 && pip3 install -U poetry pipdeptree
+type pip3 > /dev/null 2>&1 && pip3 install -U pip poetry pipdeptree
 
 type npm > /dev/null 2>&1 && npm i -g npm yarn eslint eslint-plugin-vue prettier typescript sql-formatter-cli
 
