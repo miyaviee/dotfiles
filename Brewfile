@@ -14,7 +14,7 @@ brew 'direnv'
 brew 'neovim'
 brew 'ripgrep'
 brew 'zsh'
-brew 'universal-ctags', args: ['HEAD', 'with-jansson', 'with-libyaml', 'without-doc']
+brew 'universal-ctags', args: ['HEAD', 'with-jansson', 'with-libyaml']
 brew 'mysql'
 brew 'redis'
 brew 'jq'
