@@ -17,7 +17,10 @@
     "golang": {
       "command": "~/go/bin/gopls",
       "rootPatterns": ["go.mod"],
-      "filetypes": ["go"]
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "completeUnimported": true
+      }
     }
   }
 }
