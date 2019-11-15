@@ -23,6 +23,7 @@ brew 'tig'
 brew 'chunkwm'
 brew 'yabai'
 brew 'csvq'
+brew 'unar'
 
 brew 'vegeta'
 brew 'jaggr'
