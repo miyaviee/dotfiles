@@ -3,7 +3,7 @@ set termguicolors
 set background=dark
 
 try
-  colorscheme quantum
+  colorscheme gruvbox
 catch
   " no colorscheme
 endtry
@@ -19,7 +19,7 @@ hi! GitGutterDelete cterm=None ctermbg=None gui=None guibg=None
 
 " statusline
 let g:lightline = {
-      \   'colorscheme': 'quantum',
+      \   'colorscheme': 'gruvbox',
       \ }
 
 let g:lightline.component_expand = {
