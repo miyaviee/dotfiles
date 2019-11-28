@@ -19,7 +19,8 @@
       "rootPatterns": ["go.mod"],
       "filetypes": ["go"],
       "initializationOptions": {
-        "completeUnimported": false
+        "completeUnimported": true,
+        "deepCompletion": false
       }
     }
   }
