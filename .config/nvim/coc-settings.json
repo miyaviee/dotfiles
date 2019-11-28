@@ -19,7 +19,7 @@
       "rootPatterns": ["go.mod"],
       "filetypes": ["go"],
       "initializationOptions": {
-        "completeUnimported": true
+        "completeUnimported": false
       }
     }
   }
