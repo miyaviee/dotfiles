@@ -20,7 +20,8 @@
       "filetypes": ["go"],
       "initializationOptions": {
         "completeUnimported": true,
-        "deepCompletion": false
+        "deepCompletion": false,
+        "fuzzyMatching": false
       }
     }
   }
