@@ -16,6 +16,7 @@ Plug 'Shougo/neosnippet'
 " file explorer
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-grepper'
+Plug 'mhinz/vim-startify'
 
 " util
 Plug 'vim-scripts/AnsiEsc.vim'
