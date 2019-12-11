@@ -1387,7 +1387,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>11 12 2538 1393 0 0 2560 1417 </string>
+	<string>0 0 2560 1440 0 0 2560 1440 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2118,7 +2118,7 @@
 			<key>Visual Bell</key>
 			<false/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>Working Directory</key>
 			<string>/Users/kageyama</string>
 		</dict>
@@ -2130,9 +2130,10 @@
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
+		<string>3.3.7</string>
+		<string>3.3.0</string>
 		<string>3.2.9</string>
 		<string>3.3.2</string>
-		<string>3.3.0</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
@@ -2146,7 +2147,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>C4A599D3-3D50-4B7C-9AF4-6987EC99CD38</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>40</integer>
+	<integer>50</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>586443700.52005398</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2907,7 +2908,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-18T09:24:02Z</date>
+	<date>2019-12-11T14:10:42Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2929,7 +2930,7 @@
 	<key>TabsHaveCloseButton</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1560569344</real>
+	<real>1574869248</real>
 	<key>UseLionStyleFullscreen</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
@@ -2939,6 +2940,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.6</string>
+	<string>3.3.7</string>
 </dict>
 </plist>
