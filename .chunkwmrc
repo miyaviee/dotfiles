@@ -48,7 +48,7 @@ chunkc set custom_bar_offset_bottom      0
 chunkc set custom_bar_offset_left        0
 chunkc set custom_bar_offset_right       0
 
-chunkc set global_desktop_mode           monocle
+chunkc set global_desktop_mode           bsp
 chunkc set global_desktop_offset_top     10
 chunkc set global_desktop_offset_bottom  10
 chunkc set global_desktop_offset_left    10
@@ -70,7 +70,7 @@ chunkc set global_desktop_offset_gap     10
 chunkc set desktop_padding_step_size     10.0
 chunkc set desktop_gap_step_size         5.0
 
-chunkc set bsp_spawn_left                1
+chunkc set bsp_spawn_left                0
 chunkc set bsp_optimal_ratio             1.618
 chunkc set bsp_split_mode                optimal
 chunkc set bsp_split_ratio               0.5
@@ -139,7 +139,4 @@ chunkc core::load tiling.so
 chunkc tiling::rule --owner Finder --name Copy --state float &
 chunkc tiling::rule --owner \"App Store\" --state float &
 chunkc tiling::rule --owner Emacs --except "^$" --state tile &
-chunkc tiling::rule --owner \"Google Chrome\" --state float &
 chunkc tiling::rule --owner iTerm --state float &
-
-chunkc tiling::desktop --layout bsp
