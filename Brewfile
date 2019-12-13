@@ -35,5 +35,4 @@ brew 'kubernetes-helm'
 
 cask 'insomnia'
 cask 'sequel-pro'
-cask 'tableplus'
 cask 'table-tool'
