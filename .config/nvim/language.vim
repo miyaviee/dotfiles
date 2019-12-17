@@ -108,3 +108,6 @@ let g:go_highlight_extra_types = 1
 
 let g:go_highlight_diagnostic_errors = 0
 let g:go_highlight_diagnostic_warnings = 0
+
+" language pack
+let g:polyglot_disabled = ['go']
