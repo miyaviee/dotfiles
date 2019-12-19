@@ -47,7 +47,6 @@ try
   set fillchars=eob:\ ,
   set inccommand=nosplit
 
-  autocmd TermOpen * setlocal nonumber norelativenumber signcolumn=no
   autocmd TermOpen * tnoremap <silent> <ESC> <C-\><C-n>
 catch
   " not supported
