@@ -1,3 +1,6 @@
+filetype plugin indent on
+syntax on
+
 set fileformat=unix
 set fileencoding=utf-8
 set autoindent
@@ -51,9 +54,6 @@ try
 catch
   " not supported
 endtry
-
-filetype plugin indent on
-syntax on
 
 autocmd FileType * setlocal formatoptions-=ro
 

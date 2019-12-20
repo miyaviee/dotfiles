@@ -1,8 +1,8 @@
-" not plugged
-source ~/.config/nvim/base.vim
-
 " plugin manage
 source ~/.config/nvim/plugged.vim
+
+" not plugged
+source ~/.config/nvim/base.vim
 
 " ui
 source ~/.config/nvim/general.vim
