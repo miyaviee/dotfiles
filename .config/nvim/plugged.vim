@@ -22,7 +22,6 @@ Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
-  Plug 'maximbaz/lightline-ale'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'junegunn/vim-easy-align'
 

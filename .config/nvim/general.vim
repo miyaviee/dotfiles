@@ -22,27 +22,6 @@ let g:lightline = {
       \   'colorscheme': 'gruvbox',
       \ }
 
-let g:lightline.component_expand = {
-      \   'linter_checking': 'lightline#ale#checking',
-      \   'linter_warnings': 'lightline#ale#warnings',
-      \   'linter_errors': 'lightline#ale#errors',
-      \ }
-
-let g:lightline.component_type = {
-      \   'linter_checking': 'left',
-      \   'linter_warnings': 'warning',
-      \   'linter_errors': 'error',
-      \   'linter_ok': 'left',
-      \ }
-
-let g:lightline.active = {
-      \   'left': [
-      \     [ 'mode', 'paste' ],
-      \     [ 'readonly', 'absolutepath', 'modified' ],
-      \     [ 'linter_checking', 'linter_errors', 'linter_warnings' ],
-      \   ],
-      \ }
-
 " Move to char in line
 nmap f <Plug>(easymotion-fl)
 nmap F <Plug>(easymotion-Fl)
