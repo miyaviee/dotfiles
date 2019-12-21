@@ -18,11 +18,8 @@ if executable('pytest')
   let g:test#python#runner = 'pytest'
 endif
 
-let g:test#python#djangotest#options = '--failfast --noinput'
-let g:test#python#pytest#options = '-x --quiet'
-let g:test#go#gotest#options = {
-      \   'nearest': '-failfast',
-      \ }
+let g:test#python#djangotest#options = '--noinput'
+let g:test#python#pytest#options = '--quiet'
 
 nnoremap <silent> tt :<C-u>TestLast<CR>
 nnoremap <silent> tn :<C-u>TestNearest<CR>
