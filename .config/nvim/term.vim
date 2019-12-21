@@ -18,6 +18,10 @@ if executable('pytest')
   let g:test#python#runner = 'pytest'
 endif
 
+if executable('rspec')
+  let g:test#ruby#rspec#executable = 'rspec'
+endif
+
 let g:test#python#djangotest#options = '--noinput'
 let g:test#python#pytest#options = '--quiet'
 
