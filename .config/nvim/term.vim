@@ -26,18 +26,15 @@ let g:test#python#djangotest#options = '--noinput'
 let g:test#python#pytest#options = '--quiet'
 
 nnoremap <silent> tt :<C-u>TestLast<CR>
-nnoremap <silent> tn :<C-u>call ChangeDirTest('TestNearest')<CR>
-nnoremap <silent> tf :<C-u>call ChangeDirTest('TestFile')<CR>
+nnoremap <silent> tn :<C-u>call ChangeDirTest('nearest')<CR>
+nnoremap <silent> tf :<C-u>call ChangeDirTest('file')<CR>
 nnoremap <silent> ts :<C-u>TestSuite<CR>
 nnoremap <silent> tv :<C-u>TestVisit<CR>
 
-let g:chdir_test_filetypes = ['go']
-function! ChangeDirTest(testcmd) abort
-  let l:project_root = getcwd()
-  let l:cdcmd = has('lcd') ? 'lcd' : 'cd'
-  if index(g:chdir_test_filetypes, &filetype) != -1
-    execute l:cdcmd '%:p:h'
+function! ChangeDirTest(type) abort
+  let dir = getcwd()
+  call test#run(a:type, [])
+  if exists('g:test#project_root')
+    execute 'cd' fnameescape(dir)
   endif
-  execute a:testcmd
-  execute l:cdcmd l:project_root
 endfunction
