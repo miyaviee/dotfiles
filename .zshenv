@@ -4,10 +4,7 @@ export LC_ALL=en_US.UTF-8
 
 export EDITOR=nvim
 
-export PATH=/usr/local/bin:$PATH
-
 export GOPATH=~/go
-export PATH=$GOPATH/bin:$PATH
 
 export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000
@@ -17,7 +14,5 @@ export DIRENV_WARN_TIMEOUT=100s
 export PIPENV_VENV_IN_PROJECT=1
 
 export GIT_MERGE_AUTOEDIT=no
-
-export PATH=~/.anyenv/bin:$PATH
 
 export BAT_THEME=ansi-dark

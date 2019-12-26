@@ -1,3 +1,7 @@
+# avoid overwriting
+export PATH=$GOPATH/bin:$PATH
+export PATH=~/.anyenv/bin:$PATH
+
 # The next line updates PATH for the Google Cloud SDK.
 [ -f ~/google-cloud-sdk/path.zsh.inc ] && source ~/google-cloud-sdk/path.zsh.inc
 

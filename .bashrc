@@ -8,19 +8,17 @@ PS1='[\u@\h \W]\$ '
 
 export EDITOR=nvim
 
-export PATH=/usr/local/bin:$PATH
-
 export GOPATH=~/go
-export PATH=$GOPATH/bin:$PATH
 
 export DIRENV_WARN_TIMEOUT=100s
 export PIPENV_VENV_IN_PROJECT=1
 
 export GIT_MERGE_AUTOEDIT=no
 
-export PATH=~/.anyenv/bin:$PATH
-
 export BAT_THEME=ansi-dark
+
+export PATH=$GOPATH/bin:$PATH
+export PATH=~/.anyenv/bin:$PATH
 
 alias vi=nvim
 
