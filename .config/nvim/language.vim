@@ -21,7 +21,7 @@ let g:ale_linters = {
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
       \   'go': ['goimports'],
-      \   'python': executable('black') ? ['black'] : ['yapf'],
+      \   'python': executable('yapf') ? ['yapf'] : ['black'],
       \   'ruby': ['rubocop'],
       \   'javascript': ['eslint'],
       \   'javascript.jsx': ['eslint'],
