@@ -19,10 +19,10 @@ git pull -p
 [ -e ~/.anyenv/plugins/anyenv-update ] || git clone https://github.com/znz/anyenv-update ~/.anyenv/plugins/anyenv-update
 
 # reset link
-for link in ~/.* ~/.config/* ~/.config/nvim/*; do [ -L $link ] && unlink $link; done
+for link in ~/.* ~/.config/* ~/.config/nvim/*; do [ -L ${link} ] && unlink ${link}; done
 
 # root dotfiles
-for name in .*; do [[ ${name} =~ \.(config|git|tags|[A-Z].*|.*-version|\.)?$ ]] || ln -fs ${BASEDIR}/${name} ~/${name} ;done
+for name in .*; do [[ ${name} =~ \.(config|git|tags|[A-Z].*|\.)?$ ]] || ln -fs ${BASEDIR}/${name} ~/${name} ;done
 
 mkdir -p ~/.config
 for name in .config/*; do
