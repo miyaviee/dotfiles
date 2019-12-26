@@ -8,8 +8,3 @@ fi
 PIP=$(which pip${ver} || which pip)
 ${PIP} freeze | xargs ${PIP} uninstall -y
 ${PIP} install -IU -r requirements.txt
-
-BASEDIR=~/neovim
-PYTHON=$(which python${ver} || which python)
-rm -rf ${BASEDIR} && ${PYTHON} -m virtualenv ${BASEDIR}
-source ${BASEDIR}/bin/activate && pip install -IU pynvim && deactivate
