@@ -74,6 +74,9 @@ Plug 'kana/vim-operator-user'
 " go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
 
+" python
+Plug 'miyaviee/pytest-vim-compiler', { 'for': 'python' }
+
 " html
 Plug 'mattn/emmet-vim'
 
