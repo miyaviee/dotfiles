@@ -13,7 +13,7 @@ type npm > /dev/null 2>&1 && npm i -g npm yarn eslint eslint-plugin-vue prettier
 type pip3 > /dev/null 2>&1 && pip3 install -U pip
 
 rm -rf ~/neovim && python3 -m venv ~/neovim
-source ~/neovim/bin/activate && pip install -IU pynvim && deactivate
+source ~/neovim/bin/activate && pip install -IU pip pynvim && deactivate
 
 nvim +:PlugUpgrade +:PlugUpdate +:PlugClean +:UpdateRemotePlugins +:qa
 
