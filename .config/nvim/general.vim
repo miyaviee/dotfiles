@@ -64,7 +64,7 @@ func! EnableLastStatus()
 endfunc
 
 " coc
-nnoremap <silent> <C-\> :<C-u>CocList outline<CR>
+nnoremap <silent> <C-\> :<C-u>BTags<CR>
 
 " grepper
 nnoremap <silent> <C-g> :<C-u>Grepper -tool rg<CR>

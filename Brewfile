@@ -24,6 +24,7 @@ brew 'chunkwm'
 brew 'yabai'
 brew 'csvq'
 brew 'unar'
+brew 'fzf'
 
 brew 'vegeta'
 brew 'jaggr'
