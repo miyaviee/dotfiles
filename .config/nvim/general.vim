@@ -20,6 +20,17 @@ hi! GitGutterDelete cterm=None ctermbg=None gui=None guibg=None
 " statusline
 let g:lightline = {
       \   'colorscheme': 'gruvbox',
+      \   'active': {
+      \     'left': [
+      \       [ 'mode', 'paste' ],
+      \       [ 'readonly', 'relativepath', 'modified' ],
+      \     ],
+      \   },
+      \   'inactive': {
+      \     'left': [
+      \       [ 'relativepath' ],
+      \     ],
+      \   },
       \ }
 
 " Move to char in line
