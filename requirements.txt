@@ -3,4 +3,5 @@ flake8
 pipdeptree
 poetry
 pylint
+sqlparse
 virtualenv
