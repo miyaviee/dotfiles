@@ -21,8 +21,8 @@ PROMPT="%c %# "
 
 bindkey -e
 
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
 
 fignore=('.pyc' '.sw?' '.6' '.8')
 
