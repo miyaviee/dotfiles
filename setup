@@ -30,4 +30,6 @@ for name in .config/*; do
   mkdir -p ~/${name} && for conf in ${name}/*; do ln -fs ${BASEDIR}/${conf} ~/${conf}; done
 done
 
+type nodenv > /dev/null 2>&1 && ln -fs `pwd`/default-packages $(nodenv root)/default-packages
+
 nvim +:PlugInstall +:PlugClean +:qa

@@ -8,7 +8,7 @@ type go > /dev/null 2>&1 && GO111MODULE=off go get -u \
   golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow \
   github.com/antonmedv/gofx
 
-type npm > /dev/null 2>&1 && npm i -g npm yarn eslint eslint-plugin-vue prettier typescript sql-formatter-cli
+type npm > /dev/null 2>&1 && npm i -g npm
 
 type pip3 > /dev/null 2>&1 && pip3 install -U pip
 
