@@ -1,1 +1,1 @@
-nnoremap <silent> == :<C-u>%!sql-formatter-cli<CR>
+nnoremap <silent> == :<C-u>%!sqlformat -k upper -<CR>
