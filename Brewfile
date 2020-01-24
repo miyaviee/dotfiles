@@ -25,6 +25,7 @@ brew 'yabai'
 brew 'csvq'
 brew 'unar'
 brew 'fzf'
+brew 'imagemagick'
 
 brew 'vegeta'
 brew 'jaggr'
