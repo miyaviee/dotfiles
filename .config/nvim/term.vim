@@ -31,6 +31,11 @@ nnoremap <silent> tf :<C-u>call ChangeDirTest('file')<CR>
 nnoremap <silent> ts :<C-u>TestSuite<CR>
 nnoremap <silent> tv :<C-u>TestVisit<CR>
 
+augroup vimtest
+  autocmd!
+  autocmd BufEnter *.go let g:test#project_root = expand('%:p:h')
+augroup END
+
 function! ChangeDirTest(type) abort
   let dir = getcwd()
   call test#run(a:type, [])
