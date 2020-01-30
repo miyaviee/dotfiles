@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
 
+# rule
+yabai -m rule --add app="^iTerm2$" manage=off
+yabai -m rule --add app="^Google Chrome$" manage=off grid=24:24:1:1:22:22
+
 # bar settings
 yabai -m config status_bar                   off
 yabai -m config status_bar_text_font         "Helvetica Neue:Bold:12.0"
@@ -39,8 +43,5 @@ yabai -m config bottom_padding               10
 yabai -m config left_padding                 10
 yabai -m config right_padding                10
 yabai -m config window_gap                   10
-
-yabai -m rule --add app="^iTerm2$" manage=off
-yabai -m rule --add app="^Google Chrome$" manage=off grid=24:24:1:1:22:22
 
 echo "yabai configuration loaded.."
