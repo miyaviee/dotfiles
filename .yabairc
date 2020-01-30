@@ -3,7 +3,7 @@
 # rule
 yabai -m rule --add app="^システム環境設定$" manage=off
 yabai -m rule --add app="^iTerm2$" manage=off
-yabai -m rule --add app="^Google Chrome$" manage=off grid=24:24:1:1:22:22
+yabai -m rule --add app="^Google Chrome$" title="\- Google Chrome$" manage=off grid=24:24:1:1:22:22
 
 # bar settings
 yabai -m config status_bar                   off
