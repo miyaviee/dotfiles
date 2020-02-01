@@ -14,7 +14,7 @@
     "<C-s>": "action:split"
   },
   "languageserver": {
-    "golang": {
+    "gopls": {
       "command": "~/go/bin/gopls",
       "rootPatterns": ["go.mod"],
       "filetypes": ["go"],
