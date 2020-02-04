@@ -25,6 +25,7 @@ let g:ale_fixers = {
       \   'ruby': ['rubocop'],
       \   'javascript': ['eslint'],
       \   'javascript.jsx': ['eslint'],
+      \   'vue': ['eslint'],
       \   'terraform': executable('terraform') ? ['terraform'] : [],
       \ }
 
