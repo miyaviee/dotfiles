@@ -63,8 +63,8 @@ func! EnableLastStatus()
     set laststatus=2
 endfunc
 
-" coc
-nnoremap <silent> <C-\> :<C-u>BTags<CR>
+" outline
+nnoremap <silent> <C-\> :<C-u>Vista finder coc<CR>
 
 " grepper
 nnoremap <silent> <C-g> :<C-u>Grepper -tool rg<CR>
