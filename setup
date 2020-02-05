@@ -16,18 +16,6 @@ git pull -p
 [ -e ~/.config/anyenv/anyenv-install ] || ~/.anyenv/bin/anyenv install --init
 [ -e ~/.anyenv/plugins/anyenv-update ] || git clone https://github.com/znz/anyenv-update ~/.anyenv/plugins/anyenv-update
 
-# reset link
-for link in ~/.* ~/.config/* ~/.config/nvim/*; do [ -L ${link} ] && unlink ${link}; done
-
-# root dotfiles
-for name in .*; do [[ ${name} =~ \.+(config|git(ignore)?|tags|[A-Z].*)?$ ]] || ln -fs $(pwd)/${name} ~/${name} ;done
-
-mkdir -p ~/.config
-for name in .config/*; do
-  [ -f ${name} ] && ln -fs $(pwd)/${name} ~/${name} && continue
-  mkdir -p ~/${name} && for conf in ${name}/*; do ln -fs $(pwd)/${conf} ~/${conf}; done
-done
-
-type nodenv > /dev/null 2>&1 && ln -fs $(pwd)/default-packages $(nodenv root)/default-packages
+./sync_dotfiles
 
 nvim +:PlugInstall +:PlugClean +:qa
