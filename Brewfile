@@ -34,6 +34,7 @@ brew 'circleci'
 brew 'kubernetes-helm'
 
 cask 'insomnia'
+cask 'tableplus'
 cask 'sequel-pro'
 cask 'table-tool'
 cask 'rectangle'
