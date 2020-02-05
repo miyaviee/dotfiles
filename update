@@ -1,5 +1,8 @@
 #!/bin/bash
 
+git pull -p
+./sync_dotfiles
+
 type brew > /dev/null 2>&1 && brew upgrade --fetch-HEAD && brew cleanup
 type gcloud > /dev/null 2>&1 && gcloud components update
 
