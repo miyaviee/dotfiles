@@ -83,6 +83,9 @@ Plug 'miyaviee/pytest-vim-compiler', { 'for': 'python' }
 " html
 Plug 'mattn/emmet-vim'
 
+" riot
+Plug 'ryym/vim-riot'
+
 " syntax
 Plug 'sheerun/vim-polyglot'
 
