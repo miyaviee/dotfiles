@@ -86,6 +86,9 @@ Plug 'mattn/emmet-vim'
 " riot
 Plug 'ryym/vim-riot'
 
+" vue
+Plug 'posva/vim-vue'
+
 " syntax
 Plug 'sheerun/vim-polyglot'
 
