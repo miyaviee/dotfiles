@@ -8,6 +8,8 @@
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
