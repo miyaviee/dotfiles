@@ -24,6 +24,7 @@ brew 'csvq'
 brew 'unar'
 brew 'fzf'
 brew 'imagemagick'
+brew 'pre-commit'
 
 brew 'vegeta'
 brew 'jaggr'
