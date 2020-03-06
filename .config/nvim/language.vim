@@ -77,7 +77,6 @@ let g:coc_global_extensions = [
       \   'coc-neosnippet',
       \ ]
 
-" neosnippet
 imap <expr><TAB> neosnippet#jumpable() ?
       \ "\<Plug>(neosnippet_jump)" : neosnippet#expandable() ?
       \ "\<Plug>(neosnippet_expand)" : "\<TAB>"
