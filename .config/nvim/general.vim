@@ -64,7 +64,7 @@ func! EnableLastStatus()
 endfunc
 
 " outline
-nnoremap <silent> <C-\> :<C-u>Vista finder coc<CR>
+nnoremap <silent> <C-\> :<C-u>Vista finder ctags<CR>
 
 " grepper
 nnoremap <silent> <C-g> :<C-u>Grepper -tool rg<CR>
