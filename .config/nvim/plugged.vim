@@ -38,7 +38,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
-" extend search
+" cursor
 Plug 'easymotion/vim-easymotion'
 
 " terminal
