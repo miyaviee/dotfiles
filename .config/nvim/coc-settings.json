@@ -1,6 +1,7 @@
 {
   "coc.preferences.messageLevel": "warning",
   "coc.preferences.bracketEnterImprove": false,
+  "coc.preferences.useQuickfixForLocations": true,
   "diagnostic.enable": false,
   "suggest.noselect": false,
   "suggest.enablePreselect": false,
