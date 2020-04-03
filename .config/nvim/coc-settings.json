@@ -3,6 +3,7 @@
   "coc.preferences.bracketEnterImprove": false,
   "coc.preferences.useQuickfixForLocations": true,
   "diagnostic.enable": false,
+  "signature.target": "echo",
   "suggest.noselect": false,
   "suggest.enablePreselect": false,
   "suggest.maxCompleteItemCount": 10,
