@@ -19,6 +19,8 @@ zplug load
 
 PROMPT="%c %# "
 
+zstyle ':completion:*:default' menu select=1
+
 bindkey -e
 
 bindkey '^P' history-substring-search-up
