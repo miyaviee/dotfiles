@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 cask_args appdir: '/Applications'
 
 tap 'beeftornado/rmtree'
@@ -13,7 +15,7 @@ brew 'go'
 brew 'direnv'
 brew 'neovim'
 brew 'ripgrep'
-brew 'universal-ctags', args: ['HEAD', 'with-jansson', 'with-libyaml']
+brew 'universal-ctags', args: %w[HEAD with-jansson with-libyaml]
 brew 'mysql'
 brew 'redis'
 brew 'jq'
@@ -25,6 +27,7 @@ brew 'unar'
 brew 'fzf'
 brew 'imagemagick'
 brew 'pre-commit'
+brew 'fx'
 
 brew 'vegeta'
 brew 'jaggr'

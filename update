@@ -8,8 +8,7 @@ type gcloud > /dev/null 2>&1 && gcloud components update
 
 type go > /dev/null 2>&1 && GO111MODULE=off go get -u \
   github.com/cweill/gotests/... \
-  golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow \
-  github.com/antonmedv/gofx
+  golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow
 
 type npm > /dev/null 2>&1 && npm i -g npm
 
