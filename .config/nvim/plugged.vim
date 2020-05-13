@@ -7,8 +7,6 @@ Plug 'tyrannicaltoucan/vim-quantum'
 
 " completion
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-Plug 'Shougo/neosnippet'
-  Plug 'Shougo/neosnippet-snippets'
 
 " file explorer
 Plug 'ctrlpvim/ctrlp.vim'

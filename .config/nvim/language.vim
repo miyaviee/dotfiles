@@ -74,14 +74,7 @@ let g:coc_global_extensions = [
       \   'coc-tsserver',
       \   'coc-vetur',
       \   'coc-word',
-      \   'coc-neosnippet',
       \ ]
-
-imap <expr><TAB> neosnippet#jumpable() ?
-      \ "\<Plug>(neosnippet_jump)" : neosnippet#expandable() ?
-      \ "\<Plug>(neosnippet_expand)" : "\<TAB>"
-smap <expr><TAB> neosnippet#jumpable() ?
-      \ "\<Plug>(neosnippet_jump)" : "\<TAB>"
 
 " emmet
 let g:user_emmet_settings = {
@@ -101,6 +94,7 @@ let g:go_code_completion_enabled = 0
 let g:go_def_mapping_enabled = 0
 let g:go_gopls_enabled = 0
 let g:go_echo_go_info = 0
+let g:go_snippet_engine = ''
 
 let g:go_list_type = 'quickfix'
 
