@@ -82,3 +82,6 @@ endif
 vnoremap <silent> y y`]
 vnoremap <silent> p p`]
 nnoremap <silent> p p`]
+
+inoremap <silent> <C-b> <Home>
+inoremap <silent> <C-e> <End>
