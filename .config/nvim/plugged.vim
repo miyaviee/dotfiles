@@ -20,9 +20,6 @@ Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'junegunn/vim-easy-align'
-Plug 'liuchengxu/vista.vim'
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
 
 " auto close
 Plug 'jiangmiao/auto-pairs'
