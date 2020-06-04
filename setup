@@ -8,6 +8,8 @@
 
 [ -z "$(git config --global --get init.templatedir)" ] && git config --global init.templatedir ~/.git_template
 [ -z "$(git config --global --get core.excludesfile)" ] && git config --global core.excludesfile ~/.gitignore_global
+[ -z "$(git config --global --get pull.rebase)" ] && git config --global pull.rebase false
+
 
 # anyenv
 [ -e ~/.anyenv ] || git clone https://github.com/anyenv/anyenv ~/.anyenv
