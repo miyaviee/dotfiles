@@ -4,6 +4,8 @@ let g:neoterm_size = 20
 let g:neoterm_fixedsize = 1
 let g:neoterm_use_relative_path = 1
 
+let g:dispatch_quickfix_height = 20
+
 " open/close terminal
 nnoremap <silent> vc :<C-u>Ttoggle<CR>
 " kills the current job (send a <c-c>)
