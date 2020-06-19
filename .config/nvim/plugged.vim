@@ -1,5 +1,3 @@
-call plug#begin('~/.config/nvim/plugged')
-
 " colorcheme
 Plug 'cocopon/iceberg.vim'
 Plug 'morhetz/gruvbox'
@@ -84,5 +82,3 @@ Plug 'posva/vim-vue'
 
 " syntax
 Plug 'sheerun/vim-polyglot'
-
-call plug#end()
