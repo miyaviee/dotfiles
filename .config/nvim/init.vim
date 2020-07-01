@@ -12,8 +12,8 @@ source ~/.config/nvim/general.vim
 " language
 source ~/.config/nvim/language.vim
 
-" term
-source ~/.config/nvim/term.vim
+" runner
+source ~/.config/nvim/runner.vim
 
 " textobj
 source ~/.config/nvim/operator.vim

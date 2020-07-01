@@ -24,6 +24,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
 
 " runner
+Plug 'kassio/neoterm'
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-dispatch'
 Plug 'thinca/vim-quickrun'
@@ -34,9 +35,6 @@ Plug 'tpope/vim-fugitive'
 
 " cursor
 Plug 'easymotion/vim-easymotion'
-
-" terminal
-Plug 'kassio/neoterm'
 
 " extend visual mode
 Plug 'terryma/vim-expand-region'
