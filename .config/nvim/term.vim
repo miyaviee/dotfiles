@@ -45,3 +45,10 @@ function! ChangeDirTest(type) abort
     execute 'cd' fnameescape(dir)
   endif
 endfunction
+
+let g:quickrun_config = {
+      \   '_': {
+      \     'outputter': 'quickfix',
+      \     'outputter/quickfix/errorformat': '%m',
+      \   },
+      \ }

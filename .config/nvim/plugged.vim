@@ -26,6 +26,7 @@ Plug 'tpope/vim-endwise'
 " runner
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-dispatch'
+Plug 'thinca/vim-quickrun'
 
 " git status
 Plug 'airblade/vim-gitgutter'
