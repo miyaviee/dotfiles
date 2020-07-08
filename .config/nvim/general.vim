@@ -79,9 +79,3 @@ let g:grepper = {
 let g:grepper.rg = {
       \   'grepprg': 'rg --vimgrep --hidden --smart-case',
       \ }
-
-" vista
-let g:vista#renderer#enable_icon = 0
-let g:vista_close_on_jump = 1
-let g:vista_default_executive = 'coc'
-let g:vista_echo_cursor_strategy = 'scroll'
