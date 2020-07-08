@@ -1,1 +1,1 @@
-setlocal nonumber norelativenumber signcolumn=no
+set nonumber norelativenumber signcolumn=no
