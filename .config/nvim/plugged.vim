@@ -17,7 +17,6 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'junegunn/vim-easy-align'
 
 " auto close
 Plug 'jiangmiao/auto-pairs'
