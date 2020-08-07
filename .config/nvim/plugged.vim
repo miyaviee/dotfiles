@@ -60,7 +60,6 @@ Plug 'kana/vim-textobj-user'
 " operator
 Plug 'kana/vim-operator-user'
   Plug 'kana/vim-operator-replace'
-  Plug 'tyru/operator-camelize.vim'
   Plug 'tpope/vim-surround'
     Plug 'tpope/vim-ragtag'
 
