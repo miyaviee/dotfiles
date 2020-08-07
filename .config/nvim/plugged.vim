@@ -60,7 +60,6 @@ Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-operator-user'
   Plug 'kana/vim-operator-replace'
   Plug 'tpope/vim-surround'
-    Plug 'tpope/vim-ragtag'
 
 " go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
