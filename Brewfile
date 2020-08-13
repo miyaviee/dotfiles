@@ -6,6 +6,7 @@ tap 'beeftornado/rmtree'
 tap 'universal-ctags/universal-ctags'
 tap 'rs/tap'
 tap 'koekeishiya/formulae'
+tap 'aws/tap'
 
 brew 'readline'
 brew 'xz'
@@ -34,6 +35,7 @@ brew 'jplot'
 
 brew 'circleci'
 
+brew 'aws-sam-cli'
 brew 'kubernetes-helm'
 
 cask 'insomnia'
