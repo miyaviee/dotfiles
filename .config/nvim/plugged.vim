@@ -70,9 +70,6 @@ Plug 'miyaviee/pytest-vim-compiler', { 'for': 'python' }
 " html
 Plug 'mattn/emmet-vim'
 
-" riot
-Plug 'ryym/vim-riot'
-
 " vue
 Plug 'posva/vim-vue'
 
