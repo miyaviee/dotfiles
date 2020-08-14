@@ -12,7 +12,6 @@ Plug 'mhinz/vim-grepper'
 Plug 'mhinz/vim-startify'
 
 " util
-Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
