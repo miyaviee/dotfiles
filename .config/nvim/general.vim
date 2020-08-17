@@ -79,3 +79,8 @@ let g:grepper = {
 let g:grepper.rg = {
       \   'grepprg': 'rg --vimgrep --hidden --smart-case',
       \ }
+
+let g:qfenter_keymap = {}
+let g:qfenter_keymap.vopen = ['<C-v>']
+let g:qfenter_keymap.hopen = ['<C-s>']
+let g:qfenter_keymap.topen = ['<C-t>']

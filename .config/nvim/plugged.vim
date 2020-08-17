@@ -10,6 +10,7 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'mhinz/vim-startify'
+Plug 'yssl/QFEnter'
 
 " util
 Plug 'AndrewRadev/splitjoin.vim'
