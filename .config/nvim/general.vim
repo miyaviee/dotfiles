@@ -67,9 +67,9 @@ endfunc
 nnoremap <silent> <C-\> :<C-u>CocList outline<CR>
 
 " grepper
-nnoremap <silent> <C-g> :<C-u>Grepper -tool rg<CR>
-nnoremap <silent> <C-h> :<C-u>Grepper -tool rg -cword -noprompt<CR>
-nnoremap <silent> <C-l> :<C-u>Grepper -tool rg -buffer<CR>
+nnoremap <silent> <C-g> :<C-u>Grepper<CR>
+nnoremap <silent> <C-h> :<C-u>Grepper -cword -noprompt<CR>
+nnoremap <silent> <C-l> :<C-u>Grepper -buffer<CR>
 
 let g:grepper = {
       \   'simple_prompt': 1,
