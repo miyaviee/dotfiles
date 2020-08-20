@@ -7,4 +7,5 @@ fi
 
 PIP=$(which pip${ver} || which pip)
 ${PIP} freeze | xargs ${PIP} uninstall -y
+${PIP} install -IU wheel
 ${PIP} install -IU -r requirements.txt
