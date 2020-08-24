@@ -23,7 +23,8 @@
       "initializationOptions": {
         "completeUnimported": false,
         "deepCompletion": false,
-        "fuzzyMatching": false
+        "fuzzyMatching": false,
+        "usePlaceholders": true
       }
     }
   }
