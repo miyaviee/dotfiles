@@ -18,7 +18,7 @@
   "languageserver": {
     "gopls": {
       "command": "~/go/bin/gopls",
-      "rootPatterns": ["go.mod"],
+      "rootPatterns": ["go.mod", ".git/"],
       "filetypes": ["go"],
       "initializationOptions": {
         "completeUnimported": false,
