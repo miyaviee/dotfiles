@@ -26,7 +26,7 @@
       "initializationOptions": {
         "completeUnimported": false,
         "deepCompletion": false,
-        "fuzzyMatching": false,
+        "matcher": "caseSensitive",
         "usePlaceholders": true
       }
     }
