@@ -24,7 +24,6 @@
       "rootPatterns": ["go.mod", ".git/"],
       "filetypes": ["go"],
       "initializationOptions": {
-        "completeUnimported": false,
         "deepCompletion": false,
         "matcher": "caseSensitive",
         "usePlaceholders": true
