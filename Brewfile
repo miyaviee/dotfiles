@@ -28,6 +28,7 @@ brew 'unar'
 brew 'fzf'
 brew 'imagemagick'
 brew 'fx'
+brew 'gh'
 
 brew 'vegeta'
 brew 'jaggr'
