@@ -965,6 +965,8 @@
 	<false/>
 	<key>EnableDivisionView</key>
 	<false/>
+	<key>FlashTabBarInFullscreen</key>
+	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideActivityIndicator</key>
