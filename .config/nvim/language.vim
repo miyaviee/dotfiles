@@ -83,6 +83,9 @@ let g:coc_global_extensions = [
       \   'coc-snippets',
       \ ]
 
+autocmd BufEnter list:///* setlocal laststatus=0
+autocmd BufLeave list:///* setlocal laststatus=2
+
 " emmet
 let g:user_emmet_settings = {
       \    'variables': {
@@ -114,4 +117,3 @@ let g:go_highlight_extra_types = 1
 
 let g:go_highlight_diagnostic_errors = 0
 let g:go_highlight_diagnostic_warnings = 0
-
