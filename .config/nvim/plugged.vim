@@ -5,7 +5,6 @@ Plug 'tyrannicaltoucan/vim-quantum'
 
 " completion
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-Plug 'honza/vim-snippets'
 
 " file explorer
 Plug 'ctrlpvim/ctrlp.vim'
