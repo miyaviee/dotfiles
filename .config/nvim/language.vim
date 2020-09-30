@@ -74,6 +74,7 @@ let g:coc_global_extensions = [
       \   'coc-tsserver',
       \   'coc-vetur',
       \   'coc-word',
+      \   'coc-vimlsp',
       \ ]
 
 autocmd BufEnter list:///* setlocal laststatus=0
