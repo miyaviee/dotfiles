@@ -84,3 +84,6 @@ let g:qfenter_keymap = {}
 let g:qfenter_keymap.vopen = ['<C-v>']
 let g:qfenter_keymap.hopen = ['<C-s>']
 let g:qfenter_keymap.topen = ['<C-t>']
+
+let g:localrc_filename = '.local.vim'
+let g:localrc_filetype = '/^\.local\..*\<%s\>.*\.vim$'

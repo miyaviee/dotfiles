@@ -13,3 +13,4 @@ vendor/bundle/
 .DS_Store
 *.tags
 .local.vim
+.local.*.vim
