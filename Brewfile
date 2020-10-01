@@ -22,6 +22,7 @@ brew 'mysql'
 brew 'redis'
 brew 'sqlite3'
 
+brew 'git'
 brew 'gh'
 brew 'hub'
 brew 'tig'
