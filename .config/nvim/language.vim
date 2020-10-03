@@ -75,7 +75,10 @@ let g:coc_global_extensions = [
       \   'coc-vetur',
       \   'coc-word',
       \   'coc-vimlsp',
+      \   'coc-explorer',
       \ ]
+
+nnoremap <silent><C-e> :<C-u>CocCommand explorer<CR>
 
 autocmd BufEnter list:///* setlocal laststatus=0
 autocmd BufLeave list:///* setlocal laststatus=2
