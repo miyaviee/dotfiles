@@ -34,6 +34,7 @@ brew 'fzf'
 brew 'gnu-sed'
 brew 'jq'
 brew 'ripgrep'
+brew 'fd'
 
 brew 'jaggr'
 brew 'jplot'
