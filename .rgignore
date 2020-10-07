@@ -8,6 +8,7 @@
 **/rw/*
 **/migrations/*
 **/migrate/*
+**/gen/*
 **/bin/*
 **/__*
 **/*\.min\.*
