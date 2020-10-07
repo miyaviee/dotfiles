@@ -46,6 +46,7 @@ brew 'aws-sam-cli'
 brew 'kubernetes-helm'
 
 brew 'unar'
+brew 'graphviz'
 
 cask 'insomnia'
 cask 'rectangle'
@@ -53,3 +54,4 @@ cask 'sequel-pro'
 cask 'table-tool'
 cask 'tableplus'
 cask 'visual-studio-code'
+cask 'oracle-jdk'
