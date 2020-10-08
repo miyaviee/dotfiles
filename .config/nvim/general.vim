@@ -43,6 +43,7 @@ nmap s <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
 
 " ctrlp
+let g:ctrlp_cmd = 'CtrlP :pwd'
 let g:ctrlp_line_prefix = ''
 
 if executable('rg')
