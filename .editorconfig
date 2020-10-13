@@ -30,3 +30,7 @@ indent_style = tab
 [Makefile]
 indent_size = 4
 indent_style = tab
+
+[*.tsv]
+indent_style = tab
+trim_trailing_whitespace = false
