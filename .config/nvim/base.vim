@@ -86,3 +86,6 @@ vnoremap <silent> p p`]
 nnoremap <silent> p p`]
 
 command! DeleteAnsi %s/\[[0-9;]*m//g
+
+noremap H ^
+noremap L g_
