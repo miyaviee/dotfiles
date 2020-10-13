@@ -48,6 +48,7 @@ endfunction
 
 let g:quickrun_config = {
       \   '_': {
+      \     'runner': 'neovim_job',
       \     'outputter': 'quickfix',
       \     'outputter/quickfix/errorformat': '%m',
       \   },

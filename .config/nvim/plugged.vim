@@ -28,6 +28,7 @@ Plug 'kassio/neoterm'
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-dispatch'
 Plug 'thinca/vim-quickrun'
+  Plug 'lambdalisue/vim-quickrun-neovim-job'
 
 " git status
 Plug 'airblade/vim-gitgutter'
