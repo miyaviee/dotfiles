@@ -21,4 +21,5 @@ nvim +:PlugUpgrade +:PlugUpdate +:PlugClean +:UpdateRemotePlugins +:qa
 
 cd ~/.zplug && git pull -p
 zsh -c 'source ~/.zplug/init.zsh; zplug update'
-anyenv update
+asdf update
+asdf plugin update --all

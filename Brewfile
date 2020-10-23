@@ -13,8 +13,6 @@ brew 'xz'
 brew 'zlib'
 brew 'imagemagick'
 
-brew 'go'
-
 brew 'neovim'
 brew 'universal-ctags', args: %w[HEAD with-jansson with-libyaml]
 
@@ -35,6 +33,7 @@ brew 'gnu-sed'
 brew 'jq'
 brew 'ripgrep'
 brew 'fd'
+brew 'gnupg'
 
 brew 'jaggr'
 brew 'jplot'

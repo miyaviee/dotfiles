@@ -17,11 +17,8 @@ export GIT_MERGE_AUTOEDIT=no
 
 export BAT_THEME=ansi-dark
 
-export GOENV_DISABLE_GOPATH=1
-export GOENV_DISABLE_GOROOT=1
-
 export PATH=$GOPATH/bin:$PATH
-export PATH=~/.anyenv/bin:$PATH
+export PATH=~/.asdf/bin:$PATH
 
 alias vi=nvim
 

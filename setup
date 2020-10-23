@@ -11,10 +11,10 @@
 [ -z "$(git config --global --get pull.rebase)" ] && git config --global pull.rebase false
 
 
-# anyenv
-[ -e ~/.anyenv ] || git clone https://github.com/anyenv/anyenv ~/.anyenv
-[ -e ~/.config/anyenv/anyenv-install ] || ~/.anyenv/bin/anyenv install --init
-[ -e ~/.anyenv/plugins/anyenv-update ] || git clone https://github.com/znz/anyenv-update ~/.anyenv/plugins/anyenv-update
+# asdf
+[ -e ~/.asdf ] || git clone https://github.com/asdf-vm/asdf ~/.asdf
+cat .tool-versions | cut -f1 -d " " | xargs -I{} zsh -c 'asdf plugin list | grep -q "{}" || asdf plugin add "{}"'
+[ -e ~/.asdf/plugins/nodejs ] && [ ! -e ~/.gnupg/asdf-nodejs.gpg ] && mkdir -m 700 -p ~/.gnupg && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
 ./sync_dotfiles
 

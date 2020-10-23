@@ -11,5 +11,3 @@ for name in .config/*; do
   [ -f ${name} ] && ln -fs $(pwd)/${name} ~/${name} && continue
   mkdir -p ~/${name} && for conf in ${name}/*; do ln -fs $(pwd)/${conf} ~/${conf}; done
 done
-
-type nodenv > /dev/null 2>&1 && ln -fs $(pwd)/default-packages $(nodenv root)/default-packages

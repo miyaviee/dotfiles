@@ -10,5 +10,5 @@
 # added by travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
-# anyenv
-[ -e ~/.anyenv ] && eval "$(~/.anyenv/bin/anyenv init -)"
+# asdf
+[ -e ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
