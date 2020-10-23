@@ -13,7 +13,7 @@ indent_size = 4
 indent_size = 2
 indent_style = tab
 
-[*.go]
+[*.{go,gotmpl}]
 indent_size = 4
 indent_style = tab
 
