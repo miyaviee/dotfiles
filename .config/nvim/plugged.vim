@@ -18,6 +18,7 @@ Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'thinca/vim-localrc'
+Plug 'junegunn/vim-peekaboo'
 
 " auto close
 Plug 'jiangmiao/auto-pairs'
