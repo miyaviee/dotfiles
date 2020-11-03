@@ -25,3 +25,5 @@ alias vi=nvim
 type kubectl > /dev/null 2>&1 && source <(kubectl completion bash)
 
 type direnv > /dev/null 2>&1 && eval "$(direnv hook bash)"
+
+[ -e ~/.local/.bashrc ] && . ~/.local/.bashrc
