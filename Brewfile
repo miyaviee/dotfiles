@@ -34,6 +34,7 @@ brew 'jq'
 brew 'ripgrep'
 brew 'fd'
 brew 'gnupg'
+brew 'coreutils'
 
 brew 'jaggr'
 brew 'jplot'
