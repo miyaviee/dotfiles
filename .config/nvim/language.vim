@@ -59,6 +59,12 @@ let g:endwise_no_mappings = 1
 inoremap <silent><expr> <CR> pumvisible() ?
       \ "\<C-y>" : "\<C-g>u\<CR>\<C-r>=EndwiseDiscretionary()\<CR>\<C-r>=AutoPairsReturn()\<CR>"
 
+imap <expr><TAB> coc#jumpable() ?
+      \ "\<C-g>u\<C-j>" : coc#expandable() ?
+      \ "\<Plug>(coc-snippets-expand)" : "\<TAB>"
+smap <expr><TAB> coc#jumpable() ?
+      \ "\<C-j>" : "\<TAB>"
+
 function! Multiple_cursors_before()
   let b:coc_suggest_disable = 1
 endfunction
@@ -75,6 +81,7 @@ let g:coc_global_extensions = [
       \   'coc-word',
       \   'coc-vimlsp',
       \   'coc-explorer',
+      \   'coc-snippets',
       \ ]
 
 nnoremap <silent><C-e> :<C-u>CocCommand explorer<CR>
