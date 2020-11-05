@@ -42,14 +42,12 @@ Plug 'easymotion/vim-easymotion'
 Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
 
-" editorconfig
-Plug 'editorconfig/editorconfig-vim'
-
 " comment
 Plug 'tpope/vim-commentary'
 
-" async syntax check
+" syntax/format
 Plug 'dense-analysis/ale'
+Plug 'editorconfig/editorconfig-vim'
 
 " textobj
 Plug 'kana/vim-textobj-user'
