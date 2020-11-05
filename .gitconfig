@@ -1,0 +1,9 @@
+[user]
+	name = miyaviee
+	email = miyaviee@users.noreply.github.com
+[init]
+	templatedir = ~/.git_template
+[core]
+	excludesfile = ~/.gitignore_global
+[pull]
+	rebase = false

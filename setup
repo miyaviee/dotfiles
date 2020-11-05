@@ -6,11 +6,6 @@
 
 [ -e ~/.zplug/init.zsh ] || git clone https://github.com/zplug/zplug ~/.zplug
 
-[ -z "$(git config --global --get init.templatedir)" ] && git config --global init.templatedir ~/.git_template
-[ -z "$(git config --global --get core.excludesfile)" ] && git config --global core.excludesfile ~/.gitignore_global
-[ -z "$(git config --global --get pull.rebase)" ] && git config --global pull.rebase false
-
-
 # asdf
 [ -e ~/.asdf ] || git clone https://github.com/asdf-vm/asdf ~/.asdf
 cat .tool-versions | cut -f1 -d " " | xargs -I{} zsh -c 'asdf plugin list | grep -q "{}" || asdf plugin add "{}"'
