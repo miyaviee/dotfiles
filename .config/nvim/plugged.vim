@@ -56,7 +56,7 @@ Plug 'kana/vim-textobj-user'
   Plug 'kana/vim-textobj-indent'
   Plug 'kana/vim-textobj-entire'
   Plug 'rhysd/vim-textobj-anyblock'
-  Plug 'sgur/vim-textobj-parameter'
+Plug 'machakann/vim-swap'
 
 " operator
 Plug 'kana/vim-operator-user'
