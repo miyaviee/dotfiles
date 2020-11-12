@@ -19,9 +19,9 @@
     "<C-s>": "action:split"
   },
   "languageserver": {
-    "gopls": {
-      "command": "~/go/bin/gopls",
-      "rootPatterns": ["go.mod", ".git/"],
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
       "filetypes": ["go"],
       "initializationOptions": {
         "completionDocumentation": false,
@@ -31,7 +31,7 @@
         "usePlaceholders": true
       }
     },
-    "pyls": {
+    "python": {
       "command": "pyls",
       "filetypes": ["python"]
     }
