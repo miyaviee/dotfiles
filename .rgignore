@@ -1,10 +1,10 @@
-/vendor/*
-/node_modules/*
-/cache/*
-/tmp/*
-/.git/*
-/.svn/*
-/coverage/*
+**/vendor/*
+**/node_modules/*
+**/cache/*
+**/tmp/*
+**/.git/*
+**/.svn/*
+**/coverage/*
 **/rw/*
 **/migrations/*
 **/migrate/*
