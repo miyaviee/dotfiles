@@ -7,7 +7,7 @@ let g:ale_pattern_options = {
       \ }
 
 let g:ale_go_golangci_lint_package = 1
-let g:ale_go_golangci_lint_options = '--disable-all --enable=typecheck,golint,errcheck'
+let g:ale_go_golangci_lint_options = '--disable-all --enable=typecheck,golint,errcheck .'
 
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_insert_leave = 0
