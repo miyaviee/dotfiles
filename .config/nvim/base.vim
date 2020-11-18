@@ -1,6 +1,3 @@
-filetype plugin indent on
-syntax on
-
 set fileformat=unix
 set fileencoding=utf-8
 set autoindent

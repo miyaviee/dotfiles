@@ -1,10 +1,10 @@
+" not plugged
+source ~/.config/nvim/base.vim
+
 " plugin manage
 call plug#begin('~/.config/nvim/plugged')
 source ~/.config/nvim/plugged.vim
 call plug#end()
-
-" not plugged
-source ~/.config/nvim/base.vim
 
 " ui
 source ~/.config/nvim/general.vim
