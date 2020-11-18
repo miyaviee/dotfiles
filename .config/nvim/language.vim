@@ -1,19 +1,18 @@
 " lint
 let g:ale_disable_lsp = 1
 let g:ale_set_highlights = 0
-let g:ale_open_list = 1
+let g:ale_open_list = 'on_save'
 let g:ale_pattern_options = {
       \   '\.direnv\|\.venv\|\.vim\|vendor\|migrations': {'ale_linters': [], 'ale_fixers': []},
       \ }
 
 let g:ale_go_golangci_lint_package = 1
-let g:ale_go_golangci_lint_options = '--disable-all --enable=typecheck,golint,errcheck .'
+let g:ale_go_golangci_lint_options = '--disable-all --enable=golint .'
+let g:ale_go_staticcheck_lint_package = 1
 
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_insert_leave = 0
 let g:ale_lint_on_enter = 0
 let g:ale_linters = {
-      \   'go': ['golangci-lint'],
+      \   'go': ['golangci-lint', 'staticcheck'],
       \   'python': ['flake8'],
       \   'ruby': ['rubocop'],
       \ }
