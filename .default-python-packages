@@ -1,5 +1,5 @@
-awscli
 ansible
+awscli
 black
 flake8
 pipdeptree
@@ -9,4 +9,5 @@ pylint
 python-language-server
 sqlparse
 virtualenv
+wheel
 yamllint

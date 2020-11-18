@@ -7,15 +7,12 @@ type brew > /dev/null 2>&1 && brew upgrade --fetch-HEAD && brew cleanup
 type gcloud > /dev/null 2>&1 && gcloud components update
 
 type npm > /dev/null 2>&1 && npm i -g npm
-
-type pip3 > /dev/null 2>&1 && pip3 install -U pip
-
-rm -rf ~/neovim && python3 -m venv ~/neovim
-source ~/neovim/bin/activate && pip install -IU pip pynvim && deactivate
+type pip > /dev/null 2>&1 && pip install -U pip
 
 nvim +:PlugUpgrade +:PlugUpdate +:PlugClean +:UpdateRemotePlugins +:qa
 
-cd ~/.zplug && git pull -p
+pushd ~/.zplug && git pull -p && popd
 zsh -c 'source ~/.zplug/init.zsh; zplug update'
+
 asdf update
 asdf plugin update --all

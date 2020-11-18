@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm -rf ~/neovim && python -m venv ~/neovim
+source ~/neovim/bin/activate && pip install -IU pip pynvim && deactivate
