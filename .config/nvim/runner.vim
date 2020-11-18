@@ -1,10 +1,9 @@
+" neoterm
 let g:neoterm_autoscroll = 1
 let g:neoterm_default_mod = 'botright'
 let g:neoterm_size = 20
 let g:neoterm_fixedsize = 1
 let g:neoterm_use_relative_path = 1
-
-let g:dispatch_quickfix_height = 20
 
 " open/close terminal
 nnoremap <silent> vc :<C-u>Ttoggle<CR>
@@ -14,6 +13,13 @@ nnoremap <silent> vq :<C-u>Tkill<CR>
 command! -nargs=+ Rails   :T bin/rails <args>
 command! -nargs=+ Django  :T python manage.py <args>
 
+" asyncrun
+let g:asyncrun_open = 20
+
+" dispatch
+let g:dispatch_quickfix_height = 20
+
+" test
 let g:test#strategy = 'dispatch'
 
 if executable('pytest')
@@ -46,6 +52,7 @@ function! ChangeDirTest(type) abort
   endif
 endfunction
 
+" quickrun
 let g:quickrun_config = {
       \   '_': {
       \     'runner': 'neovim_job',
