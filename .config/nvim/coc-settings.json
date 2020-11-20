@@ -17,6 +17,10 @@
     "<C-v>": "action:vsplit",
     "<C-s>": "action:split"
   },
+  "list.normalMappings": {
+    "<C-v>": "action:vsplit",
+    "<C-s>": "action:split"
+  },
   "languageserver": {
     "go": {
       "command": "gopls",
