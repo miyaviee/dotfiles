@@ -21,10 +21,6 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'thinca/vim-localrc'
 Plug 'junegunn/vim-peekaboo'
 
-" auto close
-Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-endwise'
-
 " runner
 Plug 'kassio/neoterm'
 Plug 'janko-m/vim-test'

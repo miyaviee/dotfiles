@@ -48,15 +48,9 @@ function! s:show_documentation()
   endif
 endfunction
 
-" auto close
-let g:AutoPairsMapCR = 0
-let g:AutoPairsMultilineClose = 0
-
-let g:endwise_no_mappings = 1
-
 " completion
 inoremap <silent><expr> <CR> pumvisible() ?
-      \ "\<C-y>" : "\<C-g>u\<CR>\<C-r>=EndwiseDiscretionary()\<CR>\<C-r>=AutoPairsReturn()\<CR>"
+      \ "\<C-y>" : "\<C-g>u\<CR>"
 
 imap <expr><TAB> coc#jumpable() ?
       \ "\<C-g>u\<C-j>" : coc#expandable() ?
