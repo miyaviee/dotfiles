@@ -20,12 +20,12 @@ let g:ale_linters = {
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
       \   'go': ['goimports'],
-      \   'python': executable('yapf') ? ['yapf'] : ['black'],
+      \   'python': ['black'],
       \   'ruby': ['rubocop'],
       \   'javascript': ['eslint'],
       \   'javascript.jsx': ['eslint'],
       \   'vue': ['eslint'],
-      \   'terraform': executable('terraform') ? ['terraform'] : [],
+      \   'terraform': ['terraform'],
       \ }
 
 nmap <silent> <C-k> <Plug>(ale_previous)
