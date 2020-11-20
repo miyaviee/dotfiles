@@ -50,7 +50,7 @@ endfunction
 
 " completion
 inoremap <silent><expr> <CR> pumvisible() ?
-      \ "\<C-y>" : "\<C-g>u\<CR>"
+      \ coc#_select_confirm() : "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
 
 imap <expr><TAB> coc#jumpable() ?
       \ "\<C-g>u\<C-j>" : coc#expandable() ?
