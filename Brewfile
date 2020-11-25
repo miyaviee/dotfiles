@@ -49,6 +49,7 @@ brew 'unar'
 brew 'graphviz'
 
 cask 'iterm2'
+cask 'appcleaner'
 cask 'insomnia'
 cask 'rectangle'
 cask 'table-tool'
