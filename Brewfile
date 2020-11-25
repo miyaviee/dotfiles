@@ -2,6 +2,7 @@
 
 cask_args appdir: '/Applications'
 
+tap 'homebrew/cask'
 tap 'aws/tap'
 tap 'beeftornado/rmtree'
 tap 'koekeishiya/formulae'
