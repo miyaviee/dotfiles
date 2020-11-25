@@ -50,6 +50,7 @@ brew 'unar'
 brew 'graphviz'
 
 cask 'iterm2'
+cask 'docker'
 cask 'appcleaner'
 cask 'insomnia'
 cask 'rectangle'
