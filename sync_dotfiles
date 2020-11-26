@@ -5,7 +5,7 @@ for link in ~/.* ~/.config/* ~/.config/nvim/*; do [ -L ${link} ] && unlink ${lin
 
 # root dotfiles
 for name in .*; do [[ ${name} =~ \.+(config|git(ignore|config)?|tags|eslintrc\..*|[A-Z].*)?$ ]] || ln -fs $(pwd)/${name} ~/${name}; done
-for name in .gitconfig; do cp -f ${name} ~/${name}; done
+for name in .gitconfig; do [[ -e ~/${name} ]] || cp -f ${name} ~/${name}; done
 
 mkdir -p ~/.config
 for name in .config/*; do
