@@ -1,7 +1,4 @@
-map    r  <Plug>(operator-replace)
-
-vmap   v  <Plug>(expand_region_expand)
-vmap   V  <Plug>(expand_region_shrink)
+UsePlugin 'vim-swap'
 
 omap   i, <Plug>(swap-textobject-i)
 xmap   i, <Plug>(swap-textobject-i)
