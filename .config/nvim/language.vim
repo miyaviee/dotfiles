@@ -94,6 +94,7 @@ let g:jsx_ext_required = 0
 
 " ctags
 let g:gutentags_ctags_tagfile = '.tags'
+let g:gutentags_enabled = 0
 
 " go
 let g:go_code_completion_enabled = 0
