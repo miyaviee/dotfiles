@@ -29,6 +29,7 @@ set listchars=tab:\|\ ,trail:_,extends:\
 set clipboard+=unnamed
 set mouse-=a
 set completeopt=menu,noinsert
+set shortmess+=c
 set visualbell t_vb=
 set noerrorbells
 set signcolumn=yes
