@@ -15,4 +15,5 @@ __pycache__/
 *.tags
 .local.vim
 .local.*.vim
-.gutctags
+.root
+.notags
