@@ -11,7 +11,7 @@ let g:ale_go_golangci_lint_package = 1
 let g:ale_go_golangci_lint_options = '--disable-all --enable=golint .'
 let g:ale_go_staticcheck_lint_package = 1
 
-let g:ale_lint_on_enter = 0
+let g:ale_lint_on_enter = 1
 let g:ale_linters = {
       \   'go': ['golangci-lint', 'staticcheck'],
       \   'python': ['flake8'],
