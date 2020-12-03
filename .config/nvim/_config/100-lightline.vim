@@ -1,5 +1,7 @@
 UsePlugin 'lightline.vim'
 
+setlocal laststatus=2
+
 let g:lightline = {
       \   'colorscheme': get(g:, 'colors_name', 'default'),
       \   'active': {

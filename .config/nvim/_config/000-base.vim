@@ -11,7 +11,7 @@ set hidden
 set ignorecase
 set incsearch
 set infercase
-set laststatus=2
+set laststatus=0
 set list
 set listchars=tab:\|\ ,trail:_,extends:\
 set matchtime=1
