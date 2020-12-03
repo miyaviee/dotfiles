@@ -32,12 +32,10 @@ let g:coc_global_extensions = [
       \   'coc-vetur',
       \   'coc-word',
       \   'coc-vimlsp',
-      \   'coc-explorer',
       \   'coc-snippets',
       \   'coc-pairs',
       \ ]
 
 nnoremap <silent><C-\> :<C-u>CocList outline<CR>
-nnoremap <silent><C-e> :<C-u>CocCommand explorer<CR>
 
 autocmd FileType list setlocal laststatus=0
