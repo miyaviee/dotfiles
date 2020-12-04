@@ -53,7 +53,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'kana/vim-textobj-user'
   Plug 'kana/vim-textobj-line'
   Plug 'kana/vim-textobj-indent'
-  Plug 'kana/vim-textobj-entire'
   Plug 'rhysd/vim-textobj-anyblock'
 Plug 'machakann/vim-swap'
 
