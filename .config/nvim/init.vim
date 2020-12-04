@@ -30,7 +30,6 @@ Plug 'janko-m/vim-test'
 Plug 'tpope/vim-dispatch'
 Plug 'thinca/vim-quickrun'
   Plug 'lambdalisue/vim-quickrun-neovim-job'
-Plug 'skywind3000/asyncrun.vim'
 
 " git status
 Plug 'airblade/vim-gitgutter'
