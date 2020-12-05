@@ -43,8 +43,6 @@ set wildmode=longest,full
 try
   set fillchars=eob:\ ,
   set inccommand=nosplit
-
-  autocmd TermOpen * tnoremap <silent> <ESC> <C-\><C-n>
 catch
   " not supported
 endtry
@@ -66,6 +64,8 @@ nnoremap <silent> p p`]
 
 noremap H ^
 noremap L g_
+
+tnoremap <silent> <ESC> <C-\><C-n>
 
 command! DeleteAnsi %s/\[[0-9;]*m//g
 
