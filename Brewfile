@@ -28,7 +28,6 @@ brew 'tig'
 
 brew 'csvq'
 brew 'direnv'
-brew 'fx'
 brew 'fzf'
 brew 'gnu-sed'
 brew 'jq'

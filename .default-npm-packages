@@ -1,5 +1,6 @@
 eslint
 eslint-plugin-vue
+fx
 prettier
 sql-formatter-cli
 typescript
