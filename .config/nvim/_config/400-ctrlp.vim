@@ -1,6 +1,6 @@
 UsePlugin 'ctrlp.vim'
 
-let g:ctrlp_cmd = 'CtrlP :pwd'
+let g:ctrlp_cmd = 'CtrlPCurWD'
 let g:ctrlp_line_prefix = ''
 
 if executable('rg')
