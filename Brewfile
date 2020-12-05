@@ -8,6 +8,7 @@ tap 'beeftornado/rmtree'
 tap 'koekeishiya/formulae'
 tap 'rs/tap'
 tap 'universal-ctags/universal-ctags'
+tap 'hashicorp/tap'
 
 brew 'readline'
 brew 'xz'
@@ -47,6 +48,8 @@ brew 'kubernetes-helm'
 
 brew 'unar'
 brew 'graphviz'
+
+brew 'terraform-ls'
 
 cask 'iterm2'
 cask 'docker'
