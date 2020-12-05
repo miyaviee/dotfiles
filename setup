@@ -8,7 +8,7 @@
 
 # asdf
 [ -e ~/.asdf ] || git clone https://github.com/asdf-vm/asdf ~/.asdf
-cat .tool-versions | cut -f1 -d " " | xargs -I{} zsh -c '~/.asdf/bin/asdf plugin list | grep -q "{}" || ~/.asdf/bin/asdf plugin add "{}"'
+cat .tool-versions | cut -f1 -d " " | xargs -I{} zsh -c '~/.asdf/bin/asdf plugin list | grep -q "{}" || ~/.asdf/bin/asdf plugin-add "{}"'
 [ -e ~/.asdf/plugins/nodejs ] && [ ! -e ~/.gnupg/asdf-nodejs.gpg ] && mkdir -m 700 -p ~/.gnupg && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 ~/.asdf/bin/asdf install
 
