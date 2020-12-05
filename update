@@ -7,6 +7,8 @@ type brew > /dev/null 2>&1 && brew upgrade --fetch-HEAD && brew cleanup
 
 nvim +:PlugUpgrade +:PlugUpdate +:PlugClean +:UpdateRemotePlugins +:qa
 
+go get -u github.com/cweill/gotests/...
+
 pushd ~/.zplug && git pull -p && popd
 zsh -c 'source ~/.zplug/init.zsh; zplug update'
 
