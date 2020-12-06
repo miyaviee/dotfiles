@@ -13,8 +13,10 @@ let g:go_mod_fmt_autosave = 0
 let g:go_asmfmt_autosave = 0
 let g:go_metalinter_autosave = 0
 
-let g:go_highlight_functions = 1
-let g:go_highlight_extra_types = 1
-
 let g:go_highlight_diagnostic_errors = 0
 let g:go_highlight_diagnostic_warnings = 0
+
+if has('nvim-0.5') | finish | endif
+
+let g:go_highlight_functions = 1
+let g:go_highlight_extra_types = 1

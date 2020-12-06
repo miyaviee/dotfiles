@@ -75,7 +75,11 @@ Plug 'mattn/emmet-vim'
 Plug 'posva/vim-vue'
 
 " syntax
-Plug 'sheerun/vim-polyglot'
+if has('nvim-0.5')
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+else
+  Plug 'sheerun/vim-polyglot'
+endif
 
 call plug#end()
 
