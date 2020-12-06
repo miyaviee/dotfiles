@@ -1,3 +1,3 @@
-hi! LineNr cterm=NONE ctermbg=NONE gui=NONE guibg=NONE
-hi! SignColumn cterm=NONE ctermbg=NONE gui=NONE guibg=NONE
-hi! VertSplit cterm=NONE ctermbg=NONE gui=NONE guibg=NONE
+highlight! LineNr cterm=NONE ctermbg=NONE gui=NONE guibg=NONE
+highlight! SignColumn cterm=NONE ctermbg=NONE gui=NONE guibg=NONE
+highlight! VertSplit cterm=NONE ctermbg=NONE gui=NONE guibg=NONE

@@ -33,3 +33,6 @@ nmap <silent> <C-k> <Plug>(ale_previous)
 nmap <silent> <C-j> <Plug>(ale_next)
 
 autocmd QuitPre * if empty(&buftype) | lclose | endif
+
+highlight! link ALEErrorSign Error
+highlight! link ALEWarningSign Warning
