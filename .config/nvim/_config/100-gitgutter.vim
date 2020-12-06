@@ -1,6 +1,6 @@
 UsePlugin 'vim-gitgutter'
 
-hi! GitGutterAdd cterm=None ctermbg=None gui=None guibg=None
-hi! GitGutterChange cterm=None ctermbg=None gui=None guibg=None
-hi! GitGutterChangeDelete cterm=None ctermbg=None gui=None guibg=None
-hi! GitGutterDelete cterm=None ctermbg=None gui=None guibg=None
+hi! GitGutterAdd cterm=NONE ctermbg=NONE gui=NONE guibg=NONE
+hi! GitGutterChange cterm=NONE ctermbg=NONE gui=NONE guibg=NONE
+hi! GitGutterChangeDelete cterm=NONE ctermbg=NONE gui=NONE guibg=NONE
+hi! GitGutterDelete cterm=NONE ctermbg=NONE gui=NONE guibg=NONE
