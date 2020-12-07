@@ -14,7 +14,6 @@ Plug 'honza/vim-snippets'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'mhinz/vim-startify'
-Plug 'yssl/QFEnter'
 Plug 'lambdalisue/fern.vim'
 
 " util
@@ -72,7 +71,10 @@ Plug 'miyaviee/pytest-vim-compiler', { 'for': 'python' }
 Plug 'mattn/emmet-vim'
 
 " vue
-Plug 'posva/vim-vue'
+Plug 'posva/vim-vue', { 'for': 'vue' }
+
+" quickfix
+Plug 'yssl/QFEnter', { 'for': 'qf' }
 
 " syntax
 if has('nvim-0.5')
