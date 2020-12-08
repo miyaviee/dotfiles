@@ -70,7 +70,7 @@ tnoremap <silent> <ESC> <C-\><C-n>
 command! DeleteAnsi %s/\[[0-9;]*m//g
 
 " plugin manage
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.cache/vim-plug')
 
 " colorcheme
 Plug 'cocopon/iceberg.vim'
