@@ -2,6 +2,7 @@ eslint
 eslint-plugin-vue
 fx
 prettier
+prettier-plugin-toml
 sql-formatter-cli
 typescript
 yarn
