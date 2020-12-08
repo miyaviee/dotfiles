@@ -29,7 +29,7 @@ Plug 'kassio/neoterm'
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-dispatch'
 Plug 'thinca/vim-quickrun'
-  Plug 'lambdalisue/vim-quickrun-neovim-job'
+Plug 'lambdalisue/vim-quickrun-neovim-job'
 
 " git status
 Plug 'airblade/vim-gitgutter'
@@ -51,15 +51,15 @@ Plug 'editorconfig/editorconfig-vim'
 
 " textobj
 Plug 'kana/vim-textobj-user'
-  Plug 'kana/vim-textobj-line'
-  Plug 'kana/vim-textobj-indent'
-  Plug 'rhysd/vim-textobj-anyblock'
+Plug 'kana/vim-textobj-line'
+Plug 'kana/vim-textobj-indent'
+Plug 'rhysd/vim-textobj-anyblock'
 Plug 'machakann/vim-swap'
 
 " operator
 Plug 'kana/vim-operator-user'
-  Plug 'kana/vim-operator-replace'
-  Plug 'tpope/vim-surround'
+Plug 'kana/vim-operator-replace'
+Plug 'tpope/vim-surround'
 
 " go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
