@@ -5,7 +5,7 @@ git pull -p
 
 type brew > /dev/null 2>&1 && brew upgrade && brew cleanup
 
-nvim +:PlugUpgrade +:PlugUpdate +:PlugClean +:UpdateRemotePlugins +:qa
+nvim +PlugUpgrade +PlugUpdate +PlugClean +UpdateRemotePlugins +qa
 
 go get -u github.com/cweill/gotests/...
 
