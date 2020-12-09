@@ -1,6 +1,7 @@
 eslint
 eslint-plugin-vue
 fx
+json2csv
 prettier
 prettier-plugin-toml
 sql-formatter-cli
