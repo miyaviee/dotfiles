@@ -62,8 +62,8 @@ vnoremap <silent> y y`]
 vnoremap <silent> p p`]
 nnoremap <silent> p p`]
 
-noremap H ^
-noremap L g_
+nnoremap H ^
+nnoremap L g_
 
 nnoremap <silent> x "_x
 
