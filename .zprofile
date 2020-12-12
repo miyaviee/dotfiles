@@ -1,4 +1,5 @@
 # avoid overwriting
+export PATH=/usr/local/sbin:$PATH
 export PATH=$GOPATH/bin:$PATH
 export PATH=~/.asdf/bin:$PATH
 
