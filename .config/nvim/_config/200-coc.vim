@@ -19,12 +19,6 @@ endfunction
 inoremap <silent><expr> <CR> pumvisible() ?
       \ coc#_select_confirm() : "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
 
-imap <expr><TAB> coc#jumpable() ?
-      \ "\<C-g>u\<C-j>" : coc#expandable() ?
-      \ "\<Plug>(coc-snippets-expand)" : "\<TAB>"
-smap <expr><TAB> coc#jumpable() ?
-      \ "\<C-j>" : "\<TAB>"
-
 let g:coc_global_extensions = [
       \   'coc-json',
       \   'coc-solargraph',
@@ -32,7 +26,6 @@ let g:coc_global_extensions = [
       \   'coc-vetur',
       \   'coc-word',
       \   'coc-vimlsp',
-      \   'coc-snippets',
       \   'coc-pairs',
       \ ]
 

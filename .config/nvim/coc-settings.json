@@ -10,9 +10,6 @@
   "suggest.minTriggerInputLength": 2,
   "javascript.validate.enable": false,
   "solargraph.checkGemVersion": false,
-  "snippets.ultisnips.directories": [
-    "gosnippets/Ultisnips"
-  ],
   "list.insertMappings": {
     "<C-v>": "action:vsplit",
     "<C-s>": "action:split"
