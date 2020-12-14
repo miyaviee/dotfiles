@@ -38,4 +38,5 @@ let g:coc_global_extensions = [
 
 nnoremap <silent><C-\> :<C-u>CocList outline<CR>
 
-autocmd FileType list setlocal laststatus=0
+autocmd BufEnter list://* setlocal laststatus=0
+autocmd BufLeave list://* setlocal laststatus=2
