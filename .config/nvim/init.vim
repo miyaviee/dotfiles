@@ -46,8 +46,6 @@ catch
   " not supported
 endtry
 
-autocmd FileType * setlocal formatoptions-=ro
-
 let g:python3_host_prog = expand('~/neovim/bin/python')
 
 nnoremap <silent> <C-]> g<C-]>
