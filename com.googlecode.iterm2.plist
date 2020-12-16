@@ -1685,7 +1685,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Thin Strokes</key>
-			<integer>3</integer>
+			<integer>4</integer>
 			<key>Transparency</key>
 			<real>0.12</real>
 			<key>Unlimited Scrollback</key>
