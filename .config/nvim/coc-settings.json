@@ -28,7 +28,7 @@
         "completeUnimported": true,
         "deepCompletion": false,
         "matcher": "caseSensitive",
-        "usePlaceholders": true
+        "usePlaceholders": false
       }
     },
     "python": {
