@@ -1,6 +1,6 @@
 UsePlugin 'fern.vim'
 
-nnoremap <silent><C-e> :<C-u>Fern . -reveal=%<CR>
+nnoremap <silent><C-e> :<C-u>Fern %:h -reveal=%<CR>
 
 let g:fern#default_exclude = '^.git$'
 
