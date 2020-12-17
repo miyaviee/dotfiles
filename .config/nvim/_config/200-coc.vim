@@ -17,7 +17,7 @@ function! s:show_documentation()
 endfunction
 
 inoremap <silent><expr> <CR> pumvisible() ?
-      \ coc#_select_confirm() : "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
+      \ coc#_select_confirm() : "\<CR>"
 
 let g:coc_global_extensions = [
       \   'coc-json',
@@ -26,7 +26,6 @@ let g:coc_global_extensions = [
       \   'coc-vetur',
       \   'coc-word',
       \   'coc-vimlsp',
-      \   'coc-pairs',
       \ ]
 
 nnoremap <silent><C-\> :<C-u>CocList outline<CR>
