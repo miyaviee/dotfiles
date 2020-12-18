@@ -35,7 +35,7 @@ set synmaxcol=1000
 set tabstop=4
 set tagcase=match
 set tags=.tags,vendor.tags
-set updatetime=100
+set updatetime=300
 set visualbell t_vb=
 set wildmode=longest,full
 
