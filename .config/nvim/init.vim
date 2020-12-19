@@ -150,7 +150,7 @@ Plug 'yssl/QFEnter', { 'for': 'qf' }
 
 " syntax
 if has('nvim-0.5')
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 else
   Plug 'sheerun/vim-polyglot'
 endif
