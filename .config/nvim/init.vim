@@ -37,7 +37,7 @@ set tagcase=match
 set tags=.tags,vendor.tags
 set updatetime=300
 set visualbell t_vb=
-set wildmode=longest,full
+set wildmode=list:longest
 
 try
   set fillchars=eob:\ ,
