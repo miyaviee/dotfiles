@@ -4,7 +4,7 @@ let g:ctrlp_cmd = 'CtrlPCurWD'
 let g:ctrlp_line_prefix = ''
 
 if executable('rg')
-  let g:ctrlp_user_command = 'rg --files %s'
+  let g:ctrlp_user_command = 'rg --hidden --files %s'
   let g:ctrlp_use_caching = 0
 endif
 
