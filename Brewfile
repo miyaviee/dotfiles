@@ -15,18 +15,16 @@ brew 'xz'
 brew 'zlib'
 brew 'imagemagick'
 
-brew 'neovim'
-brew 'universal-ctags', args: %w[HEAD with-jansson with-libyaml]
-
 brew 'mysql'
 brew 'redis'
 brew 'sqlite3'
 
+brew 'neovim'
+brew 'universal-ctags', args: %w[HEAD with-jansson with-libyaml]
 brew 'git'
 brew 'gh'
 brew 'hub'
 brew 'tig'
-
 brew 'csvq'
 brew 'direnv'
 brew 'fzf'
@@ -36,18 +34,12 @@ brew 'ripgrep'
 brew 'fd'
 brew 'gnupg'
 brew 'coreutils'
+brew 'unar'
+brew 'graphviz'
 
 brew 'jaggr'
 brew 'jplot'
 brew 'vegeta'
-
-brew 'circleci'
-
-brew 'aws-sam-cli'
-brew 'kubernetes-helm'
-
-brew 'unar'
-brew 'graphviz'
 
 brew 'terraform-ls'
 
