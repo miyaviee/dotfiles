@@ -53,6 +53,7 @@ nnoremap <silent> <C-]> g<C-]>
 nnoremap <silent> <ESC><ESC> :<C-u>nohlsearch<CR>
 
 nnoremap <silent> q <Nop>
+nnoremap <silent> Q <Nop>
 
 " multi line continuous paste
 vnoremap <silent> y y`]
