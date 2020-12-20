@@ -15,6 +15,8 @@ brew 'xz'
 brew 'zlib'
 brew 'imagemagick'
 
+brew 'go'
+
 brew 'mysql'
 brew 'redis'
 brew 'sqlite3'
