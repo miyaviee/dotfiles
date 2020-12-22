@@ -1,3 +1,0 @@
-#!/bin/bash
-VENDOR=${VIRTUAL_ENV}
-[ -e ${VENDOR} ] && ctags --languages=$(basename ${0} .ctags) -f $(git rev-parse --show-toplevel)/vendor.tags ${VENDOR}/
