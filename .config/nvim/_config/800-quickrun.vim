@@ -14,3 +14,6 @@ let g:quickrun_config = {
       \     'outputter/quickfix/errorformat': '%m',
       \   },
       \ }
+
+nnoremap <silent><expr> <C-c> quickrun#is_running() ?
+      \ quickrun#sweep_sessions() : "\<C-c>"
