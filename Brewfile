@@ -38,6 +38,7 @@ brew 'gnupg'
 brew 'coreutils'
 brew 'unar'
 brew 'graphviz'
+brew 'gibo'
 
 brew 'jaggr'
 brew 'jplot'
