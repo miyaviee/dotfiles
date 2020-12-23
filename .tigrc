@@ -1,1 +1,4 @@
-bind status P !git push origin
+bind status P ?git push origin
+
+bind generic <Ctrl-f> move-page-down
+bind generic <Ctrl-b> move-page-up
