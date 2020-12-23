@@ -1,1 +1,1 @@
-nnoremap <silent> == :<C-u>%!prettier --parser yaml --single-quote false<CR>
+nnoremap <silent> == :<C-u>%!prettier --parser yaml<CR>
