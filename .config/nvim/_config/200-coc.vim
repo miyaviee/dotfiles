@@ -16,8 +16,8 @@ function! s:show_documentation()
   endif
 endfunction
 
-inoremap <silent><expr> <CR> pumvisible() ?
-      \ "\<C-y>" : "\<CR>\<C-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <TAB> pumvisible() ?
+      \ "\<C-y>" : "\<TAB>"
 
 let g:coc_global_extensions = [
       \   'coc-json',

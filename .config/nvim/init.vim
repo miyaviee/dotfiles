@@ -151,10 +151,9 @@ Plug 'posva/vim-vue', { 'for': 'vue' }
 Plug 'yssl/QFEnter', { 'for': 'qf' }
 
 " syntax
+Plug 'sheerun/vim-polyglot'
 if has('nvim-0.5')
   Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
-else
-  Plug 'sheerun/vim-polyglot'
 endif
 
 call plug#end()
