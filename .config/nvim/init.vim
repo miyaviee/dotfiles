@@ -95,7 +95,6 @@ Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'thinca/vim-localrc'
-Plug 'junegunn/vim-peekaboo'
 Plug 'kamykn/spelunker.vim'
 
 " runner
