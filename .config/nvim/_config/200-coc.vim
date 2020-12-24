@@ -17,7 +17,7 @@ function! s:show_documentation()
 endfunction
 
 inoremap <silent><expr> <CR> pumvisible() ?
-      \ coc#_select_confirm() : "\<CR>"
+      \ "\<C-y>" : "\<CR>\<C-r>=coc#on_enter()\<CR>"
 
 let g:coc_global_extensions = [
       \   'coc-json',
