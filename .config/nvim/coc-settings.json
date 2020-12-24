@@ -38,7 +38,7 @@
     "terraform": {
       "command": "terraform-ls",
       "args": ["serve"],
-      "filetypes": ["terraform", "tf"],
+      "filetypes": ["terraform", "tf"]
     }
   }
 }
