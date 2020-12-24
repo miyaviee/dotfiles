@@ -10,3 +10,5 @@ layout_virtualenv() {
   fi
   source ${venv_path}/bin/activate
 }
+
+source "$(asdf direnv hook asdf)"
