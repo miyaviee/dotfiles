@@ -1,8 +1,8 @@
 UsePlugin 'vim-quickrun'
 
-function! JobStatus()
+function! QuickRunJobStatus()
   if quickrun#is_running()
-    return "Running..."
+    return "QuickRun Running..."
   endif
   return ""
 endfunction
