@@ -12,7 +12,7 @@ let g:lightline = {
       \     'right': [
       \       [ 'lineinfo' ],
       \       [ 'percent' ],
-      \       [ 'quickrun_job', 'fileformat', 'fileencoding', 'filetype' ],
+      \       [ 'quickrun_job', 'neomake_job', 'fileformat', 'fileencoding', 'filetype' ],
       \     ],
       \   },
       \   'inactive': {
@@ -22,5 +22,6 @@ let g:lightline = {
       \   },
       \   'component_function': {
       \     'quickrun_job': 'QuickRunJobStatus',
+      \     'neomake_job': 'NeomakeJobStatus',
       \   },
       \ }

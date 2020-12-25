@@ -1,16 +1,12 @@
 UsePlugin 'neomake'
 
-function! NeomakeJobFinishedStatus() abort
-  let context = g:neomake_hook_context
-  if context.jobinfo.exit_code != 0
-    copen 20
-  else
-    cclose
-  endif
-endfunction
+let g:neomake_open_list = 2
+let g:neomake_list_height = 20
 
-augroup neomake_hooks
-  autocmd!
-  autocmd User NeomakeJobStarted  echo 'Neomake Running...'
-  autocmd User NeomakeJobFinished echo '' | call NeomakeJobFinishedStatus()
-augroup END
+function! NeomakeJobStatus() abort
+  let jobs = neomake#GetJobs()
+  if !empty(jobs)
+    return 'Neomake Running...'
+  endif
+  return ''
+endfunction
