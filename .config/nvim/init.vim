@@ -101,6 +101,7 @@ Plug 'kamykn/spelunker.vim'
 Plug 'kassio/neoterm'
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-dispatch'
+Plug 'neomake/neomake'
 Plug 'thinca/vim-quickrun'
 Plug 'lambdalisue/vim-quickrun-neovim-job'
 
