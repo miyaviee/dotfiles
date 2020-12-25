@@ -966,7 +966,7 @@
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTab</key>
-	<true/>
+	<false/>
 	<key>HideTabCloseButton</key>
 	<true/>
 	<key>HideTabNumber</key>
@@ -1703,7 +1703,7 @@
 			<key>Visual Bell</key>
 			<false/>
 			<key>Window Type</key>
-			<integer>12</integer>
+			<integer>0</integer>
 			<key>Working Directory</key>
 			<string>/Users/kageyama</string>
 		</dict>
@@ -1765,6 +1765,8 @@
 	<false/>
 	<key>TabStyle</key>
 	<integer>0</integer>
+	<key>TabStyleWithAutomaticOption</key>
+	<integer>6</integer>
 	<key>TabsHaveCloseButton</key>
 	<false/>
 	<key>UseLionStyleFullscreen</key>
