@@ -67,5 +67,3 @@ type kubectl > /dev/null 2>&1 && source <(kubectl completion zsh)
 type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
 
 alias brew="PATH=${PATH//~\/.asdf\/shims:/} brew"
-
-[ -e ~/.local/.zshrc ] && source ~/.local/.zshrc
