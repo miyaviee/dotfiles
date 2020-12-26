@@ -87,7 +87,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'mhinz/vim-startify'
-Plug 'lambdalisue/fern.vim'
 
 " util
 Plug 'AndrewRadev/splitjoin.vim'
