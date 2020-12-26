@@ -7,3 +7,5 @@ augroup spelunker
   autocmd!
   autocmd CursorHold * call spelunker#check_displayed_words()
 augroup END
+
+command! SpelunkerClearAll :call spelunker#matches#clear_matches()
