@@ -69,6 +69,8 @@ tnoremap <silent> <ESC> <C-\><C-n>
 
 command! DeleteAnsi %s/\[[0-9;]*m//g
 
+autocmd QuitPre * if empty(&buftype) | lclose | endif
+
 " plugin manage
 call plug#begin('~/.cache/vim-plug')
 
