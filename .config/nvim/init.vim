@@ -67,6 +67,9 @@ nnoremap <silent> x "_x
 
 tnoremap <silent> <ESC> <C-\><C-n>
 
+cnoremap <C-p> <UP>
+cnoremap <C-n> <DOWN>
+
 command! DeleteAnsi %s/\[[0-9;]*m//g
 
 autocmd QuitPre * if empty(&buftype) | lclose | endif
