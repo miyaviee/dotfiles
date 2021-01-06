@@ -10,9 +10,8 @@ let g:ale_pattern_options = {
       \   '\.direnv\|\.venv\|\.vim\|vendor\|migrations': {'ale_linters': [], 'ale_fixers': []},
       \ }
 
-let g:ale_virtualtext_cursor = 1
-let g:ale_virtualtext_prefix = '> '
-let g:ale_echo_cursor = !has('nvim')
+let g:ale_virtualtext_cursor = 0
+let g:ale_echo_cursor = 1
 
 let g:ale_go_golangci_lint_package = 1
 let g:ale_go_golangci_lint_options = '--disable-all --enable=golint .'
