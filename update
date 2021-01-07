@@ -9,7 +9,7 @@ nvim +PlugUpgrade +PlugUpdate +PlugClean +UpdateRemotePlugins +qa
 
 go get -u \
   github.com/cweill/gotests/... \
-  mvdan.cc/gofumpt/gofumports
+  mvdan.cc/gofumpt
 
 pushd ~/.zplug && git pull -p && popd
 zsh -c 'source ~/.zplug/init.zsh; zplug update'
