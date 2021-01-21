@@ -34,11 +34,6 @@
     "python": {
       "command": "pyls",
       "filetypes": ["python"]
-    },
-    "terraform": {
-      "command": "terraform-ls",
-      "args": ["serve"],
-      "filetypes": ["terraform", "tf"]
     }
   }
 }
