@@ -38,10 +38,11 @@ set tags=.tags,vendor.tags
 set updatetime=300
 set visualbell t_vb=
 set wildmode=list:longest
-
 try
   set fillchars=eob:\ ,
   set inccommand=nosplit
+  set pumblend=10
+  set winblend=10
 catch
   " not supported
 endtry
