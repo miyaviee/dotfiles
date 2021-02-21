@@ -5,6 +5,9 @@ git pull -p
 
 type brew > /dev/null 2>&1 && brew upgrade && brew cleanup
 
+asdf update
+asdf install
+
 nvim +PlugUpgrade +PlugUpdate +PlugClean +UpdateRemotePlugins +qa
 
 go get -u \
@@ -13,5 +16,3 @@ go get -u \
 
 pushd ~/.zplug && git pull -p && popd
 zsh -c 'source ~/.zplug/init.zsh; zplug update'
-
-asdf update
