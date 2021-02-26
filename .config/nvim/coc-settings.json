@@ -1,6 +1,12 @@
 {
   "coc.preferences.messageLevel": "warning",
   "coc.preferences.useQuickfixForLocations": true,
+  "coc.preferences.rootPatterns": [
+    ".root",
+    ".git",
+    ".hg",
+    ".projections.json"
+  ],
   "diagnostic.enable": false,
   "signature.target": "echo",
   "suggest.floatEnable": false,
