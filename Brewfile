@@ -20,7 +20,7 @@ brew 'redis'
 brew 'sqlite3'
 
 brew 'neovim'
-brew 'universal-ctags', args: %w[HEAD with-jansson with-libyaml]
+brew 'universal-ctags', args: %w[HEAD]
 brew 'git'
 brew 'gh'
 brew 'hub'
