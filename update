@@ -11,9 +11,14 @@ cat .tool-versions | xargs -I {} sh -c "asdf global {}"
 
 nvim +PlugUpgrade +PlugUpdate +PlugClean +UpdateRemotePlugins +qa
 
-go get -u \
-  github.com/cweill/gotests/... \
+gotools=(
+  github.com/cweill/gotests/...
   mvdan.cc/gofumpt
+)
+
+for repo in ${gotools[@]}; do
+  go install ${repo}@latest
+done
 
 pushd ~/.zplug && git pull -p && popd
 zsh -c 'source ~/.zplug/init.zsh; zplug update'
