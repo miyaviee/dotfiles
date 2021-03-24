@@ -5,6 +5,7 @@ extends: default
 rules:
   document-start: disable
   line-length: disable
+  comments: disable
   colons:
     ignore: |
       *.dig
