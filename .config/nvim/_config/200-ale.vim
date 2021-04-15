@@ -21,13 +21,12 @@ let g:ale_lint_on_enter = 1
 let g:ale_linters = {
       \   'go': ['golangci-lint', 'staticcheck'],
       \   'python': ['flake8'],
-      \   'ruby': ['rubocop'],
+      \   'ruby': ['ruby'],
       \ }
 
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
       \   'python': ['black'],
-      \   'ruby': ['rubocop'],
       \   'javascript': ['eslint'],
       \   'javascript.jsx': ['eslint'],
       \   'vue': ['eslint'],
