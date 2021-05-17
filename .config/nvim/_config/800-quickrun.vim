@@ -15,5 +15,7 @@ let g:quickrun_config = {
       \   },
       \ }
 
+nmap <Leader>r <Plug>(quickrun)
+
 nnoremap <silent><expr> <C-c> quickrun#is_running() ?
       \ quickrun#sweep_sessions() : "\<C-c>"
