@@ -1,1 +1,1 @@
-set nonumber norelativenumber signcolumn=no
+set nowrap nonumber norelativenumber signcolumn=no
