@@ -2,7 +2,7 @@ set autoindent
 set backspace=indent,eol,start
 set clipboard+=unnamed
 set completeopt=menuone,noinsert
-set cursorline
+set nocursorline
 set expandtab
 set fileencoding=utf-8
 set fileformat=unix
