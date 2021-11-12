@@ -155,6 +155,7 @@ Plug 'posva/vim-vue', { 'for': 'vue' }
 
 " quickfix
 Plug 'yssl/QFEnter', { 'for': 'qf' }
+Plug 'blueyed/vim-qf_resize'
 
 " syntax
 Plug 'sheerun/vim-polyglot'
