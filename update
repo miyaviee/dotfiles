@@ -14,6 +14,7 @@ nvim +PlugUpgrade +PlugUpdate +PlugClean +UpdateRemotePlugins +qa
 gotools=(
   github.com/cweill/gotests/...
   mvdan.cc/gofumpt
+  github.com/segmentio/golines
 )
 
 for repo in ${gotools[@]}; do
