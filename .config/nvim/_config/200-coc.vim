@@ -17,7 +17,8 @@ function! s:show_documentation()
 endfunction
 
 inoremap <silent><expr> <TAB> pumvisible() ?
-      \ "\<C-y>" : "\<TAB>"
+      \ "\<C-y>" : coc#expandable() ?
+      \ "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand',''])\<CR>" : "\<TAB>"
 
 let g:coc_global_extensions = [
       \   'coc-json',
@@ -26,6 +27,7 @@ let g:coc_global_extensions = [
       \   'coc-vetur',
       \   'coc-word',
       \   'coc-vimlsp',
+      \   'coc-snippets',
       \ ]
 
 nnoremap <silent><C-\> :<C-u>CocList outline<CR>

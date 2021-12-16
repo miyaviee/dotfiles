@@ -85,6 +85,7 @@ Plug 'tyrannicaltoucan/vim-quantum'
 
 " completion
 Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
+Plug 'honza/vim-snippets'
 
 " auto close
 Plug 'jiangmiao/auto-pairs'
