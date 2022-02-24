@@ -1,4 +1,3 @@
-ansible
 awscli
 black
 flake8
