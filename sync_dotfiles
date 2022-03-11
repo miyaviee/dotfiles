@@ -12,3 +12,6 @@ for name in .config/*; do
   [ -f ${name} ] && ln -fs $(pwd)/${name} ~/${name} && continue
   mkdir -p ~/${name} && for conf in ${name}/*; do ln -fs $(pwd)/${conf} ~/${conf}; done
 done
+
+# vim
+ln -fs ~/.config/nvim/init.vim ~/.vimrc && ln -fs ~/.config/nvim ~/.vim

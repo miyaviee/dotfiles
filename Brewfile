@@ -19,6 +19,7 @@ brew 'redis'
 brew 'sqlite3'
 
 brew 'neovim'
+brew 'vim'
 brew 'universal-ctags', args: %w[HEAD]
 brew 'git'
 brew 'gh'
