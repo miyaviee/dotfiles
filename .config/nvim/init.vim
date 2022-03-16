@@ -9,6 +9,7 @@ set fileformat=unix
 set hidden
 set ignorecase
 set incsearch
+set hlsearch
 set infercase
 set laststatus=0
 set list
