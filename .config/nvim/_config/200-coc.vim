@@ -20,6 +20,15 @@ inoremap <silent><expr> <TAB> pumvisible() ?
       \ "\<C-y>" : coc#expandable() ?
       \ "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand',''])\<CR>" : "\<TAB>"
 
+inoremap <silent> <CR> <C-r>=<SID>coc_confirm()<CR>
+function! s:coc_confirm() abort
+  if pumvisible()
+    return "\<C-e>\<CR>"
+  else
+    return "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+  endif
+endfunction
+
 let g:coc_global_extensions = [
       \   'coc-json',
       \   'coc-solargraph',
