@@ -75,6 +75,7 @@ cnoremap <C-n> <DOWN>
 command! DeleteAnsi %s/\[[0-9;]*m//g
 
 autocmd QuitPre * if empty(&buftype) | lclose | endif
+autocmd WinEnter * if winnr('$') == 1 && &buftype == 'quickfix' | q | endif
 
 " plugin manage
 call plug#begin('~/.cache/vim-plug')
