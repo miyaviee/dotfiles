@@ -9,6 +9,7 @@ layout_virtualenv() {
     ${python} -m virtualenv ${venv_path}
   fi
   source ${venv_path}/bin/activate
+  unset PS1
 }
 
 source "$(asdf direnv hook asdf)"
