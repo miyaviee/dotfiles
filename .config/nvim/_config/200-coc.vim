@@ -17,8 +17,7 @@ function! s:show_documentation()
 endfunction
 
 inoremap <silent><expr> <TAB> pumvisible() ?
-      \ "\<C-y>" : coc#expandable() ?
-      \ "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand',''])\<CR>" : "\<TAB>"
+      \ "\<C-y>" : "\<TAB>"
 
 inoremap <silent> <CR> <C-r>=<SID>coc_confirm()<CR>
 function! s:coc_confirm() abort
@@ -36,7 +35,6 @@ let g:coc_global_extensions = [
       \   'coc-vetur',
       \   'coc-word',
       \   'coc-vimlsp',
-      \   'coc-snippets',
       \ ]
 
 nnoremap <silent><C-\> :<C-u>CocList outline<CR>
