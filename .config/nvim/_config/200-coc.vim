@@ -16,8 +16,8 @@ function! s:show_documentation()
   endif
 endfunction
 
-inoremap <silent><expr> <TAB> pumvisible() ?
-      \ "\<C-y>" : "\<TAB>"
+inoremap <silent><expr> <TAB> coc#pum#visible() ?
+      \ coc#_select_confirm() : "\<TAB>"
 
 inoremap <silent> <CR> <C-r>=<SID>coc_confirm()<CR>
 function! s:coc_confirm() abort
