@@ -162,7 +162,7 @@ Plug 'blueyed/vim-qf_resize'
 " syntax
 Plug 'sheerun/vim-polyglot'
 if has('nvim-0.5')
-  Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+  Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdateSync' }
 endif
 
 call plug#end()
