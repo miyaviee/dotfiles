@@ -18,6 +18,7 @@ brew 'mysql'
 brew 'redis'
 brew 'sqlite3'
 
+brew 'zsh'
 brew 'neovim'
 brew 'vim'
 brew 'universal-ctags', args: %w[HEAD]
