@@ -116,6 +116,7 @@ Plug 'skywind3000/asyncrun.vim'
 " git status
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 " cursor
 Plug 'easymotion/vim-easymotion'
