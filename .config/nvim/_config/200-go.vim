@@ -14,6 +14,7 @@ let g:go_fmt_command = 'goimports'
 let g:go_mod_fmt_autosave = 0
 let g:go_asmfmt_autosave = 0
 let g:go_metalinter_autosave = 0
+let g:go_imports_autosave = 0
 
 let g:go_highlight_diagnostic_errors = 0
 let g:go_highlight_diagnostic_warnings = 0
