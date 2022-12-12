@@ -17,7 +17,7 @@ function! s:show_documentation()
 endfunction
 
 inoremap <silent><expr> <TAB> coc#pum#visible() ?
-      \ coc#_select_confirm() : "\<TAB>"
+      \ coc#pum#confirm() : "\<TAB>"
 
 inoremap <silent> <CR> <C-r>=<SID>coc_confirm()<CR>
 function! s:coc_confirm() abort
