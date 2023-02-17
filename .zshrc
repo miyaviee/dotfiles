@@ -64,7 +64,7 @@ unsetopt promptcr
 
 type kubectl > /dev/null 2>&1 && source <(kubectl completion zsh)
 
-type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc" > /dev/null 2>&1 || echo 'need asdf direnv setup'
 
 alias brew="PATH=${PATH//~\/.asdf\/shims:/} brew"
 

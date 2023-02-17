@@ -11,5 +11,3 @@ layout_virtualenv() {
   source ${venv_path}/bin/activate
   unset PS1
 }
-
-source "$(asdf direnv hook asdf)"
