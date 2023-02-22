@@ -15,7 +15,7 @@ set laststatus=0
 set list
 set listchars=tab:\|\ ,trail:_,extends:\
 set matchtime=1
-set mouse-=a
+set mouse=h
 set nobackup
 set nocursorcolumn
 set noerrorbells
