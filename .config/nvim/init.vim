@@ -30,6 +30,7 @@ set showmatch
 set signcolumn=yes
 set smartcase
 set smartindent
+set softtabstop=4
 set splitbelow
 set splitright
 set synmaxcol=1000
