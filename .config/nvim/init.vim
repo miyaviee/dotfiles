@@ -24,13 +24,13 @@ set noswapfile
 set nowrapscan
 set nowritebackup
 set number
-set shiftwidth=2
+set shiftwidth=0
 set shortmess+=c
 set showmatch
 set signcolumn=yes
 set smartcase
 set smartindent
-set softtabstop=4
+set softtabstop=-1
 set splitbelow
 set splitright
 set synmaxcol=1000
