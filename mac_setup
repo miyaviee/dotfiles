@@ -3,7 +3,8 @@
 defaults write -g InitialKeyRepeat -int 25
 defaults write -g KeyRepeat -int 6
 defaults write -g ApplePressAndHoldEnabled -bool false
-defaults write -g _HIHideMenuBar -bool true
+defaults write -g _HIHideMenuBar -bool false
+defaults write -g AppleMenuBarVisibleInFullscreen -bool false
 defaults write com.apple.dock tilesize -integer 48 \
   && defaults write com.apple.dock autohide -bool true \
   && defaults write com.apple.dock show-recents -bool false \
