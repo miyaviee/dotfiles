@@ -12,3 +12,5 @@ rules:
   colons:
     ignore: |
       *.dig
+  truthy:
+    check-keys: false
