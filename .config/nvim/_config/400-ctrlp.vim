@@ -14,9 +14,9 @@ let g:ctrlp_buffer_func = {
     \ }
 
 func! DisableLastStatus()
-    set laststatus=0
+    setlocal laststatus=0
 endfunc
 
 func! EnableLastStatus()
-    set laststatus=2
+    setlocal laststatus=2
 endfunc
