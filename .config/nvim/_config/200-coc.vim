@@ -31,12 +31,13 @@ endfunction
 
 let g:coc_global_extensions = [
       \   'coc-json',
+      \   'coc-pyright',
+      \   'coc-snippets',
       \   'coc-solargraph',
       \   'coc-tsserver',
       \   'coc-vetur',
-      \   'coc-word',
       \   'coc-vimlsp',
-      \   'coc-snippets',
+      \   'coc-word',
       \ ]
 
 nnoremap <silent><C-\> :<C-u>CocList outline<CR>

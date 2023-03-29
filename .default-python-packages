@@ -5,7 +5,6 @@ pipdeptree
 poetry
 pre-commit
 pylint
-python-language-server
 sqlparse
 virtualenv
 wheel
