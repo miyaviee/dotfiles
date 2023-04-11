@@ -68,4 +68,4 @@ source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc" > /dev/null 2>&1 ||
 
 alias brew="PATH=${PATH//~\/.asdf\/shims:/} brew"
 
-alias vi=vim
+alias vi=$EDITOR

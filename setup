@@ -14,4 +14,4 @@ cat .tool-versions | cut -f1 -d " " | xargs -I{} zsh -c '~/.asdf/bin/asdf plugin
 
 ./sync_dotfiles
 
-nvim +PlugInstall +qa
+$EDITOR +PlugInstall +qa

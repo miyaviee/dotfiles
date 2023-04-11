@@ -8,7 +8,8 @@ type brew > /dev/null 2>&1 && brew upgrade && brew cleanup
 asdf update
 asdf install
 
-nvim +PlugUpgrade +PlugUpdate +PlugClean +UpdateRemotePlugins +qa
+$EDITOR +PlugUpgrade +PlugUpdate +PlugClean +qa
+[[ $EDITOR = 'nvim' ]] && $EDITOR +UpdateRemotePlugins +qa
 
 gotools=(
   github.com/cweill/gotests/...
