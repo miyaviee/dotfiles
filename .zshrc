@@ -30,6 +30,8 @@ fignore=('.pyc' '.sw?' '.6' '.8')
 
 fpath=(~/.zplug/repos/zsh-users/zsh-completions/src $fpath)
 
+autoload -U compinit && compinit
+
 setopt auto_cd
 
 setopt auto_pushd
