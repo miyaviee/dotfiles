@@ -11,4 +11,6 @@ defaults write com.apple.dock tilesize -integer 48 \
   && defaults write com.apple.dock autohide -bool true \
   && defaults write com.apple.dock show-recents -bool false \
   && killall Dock
-defaults write com.knollsoft.Rectangle gapSize -float 10
+defaults write com.knollsoft.Rectangle gapSize -int 5 \
+  && killall Rectangle \
+  && open /Applications/Rectangle.app
