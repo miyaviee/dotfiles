@@ -15,6 +15,7 @@ gotools=(
   github.com/cweill/gotests/...
   mvdan.cc/gofumpt
   github.com/segmentio/golines
+  github.com/ChimeraCoder/gojson/gojson
 )
 
 for repo in ${gotools[@]}; do
