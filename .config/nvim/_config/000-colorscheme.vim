@@ -3,7 +3,7 @@ set termguicolors
 set background=dark
 
 try
-  colorscheme quantum
+  colorscheme gruvbox
 catch
   " no colorscheme
 endtry
