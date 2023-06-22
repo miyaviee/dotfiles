@@ -2,14 +2,13 @@ set autoindent
 set backspace=indent,eol,start
 set clipboard+=unnamed
 set completeopt=menuone,noinsert
-set nocursorline
 set expandtab
 set fileencoding=utf-8
 set fileformat=unix
 set hidden
+set hlsearch
 set ignorecase
 set incsearch
-set hlsearch
 set infercase
 set laststatus=0
 set list
@@ -18,6 +17,7 @@ set matchtime=1
 set mouse=h
 set nobackup
 set nocursorcolumn
+set nocursorline
 set noerrorbells
 set noshowmode
 set noswapfile
