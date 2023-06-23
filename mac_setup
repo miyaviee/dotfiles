@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 defaults write -g InitialKeyRepeat -int 25
 defaults write -g KeyRepeat -int 6
 defaults write -g ApplePressAndHoldEnabled -bool false
@@ -7,11 +9,11 @@ defaults write -g _HIHideMenuBar -bool true
 defaults write -g AppleMenuBarVisibleInFullscreen -bool false
 killall SystemUIServer
 
-defaults write com.apple.dock tilesize -integer 48 \
-  && defaults write com.apple.dock autohide -bool true \
-  && defaults write com.apple.dock show-recents -bool false \
-  && killall Dock
+defaults write com.apple.dock tilesize -integer 48
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock show-recents -bool false
+killall Dock
 
-defaults write com.knollsoft.Rectangle gapSize -int 10 \
-  && killall Rectangle \
-  && open /Applications/Rectangle.app
+defaults write com.knollsoft.Rectangle gapSize -int 10
+killall Rectangle
+open /Applications/Rectangle.app
