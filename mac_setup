@@ -12,10 +12,6 @@ defaults write com.apple.dock tilesize -integer 48 \
   && defaults write com.apple.dock show-recents -bool false \
   && killall Dock
 
-defaults write com.knollsoft.Rectangle gapSize -int 5 \
-  && defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 5 \
-  && defaults write com.knollsoft.Rectangle screenEdgeGapBottom -int 5 \
-  && defaults write com.knollsoft.Rectangle screenEdgeGapLeft -int 5 \
-  && defaults write com.knollsoft.Rectangle screenEdgeGapRight -int 5 \
+defaults write com.knollsoft.Rectangle gapSize -int 10 \
   && killall Rectangle \
   && open /Applications/Rectangle.app
