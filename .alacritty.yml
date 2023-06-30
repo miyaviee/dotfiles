@@ -7,7 +7,7 @@ window:
     y: 4
   dynamic_padding: true
   decorations: none
-  # opacity: 0.85
+  opacity: 0.9
 
 schemes:
   gruvbox: &gruvbox
