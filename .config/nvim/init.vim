@@ -3,8 +3,10 @@ set backspace=indent,eol,start
 set clipboard+=unnamed
 set completeopt=menuone,noinsert
 set expandtab
+set encoding=utf-8
 set fileencoding=utf-8
 set fileformat=unix
+set fileformats=unix,dos,mac
 set hidden
 set hlsearch
 set ignorecase
@@ -48,6 +50,8 @@ try
 catch
   " not supported
 endtry
+
+lang en_US.UTF-8
 
 let g:python3_host_prog = expand('~/neovim/bin/python')
 
