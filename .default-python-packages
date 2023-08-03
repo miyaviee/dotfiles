@@ -1,4 +1,3 @@
-awscli
 black
 flake8
 pipdeptree
