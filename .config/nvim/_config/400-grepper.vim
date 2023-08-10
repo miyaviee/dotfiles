@@ -10,5 +10,5 @@ let g:grepper = {
       \ }
 
 let g:grepper.rg = {
-      \   'grepprg': 'rg --vimgrep --hidden --smart-case $* .',
+      \   'grepprg': 'rg --column --hidden --smart-case $* .',
       \ }
