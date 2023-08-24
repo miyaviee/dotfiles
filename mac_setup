@@ -14,6 +14,6 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock show-recents -bool false
 killall Dock
 
-defaults write com.knollsoft.Rectangle gapSize -int 5
+defaults write com.knollsoft.Rectangle gapSize -int 10
 killall Rectangle
 open /Applications/Rectangle.app
