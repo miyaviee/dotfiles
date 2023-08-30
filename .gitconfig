@@ -9,3 +9,5 @@
 	rebase = false
 [advice]
 	skippedCherryPicks = false
+[push]
+	autoSetupRemote = true
