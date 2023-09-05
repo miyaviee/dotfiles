@@ -162,9 +162,6 @@ Plug 'mattn/emmet-vim'
 " vue
 Plug 'posva/vim-vue', { 'for': 'vue' }
 
-" quickfix
-Plug 'blueyed/vim-qf_resize'
-
 " syntax
 Plug 'sheerun/vim-polyglot'
 if has('nvim-0.5')
