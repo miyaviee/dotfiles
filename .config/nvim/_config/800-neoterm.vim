@@ -7,7 +7,7 @@ let g:neoterm_fixedsize = 1
 let g:neoterm_use_relative_path = 1
 
 " open/close terminal
-nnoremap <silent> vc :<C-u>Ttoggle<CR>
+nnoremap <silent> vt :<C-u>Ttoggle<CR>
 " kills the current job (send a <c-c>)
 nnoremap <silent> vq :<C-u>Tkill<CR>
 
