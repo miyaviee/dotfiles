@@ -34,7 +34,7 @@
         "completeUnimported": true,
         "deepCompletion": false,
         "matcher": "caseSensitive",
-        "usePlaceholders": false
+        "usePlaceholders": true
       }
     }
   }
