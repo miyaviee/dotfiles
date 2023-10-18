@@ -1,4 +1,5 @@
 {
+  "coc.preferences.jumpCommand": "edit",
   "coc.preferences.messageLevel": "warning",
   "coc.preferences.useQuickfixForLocations": true,
   "coc.preferences.rootPatterns": [
