@@ -1,5 +1,5 @@
 black
-flake8==3.9.2
+flake8
 pipdeptree
 poetry
 pre-commit
