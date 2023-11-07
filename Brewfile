@@ -47,6 +47,8 @@ brew 'vegeta'
 
 brew 'terraform-ls'
 
+brew 'kadwanev/brew/retry'
+
 cask 'iterm2'
 cask 'docker'
 cask 'appcleaner'
