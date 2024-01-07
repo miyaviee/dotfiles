@@ -19,7 +19,7 @@ set matchtime=1
 set mouse=h
 set nobackup
 set nocursorcolumn
-set nocursorline
+set cursorline
 set noerrorbells
 set noshowmode
 set noswapfile
