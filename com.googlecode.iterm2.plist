@@ -1688,8 +1688,8 @@
 			<integer>4</integer>
 			<key>Title Components</key>
 			<integer>1</integer>
-			<key>Transparency</key>
-			<real>0.055</real>
+			<!-- <key>Transparency</key> -->
+			<!-- <real>0.055</real> -->
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
