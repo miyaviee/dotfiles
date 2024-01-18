@@ -82,6 +82,12 @@ command! DeleteAnsi %s/\[[0-9;]*m//g
 autocmd QuitPre * if empty(&buftype) | lclose | endif
 autocmd WinEnter * if winnr('$') == 1 && &buftype == 'quickfix' | q | endif
 
+augroup CursorLineOnlyInActiveWindow
+  autocmd!
+  autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  autocmd WinLeave * setlocal nocursorline
+augroup END
+
 " plugin manage
 call plug#begin()
 
