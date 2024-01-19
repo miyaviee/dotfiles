@@ -978,6 +978,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>Allow Title Setting</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -1317,6 +1319,8 @@
 			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Use Transparency</key>
+			<false/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -1687,9 +1691,9 @@
 			<key>Thin Strokes</key>
 			<integer>4</integer>
 			<key>Title Components</key>
-			<integer>1</integer>
-			<!-- <key>Transparency</key> -->
-			<!-- <real>0.055</real> -->
+			<integer>4</integer>
+			<key>Transparency</key>
+			<real>0.055</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1774,6 +1778,8 @@
 	<key>UseLionStyleFullscreen</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
+	<false/>
+	<key>WindowNumber</key>
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
