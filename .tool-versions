@@ -1,5 +1,5 @@
 direnv 2.32.2
-golang 1.21.1
+golang 1.21.6
 nodejs 19.8.1
 python 3.11.6
 ruby 3.2.1
