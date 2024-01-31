@@ -14,3 +14,12 @@ export PATH=~/.asdf/bin:$PATH
 
 # asdf
 [ -e ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
+
+git () {
+    if [ "$1" = "checkout" ]; then
+        echo "Don't use checkout; use switch or restore." >&2
+        return 1
+    else
+        command git "$@"
+    fi
+}
