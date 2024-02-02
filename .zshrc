@@ -8,6 +8,10 @@ zplug 'zsh-users/zsh-autosuggestions', defer:2
 
 zplug 'zsh-users/zsh-history-substring-search'
 
+zplug 'mafredri/zsh-async', from:github
+
+zplug 'sindresorhus/pure', use:pure.zsh, from:github, as:theme
+
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
     if read -q; then
@@ -16,8 +20,6 @@ if ! zplug check --verbose; then
 fi
 
 zplug load
-
-PROMPT="%c %# "
 
 zstyle ':completion:*:default' menu select=1
 
