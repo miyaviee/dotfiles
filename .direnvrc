@@ -1,6 +1,6 @@
 layout_virtualenv() {
   local python=${1}
-  local venv=$(${1} -V | cut -d ' ' -f 2)
+  local venv=venv
   if [ -n "${2}" ]; then
     venv=${2}
   fi
