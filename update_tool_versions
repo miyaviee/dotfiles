@@ -3,7 +3,7 @@
 set -e
 
 asdf plugin update --all
-asdf direnv setup --shell zsh --version latest
+$(asdf list direnv | grep $(asdf latest direnv)) > /dev/null || asdf direnv setup --shell zsh --version latest
 
 for plugin in $(cat .tool-versions | cut -f1 -d " "); do
   if [ "${plugin}" = "direnv" ]; then
