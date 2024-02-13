@@ -10,5 +10,6 @@ for plugin in $(cat .tool-versions | cut -f1 -d " "); do
     continue
   fi
   asdf install ${plugin} latest
+  asdf global ${plugin} latest
   asdf local ${plugin} latest
 done
