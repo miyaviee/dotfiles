@@ -2,12 +2,12 @@
 
 cask_args appdir: '/Applications'
 
-tap 'homebrew/cask'
 tap 'beeftornado/rmtree'
 tap 'koekeishiya/formulae'
 tap 'rs/tap'
 tap 'universal-ctags/universal-ctags'
 tap 'hashicorp/tap'
+tap 'kadwanev/brew'
 
 brew 'readline'
 brew 'xz'
