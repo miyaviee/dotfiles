@@ -1226,6 +1226,8 @@
 			<false/>
 			<key>Blur</key>
 			<false/>
+			<key>Blur Radius</key>
+			<real>0.0</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1624,6 +1626,8 @@
 				<key>Red Component</key>
 				<real>0.7928692102432251</real>
 			</dict>
+			<key>Minimum Contrast</key>
+			<real>0.20000000000000001</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
