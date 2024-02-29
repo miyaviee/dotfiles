@@ -8,7 +8,7 @@ size = 14
 [window]
 decorations = "none"
 dynamic_padding = true
-opacity = 0.96
+opacity = 0.945
 
 [window.padding]
 x = 4
