@@ -44,3 +44,5 @@ nnoremap <silent><C-\> :<C-u>CocList outline<CR>
 
 autocmd BufEnter list://* setlocal laststatus=0
 autocmd BufLeave list://* setlocal laststatus=2
+
+highlight! link CocFloating NormalFloat
