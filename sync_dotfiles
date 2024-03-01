@@ -10,7 +10,7 @@ for name in .gitconfig .tool-versions; do [[ -e ~/${name} ]] || ln -fs $(pwd)/${
 mkdir -p ~/.config
 for name in .config/*; do
   [ -f ${name} ] && ln -fs $(pwd)/${name} ~/${name} && continue
-  mkdir -p ~/${name} && for conf in ${name}/*; do ln -fs $(pwd)/${conf} ~/${conf}; done
+  mkdir -p ~/${name} && for conf in ${name}/*; do [ -L ~/${conf} ] || ln -fs $(pwd)/${conf} ~/${conf}; done
 done
 
 # vim
