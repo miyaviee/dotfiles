@@ -1,1 +1,1 @@
-nnoremap <silent> == :<C-u>%!sqlformat -k upper - \| sql-formatter-cli<CR>
+nnoremap <silent> == :<C-u>%!sql-formatter -l sql -c '{"keywordCase": "upper"}'<CR>
