@@ -100,9 +100,6 @@ Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'honza/vim-snippets'
 
-" auto close
-Plug 'jiangmiao/auto-pairs'
-
 " file explorer
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-grepper'
