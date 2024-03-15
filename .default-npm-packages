@@ -5,6 +5,6 @@ fx
 json2csv
 prettier
 prettier-plugin-toml
-sql-formatter-cli
+sql-formatter
 typescript
 yarn

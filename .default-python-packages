@@ -4,7 +4,6 @@ pipdeptree
 poetry
 pre-commit
 pylint
-sqlparse
 virtualenv
 wheel
 yamllint
