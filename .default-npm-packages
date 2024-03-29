@@ -6,5 +6,6 @@ json2csv
 prettier
 prettier-plugin-toml
 sql-formatter
+ts-node
 typescript
 yarn
