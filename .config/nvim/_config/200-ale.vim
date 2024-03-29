@@ -3,7 +3,7 @@ UsePlugin 'ale'
 let g:ale_disable_lsp = 1
 let g:ale_set_highlights = 0
 
-let g:ale_open_list = 1
+let g:ale_open_list = 0
 let g:ale_list_window_size = 10
 
 let g:ale_pattern_options = {
@@ -37,6 +37,3 @@ let g:ale_fixers = {
 
 nmap <silent> <C-k> <Plug>(ale_previous)
 nmap <silent> <C-j> <Plug>(ale_next)
-
-highlight! link ALEErrorSign Error
-highlight! link ALEWarningSign Warning
