@@ -13,6 +13,8 @@ let g:ale_pattern_options = {
 let g:ale_virtualtext_cursor = 0
 let g:ale_echo_cursor = 1
 
+let g:ale_use_global_executables = 1
+
 let g:ale_go_golangci_lint_package = 1
 let g:ale_go_golangci_lint_options = '--disable-all --enable=golint .'
 let g:ale_go_staticcheck_lint_package = 1
