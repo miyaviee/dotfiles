@@ -4,6 +4,7 @@ set -ex
 
 defaults write -g InitialKeyRepeat -int 25
 defaults write -g KeyRepeat -int 6
+defaults write -g com.apple.keyboard.fnState -bool true
 defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write -g _HIHideMenuBar -bool true
 defaults write -g AppleMenuBarVisibleInFullscreen -bool false
