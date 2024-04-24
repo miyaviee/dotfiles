@@ -16,7 +16,6 @@ defaults write com.apple.dock show-recents -bool false
 killall Dock
 
 defaults write com.knollsoft.Rectangle gapSize -int 2
-killall Rectangle
-open /Applications/Rectangle.app
+killall Rectangle && open /Applications/Rectangle.app
 
 sudo defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
