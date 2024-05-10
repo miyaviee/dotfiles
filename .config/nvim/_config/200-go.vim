@@ -21,7 +21,11 @@ let g:go_golint_bin = 'golint'
 let g:go_highlight_diagnostic_errors = 0
 let g:go_highlight_diagnostic_warnings = 0
 
-if FindPlugin("nvim-treesitter") | finish | endif
-
-let g:go_highlight_functions = 1
 let g:go_highlight_extra_types = 1
+let g:go_highlight_operators = 0
+let g:go_highlight_functions = 1
+let g:go_highlight_function_parameters = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_types = 0
+let g:go_highlight_fields = 1
+let g:go_highlight_build_constraints = 0
