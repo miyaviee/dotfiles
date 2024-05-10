@@ -168,7 +168,7 @@ Plug 'posva/vim-vue', { 'for': 'vue' }
 
 " syntax
 Plug 'sheerun/vim-polyglot'
-if has('nvim-0.5')
+if has('nvim-0.9.2')
   Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdateSync' }
 endif
 
