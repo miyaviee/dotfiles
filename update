@@ -5,12 +5,7 @@ set -e
 git pull -p
 ./sync_dotfiles
 
-BREW_UPGRADE_OPT=""
-if [ $(date +"%d") == "01" ]; then
-  BREW_UPGRADE_OPT="--fetch-HEAD"
-fi
-
-type brew > /dev/null 2>&1 && brew upgrade ${BREW_UPGRADE_OPT}; brew cleanup
+type brew > /dev/null 2>&1 && brew upgrade && brew cleanup
 
 asdf update
 asdf install
