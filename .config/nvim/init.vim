@@ -98,7 +98,6 @@ Plug 'tyrannicaltoucan/vim-quantum'
 
 " completion
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-Plug 'honza/vim-snippets'
 
 " auto close
 Plug 'jiangmiao/auto-pairs'

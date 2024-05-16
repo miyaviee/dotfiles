@@ -17,8 +17,7 @@ function! s:show_documentation()
 endfunction
 
 inoremap <silent><expr> <TAB> coc#pum#visible() ?
-      \ coc#pum#confirm() : coc#expandable() ?
-      \ "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand',''])\<CR>" : "\<TAB>"
+      \ coc#pum#confirm() : "\<TAB>"
 
 inoremap <silent> <CR> <C-r>=<SID>coc_confirm()<CR>
 function! s:coc_confirm() abort
@@ -32,7 +31,6 @@ endfunction
 let g:coc_global_extensions = [
       \   'coc-json',
       \   'coc-pyright',
-      \   'coc-snippets',
       \   'coc-solargraph',
       \   'coc-tsserver',
       \   'coc-vetur',
