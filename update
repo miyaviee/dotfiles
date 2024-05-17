@@ -8,7 +8,7 @@ git pull -p
 type brew > /dev/null 2>&1 && brew upgrade && brew cleanup
 
 asdf update
-asdf install
+asdf plugin update --all && asdf install
 
 ${EDITOR} +PlugUpgrade +PlugUpdate +PlugClean +qa
 [[ ${EDITOR} = 'nvim' ]] && ${EDITOR} +UpdateRemotePlugins +qa
