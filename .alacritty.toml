@@ -2,13 +2,36 @@ import = [
   "~/.config/alacritty/themes/gruvbox.toml"
 ]
 
+[env]
+TERM = "alacritty"
+
 [font]
 size = 14
 
+[font.bold]
+family = "Menlo"
+style = "Regular"
+
+[font.bold_italic]
+family = "Menlo"
+style = "Italic"
+
+[font.italic]
+family = "Menlo"
+style = "Italic"
+
+[font.normal]
+family = "Menlo"
+style = "Regular"
+
+[selection]
+save_to_clipboard = true
+
 [window]
-decorations = "none"
+# decorations = "none"
 dynamic_padding = true
 opacity = 0.945
+# startup_mode = "SimpleFullscreen"
 
 [window.padding]
 x = 4
