@@ -34,7 +34,7 @@
         "completionDocumentation": false,
         "completeUnimported": true,
         "deepCompletion": false,
-        "matcher": "caseSensitive",
+        "matcher": "Fuzzy",
         "usePlaceholders": false
       }
     }
