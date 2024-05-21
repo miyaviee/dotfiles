@@ -29,7 +29,7 @@ save_to_clipboard = true
 
 [window]
 # decorations = "none"
-dynamic_padding = true
+dynamic_padding = false
 opacity = 0.945
 # startup_mode = "SimpleFullscreen"
 
