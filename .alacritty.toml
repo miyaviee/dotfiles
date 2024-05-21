@@ -28,7 +28,7 @@ style = "Regular"
 save_to_clipboard = true
 
 [window]
-# decorations = "none"
+decorations = "none"
 dynamic_padding = false
 opacity = 0.945
 # startup_mode = "SimpleFullscreen"
