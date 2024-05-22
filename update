@@ -10,7 +10,7 @@ type brew > /dev/null 2>&1 && brew upgrade && brew cleanup
 asdf update
 asdf plugin update --all && asdf install
 
-${EDITOR} +PlugUpgrade +PlugUpdate +qa
+${EDITOR} +PlugUpgrade +PlugInstall +PlugUpdate +qa
 [[ ${EDITOR} = 'nvim' ]] && ${EDITOR} +UpdateRemotePlugins +qa
 
 gotools=(
