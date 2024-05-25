@@ -24,19 +24,20 @@ style = "Italic"
 family = "Menlo"
 style = "Regular"
 
-[[keyboard.bindings]]
-key = "T"
-mods = "Super"
-action = "ReceiveChar"
+[keyboard]
+bindings = [
+  { key = "T", mods = "Super", action = "ReceiveChar" },
+  { key = "Enter", mods = "Super", action = "ToggleFullscreen" },
+]
 
 [selection]
 save_to_clipboard = true
 
 [window]
-decorations = "none"
+decorations = "Full"
 dynamic_padding = false
 opacity = 0.945
-# startup_mode = "SimpleFullscreen"
+# startup_mode = "FullScreen"
 
 [window.padding]
 x = 5
