@@ -24,6 +24,11 @@ style = "Italic"
 family = "Menlo"
 style = "Regular"
 
+[[keyboard.bindings]]
+key = "T"
+mods = "Super"
+action = "ReceiveChar"
+
 [selection]
 save_to_clipboard = true
 
