@@ -27,8 +27,8 @@ config.mouse_bindings = {
   },
   {
     event = { Up = { streak = 1, button = 'Left' } },
-    mods = '',
-    action = act.Nop,
+    mods = 'NONE',
+    action = wezterm.action.CompleteSelection 'Clipboard',
   },
 }
 config.native_macos_fullscreen_mode = false
