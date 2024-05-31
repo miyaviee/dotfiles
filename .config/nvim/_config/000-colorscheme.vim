@@ -3,7 +3,11 @@ set termguicolors
 set background=dark
 
 try
-  colorscheme everforest
+  if has('nvim')
+    colorscheme everforest
+  else
+    colorscheme gruvbox
+  endif
 catch
   " no colorscheme
 endtry
