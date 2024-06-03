@@ -4,7 +4,10 @@ local config = wezterm.config_builder()
 
 config.audible_bell = 'Disabled'
 config.color_scheme = 'Everforest Dark (Gogh)'
-config.font = wezterm.font 'Menlo'
+config.font = wezterm.font_with_fallback {
+  {family = 'Menlo'},
+  'Hiragino Sans',
+}
 config.font_size = 14.0
 config.freetype_load_target = 'Light'
 config.keys = {
