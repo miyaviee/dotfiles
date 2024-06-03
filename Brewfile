@@ -40,6 +40,7 @@ brew 'findutils'
 brew 'unar'
 brew 'graphviz'
 brew 'gibo'
+brew 'stylua'
 
 brew 'jaggr'
 brew 'jplot'

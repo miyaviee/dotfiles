@@ -35,6 +35,7 @@ let g:ale_fixers = {
       \   'javascript.jsx': ['eslint'],
       \   'vue': ['eslint'],
       \   'terraform': ['terraform'],
+      \   'lua': ['stylua'],
       \ }
 
 nmap <silent> <C-k> <Plug>(ale_previous)
