@@ -1,17 +1,37 @@
 #!/bin/bash
 
-# reset link
-for link in ~/.* ~/.config/* ~/.config/nvim/*; do [ -L ${link} ] && unlink ${link}; done
-
 # root dotfiles
-for name in .*; do [[ ${name} =~ \.+(config|local|git(ignore|config)?|tags|eslintrc\..*|tool-versions|[A-Z].*)?$ ]] || ln -fs $(pwd)/${name} ~/${name}; done
-for name in .gitconfig .tool-versions; do [[ -e ~/${name} ]] || ln -fs $(pwd)/${name} ~/${name}; done
+for name in .*; do
+  if [[ ${name} =~ \.+(config|local|git(ignore|config)?|tags|eslintrc\..*|tool-versions|[A-Z].*)?$ ]]; then
+    continue
+  fi
+  [[ -L ~/${name} ]] || ln -fs $(pwd)/${name} ~/${name}
+done
+
+for name in .gitconfig .tool-versions; do
+  [[ -e ~/${name} ]] || ln -fs $(pwd)/${name} ~/${name}
+done
 
 mkdir -p ~/.config
-for name in .config/*; do
-  [ -f ${name} ] && ln -fs $(pwd)/${name} ~/${name} && continue
-  mkdir -p ~/${name} && for conf in ${name}/*; do [ -L ~/${conf} ] || ln -fs $(pwd)/${conf} ~/${conf}; done
+for name in $(find .config -maxdepth 1 -type f); do
+  ln -fs $(pwd)/${name} ~/${name}
+done
+
+for name in $(find .config -maxdepth 1 -type d); do
+  mkdir -p ~/${name}
+  for subName in $(find ${name} -maxdepth 1 -type f); do
+    ln -fs $(pwd)/${subName} ~/${subName}
+  done
 done
 
 # vim
 ln -fs ~/.config/nvim/init.vim ~/.vimrc && ln -fs ~/.config/nvim ~/.vim
+
+# clear link
+for name in $(find -L ~ -maxdepth 1 -type l); do
+  unlink ${name}
+done
+
+for name in $(find -L ~/.config -type l); do
+  unlink ${name}
+done
