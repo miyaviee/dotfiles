@@ -9,7 +9,6 @@ config.font = wezterm.font_with_fallback({
   "Hiragino Sans",
 })
 config.font_size = 14.0
-config.freetype_load_target = "Light"
 config.keys = {
   {
     key = "Enter",
