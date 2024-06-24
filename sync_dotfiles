@@ -19,8 +19,10 @@ done
 
 for name in $(find .config -maxdepth 1 -type d); do
   mkdir -p ~/${name}
-  for subName in $(find ${name} -maxdepth 1 -type f); do
-    ln -fs $(pwd)/${subName} ~/${subName}
+  for subName in $(find ${name} -maxdepth 1); do
+    if [[ ! -e ~/${subName} ]]; then
+      ln -fs $(pwd)/${subName} ~/${subName}
+    fi
   done
 done
 
