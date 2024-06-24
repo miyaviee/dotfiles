@@ -13,7 +13,7 @@ cat .tool-versions | cut -f1 -d " " | xargs -I{} zsh -c '~/.asdf/bin/asdf plugin
 ~/.asdf/bin/asdf install
 
 # gosh
-[ -e ~/.gosh ] || git clone https://github.com/Gogh-Co/Gogh.git ~/.gogh
+[ -e ~/.gogh ] || git clone https://github.com/Gogh-Co/Gogh.git ~/.gogh
 
 ./sync_dotfiles
 
