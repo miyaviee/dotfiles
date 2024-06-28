@@ -1,8 +1,8 @@
 layout_virtualenv() {
   local python=${1}
-  local venv=$(python --version | cut -d ' ' -f 2)
-  if [ -n "${2}" ]; then
-    venv=${2}
+  local venv=${2}
+  if [ -z ${venv} ]; then
+    venv=direnv
   fi
   local venv_path=$(direnv_layout_dir)/${venv}
   if [ ! -d ${venv_path} ]; then
