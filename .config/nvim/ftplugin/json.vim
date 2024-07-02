@@ -1,1 +1,1 @@
-nnoremap <silent> == :<C-u>%!gojq .<CR>
+nnoremap <silent> == :<C-u>%!jq .<CR>
