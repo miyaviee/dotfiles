@@ -14,9 +14,6 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock show-recents -bool false
 killall Dock
 
-defaults write com.knollsoft.Rectangle gapSize -int 2
-killall Rectangle && open /Applications/Rectangle.app
-
 defaults write com.apple.QuickTimePlayerX NSQuitAlwaysKeepsWindows -bool false
 
 sudo defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
