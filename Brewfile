@@ -13,7 +13,7 @@ brew 'xz'
 brew 'zlib'
 brew 'imagemagick'
 
-brew 'mysql'
+brew 'mysql@8.0'
 brew 'redis'
 brew 'sqlite3'
 
