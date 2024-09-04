@@ -3,6 +3,7 @@
 .venv/
 .bundle/
 .vscode/
+.env
 .envrc
 .coverage
 .coverage.*
