@@ -12,7 +12,7 @@ let g:lightline = {
       \     'right': [
       \       [ 'lineinfo' ],
       \       [ 'percent' ],
-      \       [ 'quickrun_job', 'neomake_job', 'fileformat', 'fileencoding', 'filetype' ],
+      \       [ 'list_count', 'quickrun_job', 'neomake_job', 'fileformat', 'fileencoding', 'filetype' ],
       \     ],
       \   },
       \   'inactive': {
@@ -21,7 +21,13 @@ let g:lightline = {
       \     ],
       \   },
       \   'component_function': {
+      \     'list_count': 'ListCountStatus',
       \     'quickrun_job': 'QuickRunJobStatus',
       \     'neomake_job': 'NeomakeJobStatus',
       \   },
       \ }
+
+function! ListCountStatus() abort
+  let l:count = len(getloclist(win_getid()))
+  return l:count == 0 ? 'OK' : printf('L:%d', l:count)
+endfunction
