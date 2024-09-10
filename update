@@ -18,6 +18,7 @@ gotools=(
   mvdan.cc/gofumpt
   github.com/segmentio/golines
   github.com/ChimeraCoder/gojson/gojson
+  honnef.co/go/tools/cmd/staticcheck
 )
 
 for repo in ${gotools[@]}; do

@@ -7,6 +7,7 @@ tap 'koekeishiya/formulae'
 tap 'rs/tap'
 tap 'hashicorp/tap'
 tap 'kadwanev/brew'
+tap 'golangci/tap'
 
 brew 'readline'
 brew 'xz'
@@ -47,6 +48,8 @@ brew 'vegeta'
 brew 'terraform-ls'
 
 brew 'kadwanev/brew/retry'
+
+brew 'golangci/tap/golangci-lint'
 
 cask 'iterm2'
 cask 'docker'
