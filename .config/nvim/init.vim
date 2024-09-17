@@ -94,7 +94,6 @@ call plug#begin()
 " colorcheme
 Plug 'cocopon/iceberg.vim'
 Plug 'morhetz/gruvbox'
-Plug 'sainnhe/everforest'
 
 " completion
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }

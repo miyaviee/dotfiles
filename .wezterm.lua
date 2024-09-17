@@ -3,7 +3,7 @@ local act = wezterm.action
 local config = wezterm.config_builder()
 
 config.audible_bell = "Disabled"
-config.color_scheme = "Everforest Dark Hard (Gogh)"
+config.color_scheme = "GruvboxDark"
 config.font = wezterm.font_with_fallback({
   { family = "Menlo" },
   "Hiragino Sans",
