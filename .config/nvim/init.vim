@@ -94,7 +94,6 @@ call plug#begin()
 " colorcheme
 Plug 'cocopon/iceberg.vim'
 Plug 'morhetz/gruvbox'
-Plug 'sainnhe/everforest'
 
 " auto close
 Plug 'jiangmiao/auto-pairs'
