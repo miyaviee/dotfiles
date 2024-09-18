@@ -52,6 +52,7 @@ brew 'kadwanev/brew/retry'
 brew 'golangci/tap/golangci-lint'
 
 cask 'iterm2'
+brew 'kitty'
 cask 'docker'
 cask 'appcleaner'
 # cask 'insomnia'
