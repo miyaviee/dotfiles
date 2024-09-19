@@ -1,0 +1,10 @@
+**/migrations
+**/migrate
+**/bin
+**/*.jpg
+**/*.jpeg
+**/*.JPG
+**/*.JPEG
+**/*.png
+**/*.PNG
+**/*.svg
