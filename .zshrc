@@ -66,10 +66,6 @@ setopt nonomatch
 
 unsetopt promptcr
 
-type kubectl > /dev/null 2>&1 && source <(kubectl completion zsh)
-
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc" > /dev/null 2>&1 || echo 'need asdf direnv setup'
-
-alias brew="PATH=${PATH//~\/.asdf\/shims:/} brew"
 
 alias vi=$EDITOR

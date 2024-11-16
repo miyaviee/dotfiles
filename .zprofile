@@ -14,3 +14,10 @@ export PATH=~/.asdf/bin:$PATH
 
 # asdf
 [ -e ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
+
+# brew
+if [[ $(uname -m) == "x86_64" ]]; then
+  eval "$(/usr/local/bin/brew shellenv)"
+else
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
