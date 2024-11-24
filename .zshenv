@@ -10,7 +10,7 @@ case $TERM in
     ;;
 esac
 
-export EDITOR=nvim
+export EDITOR=vim
 
 export GOPATH=~/go
 
