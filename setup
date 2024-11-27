@@ -12,9 +12,6 @@ cat .tool-versions | cut -f1 -d " " | xargs -I{} zsh -c '~/.asdf/bin/asdf plugin
 [ -e ~/.asdf/plugins/nodejs ] && [ ! -e ~/.gnupg/asdf-nodejs.gpg ] && bash -c '~/.asdf/plugins/nodejs/bin/import-release-team-keyring'
 ~/.asdf/bin/asdf install
 
-# gosh
-[ -e ~/.gogh ] || git clone https://github.com/Gogh-Co/Gogh.git ~/.gogh
-
 ./sync_dotfiles
 
 $EDITOR +PlugInstall +qa
