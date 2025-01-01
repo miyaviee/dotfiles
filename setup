@@ -7,10 +7,8 @@
 [ -e ~/.zplug/init.zsh ] || git clone https://github.com/zplug/zplug ~/.zplug
 
 # asdf
-[ -e ~/.asdf ] || git clone https://github.com/asdf-vm/asdf ~/.asdf
-cat .tool-versions | cut -f1 -d " " | xargs -I{} zsh -c '~/.asdf/bin/asdf plugin list | grep -q "{}" || ~/.asdf/bin/asdf plugin-add "{}"'
-[ -e ~/.asdf/plugins/nodejs ] && [ ! -e ~/.gnupg/asdf-nodejs.gpg ] && bash -c '~/.asdf/plugins/nodejs/bin/import-release-team-keyring'
-~/.asdf/bin/asdf install
+cat .tool-versions | cut -f1 -d " " | xargs -I{} asdf plugin add {}
+asdf install
 
 ./sync_dotfiles
 

@@ -13,7 +13,7 @@ export PATH=~/.asdf/bin:$PATH
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
 # asdf
-[ -e ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
+[ -e /opt/homebrew/opt/asdf/libexec/asdf.sh ] && . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # brew
 if [[ $(uname -m) == "x86_64" ]]; then

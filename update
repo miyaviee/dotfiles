@@ -7,7 +7,6 @@ git pull -p
 
 type brew > /dev/null 2>&1 && brew upgrade && brew cleanup
 
-asdf update
 asdf plugin update --all && asdf install
 
 ${EDITOR} +PlugUpgrade +PlugInstall +PlugUpdate +qa
