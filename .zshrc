@@ -31,9 +31,9 @@ bindkey '^N' history-substring-search-down
 fignore=('.pyc' '.sw?' '.6' '.8')
 
 fpath=(~/.zplug/repos/zsh-users/zsh-completions/src $fpath)
-fpath=(${ASDF_DIR}/completions $fpath)
+fpath=(${ASDF_DATA_DIR:-~/.asdf}/completions $fpath)
 
-autoload -U compinit && compinit
+autoload -Uz compinit && compinit
 
 setopt auto_pushd
 

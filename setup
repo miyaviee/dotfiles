@@ -10,6 +10,10 @@
 cat .tool-versions | cut -f1 -d " " | xargs -I{} asdf plugin add {}
 asdf install
 
+# asdf completions
+mkdir -p "${ASDF_DATA_DIR:-~/.asdf}/completions"
+asdf completions zsh > "${ASDF_DATA_DIR:-~/.asdf}/completions/_asdf"
+
 ./sync_dotfiles
 
 $EDITOR +PlugInstall +qa
