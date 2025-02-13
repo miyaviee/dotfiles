@@ -26,6 +26,8 @@ for name in $(find .config -maxdepth 1 -type d); do
   done
 done
 
+[ -e ~/.config/mise/config.toml ] || mkdir -p ~/.config/mise && cp mise.toml ~/.config/mise/config.toml
+
 # vim
 ln -fs ~/.config/nvim/init.vim ~/.vimrc && ln -fs ~/.config/nvim ~/.vim
 
