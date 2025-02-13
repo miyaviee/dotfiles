@@ -14,6 +14,9 @@ asdf install
 mkdir -p "${ASDF_DATA_DIR:-~/.asdf}/completions"
 asdf completions zsh > "${ASDF_DATA_DIR:-~/.asdf}/completions/_asdf"
 
+# mise
+mise install
+
 ./sync_dotfiles
 
 $EDITOR +PlugInstall +qa

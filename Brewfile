@@ -42,6 +42,7 @@ brew 'graphviz'
 brew 'gibo'
 brew 'stylua'
 brew 'asdf'
+brew 'mise'
 
 brew 'jaggr'
 brew 'jplot'

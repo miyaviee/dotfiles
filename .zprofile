@@ -18,3 +18,6 @@ if [[ $(uname -m) == "x86_64" ]]; then
 else
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
+
+# mise
+eval "$(mise activate zsh)"
