@@ -7,8 +7,6 @@ git pull -p
 
 type brew > /dev/null 2>&1 && brew upgrade && brew cleanup
 
-mise upgrade
-
 ${EDITOR} +PlugUpgrade +PlugInstall +PlugUpdate +qa
 [[ ${EDITOR} = 'nvim' ]] && ${EDITOR} +UpdateRemotePlugins +qa
 
