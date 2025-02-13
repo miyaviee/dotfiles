@@ -6,14 +6,6 @@
 
 [ -e ~/.zplug/init.zsh ] || git clone https://github.com/zplug/zplug ~/.zplug
 
-# asdf
-cat .tool-versions | cut -f1 -d " " | xargs -I{} asdf plugin add {}
-asdf install
-
-# asdf completions
-mkdir -p "${ASDF_DATA_DIR:-~/.asdf}/completions"
-asdf completions zsh > "${ASDF_DATA_DIR:-~/.asdf}/completions/_asdf"
-
 # mise
 mise install
 

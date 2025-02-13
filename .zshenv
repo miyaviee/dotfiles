@@ -24,5 +24,3 @@ export PIPENV_VENV_IN_PROJECT=1
 export GIT_MERGE_AUTOEDIT=no
 
 export BAT_THEME=ansi-dark
-
-export ASDF_GOLANG_MOD_VERSION_ENABLED=true

@@ -31,7 +31,6 @@ bindkey '^N' history-substring-search-down
 fignore=('.pyc' '.sw?' '.6' '.8')
 
 fpath=(~/.zplug/repos/zsh-users/zsh-completions/src $fpath)
-fpath=(${ASDF_DATA_DIR:-~/.asdf}/completions $fpath)
 
 autoload -Uz compinit && compinit
 
@@ -64,7 +63,5 @@ setopt share_history
 setopt nonomatch
 
 unsetopt promptcr
-
-source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc" > /dev/null 2>&1 || echo 'need asdf direnv setup'
 
 alias vi=$EDITOR

@@ -2,13 +2,13 @@
 
 # root dotfiles
 for name in .*; do
-  if [[ ${name} =~ \.+(config|local|git(ignore|config)?|tags|eslintrc\..*|tool-versions|[A-Z].*)?$ ]]; then
+  if [[ ${name} =~ \.+(config|local|git(ignore|config)?|tags|eslintrc\..*|[A-Z].*)?$ ]]; then
     continue
   fi
   [[ -L ~/${name} ]] || ln -fs $(pwd)/${name} ~/${name}
 done
 
-for name in .gitconfig .tool-versions; do
+for name in .gitconfig; do
   [[ -e ~/${name} ]] || ln -fs $(pwd)/${name} ~/${name}
 done
 
