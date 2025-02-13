@@ -18,5 +18,8 @@ else
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# direnv
+eval "$(direnv hook zsh)"
+
 # mise
 eval "$(mise activate zsh)"
