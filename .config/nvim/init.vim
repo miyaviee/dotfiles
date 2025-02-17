@@ -95,6 +95,7 @@ call plug#begin()
 Plug 'cocopon/iceberg.vim'
 Plug 'morhetz/gruvbox'
 Plug 'sainnhe/everforest'
+Plug 'sainnhe/gruvbox-material'
 
 " completion
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
