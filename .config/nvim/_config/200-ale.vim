@@ -38,5 +38,7 @@ let g:ale_fixers = {
       \   'lua': ['stylua'],
       \ }
 
+let g:ale_python_isort_options = '--profile black'
+
 nmap <silent> <C-k> <Plug>(ale_previous)
 nmap <silent> <C-j> <Plug>(ale_next)
