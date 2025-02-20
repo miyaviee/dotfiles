@@ -48,7 +48,8 @@ brew 'jaggr'
 brew 'jplot'
 brew 'vegeta'
 
-brew 'terraform-ls'
+brew 'hashicorp/tap/terraform'
+brew 'hashicorp/tap/terraform-ls'
 
 brew 'kadwanev/brew/retry'
 
