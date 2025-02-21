@@ -15,6 +15,9 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock show-recents -bool false
 killall Dock
 
+defaults write com.apple.desktopservices DSDontWriteNetworkStores True
+killall Finder
+
 defaults write com.apple.QuickTimePlayerX NSQuitAlwaysKeepsWindows -bool false
 
 sudo defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
