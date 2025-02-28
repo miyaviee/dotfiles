@@ -22,4 +22,4 @@ fi
 eval "$(direnv hook zsh)"
 
 # mise
-eval "$(mise activate zsh)"
+eval "$(mise activate zsh --shims)"
