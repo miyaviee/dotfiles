@@ -13,6 +13,7 @@ esac
 export EDITOR=nvim
 
 export GOPATH=~/go
+export GOBIN=${GOPATH}/bin
 
 export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000
