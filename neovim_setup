@@ -1,4 +1,4 @@
 #!/bin/bash
 
-rm -rf ~/neovim && python -m venv ~/neovim
+rm -rf ~/neovim && $(brew --prefix)/bin/python3 -m venv ~/neovim
 source ~/neovim/bin/activate && pip install -IU pip pynvim && deactivate

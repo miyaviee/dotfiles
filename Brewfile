@@ -20,6 +20,7 @@ brew 'sqlite3'
 
 brew 'zsh'
 brew 'neovim'
+brew 'python@3'
 brew 'vim'
 brew 'git'
 brew 'curl'
