@@ -13,6 +13,7 @@ brew 'readline'
 brew 'xz'
 brew 'zlib'
 brew 'imagemagick'
+brew 'pkgconf'
 
 brew 'mysql@8.0'
 brew 'redis'
