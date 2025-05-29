@@ -3,7 +3,7 @@ UsePlugin 'lightline.vim'
 setlocal laststatus=2
 
 let g:lightline = {
-      \   'colorscheme': 'gruvbox_material',
+      \   'colorscheme': get(g:, 'colors_name', 'default'),
       \   'active': {
       \     'left': [
       \       [ 'mode', 'paste' ],

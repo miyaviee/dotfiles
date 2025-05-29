@@ -3,7 +3,7 @@ set termguicolors
 set background=dark
 
 try
-  colorscheme gruvbox-material
+  colorscheme everforest
 catch
   " no colorscheme
 endtry
