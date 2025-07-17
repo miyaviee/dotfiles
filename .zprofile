@@ -23,3 +23,6 @@ eval "$(direnv hook zsh)"
 
 # mise
 eval "$(mise activate zsh --shims)"
+
+# include local setting
+[ -f ~/.local.zsh.inc ] && source ~/.local.zsh.inc
