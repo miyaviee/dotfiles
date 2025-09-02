@@ -35,7 +35,7 @@ set smartindent
 set softtabstop=-1
 set splitbelow
 set splitright
-set synmaxcol=1000
+set synmaxcol=200
 set tabstop=4
 set tagcase=match
 set tags=.tags,vendor.tags
