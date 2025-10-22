@@ -45,10 +45,10 @@ brew 'gibo'
 brew 'stylua'
 brew 'mise'
 brew 'direnv'
-
-brew 'jaggr'
-brew 'jplot'
 brew 'vegeta'
+
+brew 'rs/tap/jaggr'
+brew 'rs/tap/jplot' if OS.mac?
 
 brew 'hashicorp/tap/terraform'
 brew 'hashicorp/tap/terraform-ls'
@@ -59,7 +59,7 @@ brew 'golangci/tap/golangci-lint'
 
 cask 'iterm2'
 cask 'kitty'
-cask 'docker'
+cask 'docker-desktop'
 cask 'appcleaner'
 cask 'rectangle'
 cask 'visual-studio-code'
