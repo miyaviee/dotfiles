@@ -51,7 +51,7 @@ catch
   " not supported
 endtry
 
-lang en_US.UTF-8
+lang ja_JP.UTF-8
 
 let g:python3_host_prog = expand('~/neovim/bin/python')
 
