@@ -2,7 +2,7 @@
 
 # root dotfiles
 for name in .*; do
-  if [[ ${name} =~ \.+(config|local|git(ignore)?|tags|eslintrc\..*|[A-Z].*)?$ ]]; then
+  if [[ ${name} =~ \.+(config|local|git(ignore)?|tags|[A-Z].*)?$ ]]; then
     continue
   fi
   [[ -e ~/${name} ]] || ln -s $(pwd)/${name} ~/${name}
