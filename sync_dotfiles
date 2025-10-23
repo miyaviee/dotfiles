@@ -2,33 +2,29 @@
 
 # root dotfiles
 for name in .*; do
-  if [[ ${name} =~ \.+(config|local|git(ignore|config)?|tags|eslintrc\..*|[A-Z].*)?$ ]]; then
+  if [[ ${name} =~ \.+(config|local|git(ignore)?|tags|eslintrc\..*|[A-Z].*)?$ ]]; then
     continue
   fi
-  [[ -L ~/${name} ]] || ln -fs $(pwd)/${name} ~/${name}
-done
-
-for name in .gitconfig; do
-  [[ -e ~/${name} ]] || ln -fs $(pwd)/${name} ~/${name}
+  [[ -e ~/${name} ]] || ln -s $(pwd)/${name} ~/${name}
 done
 
 mkdir -p ~/.config
 for name in $(find .config -maxdepth 1 -type f); do
-  ln -fs $(pwd)/${name} ~/${name}
+  [[ -e ~/${name} ]] || ln -s $(pwd)/${name} ~/${name}
 done
 
 for name in $(find .config -maxdepth 1 -type d); do
   mkdir -p ~/${name}
   for subName in $(find ${name} -maxdepth 1); do
-    [[ -e ~/${subName} ]] || ln -fs $(pwd)/${subName} ~/${subName}
+    [[ -e ~/${subName} ]] || ln -s $(pwd)/${subName} ~/${subName}
   done
 done
 
 [[ -e ~/.config/mise/config.toml ]] || mkdir -p ~/.config/mise && cp mise.toml ~/.config/mise/config.toml
 
 # vim
-[[ -e ~/.vimrc ]] || ln -fs ~/.config/nvim/init.vim ~/.vimrc
-[[ -e ~/.vim ]] || ln -fs ~/.config/nvim ~/.vim
+[[ -e ~/.vimrc ]] || ln -s ~/.config/nvim/init.vim ~/.vimrc
+[[ -e ~/.vim ]] || ln -s ~/.config/nvim ~/.vim
 
 # clear link
 for name in $(find -L ~ -maxdepth 1 -type l); do
