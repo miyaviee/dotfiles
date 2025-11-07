@@ -7,6 +7,7 @@ tap 'koekeishiya/formulae'
 tap 'rs/tap'
 tap 'hashicorp/tap'
 tap 'kadwanev/brew'
+tap 'homeport/tap'
 
 brew 'readline'
 brew 'xz'
@@ -48,6 +49,7 @@ brew 'stylua'
 brew 'mise'
 brew 'direnv'
 brew 'vegeta'
+brew 'dyff'
 
 brew 'rs/tap/jaggr'
 brew 'rs/tap/jplot' if OS.mac?
