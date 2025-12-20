@@ -155,9 +155,6 @@ Plug 'tpope/vim-surround'
 " python
 Plug 'miyaviee/pytest-vim-compiler', { 'for': 'python' }
 
-" html
-Plug 'mattn/emmet-vim'
-
 " syntax
 Plug 'sheerun/vim-polyglot'
 if has('nvim-0.9.2')
