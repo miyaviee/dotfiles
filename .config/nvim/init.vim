@@ -111,7 +111,7 @@ Plug 'mhinz/vim-startify'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'tpope/vim-repeat'
 Plug 'itchyny/lightline.vim'
-Plug 'thinca/vim-localrc'
+Plug 'embear/vim-localvimrc'
 
 " runner
 Plug 'kassio/neoterm'

@@ -19,7 +19,7 @@ done
 
 # root dotfiles
 for name in .*; do
-  if [[ ${name} =~ \.+(git(ignore)?|tags|[A-Z].*)?$ ]]; then
+  if [[ ${name} =~ \.+(git(ignore)?|tags|lvimrc|[A-Z].*)?$ ]]; then
     continue
   fi
   if [[ -f ${name} ]]; then

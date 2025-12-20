@@ -16,8 +16,7 @@ __pycache__/
 .yapfignore
 .DS_Store
 *.tags
-.local.vim
-.local.*.vim
+.lvimrc
 .root
 .notags
 ~$*
