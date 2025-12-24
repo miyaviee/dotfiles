@@ -50,6 +50,7 @@ brew 'mise'
 brew 'direnv'
 brew 'vegeta'
 brew 'dyff'
+brew 'actionlint'
 
 brew 'rs/tap/jaggr'
 brew 'rs/tap/jplot' if OS.mac?
