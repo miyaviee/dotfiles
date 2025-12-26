@@ -12,7 +12,9 @@ export PATH=$GOPATH/bin:$PATH
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
 # brew
-if [[ $(uname -m) == "x86_64" ]]; then
+if [[ $(uname -a) =~ Linux ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+elif [[ $(uname -m) == "x86_64" ]]; then
   eval "$(/usr/local/bin/brew shellenv)"
 else
   eval "$(/opt/homebrew/bin/brew shellenv)"
