@@ -11,3 +11,12 @@ layout_virtualenv() {
   source ${venv_path}/bin/activate
   unset PS1
 }
+
+layout_venv() {
+  local python=${1}
+  local venv_path=.venv
+  if [ ! -d ${venv_path} ]; then
+    ${python} -m venv ${venv_path}
+  fi
+  source ${venv_path}/bin/activate
+}
