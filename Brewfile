@@ -51,6 +51,7 @@ brew 'direnv'
 brew 'vegeta'
 brew 'dyff'
 brew 'actionlint'
+brew 'witr'
 
 brew 'rs/tap/jaggr'
 brew 'rs/tap/jplot' if OS.mac?
