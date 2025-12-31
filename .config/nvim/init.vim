@@ -158,7 +158,7 @@ Plug 'miyaviee/pytest-vim-compiler', { 'for': 'python' }
 " syntax
 Plug 'sheerun/vim-polyglot'
 if has('nvim-0.9.2')
-  Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdateSync' }
+  Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 endif
 
 call plug#end()
