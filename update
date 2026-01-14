@@ -11,6 +11,7 @@ ${EDITOR} +PlugUpgrade +PlugInstall +PlugUpdate +qa
 [[ ${EDITOR} = 'nvim' ]] && ${EDITOR} +UpdateRemotePlugins +qa
 
 gotools=(
+  golang.org/x/tools/gopls
   github.com/cweill/gotests/...
   mvdan.cc/gofumpt
   github.com/segmentio/golines
