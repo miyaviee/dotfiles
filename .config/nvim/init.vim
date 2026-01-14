@@ -142,8 +142,6 @@ Plug 'editorconfig/editorconfig-vim'
 
 " textobj
 Plug 'kana/vim-textobj-user'
-Plug 'kana/vim-textobj-line'
-Plug 'kana/vim-textobj-indent'
 Plug 'rhysd/vim-textobj-anyblock'
 Plug 'machakann/vim-swap'
 
