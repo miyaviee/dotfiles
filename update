@@ -17,6 +17,7 @@ gotools=(
   github.com/segmentio/golines
   github.com/ChimeraCoder/gojson/gojson
   honnef.co/go/tools/cmd/staticcheck
+  golang.org/x/tools/cmd/goimports
 )
 
 for repo in ${gotools[@]}; do
