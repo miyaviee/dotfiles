@@ -5,7 +5,7 @@ set -e
 git pull -p
 ./sync_dotfiles
 
-type brew > /dev/null 2>&1 && brew upgrade && brew cleanup
+type brew > /dev/null 2>&1 && brew upgrade; brew cleanup
 
 ${EDITOR} +PlugUpgrade +PlugInstall +PlugUpdate +qa
 [[ ${EDITOR} = 'nvim' ]] && ${EDITOR} +UpdateRemotePlugins +qa
