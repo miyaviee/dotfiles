@@ -50,6 +50,7 @@ brew 'vegeta'
 brew 'dyff'
 brew 'actionlint'
 brew 'witr'
+brew 'tmux'
 
 brew 'rs/tap/jaggr'
 brew 'rs/tap/jplot' if OS.mac?
