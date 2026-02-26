@@ -3,6 +3,7 @@
 .venv/
 .bundle/
 .vscode/
+.cursor/
 *.env
 .envrc
 .coverage
