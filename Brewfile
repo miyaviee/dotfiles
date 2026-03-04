@@ -23,7 +23,6 @@ brew 'sqlite3'
 
 brew 'zsh'
 brew 'neovim'
-brew 'vim'
 brew 'git'
 brew 'curl'
 brew 'gh'
