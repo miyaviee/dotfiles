@@ -1,0 +1,13 @@
+version: "2"
+
+linters:
+  enable:
+    - modernize
+    - revive
+
+  settings:
+    revive:
+      enable-default-rules: true
+      rules:
+        - name: package-comments
+          disabled: true
