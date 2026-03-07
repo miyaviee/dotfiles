@@ -13,8 +13,6 @@ ${EDITOR} +PlugUpgrade +PlugInstall +PlugUpdate +qa
 gotools=(
   golang.org/x/tools/gopls
   github.com/cweill/gotests/...
-  mvdan.cc/gofumpt
-  github.com/golangci/golines
   github.com/ChimeraCoder/gojson/gojson
   honnef.co/go/tools/cmd/staticcheck
   golang.org/x/tools/cmd/goimports
