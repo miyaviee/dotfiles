@@ -6,13 +6,11 @@ ignore-patterns=
 [MESSAGES CONTROL]
 disable=
     access-member-before-definition,
-    bad-continuation,
     broad-except,
     import-error,
     invalid-name,
     missing-docstring,
     no-name-in-module,
-    no-self-use,
     no-value-for-parameter,
     too-few-public-methods,
     too-many-arguments,
