@@ -4,6 +4,7 @@ golangci-lint = "latest"
 node = "latest"
 python = "latest"
 ruby = "latest"
+xc = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = []
