@@ -5,7 +5,6 @@ cask_args appdir: '/Applications'
 tap 'beeftornado/rmtree'
 tap 'koekeishiya/formulae'
 tap 'rs/tap'
-tap 'hashicorp/tap'
 tap 'kadwanev/brew'
 tap 'homeport/tap'
 
@@ -53,9 +52,6 @@ brew 'tmux'
 
 brew 'rs/tap/jaggr'
 brew 'rs/tap/jplot' if OS.mac?
-
-brew 'hashicorp/tap/terraform'
-brew 'hashicorp/tap/terraform-ls'
 
 brew 'kadwanev/brew/retry'
 
