@@ -21,6 +21,7 @@ brew 'redis'
 brew 'sqlite3'
 
 brew 'zsh'
+brew 'pure'
 brew 'neovim'
 brew 'git'
 brew 'curl'
