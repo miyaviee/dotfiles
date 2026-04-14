@@ -1,4 +1,4 @@
-source ~/.zplug/init.zsh
+source $ZPLUG_HOME/init.zsh
 
 zplug 'zsh-users/zsh-completions'
 
@@ -26,7 +26,7 @@ bindkey '^N' history-substring-search-down
 
 fignore=('.pyc' '.sw?' '.6' '.8')
 
-fpath+=(~/.zplug/repos/zsh-users/zsh-completions/src)
+fpath+=($ZPLUG_HOME/repos/zsh-users/zsh-completions/src)
 
 autoload -Uz promptinit; promptinit
 prompt pure

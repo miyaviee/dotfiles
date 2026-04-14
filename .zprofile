@@ -20,6 +20,8 @@ else
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+export ZPLUG_HOME=$(brew --prefix zplug)
+
 # direnv
 eval "$(direnv hook zsh)"
 
