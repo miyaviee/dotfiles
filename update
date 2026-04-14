@@ -21,3 +21,7 @@ gotools=(
 for repo in ${gotools[@]}; do
   go install ${repo}@latest
 done
+
+set +e
+
+source ~/.zshrc; zplug update
