@@ -1,16 +1,19 @@
 # dotfiles
 
-## Mac
+## homebrew
 
-```
+```sh
 brew bundle
 ```
 
-## Ubuntu
+## setup
 
+```sh
+make setup
 ```
-sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:neovim-ppa/stable
-sudo add-apt-repository ppa:hnakamur/universal-ctags
-sudo apt-get update
+
+## update
+
+```sh
+make update
 ```

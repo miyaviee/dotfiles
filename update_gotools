@@ -1,15 +1,5 @@
 #!/usr/bin/env zsh
 
-set -e
-
-git pull -p
-./sync_dotfiles
-
-type brew > /dev/null 2>&1 && brew update; brew upgrade; brew cleanup
-
-${EDITOR} +PlugUpgrade +PlugInstall +PlugUpdate +qa
-[[ ${EDITOR} = 'nvim' ]] && ${EDITOR} +UpdateRemotePlugins +qa
-
 gotools=(
   golang.org/x/tools/gopls
   github.com/cweill/gotests/...
@@ -21,7 +11,3 @@ gotools=(
 for repo in ${gotools[@]}; do
   go install ${repo}@latest
 done
-
-set +e
-
-source ~/.zshrc; zplug update
