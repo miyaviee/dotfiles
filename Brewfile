@@ -22,7 +22,7 @@ brew 'sqlite3'
 
 brew 'zsh'
 brew 'pure'
-brew 'zplug'
+brew 'sheldon'
 brew 'neovim'
 brew 'git'
 brew 'curl'
