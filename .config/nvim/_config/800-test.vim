@@ -1,6 +1,6 @@
 UsePlugin 'vim-test'
 
-let g:test#strategy = 'neomake'
+let g:test#strategy = 'dispatch'
 
 if executable('pytest')
   let g:test#python#runner = 'pytest'

@@ -117,7 +117,6 @@ Plug 'embear/vim-localvimrc'
 Plug 'kassio/neoterm'
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-dispatch'
-Plug 'neomake/neomake'
 Plug 'thinca/vim-quickrun'
 Plug 'lambdalisue/vim-quickrun-neovim-job'
 
@@ -149,9 +148,6 @@ Plug 'machakann/vim-swap'
 Plug 'kana/vim-operator-user'
 Plug 'kana/vim-operator-replace'
 Plug 'tpope/vim-surround'
-
-" python
-Plug 'miyaviee/pytest-vim-compiler', { 'for': 'python' }
 
 " syntax
 Plug 'sheerun/vim-polyglot'
