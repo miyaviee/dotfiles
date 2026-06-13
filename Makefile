@@ -16,7 +16,7 @@ sync-dotfiles:
 	@./sync_dotfiles
 
 brew-upgrade:
-	@brew update; brew upgrade; brew cleanup
+	@brew update; brew upgrade -y; brew cleanup
 
 vim-plugin-install:
 	@$(EDITOR) +PlugInstall +qa
