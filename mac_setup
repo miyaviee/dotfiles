@@ -14,6 +14,7 @@ killall SystemUIServer
 defaults write com.apple.dock tilesize -integer 48
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock show-recents -bool false
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 killall Dock
 
 defaults write com.apple.desktopservices DSDontWriteNetworkStores True
