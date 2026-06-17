@@ -5,6 +5,7 @@ pipdeptree
 poetry
 pre-commit
 pylint
+uv
 virtualenv
 wheel
 yamllint
