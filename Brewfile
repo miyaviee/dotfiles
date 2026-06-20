@@ -16,7 +16,7 @@ brew 'imagemagick'
 brew 'autoconf'
 brew 'pkgconf'
 
-brew 'mysql@8.0'
+brew 'mysql'
 brew 'redis'
 brew 'sqlite3'
 
