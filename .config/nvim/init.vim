@@ -136,7 +136,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-commentary'
 
 " syntax/format
-Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 
 " textobj

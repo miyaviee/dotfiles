@@ -30,6 +30,7 @@ endfunction
 
 let g:coc_global_extensions = [
       \   'coc-json',
+      \   'coc-go',
       \   'coc-pyright',
       \   'coc-solargraph',
       \   'coc-tsserver',
@@ -42,5 +43,7 @@ nnoremap <silent><C-\> :<C-u>CocList outline<CR>
 
 autocmd BufEnter list://* setlocal laststatus=0
 autocmd BufLeave list://* setlocal laststatus=2
+
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
 highlight! link CocFloating NormalFloat

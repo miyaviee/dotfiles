@@ -2,15 +2,14 @@
   "coc.preferences.jumpCommand": "edit",
   "coc.preferences.messageLevel": "warning",
   "coc.preferences.useQuickfixForLocations": true,
-  "coc.preferences.rootPatterns": [
+  "coc.preferences.formatOnSave": true,
+  "workspace.rootPatterns": [
     ".root",
     ".git",
     ".hg",
     ".projections.json"
   ],
-  "diagnostic.enable": false,
   "signature.target": "echo",
-  "suggest.floatEnable": false,
   "suggest.noselect": false,
   "suggest.enablePreselect": false,
   "suggest.maxCompleteItemCount": 10,
@@ -25,18 +24,11 @@
     "<C-v>": "action:vsplit",
     "<C-s>": "action:split"
   },
-  "languageserver": {
-    "go": {
-      "command": "gopls",
-      "rootPatterns": ["go.mod"],
-      "filetypes": ["go"],
-      "initializationOptions": {
-        "completionDocumentation": false,
-        "completeUnimported": true,
-        "deepCompletion": false,
-        "matcher": "Fuzzy",
-        "usePlaceholders": false
-      }
-    }
+  "go.goplsOptions": {
+    "completionDocumentation": false,
+    "completeUnimported": true,
+    "deepCompletion": false,
+    "matcher": "Fuzzy",
+    "usePlaceholders": false
   }
 }
