@@ -27,3 +27,5 @@ export PIPENV_VENV_IN_PROJECT=1
 export GIT_MERGE_AUTOEDIT=no
 
 export BAT_THEME=ansi-dark
+
+export DOCKER_CLI_HINTS=false
