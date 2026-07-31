@@ -2,10 +2,7 @@ PyYAML
 black
 flake8
 pipdeptree
-poetry
-pre-commit
 pylint
 uv
-virtualenv
 wheel
 yamllint
