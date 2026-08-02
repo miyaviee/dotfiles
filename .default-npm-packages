@@ -1,4 +1,5 @@
 biome
+corepack
 cspell
 eslint
 fx
@@ -8,4 +9,3 @@ prettier-plugin-toml
 sql-formatter
 tsx
 typescript
-yarn
