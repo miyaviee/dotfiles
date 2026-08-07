@@ -4,6 +4,8 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	ignorecase = false
+	autocrlf = input
+	eol = lf
 [pull]
 	rebase = false
 [advice]
