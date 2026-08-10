@@ -1,11 +1,6 @@
-biome
 corepack
 cspell
-eslint
 fx
 json2csv
-prettier
-prettier-plugin-toml
+oxfmt
 sql-formatter
-tsx
-typescript
