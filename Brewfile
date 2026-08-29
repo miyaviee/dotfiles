@@ -53,6 +53,7 @@ brew 'actionlint'
 brew 'witr'
 brew 'tmux'
 brew 'yq'
+brew 'deno'
 
 brew 'rs/tap/jaggr'
 brew 'rs/tap/jplot' if OS.mac?
