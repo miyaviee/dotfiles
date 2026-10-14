@@ -5,3 +5,5 @@ bind generic <Ctrl-b> move-page-up
 
 bind main G !@hub browse -- commit/%(commit)
 bind diff G !@hub browse -- commit/%(commit)
+
+set vertical-split = no
