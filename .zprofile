@@ -5,6 +5,7 @@ export PATH="$PATH:~/.docker/bin"
 # avoid overwriting
 export PATH=/usr/local/sbin:$PATH
 export PATH=$GOPATH/bin:$PATH
+export PATH=~/.local/bin:$PATH
 
 # The next line updates PATH for the Google Cloud SDK.
 [ -f ~/google-cloud-sdk/path.zsh.inc ] && source ~/google-cloud-sdk/path.zsh.inc
